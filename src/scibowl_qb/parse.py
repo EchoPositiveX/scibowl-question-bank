@@ -20,6 +20,7 @@ import json
 import logging
 import sys
 from collections import Counter
+from concurrent.futures import ProcessPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -46,20 +47,41 @@ def find_pdfs(raw_dir: Path, level: str | None, set_name: str | None, round_name
     return sorted(raw_dir.glob(pattern))
 
 
+def parse_one(pdf: Path, raw_dir: Path, out_dir: Path, images: bool, corrections: corr.Corrections) -> tuple[Path, list[dict]]:
+    """Parse one PDF, apply corrections, and write its round file."""
+    rel = pdf.relative_to(raw_dir)
+    raw = extract_round(pdf, raw_dir, images_dir=out_dir / "images" if images else None, corrections=corrections)
+    questions = [corr.apply_question_corrections(to_question(rq), corrections) for rq in raw]
+    round_file = out_dir / "rounds" / rel.with_suffix(".json")
+    round_file.parent.mkdir(parents=True, exist_ok=True)
+    round_file.write_text(json.dumps(to_question_set(questions, GENERATOR), indent=2, ensure_ascii=False), encoding="utf-8")
+    return round_file, questions
+
+
+def _parse_one_in_worker(args) -> tuple[Path, list[dict]]:
+    pdf, raw_dir, out_dir, images, corrections_path = args
+    logging.getLogger("pdfminer").setLevel(logging.WARNING)
+    return parse_one(pdf, raw_dir, out_dir, images, corr.load(corrections_path))
+
+
 def parse_pdfs(
-    pdfs: list[Path], raw_dir: Path, out_dir: Path, images: bool, corrections: corr.Corrections
+    pdfs: list[Path], raw_dir: Path, out_dir: Path, images: bool, corrections: corr.Corrections,
+    jobs: int = 1, corrections_path: Path | None = None,
 ) -> dict[Path, list[dict]]:
-    """Parse each PDF, apply corrections, write its round file, and return {round file: questions}."""
+    """Parse each PDF and return {round file: questions}. With jobs > 1, PDFs are parsed in parallel."""
     written = {}
-    for n, pdf in enumerate(pdfs, 1):
-        rel = pdf.relative_to(raw_dir)
-        log.info("[%d/%d] %s", n, len(pdfs), rel.as_posix())
-        raw = extract_round(pdf, raw_dir, images_dir=out_dir / "images" if images else None, corrections=corrections)
-        questions = [corr.apply_question_corrections(to_question(rq), corrections) for rq in raw]
-        round_file = out_dir / "rounds" / rel.with_suffix(".json")
-        round_file.parent.mkdir(parents=True, exist_ok=True)
-        round_file.write_text(json.dumps(to_question_set(questions, GENERATOR), indent=2, ensure_ascii=False), encoding="utf-8")
-        written[round_file] = questions
+    if jobs <= 1:
+        for n, pdf in enumerate(pdfs, 1):
+            log.info("[%d/%d] %s", n, len(pdfs), pdf.relative_to(raw_dir).as_posix())
+            round_file, questions = parse_one(pdf, raw_dir, out_dir, images, corrections)
+            written[round_file] = questions
+        return written
+
+    work = [(pdf, raw_dir, out_dir, images, corrections_path or corr.DEFAULT_PATH) for pdf in pdfs]
+    with ProcessPoolExecutor(max_workers=jobs) as pool:
+        for n, (round_file, questions) in enumerate(pool.map(_parse_one_in_worker, work), 1):
+            log.info("[%d/%d] %s", n, len(pdfs), round_file.relative_to(out_dir / "rounds").as_posix())
+            written[round_file] = questions
     return written
 
 
@@ -93,6 +115,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--out", type=Path, default=REPO_ROOT / "output")
     ap.add_argument("--corrections", type=Path, default=corr.DEFAULT_PATH)
     ap.add_argument("--no-images", action="store_true", help="skip image cropping (much faster)")
+    ap.add_argument("-j", "--jobs", type=int, default=1, help="PDFs to parse in parallel (e.g. the number of CPU cores)")
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args(argv)
 
@@ -111,13 +134,16 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     try:
-        parse_pdfs(pdfs, args.raw_dir, args.out, images=not args.no_images, corrections=corrections)
+        written = parse_pdfs(pdfs, args.raw_dir, args.out, images=not args.no_images, corrections=corrections,
+                             jobs=args.jobs, corrections_path=args.corrections)
     except corr.CorrectionsError as exc:
         log.error("%s", exc)
         return 1
 
     parsed_rounds = {f"{p.parent.parent.name}-{p.parent.name}-{slugify(p.stem)}-" for p in pdfs}
-    unused = [c for c in corrections.unused_question_corrections() if any(c.id.startswith(r) for r in parsed_rounds)]
+    parsed_ids = {q["id"] for questions in written.values() for q in questions}
+    unused = [c for c in corrections.questions
+              if any(c.id.startswith(r) for r in parsed_rounds) and c.id not in parsed_ids]
     if unused:
         for c in unused:
             log.error("Correction for %s matched no question (check the ID in corrections.yaml)", c.id)

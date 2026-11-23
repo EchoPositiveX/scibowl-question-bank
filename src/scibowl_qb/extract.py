@@ -47,6 +47,8 @@ CHOICE_REGEX = re.compile(r"([WXYZ])\)(?:\s+(.*)|\s*$)", re.IGNORECASE)
 NEW_QUESTION_REGEX = re.compile(r"\d+\)\s+")
 # Page footers ("Round 14 Page 9", "Middle School Regional NSB® PAGE 3") and separator rows.
 FOOTER_REGEX = re.compile(r"\bpage\s*\d+\s*$|^Middle School - Round \d+[A-Z]?$", re.IGNORECASE)
+# The moderator's closing script printed after the last bonus (2022 rounds).
+ROUND_END_REGEX = re.compile(r"^Before we leave\b", re.IGNORECASE)
 SEPARATOR_REGEX = re.compile(r"^\s*[~_=*-]{5,}\s*$")
 # "ANSWER:", "ANSWER :", "Answer:", and "ANSWER 212" (colon left out).
 ANSWER_REGEX = re.compile(r"^(?:ANSWER\b\s*:?|(?i:answer)\s*:)\s*")
@@ -320,7 +322,8 @@ def extract_round(
                 body: list[tuple[str | None, str]] = []  # (choice letter or None, text)
                 while i < len(lines):
                     text = lines[i]["text"]
-                    if _starts_new_question(text) or _is_header(text) or ANSWER_REGEX.match(text):
+                    if (_starts_new_question(text) or _is_header(text) or ANSWER_REGEX.match(text)
+                            or ROUND_END_REGEX.match(text)):
                         break
                     if _is_footer(text):
                         raw_lines.append(text)
@@ -379,7 +382,7 @@ def extract_round(
                     i += 1
                     while i < len(lines):
                         text = lines[i]["text"]
-                        if _starts_new_question(text) or _is_header(text):
+                        if _starts_new_question(text) or _is_header(text) or ROUND_END_REGEX.match(text):
                             break
                         if _is_footer(text):
                             raw_lines.append(text)

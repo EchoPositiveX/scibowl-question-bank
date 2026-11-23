@@ -15,15 +15,12 @@ How this file works:
 - QB-20 Grow the sample file into the golden test set (feeds QB-05) and share it with the website for WEB-01
 - QB-03 Cache per-round results so a full run only re-parses PDFs that changed
 - QB-05 Golden tests: about 50 hand-checked questions across sets, compared field by field
-- QB-06 Content checks across all questions: answer present, multiple choice has W–Z, valid category, no footer text
-- QB-09 Publish versioned releases (questions JSON + images) for the website to download
 - QB-10 AI vision step to produce text with LaTeX/mhchem, prototyped on 1–2 sets and reviewed before continuing. Start with the 78 questions still flagged needs_review (mostly set 06 and 07 math, where formulas overlap the text in the PDF)
 - QB-11 Draft a topic list (disciplines and sub-topics) with AI help, for John to edit
 - QB-12 AI-tag questions against the topic list, a set or two at a time. First goal: give every question one of the 2022 subjects (biology, chemistry, physics, earth and space, energy, math) in `tags.disciplines`, so older Life, Physical and General Science questions can be studied with the new grouping
 
 ## Nice to have
 
-- QB-22 Parse in parallel to cut the full run with images (about 70 minutes single-threaded)
 - QB-13 High school question sets
 - QB-14 Local review tool: question image next to rendered text, approve or fix with one click
 - QB-15 Accepted alternate answers, for self-check in study mode
@@ -38,6 +35,9 @@ How this file works:
 
 ## Done
 
+- QB-09 Releases: `python -m scibowl_qb.release` builds questions.json, images.zip and manifest.json; pushing a `vX.Y.Z` tag publishes them as a GitHub Release after tests, validation and content checks pass
+- QB-06 Content checks (`python -m scibowl_qb.checks`): every problem must be fixed or flagged needs_review, or the release stops; found and fixed the 2022 moderator closing script leaking into the last answer
+- QB-22 `--jobs N` parses PDFs in parallel (text-only full run under a minute on 4 cores)
 - QB-08 needs_review down from 259 to 78: numbered statements ("1) … 2) …") no longer cut a question off before its answer, ANSWER spelling variants are read, blank choice lines (formulas) are kept, and page footers and separator rows are dropped; the old `Bad Questions.txt` cases are fixed
 - QB-24 Added set 16 (nine 2022 middle school rounds, 324 questions), supplied by John
 - QB-23 Set 15 round 7: replaced the high school PDF that was in the middle school set with the middle school round John supplied (set 15 is now 300 questions)
