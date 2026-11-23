@@ -1,22 +1,28 @@
 name: Release
 
-# Publishes a dataset release when a version tag is pushed:
-#   git tag v1.0.0 && git push origin v1.0.0
+# Two ways to publish a dataset release:
+#   - Actions tab > Release > Run workflow, and fill in "version" (e.g. v1.0.0).
+#     The release and its tag are created on the commit the workflow ran on.
+#   - Or push a version tag: git tag v1.0.0 && git push origin v1.0.0
 # The build parses every PDF with images, validates, checks counts, runs the
 # content checks, and stops without publishing if any of them fail.
 #
-# Trial build: Actions tab > Release > Run workflow, pick a set. It builds that set
-# and attaches the result (preview.html, images, questions.json) to the run as a
+# Trial build: Run workflow with "version" left empty, and pick a set. It builds that
+# set and attaches the result (preview.html, images, questions.json) to the run as a
 # downloadable artifact. Nothing is published.
 
 on:
   push:
     tags: ["v*.*.*"]
-  # "Run workflow" button on the Actions tab: a trial build that publishes nothing.
+  # "Run workflow" button on the Actions tab: a trial build, or a release when a version is given.
   workflow_dispatch:
     inputs:
+      version:
+        description: "To publish a release, the version, e.g. v1.0.0. Leave empty for a trial build."
+        required: false
+        default: ""
       set:
-        description: "Set to build, e.g. set16 (leave empty for all sets)"
+        description: "Trial build only: set to build, e.g. set16 (leave empty for all sets)"
         required: false
         default: "set16"
 
@@ -26,31 +32,41 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      # The version to publish, or empty for a trial build.
+      VERSION: ${{ github.event_name == 'push' && github.ref_name || inputs.version }}
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Check the version
+        if: env.VERSION != ''
+        run: |
+          [[ "$VERSION" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "Version must look like v1.2.3, got: $VERSION"; exit 1; }
+          if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" && "$GITHUB_REF" != "refs/heads/main" ]]; then
+            echo "Releases are published from main only. Pick main in the Run workflow menu."; exit 1
+          fi
       - run: pip install -e ".[dev]"
       - run: pytest
       - name: Trial build (no release)
-        if: github.event_name == 'workflow_dispatch'
+        if: env.VERSION == ''
         env:
           SET: ${{ inputs.set }}
         run: python -m scibowl_qb.release 0.0.0 --trial --jobs "$(nproc)" ${SET:+--set "$SET"}
       - name: Upload trial build
-        if: github.event_name == 'workflow_dispatch'
+        if: env.VERSION == ''
         uses: actions/upload-artifact@v6
         with:
           name: trial-build-${{ inputs.set || 'all' }}
           path: dist/
           retention-days: 14
       - name: Build release files
-        if: github.event_name == 'push'
-        run: python -m scibowl_qb.release "${GITHUB_REF_NAME}" --jobs "$(nproc)"
+        if: env.VERSION != ''
+        run: python -m scibowl_qb.release "$VERSION" --jobs "$(nproc)"
       - name: Write release notes
-        if: github.event_name == 'push'
+        if: env.VERSION != ''
         run: |
           python - <<'EOF'
           import json
@@ -68,11 +84,13 @@ jobs:
           open("dist/NOTES.md", "w").write("\n".join(lines) + "\n")
           EOF
       - name: Publish GitHub Release
-        if: github.event_name == 'push'
+        if: env.VERSION != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "${GITHUB_REF_NAME}" \
+          # --target only matters when the tag doesn't exist yet (Run workflow); it is the commit built here.
+          gh release create "$VERSION" \
             dist/questions.json dist/images.zip dist/manifest.json dist/preview.html \
-            --title "Question bank ${GITHUB_REF_NAME}" \
+            --target "$GITHUB_SHA" \
+            --title "Question bank $VERSION" \
             --notes-file dist/NOTES.md
