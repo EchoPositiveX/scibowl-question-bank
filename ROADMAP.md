@@ -9,7 +9,6 @@ How this file works:
 
 ## Now
 
-- QB-04 Corrections file (`corrections.yaml`) to replace the 7 hard-coded overrides, each with a reason
 - QB-21 "Question problem" GitHub issue form, and a documented workflow for turning issues into corrections or parser fixes, each with a regression test
 
 ## Next
@@ -42,6 +41,7 @@ How this file works:
 
 ## Done
 
-- QB-02 Parser ported: `python -m scibowl_qb.parse` (one set, one round, or all), same 11,374 questions as the old parser, full text-only run in about 2 minutes
-- QB-01 Question format v1: JSON Schema, `python -m scibowl_qb.validate`, docs/question-format.md, 10-question sample file
+- QB-04 `corrections.yaml`: the 7 overrides moved there with reasons, plus per-question fixes by ID; the parser fails on a correction that matches nothing
+- QB-02 (#3) Parser ported: `python -m scibowl_qb.parse` (one set, one round, or all), same 11,374 questions as the old parser, full text-only run in about 2 minutes
+- QB-01 (#2) Question format v1: JSON Schema, `python -m scibowl_qb.validate`, docs/question-format.md, 10-question sample file
 - QB-00 Repo setup: roadmap, AI instructions, decisions log, Python skeleton, middle school PDFs (#1)

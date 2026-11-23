@@ -76,6 +76,8 @@ def to_question(rq: RawQuestion) -> dict:
     is_mc = rq.style == "Multiple Choice"
     flags: list[str] = []
     notes: list[str] = list(rq.overrides_applied)
+    if rq.overrides_applied:
+        flags.append("corrected")
 
     question_text = clean_question_text(rq.question_lines)
     if not question_text:

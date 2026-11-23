@@ -60,7 +60,7 @@ Changing the format means bumping `schema_version` and recording why in `docs/de
 | `tags` | `disciplines` (physics, chemistry, ...) and `topics` (momentum, springs, ...), from the topic list (QB-11). `source` says who tagged it; `reviewed` says whether John checked it. |
 | `quality.text_status` | `images_only`: the text is unreliable, so show images. `auto`: parsed text, not checked. `verified`: text (and LaTeX if present) checked against the image. |
 | `quality.flags` | `has_math`, `has_chemistry`, `has_figure`, `corrected`, `needs_review`. |
-| `quality.notes` | What was corrected and why, in plain words. |
+| `quality.notes` | What was corrected and why, in plain words. Entries from `corrections.yaml` start with "Corrected:". |
 
 ## What the website should do
 
