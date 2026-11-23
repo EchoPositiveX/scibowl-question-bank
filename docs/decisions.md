@@ -2,6 +2,12 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-23: Transcriptions for unreadable math (QB-10)
+
+- Text and LaTeX for questions the parser can't read go in `transcriptions/<level>/<set>.yaml`, one file per set, applied after `corrections.yaml`. They are data files a person can review and edit, like corrections, not parser code.
+- An entry changes nothing the website shows until it is marked `reviewed: true`: until then the question stays flagged `needs_review` and the images are shown. Reviewed entries become `verified`.
+- The first batch (set 01, 28 questions) was transcribed by Claude reading the question images directly in a session, so no API key or spending was needed. Running the rest through an API (QB-31) waits for John's OK on a key and cost.
+- `python -m scibowl_qb.transcription_review` makes a self-contained review page with each image next to the rendered LaTeX.
 
 ## 2026-11-23: Never show the answer in a question image or text (QB-28)
 

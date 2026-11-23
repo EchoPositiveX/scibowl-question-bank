@@ -15,12 +15,13 @@ How this file works:
 - QB-20 Grow the sample file into the golden test set (feeds QB-05) and share it with the website for WEB-01
 - QB-03 Cache per-round results so a full run only re-parses PDFs that changed
 - QB-05 Golden tests: about 50 hand-checked questions across sets, compared field by field
-- QB-10 AI vision step to produce text with LaTeX/mhchem, prototyped on 1–2 sets and reviewed before continuing. Start with the questions still flagged needs_review (153 after QB-28) (mostly set 06 and 07 math, where formulas overlap the text in the PDF)
+- QB-10 AI vision step to produce text with LaTeX/mhchem, prototyped on 1–2 sets and reviewed before continuing. Start with the questions still flagged needs_review (153 after QB-28) (mostly set 06 and 07 math, where formulas overlap the text in the PDF). Progress: the transcription format, parser support and review page are done, and set 01's 28 flagged questions are transcribed (waiting for John's review); next are set 06 (62) and set 07 (20)
 - QB-11 Draft a topic list (disciplines and sub-topics) with AI help, for John to edit
 - QB-12 AI-tag questions against the topic list, a set or two at a time. First goal: give every question one of the 2022 subjects (biology, chemistry, physics, earth and space, energy, math) in `tags.disciplines`, so older Life, Physical and General Science questions can be studied with the new grouping
 
 ## Nice to have
 
+- QB-31 Run the remaining flagged questions through an AI vision API in batches, writing transcription files for review (needs an API key and a cost OK)
 - QB-30 Smaller images: 150–200 dpi or palette PNGs would cut images.zip (331 MB) to well under half, which matters for hosting
 - QB-25 Find the 6 questions the parser still misses in sets 02–04 (listed in `KNOWN_MISSING` in parse.py)
 - QB-13 High school question sets

@@ -11,6 +11,7 @@ See `ROADMAP.md` for what is planned.
 | `data/raw/` | Source PDFs, unchanged (see `data/raw/README.md`) |
 | `src/scibowl_qb/` | The parser package |
 | `corrections.yaml` | Fixes for problems in the source PDFs, each with a reason |
+| `transcriptions/` | Text and LaTeX read from the images for questions the parser gets wrong (QB-10); see `transcriptions/README.md` |
 | `tests/` | Tests (`pytest`) |
 | `docs/decisions.md` | Decisions made so far |
 | `ROADMAP.md` | To-do and nice-to-have lists |
