@@ -2,6 +2,10 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-23: Set 16 (QB-24)
+
+- Set 16 is the nine 2022 middle school rounds John downloaded. From 2022 the middle school rounds use six subjects (Biology, Chemistry, Earth and Space, Energy, Math, Physics) and 18 toss-ups per round, so `biology`, `chemistry` and `physics` are middle school categories too, not only high school ones.
+
 ## 2026-11-23: Subjects and question style (QB-07)
 
 - Earth Science and every Earth and Space variant map to `earth_and_space`. The printed label stays in `category_raw`.

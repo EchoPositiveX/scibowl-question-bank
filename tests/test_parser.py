@@ -105,7 +105,7 @@ def test_split_answer_accept_and_pronunciation():
 @pytest.mark.parametrize(
     "name, number",
     [("m_round01", 1), ("Round-10C-MS", 10), ("2019-NSB-MSR-Round-1A", 1), ("14A_MS_Reg_2016", 14),
-     ("2020-MS-Rd17", 17), ("rr5_for_web", 19), ("no_number", None)],
+     ("2020-MS-Rd17", 17), ("2022-MS-3", 3), ("rr5_for_web", 19), ("no_number", None)],
 )
 def test_round_number(name, number):
     assert parse_round_number(name) == number
