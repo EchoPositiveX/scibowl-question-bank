@@ -36,6 +36,7 @@ How this file works:
 
 ## Done
 
+- QB-26 GitHub Actions updated to their Node 24 versions (no more deprecation warning on runs)
 - QB-09 Releases: `python -m scibowl_qb.release` builds questions.json, images.zip and manifest.json; pushing a `vX.Y.Z` tag publishes them as a GitHub Release after tests, validation, count and content checks pass; a "Run workflow" trial builds one set with a preview page and publishes nothing
 - QB-06 Content checks (`python -m scibowl_qb.checks`): every problem must be fixed or flagged needs_review, or the release stops; found and fixed the 2022 moderator closing script leaking into the last answer
 - QB-22 `--jobs N` parses PDFs in parallel (text-only full run under a minute on 4 cores)
