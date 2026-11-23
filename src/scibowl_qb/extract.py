@@ -42,8 +42,14 @@ _TYPE = _group(QUESTION_TYPE_CHOICES)
 DEFAULT_QUESTION_REGEX = re.compile(rf"\*?{_NUM}\)\s+{_SUBJ}\s+{_TYPE}\s+(.*)", re.IGNORECASE)
 SUBJECT_ONLY_REGEX = re.compile(rf"\*?{_NUM}\)\s+{_SUBJ}\s+(.*)", re.IGNORECASE)
 MISSING_SUBJECT_REGEX = re.compile(rf"\*?{_NUM}\)\s+{_TYPE}\s+(.*)", re.IGNORECASE)
-CHOICE_REGEX = re.compile(r"([WXYZ])\)\s+(.*)", re.IGNORECASE)
+# A choice line. The text can be empty when the choice is a formula drawn as a picture.
+CHOICE_REGEX = re.compile(r"([WXYZ])\)(?:\s+(.*)|\s*$)", re.IGNORECASE)
 NEW_QUESTION_REGEX = re.compile(r"\d+\)\s+")
+# Page footers ("Round 14 Page 9", "Middle School Regional NSB® PAGE 3") and separator rows.
+FOOTER_REGEX = re.compile(r"\bpage\s*\d+\s*$|^Middle School - Round \d+[A-Z]?$", re.IGNORECASE)
+SEPARATOR_REGEX = re.compile(r"^\s*[~_=*-]{5,}\s*$")
+# "ANSWER:", "ANSWER :", "Answer:", and "ANSWER 212" (colon left out).
+ANSWER_REGEX = re.compile(r"^(?:ANSWER\b\s*:?|(?i:answer)\s*:)\s*")
 
 # Rounds whose file names don't contain their round number.
 SPECIAL_ROUND_NUMBERS = {
@@ -224,6 +230,19 @@ def _is_prose(text: str) -> bool:
     return len(re.findall(r"[A-Za-z]{3,}", text)) >= 2
 
 
+def _is_footer(text: str) -> bool:
+    """Page footers and separator rows, which belong to no question."""
+    return (len(text) <= 90 and bool(FOOTER_REGEX.search(text))) or bool(SEPARATOR_REGEX.match(text))
+
+
+def _starts_new_question(text: str) -> bool:
+    """True for a "N) SUBJECT ..." line. Numbered statements inside a question ("1) a square is ...") are not."""
+    if not NEW_QUESTION_REGEX.match(text):
+        return False
+    found = _match_question_line(text)
+    return bool(found and (found[2] or KNOWN_SUBJECT_REGEX.match(found[1])))
+
+
 def _guess_style(text: str) -> str:
     return "Multiple Choice" if "which of the following" in text.lower() else "Short Answer"
 
@@ -301,14 +320,18 @@ def extract_round(
                 body: list[tuple[str | None, str]] = []  # (choice letter or None, text)
                 while i < len(lines):
                     text = lines[i]["text"]
-                    if NEW_QUESTION_REGEX.match(text) or _is_header(text) or text.startswith("ANSWER:"):
+                    if _starts_new_question(text) or _is_header(text) or ANSWER_REGEX.match(text):
                         break
+                    if _is_footer(text):
+                        raw_lines.append(text)
+                        i += 1
+                        continue
                     qbox.add(lines[i])
                     entire.add(lines[i])
                     raw_lines.append(text)
                     c = CHOICE_REGEX.match(text)
                     if c:
-                        body.append((c.group(1).upper(), c.group(2)))
+                        body.append((c.group(1).upper(), c.group(2) or ""))
                     elif body and body[-1][0]:
                         body[-1] = (body[-1][0], f"{body[-1][1]} {text}")
                     else:
@@ -348,16 +371,20 @@ def extract_round(
                 apply_extract_corrections(rq, corrections)
 
                 abox = None
-                if i < len(lines) and lines[i]["text"].startswith("ANSWER:"):
+                if i < len(lines) and ANSWER_REGEX.match(lines[i]["text"]):
                     abox = _Box(lines[i])
                     entire.add(lines[i])
-                    rq.answer_lines.append(lines[i]["text"][7:].strip())
+                    rq.answer_lines.append(ANSWER_REGEX.sub("", lines[i]["text"]).strip())
                     raw_lines.append(lines[i]["text"])
                     i += 1
                     while i < len(lines):
                         text = lines[i]["text"]
-                        if NEW_QUESTION_REGEX.match(text) or _is_header(text):
+                        if _starts_new_question(text) or _is_header(text):
                             break
+                        if _is_footer(text):
+                            raw_lines.append(text)
+                            i += 1
+                            continue
                         abox.add(lines[i])
                         entire.add(lines[i])
                         raw_lines.append(text)
