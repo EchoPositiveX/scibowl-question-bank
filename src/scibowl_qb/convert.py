@@ -108,6 +108,11 @@ def to_question(rq: RawQuestion) -> dict:
         notes.append(f"Unknown subject label: {rq.subject_raw!r}" if rq.subject_raw else "No subject label found")
         flags.append("needs_review")
 
+    if rq.answer_row_overlap:
+        # Never show this text before the answer is revealed: it may contain part of the answer.
+        notes.append("Some question text sits in the ANSWER row and may be part of the answer; see the question image")
+        flags.append("needs_review")
+
     question_text = clean_question_text(rq.question_lines)
     if not question_text:
         question_text = "[question text not found by parser]"
