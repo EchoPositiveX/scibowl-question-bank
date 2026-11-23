@@ -1,0 +1,54 @@
+# Corrections for problems in the source PDFs.
+#
+# Fix data here, not by editing PDFs or adding special cases to the parser code.
+# Every entry needs a `reason` in plain words. It is copied into the question's
+# quality.notes, so the website and reviewers can see what was changed.
+#
+# Two kinds of correction:
+#
+# extract:   applied while reading the PDF, before the question has an ID.
+#            Use these when the PDF prints the wrong number, part or subject,
+#            because those change the question's ID.
+#            match: fields that must all equal (level, set, round, page, number,
+#                   part, subject_raw, style), plus optional question_starts_with.
+#            set:   fields to change (number, part, subject_raw, style).
+#
+# questions: applied to the finished question, matched by ID.
+#            Use these for one-off text fixes: a typo, a wrong or missing answer,
+#            a broken formula, a wrong format.
+#            set: dotted paths to change, e.g. answer.text, question.text,
+#                 choices.W.text, format, category, quality.text_status.
+#            The parser fails if a correction's ID matches no question, so typos
+#            in IDs are caught.
+
+extract:
+  - match: {level: ms, set: set02, round: sample_questions_r3, part: bonus, number: 46}
+    set: {number: 2}
+    reason: The PDF numbers this bonus 46; it belongs with toss-up 2.
+
+  - match: {level: ms, set: set02, round: sample_questions_r7, page: 6, number: 10}
+    set: {number: 12}
+    reason: The PDF prints question 12 as 10 on page 6.
+
+  - match: {level: ms, set: set02, round: sample_questions_r6, page: 6, number: 10}
+    set: {number: 12}
+    reason: The PDF prints question 12 as 10 on page 6.
+
+  - match: {level: ms, set: set02, round: sample_questions_r8, page: 6, number: 10, part: bonus}
+    set: {number: 12}
+    reason: The PDF prints bonus 12 as 10 on page 6.
+
+  - match: {level: ms, set: set02, round: sample_questions_r6, page: 4, number: 2, part: bonus}
+    set: {number: 8}
+    reason: The PDF prints bonus 8 as 2 on page 4.
+
+  - match: {level: ms, set: set10, round: 14A_MS_Reg_2016, page: 8, number: 16, part: tossup}
+    question_starts_with: "– Multiple Choice A discharged capacitor"
+    set: {part: bonus}
+    reason: The capacitor question is bonus 16, but the PDF labels it as a second toss-up 16.
+
+  - match: {level: ms, set: set08, round: Round-17-A, page: 9, number: 18, part: tossup, subject_raw: Math Math}
+    set: {subject_raw: Math}
+    reason: The subject is printed twice in the PDF.
+
+questions: []

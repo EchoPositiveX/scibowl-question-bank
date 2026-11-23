@@ -24,9 +24,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import RAW_DIR, REPO_ROOT, __version__
+from . import corrections as corr
 from .convert import to_question, to_question_set
 from .extract import extract_round
-from .validate import validate_question_set
+from .validate import slugify, validate_question_set
 
 log = logging.getLogger("scibowl_qb.parse")
 
@@ -45,14 +46,16 @@ def find_pdfs(raw_dir: Path, level: str | None, set_name: str | None, round_name
     return sorted(raw_dir.glob(pattern))
 
 
-def parse_pdfs(pdfs: list[Path], raw_dir: Path, out_dir: Path, images: bool) -> dict[Path, list[dict]]:
-    """Parse each PDF, write its round file, and return {round file: questions}."""
+def parse_pdfs(
+    pdfs: list[Path], raw_dir: Path, out_dir: Path, images: bool, corrections: corr.Corrections
+) -> dict[Path, list[dict]]:
+    """Parse each PDF, apply corrections, write its round file, and return {round file: questions}."""
     written = {}
     for n, pdf in enumerate(pdfs, 1):
         rel = pdf.relative_to(raw_dir)
         log.info("[%d/%d] %s", n, len(pdfs), rel.as_posix())
-        raw = extract_round(pdf, raw_dir, images_dir=out_dir / "images" if images else None)
-        questions = [to_question(rq) for rq in raw]
+        raw = extract_round(pdf, raw_dir, images_dir=out_dir / "images" if images else None, corrections=corrections)
+        questions = [corr.apply_question_corrections(to_question(rq), corrections) for rq in raw]
         round_file = out_dir / "rounds" / rel.with_suffix(".json")
         round_file.parent.mkdir(parents=True, exist_ok=True)
         round_file.write_text(json.dumps(to_question_set(questions, GENERATOR), indent=2, ensure_ascii=False), encoding="utf-8")
@@ -88,6 +91,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--round", dest="round_name", help="round file name without .pdf, e.g. m_round01")
     ap.add_argument("--raw-dir", type=Path, default=RAW_DIR)
     ap.add_argument("--out", type=Path, default=REPO_ROOT / "output")
+    ap.add_argument("--corrections", type=Path, default=corr.DEFAULT_PATH)
     ap.add_argument("--no-images", action="store_true", help="skip image cropping (much faster)")
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args(argv)
@@ -100,7 +104,24 @@ def main(argv: list[str] | None = None) -> int:
         log.error("No PDFs matched under %s", args.raw_dir)
         return 1
 
-    parse_pdfs(pdfs, args.raw_dir, args.out, images=not args.no_images)
+    try:
+        corrections = corr.load(args.corrections)
+    except corr.CorrectionsError as exc:
+        log.error("%s", exc)
+        return 1
+
+    try:
+        parse_pdfs(pdfs, args.raw_dir, args.out, images=not args.no_images, corrections=corrections)
+    except corr.CorrectionsError as exc:
+        log.error("%s", exc)
+        return 1
+
+    parsed_rounds = {f"{p.parent.parent.name}-{p.parent.name}-{slugify(p.stem)}-" for p in pdfs}
+    unused = [c for c in corrections.unused_question_corrections() if any(c.id.startswith(r) for r in parsed_rounds)]
+    if unused:
+        for c in unused:
+            log.error("Correction for %s matched no question (check the ID in corrections.yaml)", c.id)
+        return 1
     combined = combine_rounds(args.out)
     problems = validate_question_set(combined)
     (args.out / "questions.json").write_text(json.dumps(combined, indent=2, ensure_ascii=False), encoding="utf-8")

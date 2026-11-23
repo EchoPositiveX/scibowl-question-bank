@@ -3,6 +3,7 @@
 Ported from the old `nsb` repo's `src/parse_pdf.py` (NSBParser) with the same
 line-grouping and regex logic, so results match the old parser. Differences:
 
+- Fixes for bad PDFs come from corrections.yaml instead of a hard-coded list.
 - Paths are passed in explicitly instead of being read from the current directory.
 - Image cropping is optional (it is the slow part), and images go to a folder you choose.
 - The output is a list of `RawQuestion` records; `convert.py` turns them into the
@@ -20,6 +21,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 import pdfplumber
+
+from .corrections import Corrections, apply_extract_corrections
 
 log = logging.getLogger(__name__)
 
@@ -62,21 +65,6 @@ def parse_round_number(round_name: str) -> int | None:
     return int(match.group()) if match else None
 
 
-# Fixes for specific questions whose PDFs are wrong or misleading.
-# Each entry: (conditions that must all match, values to set). QB-04 moves these to a file.
-OVERRIDES: list[tuple[dict, dict]] = [
-    ({"level": "ms", "set": "set02", "round": "sample_questions_r3", "part": "bonus", "number": 46}, {"number": 2}),
-    ({"level": "ms", "set": "set02", "round": "sample_questions_r7", "page": 6, "number": 10}, {"number": 12}),
-    ({"level": "ms", "set": "set02", "round": "sample_questions_r6", "page": 6, "number": 10}, {"number": 12}),
-    ({"level": "ms", "set": "set02", "round": "sample_questions_r8", "page": 6, "number": 10, "part": "bonus"}, {"number": 12}),
-    ({"level": "ms", "set": "set02", "round": "sample_questions_r6", "page": 4, "number": 2, "part": "bonus"}, {"number": 8}),
-    ({"level": "ms", "set": "set10", "round": "14A_MS_Reg_2016", "page": 8, "number": 16, "part": "tossup",
-      "question_lines_start": "– Multiple Choice A discharged capacitor"}, {"part": "bonus"}),
-    ({"level": "ms", "set": "set08", "round": "Round-17-A", "page": 9, "number": 18, "part": "tossup",
-      "subject_raw": "Math Math"}, {"subject_raw": "Math"}),
-]
-
-
 @dataclass
 class RawQuestion:
     """One toss-up or bonus as found in the PDF, before cleanup."""
@@ -100,26 +88,6 @@ class RawQuestion:
     @property
     def round_number(self) -> int | None:
         return parse_round_number(self.round)
-
-    def _override_value(self, key: str):
-        if key == "question_lines_start":
-            return "\n".join(self.question_lines)
-        return getattr(self, key)
-
-    def apply_overrides(self) -> None:
-        for conditions, values in OVERRIDES:
-            matched = True
-            for key, expected in conditions.items():
-                actual = self._override_value(key)
-                if key == "question_lines_start":
-                    matched = matched and actual.startswith(expected)
-                else:
-                    matched = matched and actual == expected
-            if matched:
-                for key, value in values.items():
-                    setattr(self, key, value)
-                self.overrides_applied.append(f"Override {conditions} -> {values}")
-                log.info("Applied override %s -> %s", conditions, values)
 
 
 def group_words_into_lines(words: list[dict], y_tolerance: float = 3) -> list[dict]:
@@ -203,12 +171,20 @@ def _match_question_line(text: str):
     return None
 
 
-def extract_round(pdf_path: Path, raw_root: Path, images_dir: Path | None = None, resolution: int = 300) -> list[RawQuestion]:
+def extract_round(
+    pdf_path: Path,
+    raw_root: Path,
+    images_dir: Path | None = None,
+    resolution: int = 300,
+    corrections: Corrections | None = None,
+) -> list[RawQuestion]:
     """Extract every toss-up and bonus from one round PDF.
 
     pdf_path must sit at raw_root/{level}/{set}/{round}.pdf. If images_dir is given,
-    question, answer and whole-question PNGs are written under it.
+    question, answer and whole-question PNGs are written under it. Extract corrections
+    (see corrections.yaml) are applied to each question as it is read.
     """
+    corrections = corrections or Corrections.empty()
     rel = pdf_path.resolve().relative_to(raw_root.resolve())
     if len(rel.parts) != 3:
         raise ValueError(f"Expected {{level}}/{{set}}/{{round}}.pdf under {raw_root}, got {rel}")
@@ -282,7 +258,7 @@ def extract_round(pdf_path: Path, raw_root: Path, images_dir: Path | None = None
                     answer_lines=[],
                     raw_pdf_lines=raw_lines,
                 )
-                rq.apply_overrides()
+                apply_extract_corrections(rq, corrections)
 
                 abox = None
                 if i < len(lines) and lines[i]["text"].startswith("ANSWER:"):
