@@ -35,7 +35,7 @@ log = logging.getLogger("scibowl_qb.parse")
 EXPECTED_MS_SET_COUNTS = {
     "set01": 900, "set02": 500, "set03": 750, "set04": 850, "set05": 800,
     "set06": 850, "set07": 750, "set08": 782, "set09": 782, "set10": 782,
-    "set11": 782, "set12": 782, "set13": 982, "set14": 782, "set15": 306, "set16": 324,
+    "set11": 782, "set12": 782, "set13": 982, "set14": 782, "set15": 300, "set16": 324,
 }
 
 GENERATOR = f"scibowl-qb {__version__}"

@@ -31,7 +31,6 @@ How this file works:
 - QB-16 Difficulty estimates, first from tags, later from real usage
 - QB-17 Detect near-duplicate questions across sets
 - QB-18 Pronunciation hints for the moderator
-- QB-23 Decide what to do with `set15/Set-7-HS-2021`, a high school round inside the middle school sets (it uses Biology, Chemistry and Physics)
 - QB-19 ~~Track parse notes per question~~ (covered by `quality.notes` in QB-01)
 
 ## Parked
@@ -41,6 +40,7 @@ How this file works:
 ## Done
 
 - QB-24 Added set 16 (nine 2022 middle school rounds, 324 questions), supplied by John
+- QB-23 Set 15 round 7: replaced the high school PDF that was in the middle school set with the middle school round John supplied (set 15 is now 300 questions)
 - QB-07 Every question has a category; "Earth & Space" and split or garbled subject lines fixed; printed Short Answer / Multiple Choice labels after a dash are now read (828 questions became multiple choice with their choices); wrapped choice lines stay with their choice
 - QB-21 "Question problem" issue form, docs/fixing-questions.md, and tests/test_reported_issues.py for regression cases
 - QB-04 `corrections.yaml`: the 7 overrides moved there with reasons, plus per-question fixes by ID; the parser fails on a correction that matches nothing
