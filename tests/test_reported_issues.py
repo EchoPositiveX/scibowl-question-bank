@@ -1,0 +1,52 @@
+"""Regression tests for reported question problems (QB-21).
+
+Every fixed issue adds a case to REPORTED: the issue number, the question ID,
+and the values that should now be right. See docs/fixing-questions.md.
+"""
+
+from functools import lru_cache
+
+import pytest
+
+from scibowl_qb import RAW_DIR
+from scibowl_qb import corrections as corr
+from scibowl_qb.convert import to_question
+from scibowl_qb.extract import extract_round
+
+# (issue number, question id, {dotted.path: expected value})
+REPORTED: list[tuple[int, str, dict]] = [
+    # Example:
+    # (12, "ms-set13-2019-nsb-msr-round-1a-q03-tossup", {"answer.text": "25", "quality.text_status": "verified"}),
+]
+
+
+@lru_cache(maxsize=None)
+def _round(pdf_rel: str) -> dict:
+    corrections = corr.load()
+    raw = extract_round(RAW_DIR / pdf_rel, RAW_DIR, corrections=corrections)
+    questions = [corr.apply_question_corrections(to_question(rq), corrections) for rq in raw]
+    return {q["id"]: q for q in questions}
+
+
+def _find(question_id: str) -> dict:
+    for pdf in sorted(RAW_DIR.glob("*/*/*.pdf")):
+        level, set_name = pdf.parent.parent.name, pdf.parent.name
+        if question_id.startswith(f"{level}-{set_name}-"):
+            questions = _round(pdf.relative_to(RAW_DIR).as_posix())
+            if question_id in questions:
+                return questions[question_id]
+    raise AssertionError(f"{question_id} not found")
+
+
+def _get(question: dict, dotted: str):
+    value = question
+    for key in dotted.split("."):
+        value = value[key]
+    return value
+
+
+@pytest.mark.parametrize("issue, question_id, expected", REPORTED, ids=[f"issue-{r[0]}" for r in REPORTED])
+def test_reported_issue_stays_fixed(issue, question_id, expected):
+    question = _find(question_id)
+    for path, value in expected.items():
+        assert _get(question, path) == value, f"issue #{issue}: {path}"
