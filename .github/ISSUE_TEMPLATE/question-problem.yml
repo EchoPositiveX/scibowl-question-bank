@@ -1,0 +1,56 @@
+name: Question problem
+description: Report a question with wrong or missing text, answer, choices, formula, subject or image.
+title: "Question problem: "
+labels: ["question-problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! One question per issue works best. See docs/fixing-questions.md for what happens next.
+  - type: input
+    id: question
+    attributes:
+      label: Which question?
+      description: The question ID if you have it (e.g. ms-set13-2019-nsb-msr-round-1a-q03-tossup), otherwise set, round, number and toss-up or bonus.
+      placeholder: "ms-set13-2019-nsb-msr-round-1a-q03-tossup  or  set 13, round 1A, #3 toss-up"
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What's wrong?
+      multiple: true
+      options:
+        - Question text is wrong or incomplete
+        - Answer is wrong, incomplete or missing
+        - Multiple choice options are wrong or missing
+        - Math or chemistry formula is garbled
+        - Subject / category is wrong
+        - Image is cut off or wrong
+        - Question is missing entirely
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What you saw, and what it should be if you know. Paste a screenshot if it helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did you see it?
+      options:
+        - Science Bowl Prep Lab website
+        - Old practice site
+        - Parser output (questions.json)
+        - The PDF itself is wrong
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Does it block practice?
+      options:
+        - "No, fix when convenient"
+        - "Yes, the question is unusable as is"

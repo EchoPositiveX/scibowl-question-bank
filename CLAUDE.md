@@ -11,6 +11,10 @@ This repo turns National Science Bowl PDFs into a clean, versioned question data
 5. In the same pull request, move the item to **Done** in `ROADMAP.md` with a one-line note. Add any new ideas you noticed to **Nice to have**.
 6. If a choice changes the plan, record it in `docs/decisions.md`.
 
+## Fixing reported questions
+
+Follow `docs/fixing-questions.md`: one-off fixes go in `corrections.yaml` with a reason, patterns get a parser fix, and every fixed issue gets a case in `tests/test_reported_issues.py`. Use `Fixes #N` in the PR.
+
 ## Ground rules
 
 - Middle school only for now (`data/raw/ms`). High school is a later item.

@@ -9,7 +9,8 @@ How this file works:
 
 ## Now
 
-- QB-21 "Question problem" GitHub issue form, and a documented workflow for turning issues into corrections or parser fixes, each with a regression test
+- QB-07 Normalize subjects to the official NSB categories, keeping the raw label
+- QB-08 Fix known layout failures: 247 questions with no answer found (cause not yet investigated), 46 multiple choice questions missing choices or answer letter, footers in answers, the cases in the old `Bad Questions.txt`
 
 ## Next
 
@@ -17,8 +18,6 @@ How this file works:
 - QB-03 Cache per-round results so a full run only re-parses PDFs that changed
 - QB-05 Golden tests: about 50 hand-checked questions across sets, compared field by field
 - QB-06 Content checks across all questions: answer present, multiple choice has W–Z, valid category, no footer text
-- QB-07 Normalize subjects to the official NSB categories, keeping the raw label
-- QB-08 Fix known layout failures: 247 questions with no answer found (cause not yet investigated), 46 multiple choice questions missing choices or answer letter, footers in answers, the cases in the old `Bad Questions.txt`
 - QB-09 Publish versioned releases (questions JSON + images) for the website to download
 - QB-10 AI vision step to produce text with LaTeX/mhchem, prototyped on 1–2 sets and reviewed before continuing
 - QB-11 Draft a topic list (disciplines and sub-topics) with AI help, for John to edit
@@ -41,6 +40,7 @@ How this file works:
 
 ## Done
 
+- QB-21 "Question problem" issue form, docs/fixing-questions.md, and tests/test_reported_issues.py for regression cases
 - QB-04 `corrections.yaml`: the 7 overrides moved there with reasons, plus per-question fixes by ID; the parser fails on a correction that matches nothing
 - QB-02 (#3) Parser ported: `python -m scibowl_qb.parse` (one set, one round, or all), same 11,374 questions as the old parser, full text-only run in about 2 minutes
 - QB-01 (#2) Question format v1: JSON Schema, `python -m scibowl_qb.validate`, docs/question-format.md, 10-question sample file
