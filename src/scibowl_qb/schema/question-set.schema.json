@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/EchoPositiveX/scibowl-question-bank/schema/question-set.schema.json",
+  "title": "Science Bowl question set",
+  "description": "A file of parsed National Science Bowl questions. See docs/question-format.md for what each field means.",
+  "type": "object",
+  "required": ["schema_version", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "generator": { "type": "string", "description": "Tool and version that wrote this file" },
+    "questions": { "type": "array", "items": { "$ref": "#/$defs/question" } }
+  },
+  "$defs": {
+    "question": {
+      "type": "object",
+      "required": ["id", "source", "number", "part", "category", "category_raw", "format", "question", "choices", "answer", "images", "tags", "quality"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]+-set[0-9]{2}-[a-z0-9-]+-q[0-9]{2}-(tossup|bonus)$",
+          "description": "Stable ID, e.g. ms-set01-m-round01-q02-bonus. User marks and notes on the website key off this."
+        },
+        "source": { "$ref": "#/$defs/source" },
+        "number": { "type": "integer", "minimum": 1 },
+        "part": { "enum": ["tossup", "bonus"] },
+        "category": { "$ref": "#/$defs/category" },
+        "category_raw": { "type": "string", "description": "Subject label exactly as printed in the PDF" },
+        "format": { "enum": ["short_answer", "multiple_choice"] },
+        "question": { "$ref": "#/$defs/rich_text" },
+        "choices": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "required": ["W", "X", "Y", "Z"],
+              "additionalProperties": false,
+              "properties": {
+                "W": { "$ref": "#/$defs/rich_text" },
+                "X": { "$ref": "#/$defs/rich_text" },
+                "Y": { "$ref": "#/$defs/rich_text" },
+                "Z": { "$ref": "#/$defs/rich_text" }
+              }
+            }
+          ]
+        },
+        "answer": { "$ref": "#/$defs/answer" },
+        "images": { "$ref": "#/$defs/images" },
+        "tags": { "$ref": "#/$defs/tags" },
+        "quality": { "$ref": "#/$defs/quality" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["level", "set", "round", "round_number", "pdf", "page"],
+      "additionalProperties": false,
+      "properties": {
+        "level": { "enum": ["ms", "hs"] },
+        "set": { "type": "string", "pattern": "^set[0-9]{2}$" },
+        "round": { "type": "string", "description": "Round name from the PDF file name, e.g. m_round01" },
+        "round_number": { "type": ["integer", "null"], "minimum": 1 },
+        "pdf": { "type": "string", "description": "Path under data/raw, with forward slashes" },
+        "page": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "category": {
+      "enum": [
+        "life_science",
+        "physical_science",
+        "earth_and_space",
+        "energy",
+        "math",
+        "general_science",
+        "biology",
+        "chemistry",
+        "physics",
+        null
+      ],
+      "description": "Normalized NSB category; null until a raw label is mapped"
+    },
+    "rich_text": {
+      "type": "object",
+      "required": ["text", "latex"],
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": "string", "minLength": 1, "description": "Plain text as extracted from the PDF, cleaned up" },
+        "latex": {
+          "type": ["string", "null"],
+          "description": "Same content with math as $...$ and chemistry as \\ce{...}; null until produced"
+        }
+      }
+    },
+    "answer": {
+      "type": "object",
+      "required": ["text", "latex", "raw"],
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": "string", "minLength": 1, "description": "The main answer only" },
+        "latex": { "type": ["string", "null"] },
+        "choice": { "enum": ["W", "X", "Y", "Z"], "description": "Letter of the correct choice, for multiple choice" },
+        "accept": { "type": "array", "items": { "type": "string" }, "description": "Other answers the moderator should accept" },
+        "do_not_accept": { "type": "array", "items": { "type": "string" } },
+        "pronunciation": { "type": "string", "description": "Pronunciation hint printed in the PDF, e.g. TEE-koh BRAH-hay" },
+        "raw": { "type": "string", "description": "Full answer text as printed, before splitting" }
+      }
+    },
+    "images": {
+      "type": "object",
+      "required": ["question", "answer", "entire"],
+      "additionalProperties": false,
+      "properties": {
+        "question": { "type": ["string", "null"] },
+        "answer": { "type": ["string", "null"] },
+        "entire": { "type": ["string", "null"] }
+      },
+      "description": "Paths relative to the release root, with forward slashes"
+    },
+    "tags": {
+      "type": "object",
+      "required": ["disciplines", "topics", "source", "reviewed"],
+      "additionalProperties": false,
+      "properties": {
+        "disciplines": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "topics": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "source": { "enum": ["ai", "human", null] },
+        "reviewed": { "type": "boolean" }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": ["text_status", "flags", "notes"],
+      "additionalProperties": false,
+      "properties": {
+        "text_status": {
+          "enum": ["images_only", "auto", "verified"],
+          "description": "images_only: show images; auto: text parsed but unchecked; verified: text checked against the image"
+        },
+        "flags": {
+          "type": "array",
+          "items": { "enum": ["has_math", "has_chemistry", "has_figure", "corrected", "needs_review"] },
+          "uniqueItems": true
+        },
+        "notes": { "type": "array", "items": { "type": "string" }, "description": "What was corrected and why" }
+      }
+    }
+  }
+}

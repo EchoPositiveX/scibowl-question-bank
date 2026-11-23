@@ -1,0 +1,464 @@
+{
+  "schema_version": 1,
+  "generator": "hand-written example for QB-01",
+  "questions": [
+    {
+      "id": "ms-set01-m-round01-q01-tossup",
+      "source": {
+        "level": "ms",
+        "set": "set01",
+        "round": "m_round01",
+        "round_number": 1,
+        "pdf": "ms/set01/m_round01.pdf",
+        "page": 1
+      },
+      "number": 1,
+      "part": "tossup",
+      "category": "life_science",
+      "category_raw": "Life Science",
+      "format": "short_answer",
+      "question": {
+        "text": "What organelle functions to isolate a human cell’s chromosomes from the cytoplasm?",
+        "latex": null
+      },
+      "choices": null,
+      "answer": {
+        "text": "NUCLEUS",
+        "latex": null,
+        "raw": "NUCLEUS"
+      },
+      "images": {
+        "question": "images/ms/set01/m_round01/q01-tossup-question.png",
+        "answer": "images/ms/set01/m_round01/q01-tossup-answer.png",
+        "entire": "images/ms/set01/m_round01/q01-tossup-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "auto",
+        "flags": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "ms-set01-m-round01-q01-bonus",
+      "source": {
+        "level": "ms",
+        "set": "set01",
+        "round": "m_round01",
+        "round_number": 1,
+        "pdf": "ms/set01/m_round01.pdf",
+        "page": 1
+      },
+      "number": 1,
+      "part": "bonus",
+      "category": "life_science",
+      "category_raw": "Life Science",
+      "format": "short_answer",
+      "question": {
+        "text": "What is the primary oxygen-carrying protein found in red blood cells?",
+        "latex": null
+      },
+      "choices": null,
+      "answer": {
+        "text": "HEMOGLOBIN",
+        "latex": null,
+        "raw": "HEMOGLOBIN"
+      },
+      "images": {
+        "question": "images/ms/set01/m_round01/q01-bonus-question.png",
+        "answer": "images/ms/set01/m_round01/q01-bonus-answer.png",
+        "entire": "images/ms/set01/m_round01/q01-bonus-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "auto",
+        "flags": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "ms-set01-m-round01-q02-tossup",
+      "source": {
+        "level": "ms",
+        "set": "set01",
+        "round": "m_round01",
+        "round_number": 1,
+        "pdf": "ms/set01/m_round01.pdf",
+        "page": 1
+      },
+      "number": 2,
+      "part": "tossup",
+      "category": "physical_science",
+      "category_raw": "Physical Science",
+      "format": "short_answer",
+      "question": {
+        "text": "What physical state of matter is intermediate between a solid and gas?",
+        "latex": null
+      },
+      "choices": null,
+      "answer": {
+        "text": "LIQUID",
+        "latex": null,
+        "raw": "LIQUID"
+      },
+      "images": {
+        "question": "images/ms/set01/m_round01/q02-tossup-question.png",
+        "answer": "images/ms/set01/m_round01/q02-tossup-answer.png",
+        "entire": "images/ms/set01/m_round01/q02-tossup-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "auto",
+        "flags": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "ms-set01-m-round01-q02-bonus",
+      "source": {
+        "level": "ms",
+        "set": "set01",
+        "round": "m_round01",
+        "round_number": 1,
+        "pdf": "ms/set01/m_round01.pdf",
+        "page": 1
+      },
+      "number": 2,
+      "part": "bonus",
+      "category": "physical_science",
+      "category_raw": "Physical Science",
+      "format": "multiple_choice",
+      "question": {
+        "text": "Which of the following BEST describes the term static:",
+        "latex": null
+      },
+      "choices": {
+        "W": {
+          "text": "stationary",
+          "latex": null
+        },
+        "X": {
+          "text": "low",
+          "latex": null
+        },
+        "Y": {
+          "text": "constant",
+          "latex": null
+        },
+        "Z": {
+          "text": "used",
+          "latex": null
+        }
+      },
+      "answer": {
+        "text": "STATIONARY",
+        "latex": null,
+        "raw": "W) STATIONARY",
+        "choice": "W"
+      },
+      "images": {
+        "question": "images/ms/set01/m_round01/q02-bonus-question.png",
+        "answer": "images/ms/set01/m_round01/q02-bonus-answer.png",
+        "entire": "images/ms/set01/m_round01/q02-bonus-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "auto",
+        "flags": [
+          "corrected"
+        ],
+        "notes": [
+          "Removed page footer 'Middle School Round 1 Page 1' from the answer"
+        ]
+      }
+    },
+    {
+      "id": "ms-set13-2019-nsb-msr-round-1a-q01-tossup",
+      "source": {
+        "level": "ms",
+        "set": "set13",
+        "round": "2019-NSB-MSR-Round-1A",
+        "round_number": 1,
+        "pdf": "ms/set13/2019-NSB-MSR-Round-1A.pdf",
+        "page": 1
+      },
+      "number": 1,
+      "part": "tossup",
+      "category": "life_science",
+      "category_raw": "Life Science",
+      "format": "short_answer",
+      "question": {
+        "text": "What is the term for chemicals that are used to transmit impulses from one neuron to another?",
+        "latex": null
+      },
+      "choices": null,
+      "answer": {
+        "text": "NEUROTRANSMITTERS",
+        "latex": null,
+        "raw": "NEUROTRANSMITTERS"
+      },
+      "images": {
+        "question": "images/ms/set13/2019-NSB-MSR-Round-1A/q01-tossup-question.png",
+        "answer": "images/ms/set13/2019-NSB-MSR-Round-1A/q01-tossup-answer.png",
+        "entire": "images/ms/set13/2019-NSB-MSR-Round-1A/q01-tossup-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "auto",
+        "flags": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "ms-set13-2019-nsb-msr-round-1a-q01-bonus",
+      "source": {
+        "level": "ms",
+        "set": "set13",
+        "round": "2019-NSB-MSR-Round-1A",
+        "round_number": 1,
+        "pdf": "ms/set13/2019-NSB-MSR-Round-1A.pdf",
+        "page": 1
+      },
+      "number": 1,
+      "part": "bonus",
+      "category": "life_science",
+      "category_raw": "Life Science",
+      "format": "short_answer",
+      "question": {
+        "text": "What is the term for the point on a stem at which a leaf is attached?",
+        "latex": null
+      },
+      "choices": null,
+      "answer": {
+        "text": "NODE",
+        "latex": null,
+        "raw": "NODE"
+      },
+      "images": {
+        "question": "images/ms/set13/2019-NSB-MSR-Round-1A/q01-bonus-question.png",
+        "answer": "images/ms/set13/2019-NSB-MSR-Round-1A/q01-bonus-answer.png",
+        "entire": "images/ms/set13/2019-NSB-MSR-Round-1A/q01-bonus-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "auto",
+        "flags": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "ms-set13-2019-nsb-msr-round-1a-q02-tossup",
+      "source": {
+        "level": "ms",
+        "set": "set13",
+        "round": "2019-NSB-MSR-Round-1A",
+        "round_number": 1,
+        "pdf": "ms/set13/2019-NSB-MSR-Round-1A.pdf",
+        "page": 1
+      },
+      "number": 2,
+      "part": "tossup",
+      "category": "earth_and_space",
+      "category_raw": "Earth And Space",
+      "format": "short_answer",
+      "question": {
+        "text": "Satellites that stay above the same spot on Earth while in orbit are in what type of orbit?",
+        "latex": null
+      },
+      "choices": null,
+      "answer": {
+        "text": "GEOSTATIONARY",
+        "latex": null,
+        "raw": "GEOSTATIONARY (ACCEPT: GEOSYNCHRONOUS EARTH ORBIT; DO NOT ACCEPT GEOSYNCHRONOUS)",
+        "accept": [
+          "GEOSYNCHRONOUS EARTH ORBIT"
+        ],
+        "do_not_accept": [
+          "GEOSYNCHRONOUS"
+        ]
+      },
+      "images": {
+        "question": "images/ms/set13/2019-NSB-MSR-Round-1A/q02-tossup-question.png",
+        "answer": "images/ms/set13/2019-NSB-MSR-Round-1A/q02-tossup-answer.png",
+        "entire": "images/ms/set13/2019-NSB-MSR-Round-1A/q02-tossup-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "auto",
+        "flags": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "ms-set13-2019-nsb-msr-round-1a-q02-bonus",
+      "source": {
+        "level": "ms",
+        "set": "set13",
+        "round": "2019-NSB-MSR-Round-1A",
+        "round_number": 1,
+        "pdf": "ms/set13/2019-NSB-MSR-Round-1A.pdf",
+        "page": 1
+      },
+      "number": 2,
+      "part": "bonus",
+      "category": "earth_and_space",
+      "category_raw": "Earth And Space",
+      "format": "short_answer",
+      "question": {
+        "text": "Kepler's laws of planetary motion were empirically determined from data collected by what Danish astronomer?",
+        "latex": null
+      },
+      "choices": null,
+      "answer": {
+        "text": "TYCHO BRAHE",
+        "latex": null,
+        "raw": "TYCHO BRAHE [TEE-koh BRAH-hay]",
+        "pronunciation": "TEE-koh BRAH-hay"
+      },
+      "images": {
+        "question": "images/ms/set13/2019-NSB-MSR-Round-1A/q02-bonus-question.png",
+        "answer": "images/ms/set13/2019-NSB-MSR-Round-1A/q02-bonus-answer.png",
+        "entire": "images/ms/set13/2019-NSB-MSR-Round-1A/q02-bonus-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "auto",
+        "flags": [
+          "corrected"
+        ],
+        "notes": [
+          "Removed page footer '2019 Regional Science Bowl – Round 1 Page 1' from the answer"
+        ]
+      }
+    },
+    {
+      "id": "ms-set13-2019-nsb-msr-round-1a-q03-tossup",
+      "source": {
+        "level": "ms",
+        "set": "set13",
+        "round": "2019-NSB-MSR-Round-1A",
+        "round_number": 1,
+        "pdf": "ms/set13/2019-NSB-MSR-Round-1A.pdf",
+        "page": 2
+      },
+      "number": 3,
+      "part": "tossup",
+      "category": "math",
+      "category_raw": "Math",
+      "format": "short_answer",
+      "question": {
+        "text": "What is the discriminant of the quadratic polynomial 2x2 + 7x + 3?",
+        "latex": "What is the discriminant of the quadratic polynomial $2x^2 + 7x + 3$?"
+      },
+      "choices": null,
+      "answer": {
+        "text": "25",
+        "latex": null,
+        "raw": "25"
+      },
+      "images": {
+        "question": "images/ms/set13/2019-NSB-MSR-Round-1A/q03-tossup-question.png",
+        "answer": "images/ms/set13/2019-NSB-MSR-Round-1A/q03-tossup-answer.png",
+        "entire": "images/ms/set13/2019-NSB-MSR-Round-1A/q03-tossup-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "images_only",
+        "flags": [
+          "has_math",
+          "needs_review"
+        ],
+        "notes": [
+          "Plain text lost the exponent (2x2 should be 2x squared); LaTeX written by hand as an example, not yet checked against the image"
+        ]
+      }
+    },
+    {
+      "id": "ms-set13-2019-nsb-msr-round-1a-q03-bonus",
+      "source": {
+        "level": "ms",
+        "set": "set13",
+        "round": "2019-NSB-MSR-Round-1A",
+        "round_number": 1,
+        "pdf": "ms/set13/2019-NSB-MSR-Round-1A.pdf",
+        "page": 2
+      },
+      "number": 3,
+      "part": "bonus",
+      "category": "math",
+      "category_raw": "Math",
+      "format": "short_answer",
+      "question": {
+        "text": "Purity of gold is measured in karats, with 100% pure gold being 24 karats. To the nearest whole number, what percent pure is 14-karat gold?",
+        "latex": null
+      },
+      "choices": null,
+      "answer": {
+        "text": "58",
+        "latex": null,
+        "raw": "58"
+      },
+      "images": {
+        "question": "images/ms/set13/2019-NSB-MSR-Round-1A/q03-bonus-question.png",
+        "answer": "images/ms/set13/2019-NSB-MSR-Round-1A/q03-bonus-answer.png",
+        "entire": "images/ms/set13/2019-NSB-MSR-Round-1A/q03-bonus-entire.png"
+      },
+      "tags": {
+        "disciplines": [],
+        "topics": [],
+        "source": null,
+        "reviewed": false
+      },
+      "quality": {
+        "text_status": "auto",
+        "flags": [],
+        "notes": []
+      }
+    }
+  ]
+}

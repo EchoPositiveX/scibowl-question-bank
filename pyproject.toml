@@ -9,6 +9,7 @@ description = "Parse National Science Bowl PDFs into a versioned question datase
 requires-python = ">=3.11"
 dependencies = [
     "pdfplumber>=0.11",
+    "jsonschema>=4.20",
 ]
 
 [project.optional-dependencies]
@@ -16,6 +17,9 @@ dev = ["pytest>=8"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+scibowl_qb = ["schema/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
