@@ -97,3 +97,26 @@ def test_manifest_and_zip(tmp_path, sample):
     assert m["question_count"] == len(sample["questions"])
     assert set(m["files"]) == {"questions.json", "images.zip"}
     assert len(m["files"]["images.zip"]["sha256"]) == 64
+
+
+def test_preview_page(sample):
+    from scibowl_qb.preview import render
+
+    page = render(sample, "Test preview")
+    assert page.startswith("<!doctype html>")
+    assert "Test preview" in page
+    for q in sample["questions"]:
+        assert f"id='{q['id']}'" in page
+    assert "<script" not in page  # only the inline checkbox handler
+
+
+def test_count_problems():
+    from scibowl_qb.parse import count_problems
+
+    def qs(set_name, n):
+        return [{"source": {"level": "ms", "set": set_name}} for _ in range(n)]
+
+    assert count_problems(qs("set16", 324)) == []
+    assert count_problems(qs("set04", 847)) == []  # 3 known missing
+    assert count_problems(qs("set16", 323)) == ["ms/set16: found 323, expected 324"]
+    assert "no expected count" in count_problems(qs("set99", 5))[0]

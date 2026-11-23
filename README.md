@@ -47,7 +47,9 @@ The website downloads the dataset from this repo's GitHub Releases. A release ha
 | `images.zip` | Question, answer and whole-question PNGs; paths start with `images/`, matching each question's `images` fields |
 | `manifest.json` | Dataset version, counts per set, how many questions need review, and SHA-256 checksums |
 
-To publish one, push a version tag. The **Release** workflow parses everything with images, validates, runs the content checks, and creates the GitHub Release only if all of them pass:
+Before a real release, try it out. On GitHub: **Actions > Release > Run workflow**, pick a set (for example `set16`). It builds just that set, publishes nothing, and attaches a download with `preview.html`: every question's parsed text next to its PDF image, with flagged questions highlighted. Releases also include `preview.html`.
+
+To publish one, push a version tag. The **Release** workflow parses everything with images, validates, checks the question count per set, runs the content checks, and creates the GitHub Release only if all of them pass:
 
 ```bash
 git tag v1.0.0
@@ -58,7 +60,7 @@ To build the same files locally without publishing anything:
 
 ```bash
 python -m scibowl_qb.release 1.0.0 --jobs 4          # writes dist/
-python -m scibowl_qb.release 0.0.1 --set set16       # quick try on one set
+python -m scibowl_qb.release 0.0.1 --set set16 --trial   # quick try on one set; open dist/preview.html
 ```
 
 Versions: bump the major number when the question format (`schema_version`) changes, the minor number when questions are added or fixed, and the patch number for small corrections.

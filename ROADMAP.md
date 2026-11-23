@@ -21,6 +21,7 @@ How this file works:
 
 ## Nice to have
 
+- QB-25 Find the 6 questions the parser still misses in sets 02–04 (listed in `KNOWN_MISSING` in parse.py)
 - QB-13 High school question sets
 - QB-14 Local review tool: question image next to rendered text, approve or fix with one click
 - QB-15 Accepted alternate answers, for self-check in study mode
@@ -35,7 +36,7 @@ How this file works:
 
 ## Done
 
-- QB-09 Releases: `python -m scibowl_qb.release` builds questions.json, images.zip and manifest.json; pushing a `vX.Y.Z` tag publishes them as a GitHub Release after tests, validation and content checks pass
+- QB-09 Releases: `python -m scibowl_qb.release` builds questions.json, images.zip and manifest.json; pushing a `vX.Y.Z` tag publishes them as a GitHub Release after tests, validation, count and content checks pass; a "Run workflow" trial builds one set with a preview page and publishes nothing
 - QB-06 Content checks (`python -m scibowl_qb.checks`): every problem must be fixed or flagged needs_review, or the release stops; found and fixed the 2022 moderator closing script leaking into the last answer
 - QB-22 `--jobs N` parses PDFs in parallel (text-only full run under a minute on 4 cores)
 - QB-08 needs_review down from 259 to 78: numbered statements ("1) … 2) …") no longer cut a question off before its answer, ANSWER spelling variants are read, blank choice lines (formulas) are kept, and page footers and separator rows are dropped; the old `Bad Questions.txt` cases are fixed

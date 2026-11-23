@@ -9,6 +9,11 @@ runs the content checks, and writes to dist/:
     questions.json   every question, in the published format
     images.zip       question, answer and whole-question PNGs (paths start with images/)
     manifest.json    dataset version, counts per set, needs-review count, file checksums
+    preview.html     every question's parsed text next to its PDF image, for checking by eye
+                     (unzip images.zip next to it, or use --trial)
+
+With --trial, images are left unzipped next to preview.html so the folder can be
+opened directly; use it with --set to check one set quickly.
 
 Nothing is published. The GitHub workflow (.github/workflows/release.yml) runs this
 when a version tag like v1.0.0 is pushed, then uploads dist/ as a GitHub Release.
@@ -29,7 +34,7 @@ from pathlib import Path
 
 from . import REPO_ROOT, __version__
 from . import checks
-from . import parse
+from . import parse, preview
 from .validate import SCHEMA_VERSION
 
 log = logging.getLogger("scibowl_qb.release")
@@ -79,6 +84,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("-j", "--jobs", type=int, default=1)
     ap.add_argument("--level", help="limit to one level (for trying the release out)")
     ap.add_argument("--set", dest="set_name", help="limit to one set (for trying the release out)")
+    ap.add_argument("--trial", action="store_true", help="leave images unzipped next to preview.html (for checking)")
     args = ap.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
@@ -109,9 +115,24 @@ def main(argv: list[str] | None = None) -> int:
         log.error("Content checks found unflagged problems; no release built")
         return 1
 
-    files = {"questions.json": args.dist / "questions.json", "images.zip": args.dist / "images.zip"}
+    counts = parse.count_problems(data["questions"])
+    if counts:
+        for c in counts:
+            log.error("Question count: %s", c)
+        log.error("Question counts don't match; no release built")
+        return 1
+
+    (args.dist / "preview.html").write_text(preview.render(data, f"Question bank {version} preview"), encoding="utf-8")
+    if args.trial:
+        shutil.copytree(args.build / "images", args.dist / "images")
+
+    files = {"questions.json": args.dist / "questions.json"}
     shutil.copyfile(combined, files["questions.json"])
-    image_count = zip_images(args.build / "images", files["images.zip"])
+    if args.trial:
+        image_count = sum(1 for _ in (args.dist / "images").rglob("*.png"))
+    else:
+        files["images.zip"] = args.dist / "images.zip"
+        image_count = zip_images(args.build / "images", files["images.zip"])
     manifest = build_manifest(version, data, files, image_count)
     (args.dist / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 

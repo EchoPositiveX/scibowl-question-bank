@@ -39,6 +39,23 @@ EXPECTED_MS_SET_COUNTS = {
     "set11": 782, "set12": 782, "set13": 982, "set14": 782, "set15": 300, "set16": 324,
 }
 
+# Questions the parser is known not to find yet (counted as found when checking a release).
+KNOWN_MISSING = {"set02": 1, "set03": 2, "set04": 3}
+
+
+def count_problems(questions: list[dict]) -> list[str]:
+    """Sets whose question count doesn't match the expected count (allowing for KNOWN_MISSING)."""
+    by_set = Counter((q["source"]["level"], q["source"]["set"]) for q in questions)
+    problems = []
+    for (level, s), found in sorted(by_set.items()):
+        expected = EXPECTED_MS_SET_COUNTS.get(s) if level == "ms" else None
+        if expected is None:
+            problems.append(f"{level}/{s}: no expected count (add it to EXPECTED_MS_SET_COUNTS)")
+        elif found + KNOWN_MISSING.get(s, 0) != expected:
+            problems.append(f"{level}/{s}: found {found}, expected {expected - KNOWN_MISSING.get(s, 0)}")
+    return problems
+
+
 GENERATOR = f"scibowl-qb {__version__}"
 
 
