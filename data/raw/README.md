@@ -11,4 +11,4 @@ Layout: `data/raw/{level}/{set}/{round}.pdf`, for example `data/raw/ms/set01/m_r
 Known oddities:
 
 - `ms/set13` has four extra rounds with special names (`de1_for_web`, `de3_for_web`, `rr2_for_web`, `rr5_for_web`).
-- `ms/set15/Set-7-HS-2021.pdf` is named HS (high school) but sits in the middle school set. Check whether it belongs there.
+- `ms/set15/Set-7-MS-2021.pdf` replaced a high school round (`Set-7-HS-2021.pdf`) that had been copied into the middle school set by mistake.

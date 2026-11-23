@@ -2,6 +2,10 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-23: Set 15 round 7 (QB-23)
+
+- `ms/set15/Set-7-HS-2021.pdf` was the high school round. John supplied the middle school version, `Set-7-MS-2021.pdf`, and it replaced the high school file. Set 15 is now 300 questions (10 rounds of 30).
+
 ## 2026-11-23: Question format v1 (QB-01)
 
 - One JSON file holds a list of questions under `schema_version: 1`; see `docs/question-format.md`.
