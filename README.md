@@ -22,3 +22,15 @@ python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\act
 pip install -e ".[dev]"
 pytest
 ```
+
+## Parsing
+
+```bash
+python -m scibowl_qb.parse --set set01 --round m_round01   # one round
+python -m scibowl_qb.parse --set set01                     # one set
+python -m scibowl_qb.parse                                 # everything (slow with images)
+python -m scibowl_qb.parse --no-images                     # text only, about 2 minutes for all sets
+python -m scibowl_qb.validate output/questions.json        # check a file against the format
+```
+
+Output goes to `output/` (not committed): one JSON file per round under `output/rounds/`, everything combined in `output/questions.json`, and images under `output/images/`.
