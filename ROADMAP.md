@@ -21,7 +21,6 @@ How this file works:
 
 ## Nice to have
 
-- QB-29 Render each PDF page once and crop all images from it (release builds take about 30 minutes because every crop re-renders its page)
 - QB-30 Smaller images: 150–200 dpi or palette PNGs would cut images.zip (331 MB) to well under half, which matters for hosting
 - QB-25 Find the 6 questions the parser still misses in sets 02–04 (listed in `KNOWN_MISSING` in parse.py)
 - QB-13 High school question sets
@@ -38,6 +37,7 @@ How this file works:
 
 ## Done
 
+- QB-29 Each PDF page is rendered once and all its images are cropped from it: image extraction is about 3x faster, with the same image files (palette PNGs, same size on disk)
 - QB-28 Question images stop above the ANSWER row (148 crops in v1.0.0 reached into it, many showing the answer), and 75 questions whose text reaches into that row are marked needs_review so the site shows the image instead
 - QB-27 Release workflow can publish from the Run workflow button (version input, main only), so a release no longer needs a tag push
 - QB-26 GitHub Actions updated to their Node 24 versions (no more deprecation warning on runs)
