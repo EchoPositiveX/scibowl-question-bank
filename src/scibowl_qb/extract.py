@@ -20,6 +20,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 import pdfplumber
+from PIL import Image
 
 from .corrections import Corrections, apply_extract_corrections
 
@@ -290,6 +291,7 @@ def extract_round(
     with pdfplumber.open(pdf_path) as pdf:
         for page_i, page in enumerate(pdf.pages):
             lines = group_words_into_lines(page.extract_words())
+            render = _PageImage(page, resolution)
             i = 0
             while i < len(lines):
                 part = _is_header(lines[i]["text"])
@@ -428,22 +430,42 @@ def extract_round(
                     q_bottom = None
                     if row_top is not None:
                         q_bottom = max(qbox.y0 + 10, min(qbox.y1 + 5, row_top - 0.5))
-                    rq.images["question"] = _crop_box(page, qbox.x0, qbox.y0, qbox.x1, qbox.y1, images_dir,
+                    rq.images["question"] = _crop_box(render, qbox.x0, qbox.y0, qbox.x1, qbox.y1, images_dir,
                                                       f"{base}-question.png", resolution, max_y1=q_bottom)
                     if abox:
-                        rq.images["answer"] = _crop_box(page, entire.x0, abox.y0, entire.x1, abox.y1,
+                        rq.images["answer"] = _crop_box(render, entire.x0, abox.y0, entire.x1, abox.y1,
                                                         images_dir, f"{base}-answer.png", resolution)
-                    rq.images["entire"] = _crop(page, entire, images_dir, f"{base}-entire.png", resolution)
+                    rq.images["entire"] = _crop(render, entire, images_dir, f"{base}-entire.png", resolution)
 
                 results.append(rq)
     return results
 
 
-def _crop(page, box: _Box, images_dir: Path, rel_name: str, resolution: int) -> str:
+class _PageImage:
+    """A page rendered once, at first use, so each crop doesn't render the page again (QB-29)."""
+
+    def __init__(self, page, resolution: int):
+        self.page = page
+        self.width = page.width
+        self.height = page.height
+        self._resolution = resolution
+        self._image = None
+
+    def crop(self, bbox: tuple[float, float, float, float]):
+        if self._image is None:
+            self._image = self.page.to_image(resolution=self._resolution).original
+        scale = self._resolution / 72
+        left, top = self.page.bbox[0], self.page.bbox[1]
+        x0, y0, x1, y1 = bbox
+        return self._image.crop((round((x0 - left) * scale), round((y0 - top) * scale),
+                                 round((x1 - left) * scale), round((y1 - top) * scale)))
+
+
+def _crop(page: _PageImage, box: _Box, images_dir: Path, rel_name: str, resolution: int) -> str:
     return _crop_box(page, box.x0, box.y0, box.x1, box.y1, images_dir, rel_name, resolution)
 
 
-def _crop_box(page, x0, y0, x1, y1, images_dir: Path, rel_name: str, resolution: int, margin: float = 5,
+def _crop_box(page: _PageImage, x0, y0, x1, y1, images_dir: Path, rel_name: str, resolution: int, margin: float = 5,
               max_y1: float | None = None) -> str:
     out = images_dir / rel_name
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -451,5 +473,7 @@ def _crop_box(page, x0, y0, x1, y1, images_dir: Path, rel_name: str, resolution:
     if max_y1 is not None:
         bottom = min(bottom, max_y1)
     bbox = (max(0, x0 - margin), max(0, y0 - margin), min(page.width, x1 + margin), bottom)
-    page.crop(bbox).to_image(resolution=resolution).save(out, format="PNG")
+    # Saved the way pdfplumber saves page images: 256-colour palette PNG, with the resolution recorded.
+    image = page.crop(bbox).quantize(256, method=Image.Quantize.FASTOCTREE).convert("P")
+    image.save(out, format="PNG", bits=8, dpi=(resolution, resolution))
     return f"images/{rel_name}"
