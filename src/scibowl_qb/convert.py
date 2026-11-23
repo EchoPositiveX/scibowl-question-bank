@@ -5,7 +5,8 @@ This step only reshapes data and does light, safe cleanup:
 - removes the "– Short Answer" / "– Multiple Choice" prefix some sets print,
 - splits ACCEPT / DO NOT ACCEPT notes and [pronunciation] hints out of answers,
 - reads the letter of a multiple choice answer,
-- drops separator lines (~~~~) printed between questions.
+- drops separator lines (~~~~) printed between questions,
+- maps the printed subject label to one of the official categories.
 
 Bigger fixes (page footers, subject names, layout failures) have their own roadmap items,
 so anything doubtful is left as is and marked in `quality`.
@@ -24,6 +25,29 @@ PRONUNCIATION = re.compile(r"\[([^\]]+)\]")
 ACCEPT_NOTE = re.compile(r"\(([^()]*\bACCEPT\b[^()]*)\)", re.IGNORECASE)
 MISSING_ANSWER = "[answer not found by parser]"
 SEPARATOR_LINE = re.compile(r"^\s*[~_=-]{5,}\s*$")
+
+# Printed subject label (lower case, "&" written as "and") -> category.
+CATEGORIES = {
+    "life science": "life_science",
+    "physical science": "physical_science",
+    "earth and space": "earth_and_space",
+    "earth and space science": "earth_and_space",
+    "earth science": "earth_and_space",
+    "energy": "energy",
+    "math": "math",
+    "mathematics": "math",
+    "general science": "general_science",
+    # High school labels, found in a few rounds.
+    "biology": "biology",
+    "chemistry": "chemistry",
+    "physics": "physics",
+}
+
+
+def category_for(label: str) -> str | None:
+    """Official category for a printed subject label, or None if the label isn't known."""
+    key = re.sub(r"\s+", " ", label.replace("&", " and ")).strip().lower()
+    return CATEGORIES.get(key)
 
 
 def join_lines(lines: list[str]) -> str:
@@ -79,6 +103,11 @@ def to_question(rq: RawQuestion) -> dict:
     if rq.overrides_applied:
         flags.append("corrected")
 
+    category = category_for(rq.subject_raw)
+    if category is None:
+        notes.append(f"Unknown subject label: {rq.subject_raw!r}" if rq.subject_raw else "No subject label found")
+        flags.append("needs_review")
+
     question_text = clean_question_text(rq.question_lines)
     if not question_text:
         question_text = "[question text not found by parser]"
@@ -129,7 +158,7 @@ def to_question(rq: RawQuestion) -> dict:
         },
         "number": rq.number,
         "part": rq.part,
-        "category": None,
+        "category": category,
         "category_raw": rq.subject_raw,
         "format": "multiple_choice" if is_mc else "short_answer",
         "question": {"text": question_text, "latex": None},
