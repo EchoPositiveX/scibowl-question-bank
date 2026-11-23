@@ -2,6 +2,12 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-23: Layout failures (QB-08)
+
+- A numbered line ends a question only if it looks like a question start (a known subject or a printed Short Answer / Multiple Choice). Numbered statements inside a question stay in the question.
+- Page footers and separator rows are dropped while reading the PDF, so they never reach question or answer text, and they are left out of the images.
+- Questions whose formulas overlap the text in the PDF (mostly set 06 and 07 math) are left flagged `needs_review` with images as the fallback. QB-10 (AI vision) is the fix for those, not more parser rules.
+
 ## 2026-11-23: Set 16 (QB-24)
 
 - Set 16 is the nine 2022 middle school rounds John downloaded. From 2022 the middle school rounds use six subjects (Biology, Chemistry, Earth and Space, Energy, Math, Physics) and 18 toss-ups per round, so `biology`, `chemistry` and `physics` are middle school categories too, not only high school ones.

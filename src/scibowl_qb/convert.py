@@ -24,7 +24,7 @@ MC_ANSWER = re.compile(r"^\s*([WXYZ])\)\s*(.*)$", re.IGNORECASE | re.DOTALL)
 PRONUNCIATION = re.compile(r"\[([^\]]+)\]")
 ACCEPT_NOTE = re.compile(r"\(([^()]*\bACCEPT\b[^()]*)\)", re.IGNORECASE)
 MISSING_ANSWER = "[answer not found by parser]"
-SEPARATOR_LINE = re.compile(r"^\s*[~_=-]{5,}\s*$")
+SEPARATOR_LINE = re.compile(r"^\s*[~_=*-]{5,}\s*$")
 
 # Printed subject label (lower case, "&" written as "and") -> category.
 CATEGORIES = {
@@ -117,6 +117,10 @@ def to_question(rq: RawQuestion) -> dict:
     if is_mc:
         if rq.choices and set(rq.choices) == {"W", "X", "Y", "Z"}:
             choices = {k: {"text": v.strip() or "?", "latex": None} for k, v in sorted(rq.choices.items())}
+            blank = [k for k, v in sorted(rq.choices.items()) if not v.strip()]
+            if blank:
+                notes.append(f"Choice text missing for {', '.join(blank)} (probably a formula; see the question image)")
+                flags.append("needs_review")
         else:
             # Missing choices: record what we have in the notes and treat as short answer for now.
             found = ", ".join(sorted(rq.choices or {})) or "none"
@@ -133,7 +137,10 @@ def to_question(rq: RawQuestion) -> dict:
     else:
         answer = {"text": MISSING_ANSWER, "raw": ""}
         flags.append("needs_review")
-        notes.append("No ANSWER line found")
+        if rq.answer_lines:
+            notes.append("The ANSWER line has no text (the answer is probably a formula or picture; see the answer image)")
+        else:
+            notes.append("No ANSWER line found")
     if is_mc and "choice" not in answer:
         notes.append("Could not read the answer's choice letter")
         flags.append("needs_review")

@@ -9,7 +9,6 @@ How this file works:
 
 ## Now
 
-- QB-08 Fix known layout failures: 247 questions with no answer found (cause not yet investigated), 46 multiple choice questions missing choices or answer letter, footers in answers, the cases in the old `Bad Questions.txt`
 
 ## Next
 
@@ -18,9 +17,9 @@ How this file works:
 - QB-05 Golden tests: about 50 hand-checked questions across sets, compared field by field
 - QB-06 Content checks across all questions: answer present, multiple choice has W–Z, valid category, no footer text
 - QB-09 Publish versioned releases (questions JSON + images) for the website to download
-- QB-10 AI vision step to produce text with LaTeX/mhchem, prototyped on 1–2 sets and reviewed before continuing
+- QB-10 AI vision step to produce text with LaTeX/mhchem, prototyped on 1–2 sets and reviewed before continuing. Start with the 78 questions still flagged needs_review (mostly set 06 and 07 math, where formulas overlap the text in the PDF)
 - QB-11 Draft a topic list (disciplines and sub-topics) with AI help, for John to edit
-- QB-12 AI-tag questions against the topic list, a set or two at a time
+- QB-12 AI-tag questions against the topic list, a set or two at a time. First goal: give every question one of the 2022 subjects (biology, chemistry, physics, earth and space, energy, math) in `tags.disciplines`, so older Life, Physical and General Science questions can be studied with the new grouping
 
 ## Nice to have
 
@@ -39,6 +38,7 @@ How this file works:
 
 ## Done
 
+- QB-08 needs_review down from 259 to 78: numbered statements ("1) … 2) …") no longer cut a question off before its answer, ANSWER spelling variants are read, blank choice lines (formulas) are kept, and page footers and separator rows are dropped; the old `Bad Questions.txt` cases are fixed
 - QB-24 Added set 16 (nine 2022 middle school rounds, 324 questions), supplied by John
 - QB-23 Set 15 round 7: replaced the high school PDF that was in the middle school set with the middle school round John supplied (set 15 is now 300 questions)
 - QB-07 Every question has a category; "Earth & Space" and split or garbled subject lines fixed; printed Short Answer / Multiple Choice labels after a dash are now read (828 questions became multiple choice with their choices); wrapped choice lines stay with their choice
