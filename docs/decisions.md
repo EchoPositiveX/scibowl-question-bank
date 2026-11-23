@@ -2,6 +2,10 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-23: Set 16 (QB-24)
+
+- Set 16 is the nine 2022 middle school rounds John downloaded. From 2022 the middle school rounds use six subjects (Biology, Chemistry, Earth and Space, Energy, Math, Physics) and 18 toss-ups per round, so `biology`, `chemistry` and `physics` are middle school categories too, not only high school ones.
+
 ## 2026-11-23: Set 15 round 7 (QB-23)
 
 - `ms/set15/Set-7-HS-2021.pdf` was the high school round. John supplied the middle school version, `Set-7-MS-2021.pdf`, and it replaced the high school file. Set 15 is now 300 questions (10 rounds of 30).

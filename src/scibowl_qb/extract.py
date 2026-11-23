@@ -60,7 +60,7 @@ def parse_round_number(round_name: str) -> int | None:
         return None
     if round_name in SPECIAL_ROUND_NUMBERS:
         return SPECIAL_ROUND_NUMBERS[round_name]
-    cleaned = re.sub(r"\b(2016|2019|2020|2021)\b", "", round_name.lower())
+    cleaned = re.sub(r"\b(2016|2019|2020|2021|2022)\b", "", round_name.lower())
     match = re.search(r"\d+", cleaned)
     return int(match.group()) if match else None
 

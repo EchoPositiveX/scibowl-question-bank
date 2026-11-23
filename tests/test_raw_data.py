@@ -7,7 +7,7 @@ from scibowl_qb import RAW_DIR
 EXPECTED_MS_PDFS_PER_SET = {
     "set01": 18, "set02": 10, "set03": 15, "set04": 17, "set05": 16,
     "set06": 17, "set07": 15, "set08": 17, "set09": 17, "set10": 17,
-    "set11": 17, "set12": 17, "set13": 21, "set14": 17, "set15": 10,
+    "set11": 17, "set12": 17, "set13": 21, "set14": 17, "set15": 10, "set16": 9,
 }
 
 

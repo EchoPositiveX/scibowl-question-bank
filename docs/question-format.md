@@ -50,7 +50,7 @@ Changing the format means bumping `schema_version` and recording why in `docs/de
 | `source` | Where the question came from. `pdf` is relative to `data/raw` with forward slashes. `round_number` is the round as an integer, or null if it can't be worked out. |
 | `number` | Question number within the round. |
 | `part` | `tossup` or `bonus`. |
-| `category` | Normalized NSB category: `life_science`, `physical_science`, `earth_and_space`, `energy`, `math`, `general_science` (middle school), or `biology`, `chemistry`, `physics` (high school). Labels map as: Earth Science, Earth and Space, Earth & Space and Earth and Space Science → `earth_and_space`; Math and Mathematics → `math`; the rest by name. Null only for a label the parser doesn't know, and then the question is flagged `needs_review`. |
+| `category` | Normalized NSB category: `life_science`, `physical_science`, `earth_and_space`, `energy`, `math`, `general_science`, `biology`, `chemistry`, `physics`. Middle school rounds up to 2021 use the first six; from 2022 they use biology, chemistry, earth_and_space, energy, math and physics, like high school. Labels map as: Earth Science, Earth and Space, Earth & Space and Earth and Space Science → `earth_and_space`; Math and Mathematics → `math`; the rest by name. Null only for a label the parser doesn't know, and then the question is flagged `needs_review`. |
 | `category_raw` | The subject as printed (title case), for traceability. |
 | `format` | `short_answer` or `multiple_choice`. |
 | `question` | `text` is cleaned plain text (no "Short Answer" prefix, no line breaks from the PDF layout). `latex` is the same with math as `$...$` and chemistry as `\ce{...}`, null until produced (QB-10). |
