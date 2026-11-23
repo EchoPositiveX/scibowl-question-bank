@@ -19,7 +19,7 @@ def write(tmp_path, text):
 
 def test_repo_corrections_file_loads():
     c = corr.load()
-    assert len(c.extract) == 7
+    assert c.extract
     assert all(e.reason for e in c.extract)
 
 

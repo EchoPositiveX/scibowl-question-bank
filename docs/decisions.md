@@ -2,6 +2,13 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-23: Subjects and question style (QB-07)
+
+- Earth Science and every Earth and Space variant map to `earth_and_space`. The printed label stays in `category_raw`.
+- The few high school labels (Biology, Chemistry, Physics) map to their own high school categories rather than being forced into middle school ones.
+- A question that prints all four choices W) to Z) is multiple choice, even if its label says Short Answer. The printed label used to be ignored when it followed a dash ("Earth & Space – Multiple Choice"), and the style was guessed; now it is read.
+- A question with no printed subject keeps its words as question text, and gets its subject from `corrections.yaml`.
+
 ## 2026-11-23: Question format v1 (QB-01)
 
 - One JSON file holds a list of questions under `schema_version: 1`; see `docs/question-format.md`.

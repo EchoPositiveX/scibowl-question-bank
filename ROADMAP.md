@@ -9,7 +9,6 @@ How this file works:
 
 ## Now
 
-- QB-07 Normalize subjects to the official NSB categories, keeping the raw label
 - QB-08 Fix known layout failures: 247 questions with no answer found (cause not yet investigated), 46 multiple choice questions missing choices or answer letter, footers in answers, the cases in the old `Bad Questions.txt`
 
 ## Next
@@ -32,6 +31,7 @@ How this file works:
 - QB-16 Difficulty estimates, first from tags, later from real usage
 - QB-17 Detect near-duplicate questions across sets
 - QB-18 Pronunciation hints for the moderator
+- QB-23 Decide what to do with `set15/Set-7-HS-2021`, a high school round inside the middle school sets (it uses Biology, Chemistry and Physics)
 - QB-19 ~~Track parse notes per question~~ (covered by `quality.notes` in QB-01)
 
 ## Parked
@@ -40,6 +40,7 @@ How this file works:
 
 ## Done
 
+- QB-07 Every question has a category; "Earth & Space" and split or garbled subject lines fixed; printed Short Answer / Multiple Choice labels after a dash are now read (828 questions became multiple choice with their choices); wrapped choice lines stay with their choice
 - QB-21 "Question problem" issue form, docs/fixing-questions.md, and tests/test_reported_issues.py for regression cases
 - QB-04 `corrections.yaml`: the 7 overrides moved there with reasons, plus per-question fixes by ID; the parser fails on a correction that matches nothing
 - QB-02 (#3) Parser ported: `python -m scibowl_qb.parse` (one set, one round, or all), same 11,374 questions as the old parser, full text-only run in about 2 minutes

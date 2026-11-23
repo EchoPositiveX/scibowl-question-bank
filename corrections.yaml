@@ -43,12 +43,16 @@ extract:
     reason: The PDF prints bonus 8 as 2 on page 4.
 
   - match: {level: ms, set: set10, round: 14A_MS_Reg_2016, page: 8, number: 16, part: tossup}
-    question_starts_with: "– Multiple Choice A discharged capacitor"
+    question_starts_with: "A discharged capacitor"
     set: {part: bonus}
     reason: The capacitor question is bonus 16, but the PDF labels it as a second toss-up 16.
 
-  - match: {level: ms, set: set08, round: Round-17-A, page: 9, number: 18, part: tossup, subject_raw: Math Math}
-    set: {subject_raw: Math}
-    reason: The subject is printed twice in the PDF.
+  - match: {level: ms, set: set13, round: rr5_for_web, number: 16, part: tossup}
+    set: {subject_raw: Earth and Space}
+    reason: The PDF prints no subject for this question about the zodiac.
+
+  - match: {level: ms, set: set12, round: MSRound-6, number: 12, part: bonus}
+    set: {style: Short Answer}
+    reason: The PDF labels this Multiple Choice, but it has no choices and a number for an answer.
 
 questions: []
