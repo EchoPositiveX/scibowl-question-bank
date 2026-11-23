@@ -9,8 +9,7 @@ line-grouping and regex logic, so results match the old parser. Differences:
 - The output is a list of `RawQuestion` records; `convert.py` turns them into the
   published question format.
 
-Known problems (page footers in answers, questions split across pages, and so on)
-are deliberately left as they were. They have their own roadmap items.
+Layout fixes since the port (QB-07, QB-08, QB-28) are described in docs/decisions.md.
 """
 
 from __future__ import annotations
@@ -92,6 +91,8 @@ class RawQuestion:
     raw_pdf_lines: list[str]
     images: dict[str, str | None] = field(default_factory=lambda: {"question": None, "answer": None, "entire": None})
     overrides_applied: list[str] = field(default_factory=list)
+    # True when some question text reaches into the ANSWER row, so it may hold part of the answer.
+    answer_row_overlap: bool = False
 
     @property
     def round_number(self) -> int | None:
@@ -245,6 +246,22 @@ def _starts_new_question(text: str) -> bool:
     return bool(found and (found[2] or KNOWN_SUBJECT_REGEX.match(found[1])))
 
 
+def _next_answer_top(lines: list[dict], i: int) -> float | None:
+    """Top of the ANSWER line that ends the question starting at lines[i], if there is one."""
+    while i < len(lines):
+        text = lines[i]["text"]
+        if ANSWER_REGEX.match(text):
+            return lines[i]["y0"]
+        if _starts_new_question(text) or _is_header(text) or ROUND_END_REGEX.match(text):
+            return None
+        i += 1
+    return None
+
+
+# How far (in points) a line may reach into the ANSWER row and still count as question text.
+ANSWER_ROW_TOLERANCE = 1.0
+
+
 def _guess_style(text: str) -> str:
     return "Multiple Choice" if "which of the following" in text.lower() else "Short Answer"
 
@@ -319,6 +336,13 @@ def extract_round(
                 i += 1
 
                 # Read the body. A line after a choice that isn't a new choice continues that choice.
+                # A line reaching into the ANSWER row may be part of the answer (a fraction's numerator set
+                # above the word ANSWER), or question math whose text sits lower than it is drawn. Positions
+                # can't tell them apart, so such text is kept but marked, and the question image always
+                # stops above the ANSWER row.
+                answer_top = _next_answer_top(lines, i)
+                in_answer_row = False
+                row_top = answer_top  # top of everything printed in the ANSWER row
                 body: list[tuple[str | None, str]] = []  # (choice letter or None, text)
                 while i < len(lines):
                     text = lines[i]["text"]
@@ -329,6 +353,9 @@ def extract_round(
                         raw_lines.append(text)
                         i += 1
                         continue
+                    if answer_top is not None and lines[i]["y1"] > answer_top + ANSWER_ROW_TOLERANCE:
+                        in_answer_row = True
+                        row_top = min(row_top, lines[i]["y0"])
                     qbox.add(lines[i])
                     entire.add(lines[i])
                     raw_lines.append(text)
@@ -370,6 +397,7 @@ def extract_round(
                     choices=choices,
                     answer_lines=[],
                     raw_pdf_lines=raw_lines,
+                    answer_row_overlap=in_answer_row,
                 )
                 apply_extract_corrections(rq, corrections)
 
@@ -396,7 +424,12 @@ def extract_round(
 
                 if images_dir is not None:
                     base = f"{level}/{set_name}/{round_name}/q{rq.number:02d}-{rq.part}"
-                    rq.images["question"] = _crop(page, qbox, images_dir, f"{base}-question.png", resolution)
+                    # The question image stops above the ANSWER row, so it never shows the answer.
+                    q_bottom = None
+                    if row_top is not None:
+                        q_bottom = max(qbox.y0 + 10, min(qbox.y1 + 5, row_top - 0.5))
+                    rq.images["question"] = _crop_box(page, qbox.x0, qbox.y0, qbox.x1, qbox.y1, images_dir,
+                                                      f"{base}-question.png", resolution, max_y1=q_bottom)
                     if abox:
                         rq.images["answer"] = _crop_box(page, entire.x0, abox.y0, entire.x1, abox.y1,
                                                         images_dir, f"{base}-answer.png", resolution)
@@ -410,9 +443,13 @@ def _crop(page, box: _Box, images_dir: Path, rel_name: str, resolution: int) -> 
     return _crop_box(page, box.x0, box.y0, box.x1, box.y1, images_dir, rel_name, resolution)
 
 
-def _crop_box(page, x0, y0, x1, y1, images_dir: Path, rel_name: str, resolution: int, margin: float = 5) -> str:
+def _crop_box(page, x0, y0, x1, y1, images_dir: Path, rel_name: str, resolution: int, margin: float = 5,
+              max_y1: float | None = None) -> str:
     out = images_dir / rel_name
     out.parent.mkdir(parents=True, exist_ok=True)
-    bbox = (max(0, x0 - margin), max(0, y0 - margin), min(page.width, x1 + margin), min(page.height, y1 + margin))
+    bottom = min(page.height, y1 + margin)
+    if max_y1 is not None:
+        bottom = min(bottom, max_y1)
+    bbox = (max(0, x0 - margin), max(0, y0 - margin), min(page.width, x1 + margin), bottom)
     page.crop(bbox).to_image(resolution=resolution).save(out, format="PNG")
     return f"images/{rel_name}"

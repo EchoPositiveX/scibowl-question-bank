@@ -2,6 +2,12 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+
+## 2026-11-23: Never show the answer in a question image or text (QB-28)
+
+- Found while testing the website on v1.0.0: 148 question images reached into the ANSWER row, many showing all or part of the answer, which game mode must never do. The question image now always stops above the ANSWER row (including numerators printed above the word ANSWER).
+- Text can't be fixed by position alone: some math fonts report text lower than it is drawn, so question math and answer pieces look the same. Questions with text in the ANSWER row are marked needs_review instead (75 of them), which makes the site show the clean image.
+
 ## 2026-11-23: Releases and content checks (QB-09, QB-06)
 
 - The dataset is published as GitHub Releases on this repo, created by pushing a `vX.Y.Z` tag. Each release has `questions.json`, `images.zip` and `manifest.json`. Nothing is published from a pull request.
