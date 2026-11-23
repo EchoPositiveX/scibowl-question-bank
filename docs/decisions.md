@@ -2,6 +2,13 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-23: Releases and content checks (QB-09, QB-06)
+
+- The dataset is published as GitHub Releases on this repo, created by pushing a `vX.Y.Z` tag. Each release has `questions.json`, `images.zip` and `manifest.json`. Nothing is published from a pull request.
+- The website pins a release version and downloads it at build time, so the site only changes when its pinned version is bumped.
+- Content rule: every problem the checks find must be fixed or flagged `needs_review` (images are shown instead). Unflagged problems stop the release.
+- Dataset versions: major for a question format change, minor for added or fixed questions, patch for small corrections.
+
 ## 2026-11-23: Layout failures (QB-08)
 
 - A numbered line ends a question only if it looks like a question start (a known subject or a printed Short Answer / Multiple Choice). Numbered statements inside a question stay in the question.

@@ -1,0 +1,78 @@
+name: Release
+
+# Publishes a dataset release when a version tag is pushed:
+#   git tag v1.0.0 && git push origin v1.0.0
+# The build parses every PDF with images, validates, checks counts, runs the
+# content checks, and stops without publishing if any of them fail.
+#
+# Trial build: Actions tab > Release > Run workflow, pick a set. It builds that set
+# and attaches the result (preview.html, images, questions.json) to the run as a
+# downloadable artifact. Nothing is published.
+
+on:
+  push:
+    tags: ["v*.*.*"]
+  # "Run workflow" button on the Actions tab: a trial build that publishes nothing.
+  workflow_dispatch:
+    inputs:
+      set:
+        description: "Set to build, e.g. set16 (leave empty for all sets)"
+        required: false
+        default: "set16"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: pytest
+      - name: Trial build (no release)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          SET: ${{ inputs.set }}
+        run: python -m scibowl_qb.release 0.0.0 --trial --jobs "$(nproc)" ${SET:+--set "$SET"}
+      - name: Upload trial build
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: trial-build-${{ inputs.set || 'all' }}
+          path: dist/
+          retention-days: 14
+      - name: Build release files
+        if: github.event_name == 'push'
+        run: python -m scibowl_qb.release "${GITHUB_REF_NAME}" --jobs "$(nproc)"
+      - name: Write release notes
+        if: github.event_name == 'push'
+        run: |
+          python - <<'EOF'
+          import json
+          m = json.load(open("dist/manifest.json"))
+          lines = [
+              f"Dataset {m['dataset_version']} (question format v{m['schema_version']}).",
+              "",
+              f"- {m['question_count']} questions, {m['image_count']} images",
+              f"- {m['needs_review_count']} questions flagged needs_review (shown as images on the site)",
+              "",
+              "| Set | Questions |",
+              "| --- | --- |",
+          ]
+          lines += [f"| {s} | {n} |" for s, n in m["sets"].items()]
+          open("dist/NOTES.md", "w").write("\n".join(lines) + "\n")
+          EOF
+      - name: Publish GitHub Release
+        if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            dist/questions.json dist/images.zip dist/manifest.json dist/preview.html \
+            --title "Question bank ${GITHUB_REF_NAME}" \
+            --notes-file dist/NOTES.md

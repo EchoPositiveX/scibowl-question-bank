@@ -15,3 +15,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -e ".[dev]"
       - run: pytest
+      - name: Parse every PDF (text only) and run the content checks
+        run: |
+          python -m scibowl_qb.parse --no-images --jobs "$(nproc)"
+          python -m scibowl_qb.checks output/questions.json
