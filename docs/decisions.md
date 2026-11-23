@@ -2,6 +2,14 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-23: Question format v1 (QB-01)
+
+- One JSON file holds a list of questions under `schema_version: 1`; see `docs/question-format.md`.
+- Question IDs are derived from level, set, round, number and part, so they stay stable across re-parses.
+- Every text field has a plain `text` and an optional `latex`; images are always kept as the fallback.
+- Answers keep the printed `raw` text and split out `accept`, `do_not_accept` and `pronunciation`.
+- `quality.text_status` (images_only, auto, verified) tells the website when it can trust the text.
+
 ## 2026-11-23: Initial plan
 
 - Two repos: `scibowl-question-bank` (this one) and `scibowl-prep-lab` (website). The old `nsb` repo is kept as is, for reference.

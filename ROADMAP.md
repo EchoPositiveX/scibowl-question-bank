@@ -9,11 +9,11 @@ How this file works:
 
 ## Now
 
-- QB-01 Question format: JSON Schema for one question, a validator script, and a short doc of each field
 - QB-02 Port the parser from the old `nsb` repo onto the new format, with a command line that can run one set, one round, or everything
 
 ## Next
 
+- QB-20 Grow the sample file into the golden test set (feeds QB-05) and share it with the website for WEB-01
 - QB-03 Cache per-round results so a full run only re-parses PDFs that changed
 - QB-04 Corrections file (`corrections.yaml`) to replace the 7 hard-coded overrides, each with a reason
 - QB-05 Golden tests: about 50 hand-checked questions across sets, compared field by field
@@ -33,7 +33,7 @@ How this file works:
 - QB-16 Difficulty estimates, first from tags, later from real usage
 - QB-17 Detect near-duplicate questions across sets
 - QB-18 Pronunciation hints for the moderator
-- QB-19 Track parse notes per question: what was corrected and why
+- QB-19 ~~Track parse notes per question~~ (covered by `quality.notes` in QB-01)
 
 ## Parked
 
@@ -41,4 +41,5 @@ How this file works:
 
 ## Done
 
-- QB-00 Repo setup: roadmap, AI instructions, decisions log, Python skeleton, middle school PDFs
+- QB-01 Question format v1: JSON Schema, `python -m scibowl_qb.validate`, docs/question-format.md, 10-question sample file
+- QB-00 Repo setup: roadmap, AI instructions, decisions log, Python skeleton, middle school PDFs (#1)
