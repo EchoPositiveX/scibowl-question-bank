@@ -154,21 +154,78 @@ def _is_header(text: str) -> str | None:
     return None
 
 
+# Subject labels printed in the PDFs, longest first so "Earth Science" wins over "Earth".
+KNOWN_SUBJECTS = [
+    "Earth and Space Science", "Earth & Space", "Earth and Space", "Earth Science", "General Science",
+    "Physical Science", "Life Science", "Mathematics", "Chemistry", "Biology", "Physics", "Energy", "Math",
+]
+# A known subject, followed by a non-letter, the end of the line, or a style glued on ("ENERGYMultiple Choice").
+KNOWN_SUBJECT_REGEX = re.compile(
+    rf"({'|'.join(re.escape(s) for s in KNOWN_SUBJECTS)})(?=[^A-Za-z]|$|{_TYPE})", re.IGNORECASE
+)
+STYLE_AT_START = re.compile(rf"^[\s.:–—-]*{_TYPE}\s*:?\s*", re.IGNORECASE)
+QUESTION_NUMBER_REGEX = re.compile(rf"\*?{_NUM}\)\s+(.*)")
+# An unknown "subject" this long is really question text (the PDF printed no subject).
+MAX_UNKNOWN_SUBJECT_WORDS = 2
+
+
+def _split_style(text: str) -> tuple[str | None, str]:
+    """Take a leading "Short Answer" / "Multiple Choice" (with any dash or dot before it) off the text."""
+    m = STYLE_AT_START.match(text)
+    if m:
+        return m.group(1), text[m.end():]
+    return None, text
+
+
 def _match_question_line(text: str):
-    """Return (number, subject, style, rest) if this line starts a question, else None."""
-    m = DEFAULT_QUESTION_REGEX.match(text)
-    if m:
-        return m.groups()
-    m = MISSING_SUBJECT_REGEX.match(text)
-    if m:
-        num, style, rest = m.groups()
-        return num, "", style, rest
-    m = SUBJECT_ONLY_REGEX.match(text)
-    if m:
-        num, subj, rest = m.groups()
-        style = "Multiple Choice" if "which of the following" in rest.lower() else "Short Answer"
+    """Return (number, subject, style, rest) if this line starts a question, else None.
+
+    style is None when the line doesn't print one; the caller guesses it.
+    """
+    m = QUESTION_NUMBER_REGEX.match(text)
+    if not m:
+        return None
+    num, after = m.groups()
+
+    known = KNOWN_SUBJECT_REGEX.match(after)
+    if known:
+        subj = known.group(1)
+        rest = after[known.end():]
+        # "Math Math ..." : the subject printed twice.
+        again = re.match(rf"\s*{re.escape(subj)}(?=[^A-Za-z]|$)", rest, re.IGNORECASE)
+        if again:
+            rest = rest[again.end():]
+        style, rest = _split_style(rest)
+        return num, subj, style, rest.lstrip(" .:–—-")
+
+    # Fall back to the old parser's patterns for labels we don't know.
+    for regex in (DEFAULT_QUESTION_REGEX, MISSING_SUBJECT_REGEX, SUBJECT_ONLY_REGEX):
+        m = regex.match(text)
+        if not m:
+            continue
+        if regex is DEFAULT_QUESTION_REGEX:
+            num, subj, style, rest = m.groups()
+        elif regex is MISSING_SUBJECT_REGEX:
+            (num, style, rest), subj = m.groups(), ""
+        else:
+            (num, subj, rest), style = m.groups(), None
+            found_style, rest_after = _split_style(rest)
+            if found_style:
+                style, rest = found_style, rest_after
+        if len(subj.split()) > MAX_UNKNOWN_SUBJECT_WORDS:
+            # Question words swallowed as a subject: give them back.
+            return num, "", None, after
         return num, subj, style, rest
     return None
+
+
+def _is_prose(text: str) -> bool:
+    """True if the text has at least two real words (not just numbers or variables)."""
+    return len(re.findall(r"[A-Za-z]{3,}", text)) >= 2
+
+
+def _guess_style(text: str) -> str:
+    return "Multiple Choice" if "which of the following" in text.lower() else "Short Answer"
 
 
 def extract_round(
@@ -208,12 +265,14 @@ def extract_round(
                 i += 1
 
                 found = None
+                skipped: list[dict] = []
                 for _ in range(3):
                     if i >= len(lines):
                         break
                     found = _match_question_line(lines[i]["text"])
                     if found:
                         break
+                    skipped.append(lines[i])
                     i += 1
                 if not found:
                     log.debug("%s page %d: no question after %s header", rel, page_i + 1, part)
@@ -221,14 +280,25 @@ def extract_round(
                     continue
 
                 num, subj, style, first_text = found
+                question_lines = [first_text] if first_text.strip() else []
+                # Lines between the header and the "N) SUBJECT" line belong to the question: a superscript
+                # or subscript in the first line can push its words above the number. Prose goes back at
+                # the start of the text; stray math pieces (exponents, numerators) stay only in the images.
+                for line in skipped:
+                    qbox.add(line)
+                    entire.add(line)
+                    raw_lines.append(line["text"])
+                lead_style, lead = _split_style(" ".join(line["text"] for line in skipped))
+                if _is_prose(lead):
+                    style = style or lead_style
+                    question_lines = [lead] + question_lines
                 qbox.add(lines[i])
                 entire.add(lines[i])
                 raw_lines.append(lines[i]["text"])
-                style = style.strip() if style else "Short Answer"
-                choices: dict[str, str] | None = {} if style.lower() == "multiple choice" else None
-                question_lines = [first_text]
                 i += 1
 
+                # Read the body. A line after a choice that isn't a new choice continues that choice.
+                body: list[tuple[str | None, str]] = []  # (choice letter or None, text)
                 while i < len(lines):
                     text = lines[i]["text"]
                     if NEW_QUESTION_REGEX.match(text) or _is_header(text) or text.startswith("ANSWER:"):
@@ -236,12 +306,29 @@ def extract_round(
                     qbox.add(lines[i])
                     entire.add(lines[i])
                     raw_lines.append(text)
-                    c = CHOICE_REGEX.match(text) if choices is not None else None
+                    c = CHOICE_REGEX.match(text)
                     if c:
-                        choices[c.group(1).upper()] = c.group(2)
+                        body.append((c.group(1).upper(), c.group(2)))
+                    elif body and body[-1][0]:
+                        body[-1] = (body[-1][0], f"{body[-1][1]} {text}")
                     else:
-                        question_lines.append(text)
+                        body.append((None, text))
                     i += 1
+
+                letters = {letter for letter, _ in body if letter}
+                if style:
+                    style = style.strip()
+                    # A question printing all four choices is multiple choice, whatever its label says.
+                    if letters == set("WXYZ"):
+                        style = "Multiple Choice"
+                else:
+                    style = "Multiple Choice" if letters == set("WXYZ") else _guess_style(" ".join(question_lines))
+                choices: dict[str, str] | None = None
+                if style.lower() == "multiple choice":
+                    choices = {letter: text for letter, text in body if letter}
+                    question_lines += [text for letter, text in body if not letter]
+                else:
+                    question_lines += [f"{letter}) {text}" if letter else text for letter, text in body]
 
                 rq = RawQuestion(
                     level=level,

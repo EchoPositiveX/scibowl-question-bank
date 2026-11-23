@@ -50,8 +50,8 @@ Changing the format means bumping `schema_version` and recording why in `docs/de
 | `source` | Where the question came from. `pdf` is relative to `data/raw` with forward slashes. `round_number` is the round as an integer, or null if it can't be worked out. |
 | `number` | Question number within the round. |
 | `part` | `tossup` or `bonus`. |
-| `category` | Normalized NSB category: `life_science`, `physical_science`, `earth_and_space`, `energy`, `math`, `general_science` (middle school), or `biology`, `chemistry`, `physics` (high school). Null until the raw label is mapped (QB-07). |
-| `category_raw` | The subject exactly as printed, for traceability. |
+| `category` | Normalized NSB category: `life_science`, `physical_science`, `earth_and_space`, `energy`, `math`, `general_science` (middle school), or `biology`, `chemistry`, `physics` (high school). Labels map as: Earth Science, Earth and Space, Earth & Space and Earth and Space Science → `earth_and_space`; Math and Mathematics → `math`; the rest by name. Null only for a label the parser doesn't know, and then the question is flagged `needs_review`. |
+| `category_raw` | The subject as printed (title case), for traceability. |
 | `format` | `short_answer` or `multiple_choice`. |
 | `question` | `text` is cleaned plain text (no "Short Answer" prefix, no line breaks from the PDF layout). `latex` is the same with math as `$...$` and chemistry as `\ce{...}`, null until produced (QB-10). |
 | `choices` | For multiple choice, `W`, `X`, `Y`, `Z`, each with `text` and `latex`. Null for short answer. |
