@@ -2,6 +2,11 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-24: Fraction and root bars mean the text needs review (QB-35)
+
+- John found Set 01 Round 1 bonus 14 on the site reading "convert rd to a decimal: 3"; the PDF prints 1 over 3 with "rd". The parser now flags any question or answer with a fraction or root bar, found as a short horizontal rule with printed characters just above and below it.
+- Flagged questions show their image on the website until a transcription is reviewed. Questions already transcribed and reviewed stay verified.
+
 ## 2026-11-24: When an ACCEPT is split into several answers (QB-32)
 
 - A printed ACCEPT is split only on a lower case "or" (the older sets use it between upper case answers, "D-GLUCOSE or DEXTROSE"), and only when the entry has no comma, no lower case "for" and doesn't start with a sign ("+ or -").
