@@ -59,3 +59,13 @@ questions:
   - id: ms-set13-rr2-for-web-q13-tossup
     set: {answer.choice: X, answer.text: "x^10"}
     reason: "The PDF's answer is Y) x^6, but x^8 x^4 / x^2 = x^12 / x^2 = x^10, which is choice X. Confirmed by John on 2026-11-24."
+
+  - id: ms-set04-round4-q21-tossup
+    set:
+      choices.X.text: "10"
+      choices.Y.text: "20"
+      answer.text: "20"
+      quality.text_status: verified
+      quality.flags: []
+      quality.notes: []
+    reason: "The PDF's choices X and Y and the first digit of the answer are blank embedded images (it prints W) 5, X), Y), Z) 50, ANSWER: Y) 0). Filled in as Y) 20 (20 °C is the accepted minimum for commercial OTEC, and the answer ends in 0). X) 10 is inferred from the 5, ?, ?, 50 ladder and does not affect the answer. Confirmed by John on 2026-11-24."
