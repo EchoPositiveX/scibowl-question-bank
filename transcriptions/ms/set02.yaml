@@ -1,6 +1,7 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
 # Reviewed by John on 2026-11-24.
+# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -83,3 +84,45 @@ questions:
       text: "6 11/12"
       latex: "$6\\frac{11}{12}$"
     reviewed: true
+
+  - id: ms-set02-sample-questions-r3-q08-tossup
+    question:
+      text: "Solve the following equation: 3x/4 = −12"
+      latex: "Solve the following equation: $\\frac{3x}{4} = -12$"
+    answer:
+      text: "−16"
+      latex: "$-16$"
+    reviewed: false
+
+  - id: ms-set02-sample-questions-r4-q13-tossup
+    question:
+      text: "Solve the following equation: x/6 = −8"
+      latex: "Solve the following equation: $\\frac{x}{6} = -8$"
+    answer:
+      text: "−48"
+      latex: "$-48$"
+    reviewed: false
+
+  - id: ms-set02-sample-questions-r7-q20-tossup
+    question:
+      text: "What is the least common denominator for the following operation: 1/2 + 2/3 + 4/5"
+      latex: "What is the least common denominator for the following operation: $\\frac{1}{2} + \\frac{2}{3} + \\frac{4}{5}$"
+    answer:
+      text: "30"
+      latex: "$30$"
+    reviewed: false
+
+  - id: ms-set02-sample-questions-r10-q03-tossup
+    question:
+      text: "Which of the following is a binomial?"
+      latex: "Which of the following is a binomial?"
+    answer:
+      text: "x − 2"
+      latex: "$x - 2$"
+      choice: Z
+    choices:
+      W: {text: "x^2/2", latex: "$\\frac{x^2}{2}$"}
+      X: {text: "x^2 + 5x − 2", latex: "$x^2 + 5x - 2$"}
+      Y: {text: "π", latex: "$\\pi$"}
+      Z: {text: "x − 2", latex: "$x - 2$"}
+    reviewed: false
