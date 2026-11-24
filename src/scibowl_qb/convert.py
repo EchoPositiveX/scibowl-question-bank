@@ -156,6 +156,12 @@ def to_question(rq: RawQuestion) -> dict:
         notes.append("Some question text sits in the ANSWER row and may be part of the answer; see the question image")
         flags.append("needs_review")
 
+    if rq.stacked_fractions:
+        # Fractions and roots come apart in the PDF text (1/3 can read as "3"), so the text can't be
+        # trusted. The website shows the image until a transcription is reviewed.
+        notes.append(f"Fraction or root bar in the {' and '.join(rq.stacked_fractions)}; the text may be wrong, see the image")
+        flags.append("needs_review")
+
     question_text = clean_question_text(rq.question_lines)
     if not question_text:
         question_text = "[question text not found by parser]"

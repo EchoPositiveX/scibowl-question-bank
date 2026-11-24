@@ -63,6 +63,15 @@ def test_matches_hand_checked_sample(qid, set01_round01, set13_round01):
     assert got["answer"].get("do_not_accept", []) == expected["answer"].get("do_not_accept", [])
 
 
+def test_fraction_bar_is_flagged(set01_round01):
+    """1 over 3 comes apart in the PDF text ("convert rd to a decimal: 3"), so the question shows its image."""
+    q = set01_round01["ms-set01-m-round01-q14-bonus"]
+    assert "needs_review" in q["quality"]["flags"]
+    assert "Fraction or root bar in the question; the text may be wrong, see the image" in q["quality"]["notes"]
+    # A question with no fraction stays as it was.
+    assert "needs_review" not in set01_round01["ms-set01-m-round01-q02-bonus"]["quality"]["flags"]
+
+
 def test_multiple_choice_is_read(set01_round01):
     q = set01_round01["ms-set01-m-round01-q02-bonus"]
     assert q["format"] == "multiple_choice"

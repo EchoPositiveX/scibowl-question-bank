@@ -20,6 +20,7 @@ How this file works:
 
 ## Nice to have
 
+- QB-36 Transcribe the 65 questions QB-35 flagged (sets 01, 02, 03, 04, 05, 08 and 13), two sets per PR with John reviewing, as in QB-10
 - QB-34 Review pages with KaTeX built in: put the KaTeX script, styles and fonts inside the review HTML so it renders the same in any viewer (John's viewer did not load the fonts from the web, so ≠ showed as a box)
 - QB-33 Publish the printed "(Solution: ...)" working as its own answer field (schema change) instead of only keeping it in answer.raw
 - QB-31 Run the remaining flagged questions through an AI vision API in batches, writing transcription files for review (needs an API key and a cost OK)
@@ -39,6 +40,7 @@ How this file works:
 
 ## Done
 
+- QB-35 Questions with a fraction or root bar (a short rule with characters just above and below) are flagged needs_review, so the website shows their image: their PDF text comes apart ("convert 1/3 to a decimal" read as "convert rd to a decimal: 3"). 65 more questions flagged; the 61 already transcribed stay verified
 - QB-32 Parser fixes from the golden tests: chemical subscripts stay in place (C6H12O6, NH3), a superscript o after a number becomes °, no space before a final ?, printed (Solution: ...) working is dropped from the answer (kept in answer.raw), and ACCEPT lists split on a lower case "or" or on commas between equal numbers. A full parse changes about 700 fields against v1.0.2 and no question's flags
 - QB-05 Golden tests: 50 questions from all 16 middle school sets, hand-checked against their images, in `tests/golden/questions.yaml`; `tests/test_golden.py` compares each field. 7 showed parser bugs, fixed in QB-32
 - QB-29 Each PDF page is rendered once and all its images are cropped from it: image extraction is about 3x faster, with the same image files (palette PNGs, same size on disk)

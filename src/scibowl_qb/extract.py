@@ -94,6 +94,9 @@ class RawQuestion:
     overrides_applied: list[str] = field(default_factory=list)
     # True when some question text reaches into the ANSWER row, so it may hold part of the answer.
     answer_row_overlap: bool = False
+    # Where a fraction or root bar (a short rule with characters just above and below it) is printed:
+    # "question" and/or "answer". Its text comes apart in the PDF, so the question needs review.
+    stacked_fractions: list[str] = field(default_factory=list)
 
     @property
     def round_number(self) -> int | None:
@@ -211,6 +214,26 @@ class _Box:
         self.x1 = max(self.x1, line["x1"])
         self.y0 = min(self.y0, line["y0"])
         self.y1 = max(self.y1, line["y1"])
+
+
+def find_fraction_bars(page) -> list[tuple[float, float, float]]:
+    """(x0, x1, y) of each fraction or root bar on a page: a short horizontal rule with printed
+    characters just above and just below it, as in 1 over 3 or the top of a square root."""
+    chars = [c for c in page.chars if c["text"].strip()]
+    bars = []
+    for r in page.lines + page.rects:
+        if r["bottom"] - r["top"] >= 2 or not 3 < r["x1"] - r["x0"] < 80:
+            continue
+        over = [c for c in chars if c["x0"] >= r["x0"] - 2 and c["x1"] <= r["x1"] + 2]
+        if (any(0 < r["top"] - c["bottom"] < 6 for c in over)
+                and any(0 < c["top"] - r["bottom"] < 6 for c in over)):
+            bars.append((r["x0"], r["x1"], (r["top"] + r["bottom"]) / 2))
+    return bars
+
+
+def _has_bar(bars: list[tuple[float, float, float]], box: "_Box", y1: float | None = None) -> bool:
+    bottom = box.y1 if y1 is None else y1
+    return any(box.y0 - 6 <= y <= bottom + 6 and x1 >= box.x0 and x0 <= box.x1 for x0, x1, y in bars)
 
 
 def _is_header(text: str) -> str | None:
@@ -350,6 +373,7 @@ def extract_round(
         for page_i, page in enumerate(pdf.pages):
             lines = group_words_into_lines(pdfplumber.utils.extract_words(normalize_chars(page.chars)))
             render = _PageImage(page, resolution)
+            bars = find_fraction_bars(page)
             i = 0
             while i < len(lines):
                 part = _is_header(lines[i]["text"])
@@ -481,6 +505,13 @@ def extract_round(
                         raw_lines.append(text)
                         rq.answer_lines.append(text)
                         i += 1
+
+                # The question part ends above the ANSWER row; a bar in that row belongs to the answer.
+                q_end = qbox.y1 if row_top is None else min(qbox.y1, row_top - 0.5)
+                if _has_bar(bars, qbox, q_end):
+                    rq.stacked_fractions.append("question")
+                if abox and _has_bar(bars, abox):
+                    rq.stacked_fractions.append("answer")
 
                 if images_dir is not None:
                     base = f"{level}/{set_name}/{round_name}/q{rq.number:02d}-{rq.part}"
