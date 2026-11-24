@@ -100,6 +100,64 @@ class RawQuestion:
         return parse_round_number(self.round)
 
 
+def _same_line(a: dict, b: dict) -> bool:
+    return abs(a["top"] - b["top"]) <= 0.5 and abs(a["size"] - b["size"]) <= 0.1
+
+
+def _x_adjacent(left: dict, right: dict) -> bool:
+    return -1 <= right["x0"] - left["x1"] <= 2
+
+
+def normalize_chars(chars: list[dict]) -> list[dict]:
+    """Fix two kinds of small raised or lowered characters before words are built (QB-32).
+
+    - Subscripts (C6H12O6, NH3) sit more than 3 points below the line's top, so pdfplumber
+      puts them on a line of their own and they end up as loose numbers at the end of the
+      text. A run of small characters whose bottom lines up with a larger neighbour's is
+      moved onto that neighbour's line.
+    - A small raised "o" right after a digit is a degree sign typed as a superscript letter
+      ("100oC"), and becomes "°".
+    """
+    out = [dict(c) for c in chars]
+    moved = None  # (last moved run's last char as it was, shift), to carry the shift on to "(l" + ")"
+    i = 0
+    while i < len(out):
+        j = i + 1
+        while j < len(out) and _same_line(out[j], out[i]) and _x_adjacent(out[j - 1], out[j]):
+            j += 1
+        run = out[i:j]
+        small = run[0].get("size", 0)
+        if moved and abs(moved[0]["top"] - run[0]["top"]) <= 1 and _x_adjacent(moved[0], run[0]):
+            for c in run:
+                c["top"] += moved[1]
+                c["doctop"] += moved[1]
+                c["bottom"] += moved[1]
+            moved = (dict(chars[j - 1]), moved[1])
+            i = j
+            continue
+        moved = None
+        for nb, left in ((out[i - 1] if i > 0 else None, True), (out[j] if j < len(out) else None, False)):
+            if nb is None or not nb["text"].strip() or nb.get("size", 0) < small * 1.2:
+                continue
+            adjacent = _x_adjacent(nb, run[0]) if left else _x_adjacent(run[-1], nb)
+            if not adjacent:
+                continue
+            if abs(run[0]["bottom"] - nb["bottom"]) <= 2.5 and 3 < run[0]["top"] - nb["top"] <= 8:
+                shift = nb["top"] - run[0]["top"]
+                for c in run:
+                    c["top"] += shift
+                    c["doctop"] += shift
+                    c["bottom"] += shift
+                moved = (dict(chars[j - 1]), shift)
+                break
+            if (left and len(run) == 1 and run[0]["text"] == "o" and nb["text"].isdigit()
+                    and run[0]["bottom"] < nb["bottom"] - 2):
+                run[0]["text"] = "°"
+                break
+        i = j
+    return out
+
+
 def group_words_into_lines(words: list[dict], y_tolerance: float = 3) -> list[dict]:
     """Group pdfplumber words into text lines with bounding boxes (same logic as the old parser)."""
     lines: list[dict] = []
@@ -290,7 +348,7 @@ def extract_round(
     results: list[RawQuestion] = []
     with pdfplumber.open(pdf_path) as pdf:
         for page_i, page in enumerate(pdf.pages):
-            lines = group_words_into_lines(page.extract_words())
+            lines = group_words_into_lines(pdfplumber.utils.extract_words(normalize_chars(page.chars)))
             render = _PageImage(page, resolution)
             i = 0
             while i < len(lines):
