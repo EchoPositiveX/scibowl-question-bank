@@ -23,6 +23,7 @@ questions:
 
 - `text` is plain text a person can read aloud: `1/3`, `2 1/6`, `x^2`, `√0.5`, `∛5`, `π`, `×`, `−`.
 - `latex` is the same with math in `$...$` (KaTeX syntax; chemistry as `\ce{...}`).
+- Outside math, `latex` is plain text with two exceptions: a literal dollar sign is `\$`, and bold text is `\textbf{...}`. The printed "read as" phrases in brackets are bold in the PDFs, so they are written `\textbf{[the absolute value of t]}`. The review page and the website render both the same way.
 - The parser applies these after `corrections.yaml`. An ID that matches no question stops the parse.
 - For multiple choice, `answer.text` is the answer without its letter, and the letter goes in `answer.choice`. When the parser couldn't read the choices it makes the question short answer; giving the choices in the transcription makes it multiple choice again. The review page shows the letter as "Answer: choice X".
 - Everything printed in the answer is transcribed, not only the main answer. If the printed answer has ACCEPT or DO NOT ACCEPT and the entry doesn't, the parse stops with a message that says so. They come out in the data as `answer.accept` and `answer.accept_latex` (and `do_not_accept`, `do_not_accept_latex`), in the same order.

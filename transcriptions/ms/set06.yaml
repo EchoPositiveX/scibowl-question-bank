@@ -1,12 +1,13 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+# Reviewed by John on 2026-11-24: 46 approved; the 16 he flagged (bold read-as text, and a page bug with \$) are fixed and waiting for a second look.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
   - id: ms-set06-round1-q02-tossup
     question:
       text: "The thickness of a plastic sheet manufactured by Perky Plastics must satisfy: |t - 2| ≤ 0.001 [the absolute value of the quantity t minus 2 is less than or equal to 0.001]. Providing your answer to the nearest thousandth, what is the maximum thickness t, in centimeters, this plastic sheet may have?"
-      latex: "The thickness of a plastic sheet manufactured by Perky Plastics must satisfy: $|t - 2| \\le 0.001$ [the absolute value of the quantity t minus 2 is less than or equal to 0.001]. Providing your answer to the nearest thousandth, what is the maximum thickness $t$, in centimeters, this plastic sheet may have?"
+      latex: "The thickness of a plastic sheet manufactured by Perky Plastics must satisfy: $|t - 2| \\le 0.001$ \\textbf{[the absolute value of the quantity t minus 2 is less than or equal to 0.001]}. Providing your answer to the nearest thousandth, what is the maximum thickness $t$, in centimeters, this plastic sheet may have?"
     answer:
       text: "2.001"
       latex: "$2.001$"
@@ -19,7 +20,7 @@ questions:
     answer:
       text: "-1/5"
       latex: "$-\\frac{1}{5}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round1-q22-tossup
     question:
@@ -28,7 +29,7 @@ questions:
     answer:
       text: "146°"
       latex: "$146^\\circ$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round2-q01-tossup
     question:
@@ -37,7 +38,7 @@ questions:
     answer:
       text: "135°"
       latex: "$135^\\circ$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round2-q01-bonus
     question:
@@ -52,7 +53,7 @@ questions:
       X: {text: "78 inches", latex: "78 inches"}
       Y: {text: "6 feet", latex: "6 feet"}
       Z: {text: "2.1 yards", latex: "2.1 yards"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round2-q04-tossup
     question:
@@ -61,7 +62,7 @@ questions:
     answer:
       text: "3"
       latex: "$3$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round2-q10-bonus
     question:
@@ -70,7 +71,7 @@ questions:
     answer:
       text: "57"
       latex: "$57$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round2-q16-bonus
     question:
@@ -79,12 +80,12 @@ questions:
     answer:
       text: "(6, 6)"
       latex: "$(6, 6)$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round2-q22-tossup
     question:
       text: "The measures of two acute angles in a right triangle are in the ratio 2:7 [2 to 7]. What are the measures in degrees of these two angles?"
-      latex: "The measures of two acute angles in a right triangle are in the ratio $2:7$ [2 to 7]. What are the measures in degrees of these two angles?"
+      latex: "The measures of two acute angles in a right triangle are in the ratio $2:7$ \\textbf{[2 to 7]}. What are the measures in degrees of these two angles?"
     answer:
       text: "20° AND 70°"
       latex: "$20^\\circ$ AND $70^\\circ$"
@@ -103,12 +104,12 @@ questions:
       X: {text: "30/50 = 600/1000", latex: "$\\frac{30}{50} = \\frac{600}{1000}$"}
       Y: {text: "8/24 = 4/16", latex: "$\\frac{8}{24} = \\frac{4}{16}$"}
       Z: {text: "4.2/8.4 = 5/10", latex: "$\\frac{4.2}{8.4} = \\frac{5}{10}$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round5-q10-bonus
     question:
       text: "What is the slope intercept form of the equation for the line that is perpendicular to y = 5(x + 66) [y equals 5 times the quantity x plus 66] and has a y intercept of 0.7?"
-      latex: "What is the slope intercept form of the equation for the line that is perpendicular to $y = 5(x + 66)$ [y equals 5 times the quantity x plus 66] and has a $y$ intercept of $0.7$?"
+      latex: "What is the slope intercept form of the equation for the line that is perpendicular to $y = 5(x + 66)$ \\textbf{[y equals 5 times the quantity x plus 66]} and has a $y$ intercept of $0.7$?"
     answer:
       text: "y = -1/5 x + 0.7"
       latex: "$y = -\\frac{1}{5}x + 0.7$"
@@ -123,7 +124,7 @@ questions:
   - id: ms-set06-round5-q22-tossup
     question:
       text: "Which of the following is the smallest integer greater than 101^(1/2) [101 to the power of one half]?"
-      latex: "Which of the following is the smallest integer greater than $101^{\\frac{1}{2}}$ [101 to the power of one half]?"
+      latex: "Which of the following is the smallest integer greater than $101^{\\frac{1}{2}}$ \\textbf{[101 to the power of one half]}?"
     answer:
       text: "11"
       latex: "$11$"
@@ -142,7 +143,7 @@ questions:
     answer:
       text: "21"
       latex: "$21$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round6-q10-tossup
     question:
@@ -151,7 +152,7 @@ questions:
     answer:
       text: "40"
       latex: "$40$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round6-q12-tossup
     question:
@@ -166,7 +167,7 @@ questions:
       X: {text: "(-1, -2)", latex: "$(-1, -2)$"}
       Y: {text: "(0, 2)", latex: "$(0, 2)$"}
       Z: {text: "(1, 6)", latex: "$(1, 6)$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round6-q16-tossup
     question:
@@ -181,7 +182,7 @@ questions:
       X: {text: "y = 4x", latex: "$y = 4x$"}
       Y: {text: "x = 4y", latex: "$x = 4y$"}
       Z: {text: "x = 5", latex: "$x = 5$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round7-q01-tossup
     question:
@@ -196,7 +197,7 @@ questions:
       X: {text: "d = 50t + 60", latex: "$d = 50t + 60$"}
       Y: {text: "d = 60t", latex: "$d = 60t$"}
       Z: {text: "d = 60t + 50", latex: "$d = 60t + 50$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round7-q05-tossup
     question:
@@ -211,7 +212,7 @@ questions:
       X: {text: "343", latex: "$343$"}
       Y: {text: "521", latex: "$521$"}
       Z: {text: "729", latex: "$729$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round7-q05-bonus
     question:
@@ -220,7 +221,7 @@ questions:
     answer:
       text: "19"
       latex: "$19$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round7-q11-tossup
     question:
@@ -229,7 +230,7 @@ questions:
     answer:
       text: "-4"
       latex: "$-4$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round7-q19-tossup
     question:
@@ -238,7 +239,7 @@ questions:
     answer:
       text: "76"
       latex: "$76$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round7-q25-tossup
     question:
@@ -247,7 +248,7 @@ questions:
     answer:
       text: "60°"
       latex: "$60^\\circ$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round8-q06-tossup
     question:
@@ -256,7 +257,7 @@ questions:
     answer:
       text: "4"
       latex: "$4$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round8-q06-bonus
     question:
@@ -270,7 +271,7 @@ questions:
           latex: "NULL SET"
         - text: "EMPTY SET"
           latex: "EMPTY SET"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round8-q12-tossup
     question:
@@ -279,12 +280,12 @@ questions:
     answer:
       text: "-8√3"
       latex: "$-8\\sqrt{3}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round8-q24-bonus
     question:
       text: "What are the largest possible domain and range, respectively, of y = 5 + √(x - 2) [y equals 5 plus the square root of the quantity x minus 2]?"
-      latex: "What are the largest possible domain and range, respectively, of $y = 5 + \\sqrt{x - 2}$ [y equals 5 plus the square root of the quantity x minus 2]?"
+      latex: "What are the largest possible domain and range, respectively, of $y = 5 + \\sqrt{x - 2}$ \\textbf{[y equals 5 plus the square root of the quantity x minus 2]}?"
     answer:
       text: "DOMAIN x ≥ 2; RANGE y ≥ 5"
       latex: "DOMAIN $x \\ge 2$; RANGE $y \\ge 5$"
@@ -293,7 +294,7 @@ questions:
   - id: ms-set06-round9-q04-tossup
     question:
       text: "Find g(1) [g of 1] when g(a) = 3^(3a - 2) [g of a equals 3 to the power of the quantity 3 a minus 2]."
-      latex: "Find $g(1)$ [g of 1] when $g(a) = 3^{3a - 2}$ [g of a equals 3 to the power of the quantity 3 a minus 2]."
+      latex: "Find $g(1)$ \\textbf{[g of 1]} when $g(a) = 3^{3a - 2}$ \\textbf{[g of a equals 3 to the power of the quantity 3 a minus 2]}."
     answer:
       text: "3"
       latex: "$3$"
@@ -306,7 +307,7 @@ questions:
     answer:
       text: "(5 + √33)/4 AND (5 - √33)/4"
       latex: "$\\frac{5 + \\sqrt{33}}{4}$ AND $\\frac{5 - \\sqrt{33}}{4}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round9-q08-tossup
     question:
@@ -315,12 +316,12 @@ questions:
     answer:
       text: "IO"
       latex: "IO"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round9-q10-tossup
     question:
       text: "What is the determinant of the 2 by 2 matrix [[-5, 3], [4, 2]] [first row negative 5, 3 and second row 4, 2]?"
-      latex: "What is the determinant of the 2 by 2 matrix $\\begin{bmatrix} -5 & 3 \\\\ 4 & 2 \\end{bmatrix}$ [first row negative 5, 3 and second row 4, 2]?"
+      latex: "What is the determinant of the 2 by 2 matrix $\\begin{bmatrix} -5 & 3 \\\\ 4 & 2 \\end{bmatrix}$ \\textbf{[first row negative 5, 3 and second row 4, 2]}?"
     answer:
       text: "-22"
       latex: "$-22$"
@@ -339,7 +340,7 @@ questions:
       X: {text: "30", latex: "$30$"}
       Y: {text: "40", latex: "$40$"}
       Z: {text: "80", latex: "$80$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round10-q04-tossup
     question:
@@ -348,7 +349,7 @@ questions:
     answer:
       text: "15"
       latex: "$15$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round10-q10-tossup
     question:
@@ -357,7 +358,7 @@ questions:
     answer:
       text: "10"
       latex: "$10$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round10-q22-tossup
     question:
@@ -372,7 +373,7 @@ questions:
       X: {text: "90π", latex: "$90\\pi$"}
       Y: {text: "60π", latex: "$60\\pi$"}
       Z: {text: "45π", latex: "$45\\pi$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round11-q04-tossup
     question:
@@ -384,7 +385,7 @@ questions:
       accept:
         - text: "7"
           latex: "$7$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round11-q06-bonus
     question:
@@ -393,7 +394,7 @@ questions:
     answer:
       text: "y = (x + 12)/5"
       latex: "$y = \\frac{x + 12}{5}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round11-q11-tossup
     question:
@@ -408,12 +409,12 @@ questions:
       X: {text: "-3", latex: "$-3$"}
       Y: {text: "1/3", latex: "$\\frac{1}{3}$"}
       Z: {text: "4", latex: "$4$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round11-q25-tossup
     question:
       text: "What is the solution set of 6 + |x| = 9 [6 plus the absolute value of x equals 9]?"
-      latex: "What is the solution set of $6 + |x| = 9$ [6 plus the absolute value of x equals 9]?"
+      latex: "What is the solution set of $6 + |x| = 9$ \\textbf{[6 plus the absolute value of x equals 9]}?"
     answer:
       text: "{3, -3}"
       latex: "$\\{3, -3\\}$"
@@ -432,7 +433,7 @@ questions:
       X: {text: "Incandescent", latex: "Incandescent"}
       Y: {text: "Halogen", latex: "Halogen"}
       Z: {text: "White L.E.D.", latex: "White L.E.D."}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round12-q20-bonus
     question:
@@ -447,7 +448,7 @@ questions:
       X: {text: "21 and 22", latex: "$21$ and $22$"}
       Y: {text: "22 and 23", latex: "$22$ and $23$"}
       Z: {text: "23 and 24", latex: "$23$ and $24$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round13-q04-tossup
     question:
@@ -456,7 +457,7 @@ questions:
     answer:
       text: "1/9"
       latex: "$\\frac{1}{9}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round13-q09-bonus
     question:
@@ -471,7 +472,7 @@ questions:
       X: {text: "40", latex: "$40$"}
       Y: {text: "20", latex: "$20$"}
       Z: {text: "10√2", latex: "$10\\sqrt{2}$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round13-q10-tossup
     question:
@@ -480,7 +481,7 @@ questions:
     answer:
       text: "{3, 4, -2, 1} (in any order)"
       latex: "$\\{3, 4, -2, 1\\}$ (in any order)"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round13-q21-bonus
     question:
@@ -491,16 +492,16 @@ questions:
       latex: "$\\sin^{-1}(2/3)$"
       choice: W
     choices:
-      W: {text: "sin^-1(2/3) [inverse sine of two thirds]", latex: "$\\sin^{-1}(2/3)$ [inverse sine of two thirds]"}
-      X: {text: "cos^-1(2/3) [inverse cosine of two thirds]", latex: "$\\cos^{-1}(2/3)$ [inverse cosine of two thirds]"}
-      Y: {text: "cos^-1(3/2) [inverse cosine of three halves]", latex: "$\\cos^{-1}(3/2)$ [inverse cosine of three halves]"}
-      Z: {text: "sin^-1(3/2) [inverse sine of three halves]", latex: "$\\sin^{-1}(3/2)$ [inverse sine of three halves]"}
+      W: {text: "sin^-1(2/3) [inverse sine of two thirds]", latex: "$\\sin^{-1}(2/3)$ \\textbf{[inverse sine of two thirds]}"}
+      X: {text: "cos^-1(2/3) [inverse cosine of two thirds]", latex: "$\\cos^{-1}(2/3)$ \\textbf{[inverse cosine of two thirds]}"}
+      Y: {text: "cos^-1(3/2) [inverse cosine of three halves]", latex: "$\\cos^{-1}(3/2)$ \\textbf{[inverse cosine of three halves]}"}
+      Z: {text: "sin^-1(3/2) [inverse sine of three halves]", latex: "$\\sin^{-1}(3/2)$ \\textbf{[inverse sine of three halves]}"}
     reviewed: false
 
   - id: ms-set06-round14-q10-tossup
     question:
       text: "What is log_5 625 [log base 5 of 625]?"
-      latex: "What is $\\log_5 625$ [log base 5 of 625]?"
+      latex: "What is $\\log_5 625$ \\textbf{[log base 5 of 625]}?"
     answer:
       text: "4"
       latex: "$4$"
@@ -519,7 +520,7 @@ questions:
       X: {text: "x = y^2 + 2y + 4", latex: "$x = y^2 + 2y + 4$"}
       Y: {text: "x = y^2 - 6y + 8", latex: "$x = y^2 - 6y + 8$"}
       Z: {text: "x = y^2 - 6y + 10", latex: "$x = y^2 - 6y + 10$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round14-q16-tossup
     question:
@@ -534,12 +535,12 @@ questions:
       X: {text: "1", latex: "$1$"}
       Y: {text: "i", latex: "$i$"}
       Z: {text: "-i", latex: "$-i$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round14-q16-bonus
     question:
       text: "What are the largest possible real domain and range, respectively, of the following function: f(x) = 4/(x + 1) [f of x equals 4 over the quantity x plus 1]?"
-      latex: "What are the largest possible real domain and range, respectively, of the following function: $f(x) = \\frac{4}{x + 1}$ [f of x equals 4 over the quantity x plus 1]?"
+      latex: "What are the largest possible real domain and range, respectively, of the following function: $f(x) = \\frac{4}{x + 1}$ \\textbf{[f of x equals 4 over the quantity x plus 1]}?"
     answer:
       text: "DOMAIN = ALL REALS EXCEPT -1; RANGE = ALL REALS EXCEPT 0"
       latex: "DOMAIN = ALL REALS EXCEPT $-1$; RANGE = ALL REALS EXCEPT $0$"
@@ -552,7 +553,7 @@ questions:
     answer:
       text: "PARABOLA; y = (x - 5)^2 - 4"
       latex: "PARABOLA; $y = (x - 5)^2 - 4$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round15-q19-tossup
     question:
@@ -567,7 +568,7 @@ questions:
       X: {text: "3, 5, 7, 9", latex: "$3, 5, 7, 9$"}
       Y: {text: "3, 6, 12, 24", latex: "$3, 6, 12, 24$"}
       Z: {text: "8, 6, 4, 2", latex: "$8, 6, 4, 2$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round15-q19-bonus
     question:
@@ -578,10 +579,10 @@ questions:
       latex: "$\\frac{x^2 + 3x + 5}{x^2 + 3x - 4}$"
       choice: Y
     choices:
-      W: {text: "(x + 1)/(x^3 + 1) [the fraction with numerator x plus 1 and denominator x cubed plus 1]", latex: "$\\frac{x + 1}{x^3 + 1}$ [the fraction with numerator x plus 1 and denominator x cubed plus 1]"}
-      X: {text: "15/(x + 1) [the fraction with numerator 15 and denominator x plus 1]", latex: "$\\frac{15}{x + 1}$ [the fraction with numerator 15 and denominator x plus 1]"}
-      Y: {text: "(x^2 + 3x + 5)/(x^2 + 3x - 4) [the fraction with numerator x squared plus 3 x plus 5 and denominator x squared plus 3 x minus 4]", latex: "$\\frac{x^2 + 3x + 5}{x^2 + 3x - 4}$ [the fraction with numerator x squared plus 3 x plus 5 and denominator x squared plus 3 x minus 4]"}
-      Z: {text: "√(x^3 - 7) [the square root of the quantity x cubed minus 7]", latex: "$\\sqrt{x^3 - 7}$ [the square root of the quantity x cubed minus 7]"}
+      W: {text: "(x + 1)/(x^3 + 1) [the fraction with numerator x plus 1 and denominator x cubed plus 1]", latex: "$\\frac{x + 1}{x^3 + 1}$ \\textbf{[the fraction with numerator x plus 1 and denominator x cubed plus 1]}"}
+      X: {text: "15/(x + 1) [the fraction with numerator 15 and denominator x plus 1]", latex: "$\\frac{15}{x + 1}$ \\textbf{[the fraction with numerator 15 and denominator x plus 1]}"}
+      Y: {text: "(x^2 + 3x + 5)/(x^2 + 3x - 4) [the fraction with numerator x squared plus 3 x plus 5 and denominator x squared plus 3 x minus 4]", latex: "$\\frac{x^2 + 3x + 5}{x^2 + 3x - 4}$ \\textbf{[the fraction with numerator x squared plus 3 x plus 5 and denominator x squared plus 3 x minus 4]}"}
+      Z: {text: "√(x^3 - 7) [the square root of the quantity x cubed minus 7]", latex: "$\\sqrt{x^3 - 7}$ \\textbf{[the square root of the quantity x cubed minus 7]}"}
     reviewed: false
 
   - id: ms-set06-round15-q25-tossup
@@ -591,12 +592,12 @@ questions:
     answer:
       text: "3"
       latex: "$3$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round16-q12-tossup
     question:
       text: "If θ [theta] is an acute angle in a right triangle and tan θ = 3/4 [tangent of theta equals 3 over 4], what is the csc θ [cosecant of theta] as a fraction in lowest terms?"
-      latex: "If $\\theta$ [theta] is an acute angle in a right triangle and $\\tan\\theta = \\frac{3}{4}$ [tangent of theta equals 3 over 4], what is the $\\csc\\theta$ [cosecant of theta] as a fraction in lowest terms?"
+      latex: "If $\\theta$ \\textbf{[theta]} is an acute angle in a right triangle and $\\tan\\theta = \\frac{3}{4}$ \\textbf{[tangent of theta equals 3 over 4]}, what is the $\\csc\\theta$ \\textbf{[cosecant of theta]} as a fraction in lowest terms?"
     answer:
       text: "5/3"
       latex: "$\\frac{5}{3}$"
@@ -611,10 +612,10 @@ questions:
       latex: "$40\\sin(\\pi/4)/\\sin(3\\pi/8)$"
       choice: W
     choices:
-      W: {text: "40sin(π/4)/sin(3π/8) [40 sine of, open parenthesis, pi over 4, close parenthesis, over sine of, open parenthesis, 3 pi over 8, close parenthesis]", latex: "$40\\sin(\\pi/4)/\\sin(3\\pi/8)$ [40 sine of, open parenthesis, pi over 4, close parenthesis, over sine of, open parenthesis, 3 pi over 8, close parenthesis]"}
-      X: {text: "40sin(2/3) [40 sine of two thirds]", latex: "$40\\sin(2/3)$ [40 sine of two thirds]"}
+      W: {text: "40sin(π/4)/sin(3π/8) [40 sine of, open parenthesis, pi over 4, close parenthesis, over sine of, open parenthesis, 3 pi over 8, close parenthesis]", latex: "$40\\sin(\\pi/4)/\\sin(3\\pi/8)$ \\textbf{[40 sine of, open parenthesis, pi over 4, close parenthesis, over sine of, open parenthesis, 3 pi over 8, close parenthesis]}"}
+      X: {text: "40sin(2/3) [40 sine of two thirds]", latex: "$40\\sin(2/3)$ \\textbf{[40 sine of two thirds]}"}
       Y: {text: "10π", latex: "$10\\pi$"}
-      Z: {text: "40sin(π/8)/sin(7π/16) [40 sine of, open parenthesis, pi over 8, close parenthesis, over sine of, open parenthesis, 7 pi over 16, close parenthesis]", latex: "$40\\sin(\\pi/8)/\\sin(7\\pi/16)$ [40 sine of, open parenthesis, pi over 8, close parenthesis, over sine of, open parenthesis, 7 pi over 16, close parenthesis]"}
+      Z: {text: "40sin(π/8)/sin(7π/16) [40 sine of, open parenthesis, pi over 8, close parenthesis, over sine of, open parenthesis, 7 pi over 16, close parenthesis]", latex: "$40\\sin(\\pi/8)/\\sin(7\\pi/16)$ \\textbf{[40 sine of, open parenthesis, pi over 8, close parenthesis, over sine of, open parenthesis, 7 pi over 16, close parenthesis]}"}
     reviewed: false
 
   - id: ms-set06-round16-q19-bonus
@@ -627,7 +628,7 @@ questions:
       choice: Y
     choices:
       W: {text: "p^2 + 2pq + q^2 = 1", latex: "$p^2 + 2pq + q^2 = 1$"}
-      X: {text: "p^2 + 2pq + q^2 = (p + q)^2 [p squared plus 2 p q plus q squared equals, open parenthesis, p plus q, close parenthesis, squared]", latex: "$p^2 + 2pq + q^2 = (p + q)^2$ [p squared plus 2 p q plus q squared equals, open parenthesis, p plus q, close parenthesis, squared]"}
+      X: {text: "p^2 + 2pq + q^2 = (p + q)^2 [p squared plus 2 p q plus q squared equals, open parenthesis, p plus q, close parenthesis, squared]", latex: "$p^2 + 2pq + q^2 = (p + q)^2$ \\textbf{[p squared plus 2 p q plus q squared equals, open parenthesis, p plus q, close parenthesis, squared]}"}
       Y: {text: "2p + pq + 2q = 1", latex: "$2p + pq + 2q = 1$"}
       Z: {text: "p + q = 1", latex: "$p + q = 1$"}
     reviewed: false
@@ -639,7 +640,7 @@ questions:
     answer:
       text: "x^2/100 + y^2/81 = 1"
       latex: "$\\frac{x^2}{100} + \\frac{y^2}{81} = 1$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round16-q20-bonus
     question:
@@ -648,7 +649,7 @@ questions:
     answer:
       text: "2x + 4y + z = 8"
       latex: "$2x + 4y + z = 8$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round17-q10-tossup
     question:
@@ -657,7 +658,7 @@ questions:
     answer:
       text: "5"
       latex: "$5$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round17-q10-bonus
     question:
@@ -681,7 +682,7 @@ questions:
       X: {text: "3", latex: "$3$"}
       Y: {text: "4.5", latex: "$4.5$"}
       Z: {text: "9", latex: "$9$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round17-q16-tossup
     question:
@@ -696,7 +697,7 @@ questions:
       X: {text: "9π", latex: "$9\\pi$"}
       Y: {text: "18π", latex: "$18\\pi$"}
       Z: {text: "36π", latex: "$36\\pi$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set06-round17-q22-tossup
     question:
@@ -705,4 +706,4 @@ questions:
     answer:
       text: "(x + 1)^2 + y^2 = 16"
       latex: "$(x + 1)^2 + y^2 = 16$"
-    reviewed: false
+    reviewed: true
