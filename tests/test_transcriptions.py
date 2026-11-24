@@ -39,7 +39,7 @@ def parsed(qid="ms-set01-m-round03-q07-bonus"):
 
 def test_repo_transcriptions_load_and_are_well_formed():
     loaded = tr.load()
-    assert len([t for t in loaded.values() if t.id.startswith("ms-set01-")]) == 28
+    assert len([t for t in loaded.values() if t.id.startswith("ms-set01-")]) == 44  # 28 (QB-10) + 16 (QB-36)
 
 
 def test_unreviewed_transcription_keeps_images(tmp_path):

@@ -1,7 +1,7 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
 # Reviewed by John on 2026-11-23 (the six with ACCEPT answers after they were redone).
-# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, 2026-11-24.
+# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, and reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-23
 questions:
@@ -292,7 +292,7 @@ questions:
       accept:
         - text: ".3333"
           latex: "$.3333$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round02-q23-tossup
     question:
@@ -301,7 +301,7 @@ questions:
     answer:
       text: "1/2"
       latex: "$\\frac{1}{2}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round03-q17-bonus
     question:
@@ -310,7 +310,7 @@ questions:
     answer:
       text: "30"
       latex: "$30$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round03-q22-bonus
     question:
@@ -319,7 +319,7 @@ questions:
     answer:
       text: "166.7 (must be exact)"
       latex: "$166.7$ (must be exact)"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round05-q15-tossup
     question:
@@ -328,7 +328,7 @@ questions:
     answer:
       text: "7"
       latex: "$7$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round05-q25-bonus
     question:
@@ -337,7 +337,7 @@ questions:
     answer:
       text: "10^5"
       latex: "$10^5$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round07-q23-tossup
     question:
@@ -346,7 +346,7 @@ questions:
     answer:
       text: "0"
       latex: "$0$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round10-q20-tossup
     question:
@@ -355,7 +355,7 @@ questions:
     answer:
       text: "320"
       latex: "$320$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round10-q25-bonus
     question:
@@ -364,7 +364,7 @@ questions:
     answer:
       text: "0.6"
       latex: "$0.6$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round13-q18-bonus
     question:
@@ -373,7 +373,7 @@ questions:
     answer:
       text: "2x^8"
       latex: "$2x^8$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round13-q23-tossup
     question:
@@ -382,7 +382,7 @@ questions:
     answer:
       text: "40"
       latex: "$40$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round14-q01-bonus
     question:
@@ -391,7 +391,7 @@ questions:
     answer:
       text: "−10x^2 z"
       latex: "$-10x^2z$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round14-q11-tossup
     question:
@@ -400,7 +400,7 @@ questions:
     answer:
       text: "6x^2 y^3"
       latex: "$6x^2y^3$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round15-q06-tossup
     question:
@@ -415,7 +415,7 @@ questions:
       X: {text: "parabola", latex: "parabola"}
       Y: {text: "ellipse", latex: "ellipse"}
       Z: {text: "circle", latex: "circle"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round16-q09-tossup
     question:
@@ -430,7 +430,7 @@ questions:
       X: {text: "1/2 x", latex: "$\\frac{1}{2}x$"}
       Y: {text: "√x", latex: "$\\sqrt{x}$"}
       Z: {text: "x", latex: "$x$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set01-m-round18-q08-bonus
     question:
@@ -439,4 +439,4 @@ questions:
     answer:
       text: "a^2 + ab + b^2"
       latex: "$a^2 + ab + b^2$"
-    reviewed: false
+    reviewed: true

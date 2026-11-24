@@ -1,7 +1,7 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
 # Reviewed by John on 2026-11-24.
-# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, 2026-11-24.
+# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, and reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -92,7 +92,7 @@ questions:
     answer:
       text: "−16"
       latex: "$-16$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set02-sample-questions-r4-q13-tossup
     question:
@@ -101,7 +101,7 @@ questions:
     answer:
       text: "−48"
       latex: "$-48$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set02-sample-questions-r7-q20-tossup
     question:
@@ -110,7 +110,7 @@ questions:
     answer:
       text: "30"
       latex: "$30$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set02-sample-questions-r10-q03-tossup
     question:
@@ -125,4 +125,4 @@ questions:
       X: {text: "x^2 + 5x − 2", latex: "$x^2 + 5x - 2$"}
       Y: {text: "π", latex: "$\\pi$"}
       Z: {text: "x − 2", latex: "$x - 2$"}
-    reviewed: false
+    reviewed: true
