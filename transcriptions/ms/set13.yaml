@@ -1,7 +1,7 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
 # Reviewed by John on 2026-11-24.
-# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, 2026-11-24.
+# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, and reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -57,16 +57,16 @@ questions:
       accept:
         - text: "0.033"
           latex: "$0.033$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set13-rr2-for-web-q08-bonus
     question:
       text: "Simplify: 5 ÷ 5 ÷ 5 ÷ 1/5 (read \"five divided by five divided by five divided by one fifth\")."
-      latex: "Simplify: $5 \\div 5 \\div 5 \\div \\frac{1}{5}$ (read \\\"five divided by five divided by five divided by one fifth\\\")."
+      latex: "Simplify: $5 \\div 5 \\div 5 \\div \\frac{1}{5}$ (read \"five divided by five divided by five divided by one fifth\")."
     answer:
       text: "1"
       latex: "$1$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set13-rr2-for-web-q13-tossup
     question:
@@ -81,4 +81,4 @@ questions:
       X: {text: "x^10", latex: "$x^{10}$"}
       Y: {text: "x^6", latex: "$x^6$"}
       Z: {text: "x^4", latex: "$x^4$"}
-    reviewed: false
+    reviewed: true

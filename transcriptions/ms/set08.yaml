@@ -1,7 +1,7 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
 # Reviewed by John on 2026-11-24.
-# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, 2026-11-24.
+# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, and reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -30,7 +30,7 @@ questions:
     answer:
       text: "π, 22/7, √10"
       latex: "$\\pi$, $22/7$, $\\sqrt{10}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set08-round-9-a-q10-bonus
     question:
@@ -42,7 +42,7 @@ questions:
       accept:
         - text: "(5 + √10)/5"
           latex: "$(5 + \\sqrt{10})/5$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set08-round-9-a-q18-bonus
     question:
@@ -57,7 +57,7 @@ questions:
       X: {text: "√2", latex: "$\\sqrt{2}$"}
       Y: {text: "2", latex: "$2$"}
       Z: {text: "4", latex: "$4$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set08-round-11-a-q13-tossup
     question:
@@ -72,7 +72,7 @@ questions:
       X: {text: "0", latex: "$0$"}
       Y: {text: "−1", latex: "$-1$"}
       Z: {text: "−2", latex: "$-2$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set08-round-13-a-q16-bonus
     question:
@@ -81,4 +81,4 @@ questions:
     answer:
       text: "−1"
       latex: "$-1$"
-    reviewed: false
+    reviewed: true
