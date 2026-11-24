@@ -1,0 +1,19 @@
+# Text and LaTeX transcribed from the question images (QB-10).
+# See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+
+source: Read from the printed question images by Claude (no API), 2026-11-24
+questions:
+  - id: ms-set09-regionalms-9a-q10-tossup
+    question:
+      text: "Which of the following is a vascular plant?"
+      latex: "Which of the following is a vascular plant?"
+    answer:
+      text: "OAK TREE"
+      latex: "OAK TREE"
+      choice: X
+    choices:
+      W: {text: "Spanish moss", latex: "Spanish moss"}
+      X: {text: "Oak tree", latex: "Oak tree"}
+      Y: {text: "Green algae", latex: "Green algae"}
+      Z: {text: "Fern lichen", latex: "Fern lichen"}
+    reviewed: false
