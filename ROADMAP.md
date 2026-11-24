@@ -20,7 +20,7 @@ How this file works:
 
 ## Nice to have
 
-- QB-32 Fix the parser bugs the golden tests found: chemical formula subscripts come out as separate numbers (C H O 6 12 6), a superscript o degree sign comes out as the letter o, a space before a final question mark, a printed (Solution: ...) kept in the answer, and ACCEPT lists joined by "or" or a comma kept as one answer
+- QB-33 Publish the printed "(Solution: ...)" working as its own answer field (schema change) instead of only keeping it in answer.raw
 - QB-31 Run the remaining flagged questions through an AI vision API in batches, writing transcription files for review (needs an API key and a cost OK)
 - QB-30 Smaller images: 150–200 dpi or palette PNGs would cut images.zip (331 MB) to well under half, which matters for hosting
 - QB-25 Find the 6 questions the parser still misses in sets 02–04 (listed in `KNOWN_MISSING` in parse.py)
@@ -38,7 +38,8 @@ How this file works:
 
 ## Done
 
-- QB-05 Golden tests: 50 questions from all 16 middle school sets, hand-checked against their images, in `tests/golden/questions.yaml`; `tests/test_golden.py` compares each field. 7 show parser bugs that are still open (QB-32) and are marked as expected failures
+- QB-32 Parser fixes from the golden tests: chemical subscripts stay in place (C6H12O6, NH3), a superscript o after a number becomes °, no space before a final ?, printed (Solution: ...) working is dropped from the answer (kept in answer.raw), and ACCEPT lists split on a lower case "or" or on commas between equal numbers. A full parse changes about 700 fields against v1.0.2 and no question's flags
+- QB-05 Golden tests: 50 questions from all 16 middle school sets, hand-checked against their images, in `tests/golden/questions.yaml`; `tests/test_golden.py` compares each field. 7 showed parser bugs, fixed in QB-32
 - QB-29 Each PDF page is rendered once and all its images are cropped from it: image extraction is about 3x faster, with the same image files (palette PNGs, same size on disk)
 - QB-28 Question images stop above the ANSWER row (148 crops in v1.0.0 reached into it, many showing the answer), and 75 questions whose text reaches into that row are marked needs_review so the site shows the image instead
 - QB-27 Release workflow can publish from the Run workflow button (version input, main only), so a release no longer needs a tag push

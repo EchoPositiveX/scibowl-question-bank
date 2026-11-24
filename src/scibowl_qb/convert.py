@@ -4,6 +4,9 @@ This step only reshapes data and does light, safe cleanup:
 - joins the PDF's line breaks into normal text,
 - removes the "– Short Answer" / "– Multiple Choice" prefix some sets print,
 - splits ACCEPT / DO NOT ACCEPT notes and [pronunciation] hints out of answers,
+  and splits an ACCEPT that lists several answers (see `split_alternatives`),
+- drops a printed "(Solution: ...)" working from the answer (it stays in answer.raw),
+- removes a stray space before a final question mark,
 - reads the letter of a multiple choice answer,
 - drops separator lines (~~~~) printed between questions,
 - maps the printed subject label to one of the official categories.
@@ -25,6 +28,10 @@ PRONUNCIATION = re.compile(r"\[([^\]]+)\]")
 ACCEPT_NOTE = re.compile(r"\(([^()]*\bACCEPT\b[^()]*)\)", re.IGNORECASE)
 MISSING_ANSWER = "[answer not found by parser]"
 SEPARATOR_LINE = re.compile(r"^\s*[~_=*-]{5,}\s*$")
+SOLUTION_NOTE = re.compile(r"\s*\(\s*Solution\s*:.*$", re.DOTALL)
+SPACE_BEFORE_FINAL_QMARK = re.compile(r"(?<=[\w)\]”’°%])\s+\?$")
+LOWER_OR = re.compile(r"\s+or\s+")
+NUMBER = re.compile(r"^([–—−-])?\s*(?:(\d+)\s+)?(\d+(?:\.\d+)?)(?:\s*/\s*(\d+))?$")
 
 # Printed subject label (lower case, "&" written as "and") -> category.
 CATEGORIES = {
@@ -55,7 +62,42 @@ def join_lines(lines: list[str]) -> str:
 
 
 def clean_question_text(lines: list[str]) -> str:
-    return STYLE_PREFIX.sub("", join_lines(lines), count=1).strip()
+    text = STYLE_PREFIX.sub("", join_lines(lines), count=1).strip()
+    return SPACE_BEFORE_FINAL_QMARK.sub("?", text)
+
+
+def _number(text: str) -> float | None:
+    """Value of a plain number, decimal, fraction or mixed number ("6 18/25"), else None."""
+    m = NUMBER.match(text.strip())
+    if not m or (m.group(2) and not m.group(4)):
+        return None
+    sign, whole, num, den = m.groups()
+    value = float(num) / float(den) if den else float(num)
+    if den and float(den) == 0:
+        return None
+    value += float(whole or 0)
+    return -value if sign else value
+
+
+def split_alternatives(text: str) -> list[str]:
+    """Split one printed ACCEPT / DO NOT ACCEPT entry that lists several answers.
+
+    Only two patterns are split, because a comma or an upper case OR is often part of the
+    answer itself ("1, 2, AND 4", "Y OR ORDINATE AXIS"):
+    - a lower case "or" between upper case answers ("D-GLUCOSE or DEXTROSE"), unless the
+      entry also has a comma, a lower case "for", or starts with a sign ("+ or -");
+    - commas between numbers that are all the same value written differently ("6 18/25, 6.72").
+    """
+    parts = [p.strip() for p in LOWER_OR.split(text)]
+    if (len(parts) > 1 and all(parts) and "," not in text and " for " not in text
+            and parts[0].upper() not in {"+", "-", "–", "PLUS", "MINUS", "NEGATIVE", "POSITIVE"}):
+        return parts
+    parts = [p.strip() for p in text.split(",")]
+    values = [_number(p) for p in parts]
+    if (len(parts) > 1 and None not in values and len(set(parts)) == len(parts)
+            and max(values) - min(values) < 1e-9):
+        return parts
+    return [text]
 
 
 def split_answer(raw: str, is_mc: bool) -> dict:
@@ -77,10 +119,11 @@ def split_answer(raw: str, is_mc: bool) -> dict:
             dna = re.match(r"^DO NOT ACCEPT\s*:?\s*(.+)$", clause, re.IGNORECASE)
             acc = re.match(r"^ACCEPT\s*:?\s*(.+)$", clause, re.IGNORECASE)
             if dna:
-                do_not_accept.append(dna.group(1).strip())
+                do_not_accept.extend(split_alternatives(dna.group(1).strip()))
             elif acc:
-                accept.append(acc.group(1).strip())
+                accept.extend(split_alternatives(acc.group(1).strip()))
     text = ACCEPT_NOTE.sub("", text)
+    text = SOLUTION_NOTE.sub("", text)
 
     pron = PRONUNCIATION.findall(text)
     text = PRONUNCIATION.sub("", text)
