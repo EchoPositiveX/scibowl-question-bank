@@ -1,0 +1,22 @@
+# Text and LaTeX transcribed from the question images (QB-10).
+# See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+
+source: Read from the printed question images by Claude (no API), 2026-11-24
+questions:
+  - id: ms-set08-round-6-a-q02-bonus
+    question:
+      text: "What is the probability that an integer chosen at random from the set of all positive integers less than 100 is a multiple of 5?"
+      latex: "What is the probability that an integer chosen at random from the set of all positive integers less than 100 is a multiple of 5?"
+    answer:
+      text: "19/99"
+      latex: "$\\frac{19}{99}$"
+    reviewed: false
+
+  - id: ms-set08-round-17-a-q06-bonus
+    question:
+      text: "A student leaves for school on the bus. Her bus travels 25 miles per hour, but stops for 1 minute after every 2 minutes of travel. The route is 8 miles. To the nearest whole number, how many minutes does the trip take?"
+      latex: "A student leaves for school on the bus. Her bus travels 25 miles per hour, but stops for 1 minute after every 2 minutes of travel. The route is 8 miles. To the nearest whole number, how many minutes does the trip take?"
+    answer:
+      text: "28"
+      latex: "$28$"
+    reviewed: false
