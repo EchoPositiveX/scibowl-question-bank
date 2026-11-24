@@ -11,7 +11,7 @@ questions:
     answer:
       text: "2, 3"
       latex: "2, 3"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set13-rr5-for-web-q08-tossup
     question:
