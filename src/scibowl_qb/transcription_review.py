@@ -74,7 +74,7 @@ def render(path: Path, data_file: Path, todo_only: bool = False) -> str:
                  _field("Question", t.question)]
         for letter, c in (t.choices or {}).items():
             right.append(_field(f"Choice {letter}", c))
-        right.append(_field("Answer", t.answer))
+        right.append(_field(f"Answer: choice {t.answer['choice']}" if t.choices else "Answer", t.answer))
         for key, label in (("accept", "Accept"), ("do_not_accept", "Do not accept")):
             for alt in t.answer.get(key, []):
                 right.append(_field(label, alt))
