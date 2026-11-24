@@ -99,3 +99,40 @@ def test_choices_must_match_the_format(tmp_path):
     entry = entry.replace("    reviewed:", "    choices: {W: {text: a, latex: a}, X: {text: b, latex: b}, Y: {text: c, latex: c}, Z: {text: d, latex: d}}\n    reviewed:")
     with pytest.raises(tr.TranscriptionError, match="choices"):
         tr.apply(parsed(), tr.load(write(tmp_path, entry)))
+
+
+ACCEPT_ENTRY = """\
+questions:
+  - id: ms-set01-m-round03-q07-bonus
+    question: {text: "q", latex: "q"}
+    answer:
+      text: "22/25"
+      latex: "$\\\\frac{22}{25}$"
+      %s
+    reviewed: true
+"""
+
+
+def with_printed_accept():
+    q = parsed()
+    q["answer"]["raw"] = "22/25 (ACCEPT: 0.88)"
+    return q
+
+
+def test_accept_is_transcribed_with_latex(tmp_path):
+    entry = ACCEPT_ENTRY % 'accept: [{text: "0.88", latex: "$0.88$"}]'
+    q = tr.apply(with_printed_accept(), tr.load(write(tmp_path, entry)))
+    assert q["answer"]["accept"] == ["0.88"]
+    assert q["answer"]["accept_latex"] == ["$0.88$"]
+    problems = validate_question_set({"schema_version": 1, "generator": "test", "generated_at": "2026-11-23T00:00:00Z", "questions": [q]})
+    assert not [p for p in problems if "image" not in p], problems
+
+
+def test_printed_accept_must_be_transcribed(tmp_path):
+    with pytest.raises(tr.TranscriptionError, match="has ACCEPT"):
+        tr.apply(with_printed_accept(), tr.load(write(tmp_path, ACCEPT_ENTRY % "")))
+
+
+def test_accept_needs_latex(tmp_path):
+    with pytest.raises(tr.TranscriptionError, match="must have text and latex"):
+        tr.load(write(tmp_path, ACCEPT_ENTRY % 'accept: ["0.88"]'))

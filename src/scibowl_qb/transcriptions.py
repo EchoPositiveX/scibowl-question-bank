@@ -20,6 +20,9 @@ log = logging.getLogger(__name__)
 
 DEFAULT_DIR = REPO_ROOT / "transcriptions"
 CHOICE_LETTERS = ("W", "X", "Y", "Z")
+# Other answers printed after the main one, e.g. (ACCEPT: ...) and (DO NOT ACCEPT: ...).
+# Each is transcribed with text and latex, like the main answer.
+ALT_KEYS = ("accept", "do_not_accept")
 NOTE_UNREVIEWED = "Text and LaTeX transcribed from the question image (QB-10); not reviewed yet, so the images are still shown"
 NOTE_REVIEWED = "Text and LaTeX transcribed from the question image (QB-10) and checked against it"
 
@@ -68,9 +71,12 @@ def load_file(path: Path) -> list[Transcription]:
             raise TranscriptionError(f"{where}: missing 'id'")
         where = f"{path} {entry['id']}"
         question = _text_field(entry.get("question"), f"{where} question")
-        answer = _text_field(entry.get("answer"), f"{where} answer", {"accept"})
-        if "accept" in answer and not (isinstance(answer["accept"], list) and all(isinstance(a, str) for a in answer["accept"])):
-            raise TranscriptionError(f"{where} answer: 'accept' must be a list of strings")
+        answer = _text_field(entry.get("answer"), f"{where} answer", set(ALT_KEYS))
+        for key in ALT_KEYS:
+            if key in answer:
+                if not isinstance(answer[key], list) or not answer[key]:
+                    raise TranscriptionError(f"{where} answer: '{key}' must be a list of answers, each with text and latex")
+                answer[key] = [_text_field(a, f"{where} answer.{key}[{j}]") for j, a in enumerate(answer[key])]
         choices = entry.get("choices")
         if choices is not None:
             if not isinstance(choices, dict) or set(choices) != set(CHOICE_LETTERS):
@@ -105,17 +111,29 @@ def apply(question: dict, transcriptions: dict[str, Transcription]) -> dict:
     if t.choices:
         for letter, c in t.choices.items():
             question["choices"][letter] = {"text": c["text"], "latex": c["latex"]}
-    question["answer"]["text"] = t.answer["text"]
-    question["answer"]["latex"] = t.answer["latex"]
-    if t.answer.get("accept"):
-        question["answer"]["accept"] = list(t.answer["accept"])
-    elif "accept" in t.answer:
-        question["answer"].pop("accept", None)
+    # Every ACCEPT or DO NOT ACCEPT printed in the answer must be transcribed too, so the typeset
+    # answer never leaves out what the moderator should accept.
+    raw = question["answer"].get("raw", "").upper()
+    missing = [k for k, word in (("accept", "ACCEPT"), ("do_not_accept", "DO NOT ACCEPT"))
+               if k not in t.answer and (word in raw.replace("DO NOT ACCEPT", "") if k == "accept" else word in raw)]
+    if missing:
+        raise TranscriptionError(f"{t.id}: the printed answer has {', '.join(m.upper().replace('_', ' ') for m in missing)}; "
+                                 f"add it under answer.{missing[0]} with text and latex")
+    answer = question["answer"]
+    answer["text"] = t.answer["text"]
+    answer["latex"] = t.answer["latex"]
+    for key in ALT_KEYS:
+        answer.pop(key, None)
+        answer.pop(f"{key}_latex", None)
+        if key in t.answer:
+            answer[key] = [a["text"] for a in t.answer[key]]
+            answer[f"{key}_latex"] = [a["latex"] for a in t.answer[key]]
     t.used += 1
 
     quality = question["quality"]
     flags = set(quality["flags"])
-    if any("$" in f["latex"] for f in [t.question, t.answer, *(t.choices or {}).values()]):
+    fields = [t.question, t.answer, *(t.choices or {}).values(), *(a for k in ALT_KEYS for a in t.answer.get(k, []))]
+    if any("$" in f["latex"] for f in fields):
         flags.add("has_math")
     if t.reviewed:
         quality["text_status"] = "verified"

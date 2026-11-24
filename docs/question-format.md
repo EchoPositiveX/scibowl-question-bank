@@ -8,7 +8,7 @@ Check a file with:
 python -m scibowl_qb.validate path/to/file.json
 ```
 
-Changing the format means bumping `schema_version` and recording why in `docs/decisions.md`.
+Changing the format means bumping `schema_version` and recording why in `docs/decisions.md`. An optional new field that older readers can ignore doesn't need a bump, but is still recorded there.
 
 ## File
 
@@ -55,7 +55,7 @@ Changing the format means bumping `schema_version` and recording why in `docs/de
 | `format` | `short_answer` or `multiple_choice`. |
 | `question` | `text` is cleaned plain text (no "Short Answer" prefix, no line breaks from the PDF layout). `latex` is the same with math as `$...$` and chemistry as `\ce{...}`, null until produced from `transcriptions/` (QB-10). |
 | `choices` | For multiple choice, `W`, `X`, `Y`, `Z`, each with `text` and `latex`. Null for short answer. |
-| `answer` | `text` is the main answer only. `choice` is the letter for multiple choice. `accept` and `do_not_accept` hold the moderator notes split out. `pronunciation` holds bracketed hints. `raw` keeps the full printed answer. |
+| `answer` | `text` is the main answer only. `choice` is the letter for multiple choice. `accept` and `do_not_accept` hold the moderator notes split out; `accept_latex` and `do_not_accept_latex` are the same with math as LaTeX, in the same order, once transcribed (QB-10). `pronunciation` holds bracketed hints. `raw` keeps the full printed answer. |
 | `images` | Crops of the question, the answer, and the whole thing, relative to the release root. Kept even when text is verified. |
 | `tags` | `disciplines` (physics, chemistry, ...) and `topics` (momentum, springs, ...), from the topic list (QB-11). `source` says who tagged it; `reviewed` says whether John checked it. |
 | `quality.text_status` | `images_only`: the text is unreliable, so show images. `auto`: parsed text, not checked. `verified`: text (and LaTeX if present) checked against the image. |

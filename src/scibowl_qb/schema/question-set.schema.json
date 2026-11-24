@@ -102,6 +102,8 @@
         "choice": { "enum": ["W", "X", "Y", "Z"], "description": "Letter of the correct choice, for multiple choice" },
         "accept": { "type": "array", "items": { "type": "string" }, "description": "Other answers the moderator should accept" },
         "do_not_accept": { "type": "array", "items": { "type": "string" } },
+        "accept_latex": { "type": "array", "items": { "type": "string" }, "description": "accept with math as LaTeX, same order (QB-10)" },
+        "do_not_accept_latex": { "type": "array", "items": { "type": "string" }, "description": "do_not_accept with math as LaTeX, same order (QB-10)" },
         "pronunciation": { "type": "string", "description": "Pronunciation hint printed in the PDF, e.g. TEE-koh BRAH-hay" },
         "raw": { "type": "string", "description": "Full answer text as printed, before splitting" }
       }

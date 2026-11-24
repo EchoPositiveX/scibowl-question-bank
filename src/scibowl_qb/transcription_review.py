@@ -60,11 +60,13 @@ def _field(label: str, f: dict) -> str:
             f'<div class="plain">{html.escape(f["text"])}</div>')
 
 
-def render(path: Path, data_file: Path) -> str:
+def render(path: Path, data_file: Path, todo_only: bool = False) -> str:
     """data_file: a questions.json with its images/ folder next to it (parse output or an unzipped release)."""
     entries = tr.load_file(path)
-    images = {q["id"]: q["images"].get("entire") for q in json.loads(data_file.read_text(encoding="utf-8"))["questions"]}
     reviewed = sum(t.reviewed for t in entries)
+    if todo_only:
+        entries = [t for t in entries if not t.reviewed]
+    images = {q["id"]: q["images"].get("entire") for q in json.loads(data_file.read_text(encoding="utf-8"))["questions"]}
     parts = []
     for t in entries:
         right = [f'<div class="id">{html.escape(t.id)}</div>',
@@ -73,13 +75,15 @@ def render(path: Path, data_file: Path) -> str:
         for letter, c in (t.choices or {}).items():
             right.append(_field(f"Choice {letter}", c))
         right.append(_field("Answer", t.answer))
-        if t.answer.get("accept"):
-            right.append(f'<div class="label">Accept</div><div class="plain">{html.escape("; ".join(t.answer["accept"]))}</div>')
+        for key, label in (("accept", "Accept"), ("do_not_accept", "Do not accept")):
+            for alt in t.answer.get(key, []):
+                right.append(_field(label, alt))
         parts.append(f'<section class="q"><div>{_img(data_file.parent / images[t.id]) if images.get(t.id) else '<p class="todo">No image for this ID in the data</p>'}</div><div>{"".join(right)}</div></section>')
     title = f"Transcription review: {path.parent.name}/{path.stem}"
-    intro = (f"{len(entries)} questions, {reviewed} reviewed. Left: the printed question. Right: the transcription, "
-             "rendered, with the plain text below it. To approve one, set <code>reviewed: true</code> for its ID in "
-             f"<code>{html.escape(path.as_posix())}</code>.")
+    shown = f"Showing the {len(entries)} not reviewed yet. " if todo_only else ""
+    intro = (f"{shown}{reviewed} of {len(tr.load_file(path))} questions reviewed. Left: the printed question. Right: the transcription, "
+             "rendered, with the plain text below it. Check the rendered version against the printed question, including any ACCEPT answers. "
+             f"Approved entries get <code>reviewed: true</code> in <code>{html.escape(path.as_posix())}</code>.")
     return PAGE.format(title=html.escape(title), intro=intro, body="\n".join(parts), katex=KATEX)
 
 
@@ -88,11 +92,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("file", type=Path, help="e.g. transcriptions/ms/set01.yaml")
     ap.add_argument("--data", type=Path, default=Path("output/questions.json"),
                     help="questions.json from a parse with images (or an unzipped release), with images/ next to it")
+    ap.add_argument("--todo", action="store_true", help="only the entries not reviewed yet")
     ap.add_argument("--out", type=Path, help="default: output/review-<level>-<set>.html")
     args = ap.parse_args(argv)
     out = args.out or Path("output") / f"review-{args.file.parent.name}-{args.file.stem}.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(render(args.file, args.data), encoding="utf-8")
+    out.write_text(render(args.file, args.data, args.todo), encoding="utf-8")
     print(f"Wrote {out}")
     return 0
 

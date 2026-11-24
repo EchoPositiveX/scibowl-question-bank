@@ -8,6 +8,7 @@ Newest first. Each entry: date, decision, and why if it isn't obvious.
 - An entry changes nothing the website shows until it is marked `reviewed: true`: until then the question stays flagged `needs_review` and the images are shown. Reviewed entries become `verified`.
 - The first batch (set 01, 28 questions) was transcribed by Claude reading the question images directly in a session, so no API key or spending was needed. Running the rest through an API (QB-31) waits for John's OK on a key and cost.
 - `python -m scibowl_qb.transcription_review` makes a self-contained review page with each image next to the rendered LaTeX.
+- After John's first review: ACCEPT and DO NOT ACCEPT answers are transcribed with LaTeX too, and the parse fails if a printed one is missing. They go in new optional fields `answer.accept_latex` and `answer.do_not_accept_latex`. `schema_version` stays 1 because older readers can ignore optional fields; only changes that break readers bump it.
 
 ## 2026-11-23: Never show the answer in a question image or text (QB-28)
 
