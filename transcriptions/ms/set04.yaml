@@ -1,5 +1,6 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+# Reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -16,7 +17,7 @@ questions:
       X: {text: "(a + b + c)/2", latex: "$\\frac{a + b + c}{2}$"}
       Y: {text: "2(abc)/2", latex: "$\\frac{2(abc)}{2}$"}
       Z: {text: "2(a + b + c)", latex: "$2(a + b + c)$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set04-round3-q11-tossup
     question:
@@ -25,7 +26,7 @@ questions:
     answer:
       text: "3 4/7"
       latex: "$3\\frac{4}{7}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set04-round4-q03-tossup
     question:
@@ -34,7 +35,7 @@ questions:
     answer:
       text: "11/23"
       latex: "$\\frac{11}{23}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set04-round6-q21-tossup
     question:
@@ -49,7 +50,7 @@ questions:
       X: {text: "7 inches", latex: "$7$ inches"}
       Y: {text: "10 3/4 inches", latex: "$10\\frac{3}{4}$ inches"}
       Z: {text: "11 inches", latex: "$11$ inches"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set04-round11-q04-tossup
     question:
@@ -58,7 +59,7 @@ questions:
     answer:
       text: "8^10"
       latex: "$8^{10}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set04-round13-q08-tossup
     question:
@@ -70,7 +71,7 @@ questions:
       accept:
         - text: "y^-1"
           latex: "$y^{-1}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set04-round13-q18-bonus
     question:
@@ -79,7 +80,7 @@ questions:
     answer:
       text: "-24/7"
       latex: "$-\\frac{24}{7}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set04-round17-q16-bonus
     question:
@@ -88,7 +89,7 @@ questions:
     answer:
       text: "5√3"
       latex: "$5\\sqrt{3}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set04-round17-q20-bonus
     question:
