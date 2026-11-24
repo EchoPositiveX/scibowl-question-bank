@@ -1,5 +1,6 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+# Reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -25,7 +26,7 @@ questions:
       X: {text: "π/2 radians", latex: "$\\frac{\\pi}{2}$ radians"}
       Y: {text: "π/4 radians", latex: "$\\frac{\\pi}{4}$ radians"}
       Z: {text: "π/8 radians", latex: "$\\frac{\\pi}{8}$ radians"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set13-rr5-for-web-q23-tossup
     question:
@@ -34,7 +35,7 @@ questions:
     answer:
       text: "-2/3"
       latex: "$-\\frac{2}{3}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set13-de3-for-web-q16-bonus
     question:
@@ -43,4 +44,4 @@ questions:
     answer:
       text: "XENON"
       latex: "XENON"
-    reviewed: false
+    reviewed: true
