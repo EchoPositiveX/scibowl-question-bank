@@ -94,11 +94,35 @@ def test_same_question_in_two_files_is_rejected(tmp_path):
         tr.load(folder)
 
 
-def test_choices_must_match_the_format(tmp_path):
-    entry = ENTRY % "false"
-    entry = entry.replace("    reviewed:", "    choices: {W: {text: a, latex: a}, X: {text: b, latex: b}, Y: {text: c, latex: c}, Z: {text: d, latex: d}}\n    reviewed:")
-    with pytest.raises(tr.TranscriptionError, match="choices"):
-        tr.apply(parsed(), tr.load(write(tmp_path, entry)))
+CHOICES = "    choices: {W: {text: a, latex: a}, X: {text: b, latex: b}, Y: {text: c, latex: c}, Z: {text: d, latex: d}}\n    reviewed:"
+
+
+def test_multiple_choice_needs_its_choices(tmp_path):
+    entry = (ENTRY % "false").replace("ms-set01-m-round03-q07-bonus", "ms-set01-m-round03-q01-tossup")
+    with pytest.raises(tr.TranscriptionError, match="transcribe its choices"):
+        tr.apply(parsed("ms-set01-m-round03-q01-tossup"), tr.load(write(tmp_path, entry)))
+
+
+def test_choices_need_the_answer_letter(tmp_path):
+    with pytest.raises(tr.TranscriptionError, match="needs 'choice'"):
+        tr.load(write(tmp_path, (ENTRY % "false").replace("    reviewed:", CHOICES)))
+
+
+def test_choice_letter_needs_choices(tmp_path):
+    entry = (ENTRY % "false").replace("    reviewed:", "    reviewed:").replace('latex: "$\\\\frac{22}{25}$"}', 'latex: "$\\\\frac{22}{25}$", choice: X}')
+    with pytest.raises(tr.TranscriptionError, match="only for multiple choice"):
+        tr.load(write(tmp_path, entry))
+
+
+def test_choices_restore_multiple_choice(tmp_path):
+    # When the parser can't read the choices, the question comes out as short answer.
+    entry = (ENTRY % "true").replace("    reviewed:", CHOICES).replace('latex: "$\\\\frac{22}{25}$"}', 'latex: "$\\\\frac{22}{25}$", choice: X}')
+    q = tr.apply(parsed(), tr.load(write(tmp_path, entry)))
+    assert q["format"] == "multiple_choice"
+    assert q["choices"]["X"] == {"text": "b", "latex": "b"}
+    assert q["answer"]["choice"] == "X"
+    problems = validate_question_set({"schema_version": 1, "generator": "test", "generated_at": "2026-11-23T00:00:00Z", "questions": [q]})
+    assert not [p for p in problems if "image" not in p], problems
 
 
 ACCEPT_ENTRY = """\

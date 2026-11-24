@@ -8,6 +8,12 @@ Newest first. Each entry: date, decision, and why if it isn't obvious.
 - Commas are split only when every part is a number with the same value ("6 18/25, 6.72"). Other commas and upper case OR are left alone, because they are usually part of one answer ("1, 2, AND 4", "Y OR ORDINATE AXIS").
 - Printed "(Solution: ...)" working is dropped from `answer.text` and kept in `answer.raw`. Publishing it as its own field is QB-33.
 
+## 2026-11-24: Transcriptions restore multiple choice (QB-10)
+
+- When the parser can't read a multiple choice question's four choices or its answer letter, it makes the question short answer. In set 06 that happened to 17 of the 62 flagged questions.
+- A transcription may now give the choices and `answer.choice` for such a question. That makes it `multiple_choice` again and adds a note saying so. The reverse (leaving out the choices of a question the parser read as multiple choice) still stops the parse.
+- This changes no field in the question format, so schema_version stays 1.
+
 ## 2026-11-23: Transcriptions for unreadable math (QB-10)
 
 - Text and LaTeX for questions the parser can't read go in `transcriptions/<level>/<set>.yaml`, one file per set, applied after `corrections.yaml`. They are data files a person can review and edit, like corrections, not parser code.

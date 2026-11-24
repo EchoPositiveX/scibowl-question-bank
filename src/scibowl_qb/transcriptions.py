@@ -4,6 +4,9 @@ Files live in transcriptions/<level>/<set>.yaml. See transcriptions/README.md fo
 An entry replaces the parsed text of one question. Until a person sets `reviewed: true`,
 the question stays `images_only` and flagged `needs_review`, so the website keeps showing
 the printed images; after review it becomes `verified` and the website can show the LaTeX.
+
+A multiple choice question whose choices the parser couldn't read comes out as short answer.
+Its transcription gives the four choices and `answer.choice`, which makes it multiple choice again.
 """
 
 from __future__ import annotations
@@ -71,7 +74,7 @@ def load_file(path: Path) -> list[Transcription]:
             raise TranscriptionError(f"{where}: missing 'id'")
         where = f"{path} {entry['id']}"
         question = _text_field(entry.get("question"), f"{where} question")
-        answer = _text_field(entry.get("answer"), f"{where} answer", set(ALT_KEYS))
+        answer = _text_field(entry.get("answer"), f"{where} answer", {*ALT_KEYS, "choice"})
         for key in ALT_KEYS:
             if key in answer:
                 if not isinstance(answer[key], list) or not answer[key]:
@@ -82,6 +85,10 @@ def load_file(path: Path) -> list[Transcription]:
             if not isinstance(choices, dict) or set(choices) != set(CHOICE_LETTERS):
                 raise TranscriptionError(f"{where}: choices must have exactly W, X, Y and Z")
             choices = {k: _text_field(v, f"{where} choices.{k}") for k, v in choices.items()}
+        if choices is not None and answer.get("choice") not in CHOICE_LETTERS:
+            raise TranscriptionError(f"{where} answer: multiple choice needs 'choice', the letter of the right answer (W, X, Y or Z)")
+        if choices is None and "choice" in answer:
+            raise TranscriptionError(f"{where} answer: 'choice' is only for multiple choice; add the four choices too")
         if not isinstance(entry.get("reviewed"), bool):
             raise TranscriptionError(f"{where}: 'reviewed' must be true or false")
         result.append(Transcription(entry["id"], question, answer, choices, entry["reviewed"], Path(path)))
@@ -104,13 +111,16 @@ def apply(question: dict, transcriptions: dict[str, Transcription]) -> dict:
     t = transcriptions.get(question["id"])
     if t is None:
         return question
-    if (t.choices is None) != (question["choices"] is None):
-        raise TranscriptionError(f"{t.id}: choices given for a short-answer question, or missing for multiple choice")
+    if t.choices is None and question["choices"] is not None:
+        raise TranscriptionError(f"{t.id}: the question is multiple choice; transcribe its choices W, X, Y and Z and answer.choice")
     question["question"]["text"] = t.question["text"]
     question["question"]["latex"] = t.question["latex"]
     if t.choices:
-        for letter, c in t.choices.items():
-            question["choices"][letter] = {"text": c["text"], "latex": c["latex"]}
+        if question["choices"] is None:
+            # The parser couldn't read the choices and fell back to short answer.
+            question["format"] = "multiple_choice"
+            question["quality"]["notes"].append("Multiple choice: the choices and answer letter come from the transcription (QB-10)")
+        question["choices"] = {k: {"text": t.choices[k]["text"], "latex": t.choices[k]["latex"]} for k in CHOICE_LETTERS}
     # Every ACCEPT or DO NOT ACCEPT printed in the answer must be transcribed too, so the typeset
     # answer never leaves out what the moderator should accept.
     raw = question["answer"].get("raw", "").upper()
@@ -122,6 +132,8 @@ def apply(question: dict, transcriptions: dict[str, Transcription]) -> dict:
     answer = question["answer"]
     answer["text"] = t.answer["text"]
     answer["latex"] = t.answer["latex"]
+    if t.choices:
+        answer["choice"] = t.answer["choice"]
     for key in ALT_KEYS:
         answer.pop(key, None)
         answer.pop(f"{key}_latex", None)
