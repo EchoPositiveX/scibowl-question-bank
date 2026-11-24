@@ -50,3 +50,11 @@ def test_reported_issue_stays_fixed(issue, question_id, expected):
     question = _find(question_id)
     for path, value in expected.items():
         assert _get(question, path) == value, f"issue #{issue}: {path}"
+
+
+def test_answer_key_error_found_in_review_stays_fixed():
+    """Set 13 RR2 toss-up 13 prints Y) x^6; x^8 x^4 / x^2 is x^10 (choice X). Found in QB-36 review."""
+    question = _find("ms-set13-rr2-for-web-q13-tossup")
+    assert question["answer"]["choice"] == "X"
+    assert question["answer"]["text"] == "x^10"
+    assert "corrected" in question["quality"]["flags"]

@@ -73,9 +73,9 @@ questions:
       text: "Simplify: x^8 x^4 / x^2 (quantity x to the 8th times x to the 4th divided by x squared)"
       latex: "Simplify: $\\frac{x^8x^4}{x^2}$ (quantity x to the 8th times x to the 4th divided by x squared)"
     answer:
-      text: "x^6"
-      latex: "$x^6$"
-      choice: Y
+      text: "x^10"
+      latex: "$x^{10}$"
+      choice: X
     choices:
       W: {text: "x^16", latex: "$x^{16}$"}
       X: {text: "x^10", latex: "$x^{10}$"}
