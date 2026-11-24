@@ -14,13 +14,13 @@ How this file works:
 
 - QB-20 Grow the sample file into the golden test set (feeds QB-05) and share it with the website for WEB-01
 - QB-03 Cache per-round results so a full run only re-parses PDFs that changed
-- QB-05 Golden tests: about 50 hand-checked questions across sets, compared field by field
 - QB-10 AI vision step to produce text with LaTeX/mhchem, prototyped on 1–2 sets and reviewed before continuing. Start with the questions still flagged needs_review (153 after QB-28) (mostly set 06 and 07 math, where formulas overlap the text in the PDF). Progress: the transcription format, parser support and review page are done, and set 01's 28 flagged questions are transcribed and reviewed by John. Set 06's 62 are transcribed and waiting for John's review (17 of them are multiple choice the parser had turned into short answer; the transcription restores the choices). Set 07's 20 are transcribed and waiting for review too (8 restored to multiple choice). After John reviews both, the next step is to publish them and decide whether to go on to high school or other sets
 - QB-11 Draft a topic list (disciplines and sub-topics) with AI help, for John to edit
 - QB-12 AI-tag questions against the topic list, a set or two at a time. First goal: give every question one of the 2022 subjects (biology, chemistry, physics, earth and space, energy, math) in `tags.disciplines`, so older Life, Physical and General Science questions can be studied with the new grouping
 
 ## Nice to have
 
+- QB-32 Fix the parser bugs the golden tests found: chemical formula subscripts come out as separate numbers (C H O 6 12 6), a superscript o degree sign comes out as the letter o, a space before a final question mark, a printed (Solution: ...) kept in the answer, and ACCEPT lists joined by "or" or a comma kept as one answer
 - QB-31 Run the remaining flagged questions through an AI vision API in batches, writing transcription files for review (needs an API key and a cost OK)
 - QB-30 Smaller images: 150–200 dpi or palette PNGs would cut images.zip (331 MB) to well under half, which matters for hosting
 - QB-25 Find the 6 questions the parser still misses in sets 02–04 (listed in `KNOWN_MISSING` in parse.py)
@@ -38,6 +38,7 @@ How this file works:
 
 ## Done
 
+- QB-05 Golden tests: 50 questions from all 16 middle school sets, hand-checked against their images, in `tests/golden/questions.yaml`; `tests/test_golden.py` compares each field. 7 show parser bugs that are still open (QB-32) and are marked as expected failures
 - QB-29 Each PDF page is rendered once and all its images are cropped from it: image extraction is about 3x faster, with the same image files (palette PNGs, same size on disk)
 - QB-28 Question images stop above the ANSWER row (148 crops in v1.0.0 reached into it, many showing the answer), and 75 questions whose text reaches into that row are marked needs_review so the site shows the image instead
 - QB-27 Release workflow can publish from the Run workflow button (version input, main only), so a release no longer needs a tag push
