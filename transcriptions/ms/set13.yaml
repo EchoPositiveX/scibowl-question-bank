@@ -1,0 +1,47 @@
+# Text and LaTeX transcribed from the question images (QB-10).
+# See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+# Reviewed by John on 2026-11-24.
+
+source: Read from the printed question images by Claude (no API), 2026-11-24
+questions:
+  - id: ms-set13-2019-nsb-msr-round-4a-q03-bonus
+    question:
+      text: "Identify all of the following four quantities that are conserved during the electrolysis of water: 1) Moles of reagents [ree-AY-jents]; 2) Mass; 3) Energy; 4) Entropy."
+      latex: "Identify all of the following four quantities that are conserved during the electrolysis of water: 1) Moles of reagents \\textbf{[ree-AY-jents]}; 2) Mass; 3) Energy; 4) Entropy."
+    answer:
+      text: "2, 3"
+      latex: "2, 3"
+    reviewed: true
+
+  - id: ms-set13-rr5-for-web-q08-tossup
+    question:
+      text: "If 360 degrees is equal to 2π radians, what is the number of radians in 45 degrees?"
+      latex: "If 360 degrees is equal to $2\\pi$ radians, what is the number of radians in 45 degrees?"
+    answer:
+      text: "π/4 radians"
+      latex: "$\\frac{\\pi}{4}$ radians"
+      choice: Y
+    choices:
+      W: {text: "π radians", latex: "$\\pi$ radians"}
+      X: {text: "π/2 radians", latex: "$\\frac{\\pi}{2}$ radians"}
+      Y: {text: "π/4 radians", latex: "$\\frac{\\pi}{4}$ radians"}
+      Z: {text: "π/8 radians", latex: "$\\frac{\\pi}{8}$ radians"}
+    reviewed: true
+
+  - id: ms-set13-rr5-for-web-q23-tossup
+    question:
+      text: "What is the slope of a line that is parallel to the line y = −2/3 x + 6?"
+      latex: "What is the slope of a line that is parallel to the line $y = -\\frac{2}{3}x + 6$?"
+    answer:
+      text: "-2/3"
+      latex: "$-\\frac{2}{3}$"
+    reviewed: true
+
+  - id: ms-set13-de3-for-web-q16-bonus
+    question:
+      text: "Of the following 5 elements, which one is the least chemically reactive? Sodium, Oxygen, Francium, Boron, Xenon"
+      latex: "Of the following 5 elements, which one is the least chemically reactive? Sodium, Oxygen, Francium, Boron, Xenon"
+    answer:
+      text: "XENON"
+      latex: "XENON"
+    reviewed: true
