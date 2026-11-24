@@ -1,0 +1,19 @@
+# Text and LaTeX transcribed from the question images (QB-10).
+# See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+
+source: Read from the printed question images by Claude (no API), 2026-11-24
+questions:
+  - id: ms-set11-ms-1-q13-bonus
+    question:
+      text: "As a spring is compressed, which of the following best describes what happens to the amount of elastic potential energy stored in the spring?"
+      latex: "As a spring is compressed, which of the following best describes what happens to the amount of elastic potential energy stored in the spring?"
+    answer:
+      text: "IT INCREASES"
+      latex: "IT INCREASES"
+      choice: W
+    choices:
+      W: {text: "It increases", latex: "It increases"}
+      X: {text: "It decreases", latex: "It decreases"}
+      Y: {text: "It is unchanged", latex: "It is unchanged"}
+      Z: {text: "It decreases, then increases", latex: "It decreases, then increases"}
+    reviewed: false
