@@ -1,6 +1,7 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
 # Reviewed by John on 2026-11-24.
+# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -21,3 +22,63 @@ questions:
       text: "28"
       latex: "$28$"
     reviewed: true
+
+  - id: ms-set08-round-7-a-q18-bonus
+    question:
+      text: "Arrange the following three numbers in order from least to greatest: π, √10, and 22/7."
+      latex: "Arrange the following three numbers in order from least to greatest: $\\pi$, $\\sqrt{10}$, and $22/7$."
+    answer:
+      text: "π, 22/7, √10"
+      latex: "$\\pi$, $22/7$, $\\sqrt{10}$"
+    reviewed: false
+
+  - id: ms-set08-round-9-a-q10-bonus
+    question:
+      text: "Simplify the expression: 3/(5 − √10) [3 divided by the quantity 5 minus the square root of 10]."
+      latex: "Simplify the expression: $\\frac{3}{5 - \\sqrt{10}}$ \\textbf{[3 divided by the quantity 5 minus the square root of 10]}."
+    answer:
+      text: "1 + √10/5"
+      latex: "$1 + \\sqrt{10}/5$"
+      accept:
+        - text: "(5 + √10)/5"
+          latex: "$(5 + \\sqrt{10})/5$"
+    reviewed: false
+
+  - id: ms-set08-round-9-a-q18-bonus
+    question:
+      text: "A modern camera allows light to hit its sensor through a circular opening called an aperture. Assuming the amount of light per area is uniform; by what factor must the radius of the aperture be multiplied to double the amount of light hitting the sensor?"
+      latex: "A modern camera allows light to hit its sensor through a circular opening called an aperture. Assuming the amount of light per area is uniform; by what factor must the radius of the aperture be multiplied to double the amount of light hitting the sensor?"
+    answer:
+      text: "√2"
+      latex: "$\\sqrt{2}$"
+      choice: X
+    choices:
+      W: {text: "1/2", latex: "$1/2$"}
+      X: {text: "√2", latex: "$\\sqrt{2}$"}
+      Y: {text: "2", latex: "$2$"}
+      Z: {text: "4", latex: "$4$"}
+    reviewed: false
+
+  - id: ms-set08-round-11-a-q13-tossup
+    question:
+      text: "If a/b = −1 [a over b equals negative 1] then what is a + b?"
+      latex: "If $\\frac{a}{b} = -1$ \\textbf{[a over b equals negative 1]} then what is $a + b$?"
+    answer:
+      text: "0"
+      latex: "$0$"
+      choice: X
+    choices:
+      W: {text: "1", latex: "$1$"}
+      X: {text: "0", latex: "$0$"}
+      Y: {text: "−1", latex: "$-1$"}
+      Z: {text: "−2", latex: "$-2$"}
+    reviewed: false
+
+  - id: ms-set08-round-13-a-q16-bonus
+    question:
+      text: "Solve for x: 2^(4x) = 1/16 [2 to the 4x power equals 1/16]."
+      latex: "Solve for $x$: $2^{4x} = \\frac{1}{16}$ \\textbf{[2 to the 4x power equals 1/16]}."
+    answer:
+      text: "−1"
+      latex: "$-1$"
+    reviewed: false
