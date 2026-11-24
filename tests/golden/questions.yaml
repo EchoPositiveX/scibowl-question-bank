@@ -1,0 +1,490 @@
+# Golden questions (QB-05): hand-checked against the printed question images on 2026-11-24.
+# tests/test_golden.py parses each one's round and compares these fields.
+# Every value here is what the printed question says, not just what the parser gives today.
+# `known_issue` marks an entry the parser gets wrong today; that test is expected to fail
+# until the parser is fixed (then remove known_issue, and the test must pass).
+
+questions:
+  - id: ms-set01-m-round16-q12-bonus
+    category: physical_science
+    format: multiple_choice
+    question: "With which of the following is Brownian motion most directly related:"
+    choices:
+      W: "thermal energy"
+      X: "conservation of mass"
+      Y: "Dalton’s law"
+      Z: "chemical ionic bonds"
+    answer:
+      choice: W
+      text: "THERMAL ENERGY"
+
+  - id: ms-set01-m-round05-q03-bonus
+    category: physical_science
+    format: short_answer
+    question: "What is the ideal mechanical advantage of a ramp that is 24 meters long and 4 meters higher at one end versus the other?"
+    answer:
+      text: "6"
+    known_issue: "The printed '(Solution: ...)' note under the answer ends up in answer.text"
+
+  - id: ms-set01-m-round08-q20-tossup
+    category: physical_science
+    format: short_answer
+    question: "What is the most commonly used scientific name for the compound with the chemical formula C6H12O6, which is a product of photosynthesis?"
+    answer:
+      text: "GLUCOSE"
+      accept: ["D-GLUCOSE", "DEXTROSE"]
+    known_issue: "Subscripts in a chemical formula come out as separate numbers at the end of the text; an ACCEPT with 'or' is not split"
+
+  - id: ms-set01-m-round15-q16-tossup
+    category: math
+    format: short_answer
+    question: "A carpenter is building a vertical wall and using one, 2-by-4 vertical stud every 16 inches. If the wall is 8 feet long, how many vertical studs will he use?"
+    answer:
+      text: "7"
+
+  - id: ms-set02-sample-questions-r1-q14-bonus
+    category: life_science
+    format: multiple_choice
+    question: "In mammals, what teeth are evolved primarily to function in gripping and tearing"
+    choices:
+      W: "incissors"
+      X: "canines"
+      Y: "molars"
+      Z: "wisdom"
+    answer:
+      choice: X
+      text: "CANINES"
+
+  - id: ms-set02-sample-questions-r9-q25-bonus
+    category: physical_science
+    format: short_answer
+    question: "Order the following from the LOWEST to the HIGHEST temperature: water boils, iron melts, ammonia boils, tin melts"
+    answer:
+      text: "AMMONIA BOILS, WATER BOILS, TIN MELTS, IRON MELTS"
+
+  - id: ms-set02-sample-questions-r9-q04-bonus
+    category: earth_and_space
+    format: short_answer
+    question: "What is the only common mineral to be strongly magnetic other than magnetite:"
+    answer:
+      text: "PYRRHOTITE"
+      accept: ["FeS OR IRON SULFIDE"]
+
+  - id: ms-set03-round-7c-ms-q17-tossup
+    category: earth_and_space
+    format: multiple_choice
+    question: "Where does most of Earth’s groundwater come from:"
+    choices:
+      W: "percolation of seawater into underground aquifers where it undergoes natural desalination"
+      X: "precipitation"
+      Y: "aquifers that have been there since Earth's origin"
+      Z: "glacial melting and runoff"
+    answer:
+      choice: X
+      text: "PRECIPITATION"
+
+  - id: ms-set03-round-13c-ms-q03-tossup
+    category: physical_science
+    format: short_answer
+    question: "Order the following 3 elements from the one that most easily loses an electron to the one which will be the most difficult to remove an electron from: potassium; fluorine; nitrogen"
+    answer:
+      text: "POTASSIUM; NITROGEN; FLUORINE"
+
+  - id: ms-set03-round-1c-ms-q16-bonus
+    category: life_science
+    format: short_answer
+    question: "What outer structure possessed by plant cells protects them from environmental changes and helps them maintain their shape during stress and times of water loss?"
+    answer:
+      text: "CELL WALL"
+      accept: ["WALL"]
+
+  - id: ms-set04-round4-q09-bonus
+    category: earth_and_space
+    format: multiple_choice
+    question: "Approximately what percent of Earth’s water is in the form of ice?"
+    choices:
+      W: "1.6 %"
+      X: "6.6 %"
+      Y: "11.6 %"
+      Z: "16.6 %"
+    answer:
+      choice: W
+      text: "1.6 %"
+
+  - id: ms-set04-round3-q11-bonus
+    category: math
+    format: short_answer
+    question: "At the oil spill in the Gulf of Mexico, underwater robots dove down in the water 5000 feet. If the robot dove down another 3000 feet, then rose up 6500 feet, where would the robot be in relation to sea level?"
+    answer:
+      text: "-1500"
+      accept: ["1500 BELOW SEA LEVEL"]
+
+  - id: ms-set04-round8-q19-bonus
+    category: math
+    format: multiple_choice
+    question: "Suppose you have an equilateral triangle with a base of 2 inches. Which of the following is true?"
+    choices:
+      W: "The other sides of the triangle are 1 inch"
+      X: "The triangle could be similar to a right triangle"
+      Y: "The triangle is a right triangle"
+      Z: "The triangle is similar to all equilateral triangles"
+    answer:
+      choice: Z
+      text: "THE TRIANGLE IS SIMILAR TO ALL EQUILATERAL TRIANGLES"
+
+  - id: ms-set05-round12-q24-tossup
+    category: life_science
+    format: multiple_choice
+    question: "Which of the following types of organisms caused the potato famine in Ireland in the 1800s?"
+    choices:
+      W: "Fungus"
+      X: "Bacteria"
+      Y: "Virus"
+      Z: "Protist"
+    answer:
+      choice: Z
+      text: "PROTIST"
+
+  - id: ms-set05-round16-q03-bonus
+    category: energy
+    format: short_answer
+    question: "What two isotopes of iodine are produced by the fission of uranium atoms during the operation of nuclear reactors?"
+    answer:
+      text: "IODINE-129 AND IODINE-131"
+
+  - id: ms-set05-round6-q07-bonus
+    category: earth_and_space
+    format: short_answer
+    question: "You look at a thin section of a sedimentary rock composed of quartz, plagioclase (read as: PLAY-jee-oh-klays), and amphibole (read as: AHM(P)-fi-bōel) grains surrounded by calcite cement. Which of those minerals formed last?"
+    answer:
+      text: "CALCITE CEMENT"
+      accept: ["CALCITE"]
+
+  - id: ms-set06-round8-q18-bonus
+    category: energy
+    format: multiple_choice
+    question: "Which of the following is the effect of reactive power on the efficiency of a circuit?"
+    choices:
+      W: "It reduces efficiency"
+      X: "It increases efficiency by about 30%"
+      Y: "The efficiency remains unaffected"
+      Z: "The efficiency is maximized"
+    answer:
+      choice: W
+      text: "IT REDUCES EFFICIENCY"
+
+  - id: ms-set06-round14-q07-tossup
+    category: life_science
+    format: short_answer
+    question: "What is the term for the RNA sequences between exons that are removed before translation in eukaryotic [yoo-KAR-ee-oh-tik] cells?"
+    answer:
+      text: "INTRONS"
+
+  - id: ms-set06-round3-q07-bonus
+    category: life_science
+    format: multiple_choice
+    question: "Scientists are using genetic engineering to develop a wheat crop that is resistant to a particular kind of moth. How would they determine if the plants are moth resistant?"
+    choices:
+      W: "Determine the length of the moth reproductive cycle in normal wheat"
+      X: "Monitor moth populations in separate fields planted with control and experimental wheat crops"
+      Y: "Monitor numbers of moth species infesting normal wheat"
+      Z: "Determine whether moths in test wheat can be controlled with chemical sprays"
+    answer:
+      choice: X
+      text: "MONITOR MOTH POPULATIONS IN SEPARATE FIELDS PLANTED WITH CONTROL AND EXPERIMENTAL WHEAT CROPS"
+
+  - id: ms-set07-ms-round-11-q14-tossup
+    category: physical_science
+    format: multiple_choice
+    question: "Which of the following is NOT true regarding radioactive decay?"
+    choices:
+      W: "In gamma decay, no transmutation occurs"
+      X: "Different isotopes of the same element will decay at the same rate"
+      Y: "Radioactive decay may cause an atom to lose protons or neutrons"
+      Z: "Radioactive decay is a process by which unstable atoms emit ionizing particles"
+    answer:
+      choice: X
+      text: "DIFFERENT ISOTOPES OF THE SAME ELEMENT WILL DECAY AT THE SAME RATE"
+
+  - id: ms-set07-ms-round-6-q22-bonus
+    category: life_science
+    format: short_answer
+    question: "Animals have two sources of DNA in their cells and plants have three sources. Name the three organelles in which plant DNA can be found."
+    answer:
+      text: "CHLOROPLASTS, MITOCHONDRIA, AND THE NUCLEUS"
+
+  - id: ms-set07-ms-round-1-q04-bonus
+    category: energy
+    format: short_answer
+    question: "In a hydrogen fuel cell, the anodic reaction is hydrogen oxidation at 0.00 volts and the cathodic reaction is at 1.23 volts. What is the electric potential of the cell in volts?"
+    answer:
+      text: "+1.23"
+      accept: ["1.23"]
+      do_not_accept: ["-1.23"]
+
+  - id: ms-set08-round-14-a-q18-tossup
+    category: physical_science
+    format: multiple_choice
+    question: "Which of the following is a physical change?"
+    choices:
+      W: "Combustion"
+      X: "Electrolysis"
+      Y: "Sublimation"
+      Z: "Fermentation"
+    answer:
+      choice: Y
+      text: "SUBLIMATION"
+
+  - id: ms-set08-round-6-a-q17-tossup
+    category: energy
+    format: short_answer
+    question: "What is the lowest point of land in the United States, where pure water does not boil until temperatures exceed 100°C?"
+    answer:
+      text: "DEATH VALLEY"
+    known_issue: "A superscript o used as a degree sign comes out as the letter o"
+
+  - id: ms-set08-round-10-a-q03-tossup
+    category: earth_and_space
+    format: short_answer
+    question: "What is the term for an earthquake’s initial rupture point?"
+    answer:
+      text: "FOCUS"
+      accept: ["HYPOCENTER"]
+
+  - id: ms-set09-regionalms-8a-q03-tossup
+    category: general_science
+    format: multiple_choice
+    question: "Which of the following is an ecosystem service provided by the ocean?"
+    choices:
+      W: "Providing safe passage to mariners"
+      X: "Restricting access to deep-ocean species"
+      Y: "Sanitizing water in the hydrologic cycle"
+      Z: "Absorbing heat from the sun's light"
+    answer:
+      choice: Z
+      text: "ABSORBING HEAT FROM THE SUN'S LIGHT"
+
+  - id: ms-set09-regionalms-4a-q16-bonus
+    category: math
+    format: short_answer
+    question: "What is the distance between the points (2, 5) and (6, 8)?"
+    answer:
+      text: "5"
+    known_issue: "A space is left before the question mark"
+
+  - id: ms-set09-regionalms-12a-q03-bonus
+    category: math
+    format: short_answer
+    question: "A right triangle has sides of length 7, 24, and 25. What is the length of the altitude to the hypotenuse?"
+    answer:
+      text: "168/25"
+      accept: ["6 18/25", "6.72"]
+    known_issue: "Two ACCEPT answers separated by a comma are kept as one"
+
+  - id: ms-set10-5a-ms-reg-2016-q09-tossup
+    category: general_science
+    format: multiple_choice
+    question: "Which of the following instruments measures air pressure?"
+    choices:
+      W: "Hygrometer"
+      X: "Thermometer"
+      Y: "Barometer"
+      Z: "Anemometer"
+    answer:
+      choice: Y
+      text: "BAROMETER"
+
+  - id: ms-set10-15a-ms-reg-2016-q22-tossup
+    category: earth_and_space
+    format: short_answer
+    question: "What anion is the most common form of dissolved inorganic carbon in the Earth's oceans?"
+    answer:
+      text: "BICARBONATE"
+
+  - id: ms-set10-2a-ms-reg-2016-q14-bonus
+    category: general_science
+    format: short_answer
+    question: "Place the following four divisions of human prehistory in order, from earliest to most recent: 1) Paleolithic; 2) Bronze Age; 3) Neolithic; 4) Iron Age"
+    answer:
+      text: "1, 3, 2, 4 (PALEOLITHIC, NEOLITHIC, BRONZE AGE, IRON AGE)"
+
+  - id: ms-set11-ms-3a-q18-tossup
+    category: energy
+    format: multiple_choice
+    question: "Which industrial process is used to separate the many components of crude oil into useful petroleum products?"
+    choices:
+      W: "Absorption"
+      X: "Membrane diffusion"
+      Y: "Refrigeration"
+      Z: "Distillation"
+    answer:
+      choice: Z
+      text: "DISTILLATION"
+
+  - id: ms-set11-ms-12a-q23-bonus
+    category: life_science
+    format: short_answer
+    question: "What type of biological structures have no apparent function, but resemble structures that are found in the evolutionary history of an organism?"
+    answer:
+      text: "VESTIGIAL STRUCTURES"
+
+  - id: ms-set11-ms-14a-q22-bonus
+    category: earth_and_space
+    format: short_answer
+    question: "In stellar structure, identify all of the following four elements that are considered metals: 1) Carbon; 2) Oxygen; 3) Silicon; 4) Iron."
+    answer:
+      text: "ALL"
+      accept: ["1, 2, 3, AND 4"]
+
+  - id: ms-set12-msround-3-q01-tossup
+    category: math
+    format: multiple_choice
+    question: "Four points are all equidistant from a fifth point. Which of the following types of figures must contain the four points?"
+    choices:
+      W: "Circle"
+      X: "Sphere"
+      Y: "Square"
+      Z: "Rectangle"
+    answer:
+      choice: X
+      text: "SPHERE"
+
+  - id: ms-set12-msround-5-q04-bonus
+    category: energy
+    format: short_answer
+    question: "What reaction, in which the starting material is decomposed in the presence of high temperatures without oxygen, is used to make biochar?"
+    answer:
+      text: "PYROLYSIS"
+
+  - id: ms-set12-msround-1-q01-bonus
+    category: life_science
+    format: multiple_choice
+    question: "Which of the following best describes the pathway of aerobic respiration?"
+    choices:
+      W: "Glucose is oxidized and oxygen is reduced"
+      X: "Oxygen is oxidized and glucose is reduced"
+      Y: "Both glucose and oxygen are oxidized"
+      Z: "Both glucose and oxygen are reduced"
+    answer:
+      choice: W
+      text: "GLUCOSE IS OXIDIZED AND OXYGEN IS REDUCED"
+
+  - id: ms-set13-2019-nsb-msr-round-1a-q05-tossup
+    category: earth_and_space
+    format: multiple_choice
+    question: "Seismic activity in the ocean may lead to what destructive phenomenon?"
+    choices:
+      W: "Tsunamis"
+      X: "Monsoons"
+      Y: "Storm surge"
+      Z: "Hurricanes"
+    answer:
+      choice: W
+      text: "TSUNAMIS"
+
+  - id: ms-set13-2019-nsb-msr-round-6a-q15-bonus
+    category: energy
+    format: short_answer
+    question: "Scientists at SLAC National Lab use brilliant, ultrafast pulses produced by the Linac Coherent Light Source, or LCLS, to perform mix-and-inject serial crystallography. From what portion of the electromagnetic spectrum do these pulses originate?"
+    answer:
+      text: "X-RAY"
+
+  - id: ms-set13-rr5-for-web-q01-bonus
+    category: general_science
+    format: short_answer
+    question: "The island of Newfoundland is well known for its very wet boggy highlands that have clean but very brown water because it contains a substance that most commonly goes by what name?"
+    answer:
+      text: "TANNIN"
+      accept: ["TANNINS"]
+
+  - id: ms-set13-2019-nsb-msr-round-6a-q18-bonus
+    category: math
+    format: short_answer
+    question: "The base-six numeral five-four-three is equivalent to what in base 10?"
+    answer:
+      text: "207"
+
+  - id: ms-set14-2020-ms-rd4-q16-tossup
+    category: life_science
+    format: multiple_choice
+    question: "Which of the following best describes the role of most white blood cells?"
+    choices:
+      W: "Immune response"
+      X: "Clotting"
+      Y: "Gas transport"
+      Z: "Osmotic buffering"
+    answer:
+      choice: W
+      text: "IMMUNE RESPONSE"
+
+  - id: ms-set14-2020-ms-rd5-q17-tossup
+    category: math
+    format: short_answer
+    question: "Round 6,157.58 to the nearest hundred."
+    answer:
+      text: "6,200"
+
+  - id: ms-set14-2020-ms-rd6-q22-tossup
+    category: life_science
+    format: short_answer
+    question: "Bacterial cells are an example of what type of cell that lacks a nucleus and membrane-bound organelles?"
+    answer:
+      text: "PROKARYOTIC"
+      accept: ["PROKARYOTE"]
+
+  - id: ms-set15-set-6-ms-2021-q06-tossup
+    category: energy
+    format: multiple_choice
+    question: "Lawrence Berkeley National Lab scientists are studying the ability of a pill, originally designed to treat radiation poisoning, to remove MRI contrast dyes from the body. Which of the following lanthanide [LAN-tha-nide] elements used in these dyes are they hoping to remove?"
+    choices:
+      W: "Lead"
+      X: "Gadolinium [GAD-oh-LIN-ee-um]"
+      Y: "Plutonium"
+      Z: "Uranium"
+    answer:
+      choice: X
+      text: "GADOLINIUM"
+
+  - id: ms-set15-set-2-ms-2021-q15-bonus
+    category: physical_science
+    format: short_answer
+    question: "How many double bonds are present in one molecule of butyl-amine [BYOO-til-ah-MEEN]?"
+    answer:
+      text: "ZERO"
+
+  - id: ms-set15-set-10-ms-2021-q04-tossup
+    category: math
+    format: short_answer
+    question: "What is the slope of a line perpendicular to the line that contains the points (4, 4) and (10, 11)?"
+    answer:
+      text: "–6/7"
+    known_issue: "A space is left before the question mark"
+
+  - id: ms-set16-2022-ms-8-q14-bonus
+    category: chemistry
+    format: multiple_choice
+    question: "In which of the following compounds does hydrogen have an oxidation state that is NOT +1?"
+    choices:
+      W: "NH3"
+      X: "CH3COOH"
+      Y: "HF"
+      Z: "NaH"
+    answer:
+      choice: Z
+      text: "NaH"
+    known_issue: "Subscripts in a chemical formula come out as separate numbers"
+
+  - id: ms-set16-2022-ms-9-q01-bonus
+    category: chemistry
+    format: short_answer
+    question: "Identify all of the following three elements that can commonly be found in coal: 1) Carbon; 2) Oxygen; 3) Sulfur."
+    answer:
+      text: "ALL"
+
+  - id: ms-set16-2022-ms-8-q16-tossup
+    category: energy
+    format: short_answer
+    question: "Scientists supported by the Department of Energy are studying hexokinase, an enzyme that adds a phosphate group to glucose by taking it from what compound?"
+    answer:
+      text: "ATP"
+      accept: ["ADENOSINE TRIPHOSPHATE"]
