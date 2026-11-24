@@ -24,7 +24,6 @@ questions:
     question: "What is the ideal mechanical advantage of a ramp that is 24 meters long and 4 meters higher at one end versus the other?"
     answer:
       text: "6"
-    known_issue: "The printed '(Solution: ...)' note under the answer ends up in answer.text"
 
   - id: ms-set01-m-round08-q20-tossup
     category: physical_science
@@ -33,7 +32,6 @@ questions:
     answer:
       text: "GLUCOSE"
       accept: ["D-GLUCOSE", "DEXTROSE"]
-    known_issue: "Subscripts in a chemical formula come out as separate numbers at the end of the text; an ACCEPT with 'or' is not split"
 
   - id: ms-set01-m-round15-q16-tossup
     category: math
@@ -241,7 +239,6 @@ questions:
     question: "What is the lowest point of land in the United States, where pure water does not boil until temperatures exceed 100°C?"
     answer:
       text: "DEATH VALLEY"
-    known_issue: "A superscript o used as a degree sign comes out as the letter o"
 
   - id: ms-set08-round-10-a-q03-tossup
     category: earth_and_space
@@ -270,7 +267,6 @@ questions:
     question: "What is the distance between the points (2, 5) and (6, 8)?"
     answer:
       text: "5"
-    known_issue: "A space is left before the question mark"
 
   - id: ms-set09-regionalms-12a-q03-bonus
     category: math
@@ -279,7 +275,6 @@ questions:
     answer:
       text: "168/25"
       accept: ["6 18/25", "6.72"]
-    known_issue: "Two ACCEPT answers separated by a comma are kept as one"
 
   - id: ms-set10-5a-ms-reg-2016-q09-tossup
     category: general_science
@@ -458,7 +453,6 @@ questions:
     question: "What is the slope of a line perpendicular to the line that contains the points (4, 4) and (10, 11)?"
     answer:
       text: "–6/7"
-    known_issue: "A space is left before the question mark"
 
   - id: ms-set16-2022-ms-8-q14-bonus
     category: chemistry
@@ -472,7 +466,6 @@ questions:
     answer:
       choice: Z
       text: "NaH"
-    known_issue: "Subscripts in a chemical formula come out as separate numbers"
 
   - id: ms-set16-2022-ms-9-q01-bonus
     category: chemistry

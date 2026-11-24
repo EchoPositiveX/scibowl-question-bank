@@ -2,6 +2,12 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-24: When an ACCEPT is split into several answers (QB-32)
+
+- A printed ACCEPT is split only on a lower case "or" (the older sets use it between upper case answers, "D-GLUCOSE or DEXTROSE"), and only when the entry has no comma, no lower case "for" and doesn't start with a sign ("+ or -").
+- Commas are split only when every part is a number with the same value ("6 18/25, 6.72"). Other commas and upper case OR are left alone, because they are usually part of one answer ("1, 2, AND 4", "Y OR ORDINATE AXIS").
+- Printed "(Solution: ...)" working is dropped from `answer.text` and kept in `answer.raw`. Publishing it as its own field is QB-33.
+
 ## 2026-11-23: Transcriptions for unreadable math (QB-10)
 
 - Text and LaTeX for questions the parser can't read go in `transcriptions/<level>/<set>.yaml`, one file per set, applied after `corrections.yaml`. They are data files a person can review and edit, like corrections, not parser code.
