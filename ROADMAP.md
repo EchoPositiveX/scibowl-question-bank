@@ -12,6 +12,7 @@ How this file works:
 
 ## Next
 
+- QB-36 Transcribe the 65 questions QB-35 flagged (sets 01, 02, 03, 04, 05, 08 and 13), two sets per PR with John reviewing, as in QB-10. Progress: all 65 transcribed in four PRs, waiting for John's review. Set 13 RR2 toss-up 13 prints the answer Y) x^6, but x^8·x^4/x^2 is x^10 (choice X), so it may need a correction
 - QB-20 Grow the sample file into the golden test set (feeds QB-05) and share it with the website for WEB-01
 - QB-03 Cache per-round results so a full run only re-parses PDFs that changed
 - QB-10 AI vision step to produce text with LaTeX/mhchem, prototyped on 1–2 sets and reviewed before continuing. Start with the questions still flagged needs_review (153 after QB-28) (mostly set 06 and 07 math, where formulas overlap the text in the PDF). Progress: the transcription format, parser support and review page are done, and set 01's 28 flagged questions are transcribed and reviewed by John. Set 06's 62 are transcribed and reviewed by John (17 of them are multiple choice the parser had turned into short answer; the transcription restores the choices). Set 07's 20 are transcribed and reviewed by John (8 restored to multiple choice). The last 42 flagged questions (sets 02, 03, 04, 05, 08, 09, 11 and 13) are transcribed and reviewed by John, two sets per PR. Set 04 Round 4 toss-up 21 is left flagged because its choices are missing from the PDF itself. The next step is to publish them and decide whether to go on to high school
@@ -20,7 +21,6 @@ How this file works:
 
 ## Nice to have
 
-- QB-36 Transcribe the 65 questions QB-35 flagged (sets 01, 02, 03, 04, 05, 08 and 13), two sets per PR with John reviewing, as in QB-10
 - QB-34 Review pages with KaTeX built in: put the KaTeX script, styles and fonts inside the review HTML so it renders the same in any viewer (John's viewer did not load the fonts from the web, so ≠ showed as a box)
 - QB-33 Publish the printed "(Solution: ...)" working as its own answer field (schema change) instead of only keeping it in answer.raw
 - QB-31 Run the remaining flagged questions through an AI vision API in batches, writing transcription files for review (needs an API key and a cost OK)

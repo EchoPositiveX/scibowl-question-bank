@@ -55,4 +55,7 @@ extract:
     set: {style: Short Answer}
     reason: The PDF labels this Multiple Choice, but it has no choices and a number for an answer.
 
-questions: []
+questions:
+  - id: ms-set13-rr2-for-web-q13-tossup
+    set: {answer.choice: X, answer.text: "x^10"}
+    reason: "The PDF's answer is Y) x^6, but x^8 x^4 / x^2 = x^12 / x^2 = x^10, which is choice X. Confirmed by John on 2026-11-24."

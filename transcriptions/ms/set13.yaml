@@ -1,6 +1,7 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
 # Reviewed by John on 2026-11-24.
+# The entries for QB-36 at the end (fraction and root questions found by QB-35) were added later, read the same way, and reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -44,4 +45,40 @@ questions:
     answer:
       text: "XENON"
       latex: "XENON"
+    reviewed: true
+
+  - id: ms-set13-rr2-for-web-q03-bonus
+    question:
+      text: "Simplify the ratio of the following factorial: 4!/6! (read as: 4 factorial divided by 6 factorial)"
+      latex: "Simplify the ratio of the following factorial: $\\frac{4!}{6!}$ (read as: 4 factorial divided by 6 factorial)"
+    answer:
+      text: "1/30"
+      latex: "$1/30$"
+      accept:
+        - text: "0.033"
+          latex: "$0.033$"
+    reviewed: true
+
+  - id: ms-set13-rr2-for-web-q08-bonus
+    question:
+      text: "Simplify: 5 ÷ 5 ÷ 5 ÷ 1/5 (read \"five divided by five divided by five divided by one fifth\")."
+      latex: "Simplify: $5 \\div 5 \\div 5 \\div \\frac{1}{5}$ (read \"five divided by five divided by five divided by one fifth\")."
+    answer:
+      text: "1"
+      latex: "$1$"
+    reviewed: true
+
+  - id: ms-set13-rr2-for-web-q13-tossup
+    question:
+      text: "Simplify: x^8 x^4 / x^2 (quantity x to the 8th times x to the 4th divided by x squared)"
+      latex: "Simplify: $\\frac{x^8x^4}{x^2}$ (quantity x to the 8th times x to the 4th divided by x squared)"
+    answer:
+      text: "x^10"
+      latex: "$x^{10}$"
+      choice: X
+    choices:
+      W: {text: "x^16", latex: "$x^{16}$"}
+      X: {text: "x^10", latex: "$x^{10}$"}
+      Y: {text: "x^6", latex: "$x^6$"}
+      Z: {text: "x^4", latex: "$x^4$"}
     reviewed: true
