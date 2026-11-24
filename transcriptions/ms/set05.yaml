@@ -1,0 +1,38 @@
+# Text and LaTeX transcribed from the question images (QB-10).
+# See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+# Reviewed by John on 2026-11-24.
+
+source: Read from the printed question images by Claude (no API), 2026-11-24
+questions:
+  - id: ms-set05-round2-q25-bonus
+    question:
+      text: "Express the following in standard polynomial form: 5x^4y^7 × zy × 11x^2z^2y (read as: 5x to the fourth y to the seventh times zy times 11 x squared z squared y)."
+      latex: "Express the following in standard polynomial form: $5x^4y^7 \\times zy \\times 11x^2z^2y$ (read as: 5x to the fourth y to the seventh times zy times 11 x squared z squared y)."
+    answer:
+      text: "55x^6y^9z^3"
+      latex: "$55x^6y^9z^3$"
+    reviewed: true
+
+  - id: ms-set05-round14-q10-tossup
+    question:
+      text: "If f(x) = 1/x, then f^-1(x) (read as: f inverse of x) equals which of the following?"
+      latex: "If $f(x) = 1/x$, then $f^{-1}(x)$ (read as: f inverse of x) equals which of the following?"
+    answer:
+      text: "1/x"
+      latex: "$\\frac{1}{x}$"
+      choice: Z
+    choices:
+      W: {text: "x − 1", latex: "$x - 1$"}
+      X: {text: "x", latex: "$x$"}
+      Y: {text: "1/x^2", latex: "$\\frac{1}{x^2}$"}
+      Z: {text: "1/x", latex: "$\\frac{1}{x}$"}
+    reviewed: true
+
+  - id: ms-set05-round16-q06-bonus
+    question:
+      text: "Michelle can mow a lawn in 5 hours, Steven can mow a lawn in 4 hours, and Bill can mow it in 3 1/2 hours. As a mixed number in simplest form, how long will it take them in hours to mow the lawn together?"
+      latex: "Michelle can mow a lawn in 5 hours, Steven can mow a lawn in 4 hours, and Bill can mow it in $3\\frac{1}{2}$ hours. As a mixed number in simplest form, how long will it take them in hours to mow the lawn together?"
+    answer:
+      text: "1 37/103"
+      latex: "$1\\frac{37}{103}$"
+    reviewed: true
