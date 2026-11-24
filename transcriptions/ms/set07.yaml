@@ -117,7 +117,7 @@ questions:
   - id: ms-set07-ms-round-8-q10-bonus
     question:
       text: "To be able to quantify the energy produced by a solar collector, the following formula is utilized: Q = (m)(C_p)(T_r - T_s) [Q equals m times C sub p times the quantity T sub r minus T sub s], where Q is the collector heat rate; m is the mass flowrate, C_p is the specific heat, T_r is the temperature of the liquid in the return path, and T_s is the temperature of the liquid in the supply path. Using 3000 operating hours in a year, compute the yearly heat rate production in kilojoules of a solar collector if m = 2 kilograms per hour, C_p = 4 kilojoules over kilograms Kelvin, T_r = 425 Kelvin, and T_s = 375 Kelvin."
-      latex: "To be able to quantify the energy produced by a solar collector, the following formula is utilized: $Q = (m)(C_p)(T_r - T_s)$ [Q equals m times C sub p times the quantity T sub r minus T sub s], where $Q$ is the collector heat rate; $m$ is the mass flowrate, $C_p$ is the specific heat, $T_r$ is the temperature of the liquid in the return path, and $T_s$ is the temperature of the liquid in the supply path. Using 3000 operating hours in a year, compute the yearly heat rate production in kilojoules of a solar collector if $m = 2$ kilograms per hour, $C_p = 4$ kilojoules over kilograms Kelvin, $T_r = 425$ Kelvin, and $T_s = 375$ Kelvin."
+      latex: "To be able to quantify the energy produced by a solar collector, the following formula is utilized: $Q = (m)(C_p)(T_r - T_s)$ \\textbf{[Q equals m times C sub p times the quantity T sub r minus T sub s]}, where $Q$ is the collector heat rate; $m$ is the mass flowrate, $C_p$ is the specific heat, $T_r$ is the temperature of the liquid in the return path, and $T_s$ is the temperature of the liquid in the supply path. Using 3000 operating hours in a year, compute the yearly heat rate production in kilojoules of a solar collector if $m = 2$ kilograms per hour, $C_p = 4$ kilojoules over kilograms Kelvin, $T_r = 425$ Kelvin, and $T_s = 375$ Kelvin."
     answer:
       text: "1,200,000"
       latex: "$1{,}200{,}000$"
@@ -150,7 +150,7 @@ questions:
   - id: ms-set07-ms-round-9-q21-tossup
     question:
       text: "Two raised to what power is equal to 4^x ÷ 1/8 [4 to the power of x divided by one eighth]?"
-      latex: "Two raised to what power is equal to $4^x \\div 1/8$ [4 to the power of x divided by one eighth]?"
+      latex: "Two raised to what power is equal to $4^x \\div 1/8$ \\textbf{[4 to the power of x divided by one eighth]}?"
     answer:
       text: "2x + 3"
       latex: "$2x + 3$"
@@ -174,7 +174,7 @@ questions:
   - id: ms-set07-ms-round-11-q19-tossup
     question:
       text: "Determine the value of the function (f/g)(4) [f over g of 4], if f(x) = x^2 + 2x and g(x) = 3x - 5."
-      latex: "Determine the value of the function $\\left(\\frac{f}{g}\\right)(4)$ [f over g of 4], if $f(x) = x^2 + 2x$ and $g(x) = 3x - 5$."
+      latex: "Determine the value of the function $\\left(\\frac{f}{g}\\right)(4)$ \\textbf{[f over g of 4]}, if $f(x) = x^2 + 2x$ and $g(x) = 3x - 5$."
     answer:
       text: "24/7"
       latex: "$\\frac{24}{7}$"
@@ -219,7 +219,7 @@ questions:
   - id: ms-set07-ms-round-15-q10-bonus
     question:
       text: "If f(x) = x^2 + 2x for x > 0, and g(x) = 2x - 5, determine the value of g^-1(f^-1(15)) [g inverse of f inverse of 15]."
-      latex: "If $f(x) = x^2 + 2x$ for $x > 0$, and $g(x) = 2x - 5$, determine the value of $g^{-1}(f^{-1}(15))$ [g inverse of f inverse of 15]."
+      latex: "If $f(x) = x^2 + 2x$ for $x > 0$, and $g(x) = 2x - 5$, determine the value of $g^{-1}(f^{-1}(15))$ \\textbf{[g inverse of f inverse of 15]}."
     answer:
       text: "4"
       latex: "$4$"
