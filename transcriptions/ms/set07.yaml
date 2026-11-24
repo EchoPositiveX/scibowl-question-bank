@@ -1,5 +1,6 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+# Reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -16,7 +17,7 @@ questions:
       X: {text: "p < q", latex: "$p < q$"}
       Y: {text: "p = q", latex: "$p = q$"}
       Z: {text: "p ≤ q", latex: "$p \\le q$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-2-q16-bonus
     question:
@@ -25,7 +26,7 @@ questions:
     answer:
       text: "3, -3"
       latex: "$3, -3$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-3-q01-bonus
     question:
@@ -40,7 +41,7 @@ questions:
       X: {text: "x = 4y + 2", latex: "$x = 4y + 2$"}
       Y: {text: "y = 4x + 2", latex: "$y = 4x + 2$"}
       Z: {text: "y = 2x + 4", latex: "$y = 2x + 4$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-3-q07-tossup
     question:
@@ -49,7 +50,7 @@ questions:
     answer:
       text: "4 5/8"
       latex: "$4\\frac{5}{8}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-3-q13-tossup
     question:
@@ -58,7 +59,7 @@ questions:
     answer:
       text: "±7"
       latex: "$\\pm 7$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-4-q03-tossup
     question:
@@ -73,7 +74,7 @@ questions:
       X: {text: "0", latex: "$0$"}
       Y: {text: "1", latex: "$1$"}
       Z: {text: "π", latex: "$\\pi$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-6-q05-bonus
     question:
@@ -85,7 +86,7 @@ questions:
       accept:
         - text: "5/2"
           latex: "$\\frac{5}{2}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-7-q13-tossup
     question:
@@ -100,7 +101,7 @@ questions:
       X: {text: "x^2 + 25", latex: "$x^2 + 25$"}
       Y: {text: "x^2 - 10x + 25", latex: "$x^2 - 10x + 25$"}
       Z: {text: "x^2 + 10x + 25", latex: "$x^2 + 10x + 25$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-8-q03-bonus
     question:
@@ -112,7 +113,7 @@ questions:
       accept:
         - text: "0.2 AND -0.2"
           latex: "$0.2$ AND $-0.2$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-8-q10-bonus
     question:
@@ -121,7 +122,7 @@ questions:
     answer:
       text: "1,200,000"
       latex: "$1{,}200{,}000$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-8-q21-tossup
     question:
@@ -136,7 +137,7 @@ questions:
       X: {text: "(y - t)/b", latex: "$(y - t)/b$"}
       Y: {text: "(b + y)/t", latex: "$(b + y)/t$"}
       Z: {text: "t - by", latex: "$t - by$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-9-q03-tossup
     question:
@@ -145,7 +146,7 @@ questions:
     answer:
       text: "2π"
       latex: "$2\\pi$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-9-q21-tossup
     question:
@@ -160,7 +161,7 @@ questions:
       X: {text: "2x - 3", latex: "$2x - 3$"}
       Y: {text: "2x + 3", latex: "$2x + 3$"}
       Z: {text: "2x + 6", latex: "$2x + 6$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-10-q23-tossup
     question:
@@ -169,7 +170,7 @@ questions:
     answer:
       text: "√2"
       latex: "$\\sqrt{2}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-11-q19-tossup
     question:
@@ -181,7 +182,7 @@ questions:
       accept:
         - text: "3 3/7"
           latex: "$3\\frac{3}{7}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-12-q09-bonus
     question:
@@ -190,7 +191,7 @@ questions:
     answer:
       text: "-4 ± 2√5"
       latex: "$-4 \\pm 2\\sqrt{5}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-12-q21-tossup
     question:
@@ -205,7 +206,7 @@ questions:
       X: {text: "-x^2", latex: "$-x^2$"}
       Y: {text: "-x", latex: "$-x$"}
       Z: {text: "-√x", latex: "$-\\sqrt{x}$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-12-q21-bonus
     question:
@@ -214,7 +215,7 @@ questions:
     answer:
       text: "(4, 2) AND (-2, -4)"
       latex: "$(4, 2)$ AND $(-2, -4)$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-15-q10-bonus
     question:
@@ -223,7 +224,7 @@ questions:
     answer:
       text: "4"
       latex: "$4$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set07-ms-round-15-q16-tossup
     question:
@@ -238,4 +239,4 @@ questions:
       X: {text: "x^4 - x^2 + 1", latex: "$x^4 - x^2 + 1$"}
       Y: {text: "x^4 + x^3 + x^2 + x + 1", latex: "$x^4 + x^3 + x^2 + x + 1$"}
       Z: {text: "x^4 + x^2 + 1", latex: "$x^4 + x^2 + 1$"}
-    reviewed: false
+    reviewed: true
