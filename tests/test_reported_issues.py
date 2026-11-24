@@ -58,3 +58,14 @@ def test_answer_key_error_found_in_review_stays_fixed():
     assert question["answer"]["choice"] == "X"
     assert question["answer"]["text"] == "x^10"
     assert "corrected" in question["quality"]["flags"]
+
+
+def test_otec_choices_missing_from_pdf_stay_filled_in():
+    """Set 04 Round 4 toss-up 21 prints blank images for X, Y and the answer's first digit (QB-37)."""
+    question = _find("ms-set04-round4-q21-tossup")
+    assert question["choices"]["X"]["text"] == "10"
+    assert question["choices"]["Y"]["text"] == "20"
+    assert question["answer"]["choice"] == "Y"
+    assert question["answer"]["text"] == "20"
+    assert question["quality"]["text_status"] == "verified"
+    assert "needs_review" not in question["quality"]["flags"]

@@ -62,7 +62,9 @@ def test_footer_not_in_answer():
 
 
 def test_blank_choice_is_kept_and_flagged():
-    q = _round("ms/set04/Round4.pdf")["ms-set04-round4-q21-tossup"]
+    # Checks the parser before corrections: corrections.yaml fills these blanks in (QB-37).
+    raw = extract_round(RAW_DIR / "ms/set04/Round4.pdf", RAW_DIR, corrections=corr.load())
+    q = {q["id"]: q for q in map(to_question, raw)}["ms-set04-round4-q21-tossup"]
     assert q["format"] == "multiple_choice"
     assert set(q["choices"]) == {"W", "X", "Y", "Z"}
     assert q["answer"]["choice"] == "Y"
