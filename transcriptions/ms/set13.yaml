@@ -6,7 +6,7 @@ questions:
   - id: ms-set13-2019-nsb-msr-round-4a-q03-bonus
     question:
       text: "Identify all of the following four quantities that are conserved during the electrolysis of water: 1) Moles of reagents [ree-AY-jents]; 2) Mass; 3) Energy; 4) Entropy."
-      latex: "Identify all of the following four quantities that are conserved during the electrolysis of water: 1) Moles of reagents [ree-AY-jents]; 2) Mass; 3) Energy; 4) Entropy."
+      latex: "Identify all of the following four quantities that are conserved during the electrolysis of water: 1) Moles of reagents \\textbf{[ree-AY-jents]}; 2) Mass; 3) Energy; 4) Entropy."
     answer:
       text: "2, 3"
       latex: "2, 3"
