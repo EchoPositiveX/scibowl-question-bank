@@ -12,10 +12,8 @@ How this file works:
 
 ## Next
 
-- QB-36 Transcribe the 65 questions QB-35 flagged (sets 01, 02, 03, 04, 05, 08 and 13), two sets per PR with John reviewing, as in QB-10. Progress: all 65 transcribed in four PRs, waiting for John's review. Set 13 RR2 toss-up 13 prints the answer Y) x^6, but x^8·x^4/x^2 is x^10 (choice X), so it may need a correction
 - QB-20 Grow the sample file into the golden test set (feeds QB-05) and share it with the website for WEB-01
 - QB-03 Cache per-round results so a full run only re-parses PDFs that changed
-- QB-10 AI vision step to produce text with LaTeX/mhchem, prototyped on 1–2 sets and reviewed before continuing. Start with the questions still flagged needs_review (153 after QB-28) (mostly set 06 and 07 math, where formulas overlap the text in the PDF). Progress: the transcription format, parser support and review page are done, and set 01's 28 flagged questions are transcribed and reviewed by John. Set 06's 62 are transcribed and reviewed by John (17 of them are multiple choice the parser had turned into short answer; the transcription restores the choices). Set 07's 20 are transcribed and reviewed by John (8 restored to multiple choice). The last 42 flagged questions (sets 02, 03, 04, 05, 08, 09, 11 and 13) are transcribed and reviewed by John, two sets per PR. Set 04 Round 4 toss-up 21 is left flagged because its choices are missing from the PDF itself. The next step is to publish them and decide whether to go on to high school
 - QB-11 Draft a topic list (disciplines and sub-topics) with AI help, for John to edit
 - QB-12 AI-tag questions against the topic list, a set or two at a time. First goal: give every question one of the 2022 subjects (biology, chemistry, physics, earth and space, energy, math) in `tags.disciplines`, so older Life, Physical and General Science questions can be studied with the new grouping
 
@@ -40,6 +38,8 @@ How this file works:
 
 ## Done
 
+- QB-36 Transcribed and John reviewed the 65 questions QB-35 flagged (sets 01, 02, 03, 04, 05, 08 and 13) (#26, #27, #28, #29). Set 13 RR2 toss-up 13's answer is corrected to X) x^10. Published in v1.0.5
+- QB-10 Transcribed text and LaTeX for every question the parser flagged needs_review (sets 01 to 09, 11 and 13), from the question images at no API cost, each set reviewed by John before merging (#15 to #17, #21 to #24). Published in v1.0.3; set 04 Round 4 toss-up 21 stays flagged because its choices are missing from the PDF
 - QB-35 Questions with a fraction or root bar (a short rule with characters just above and below) are flagged needs_review, so the website shows their image: their PDF text comes apart ("convert 1/3 to a decimal" read as "convert rd to a decimal: 3"). 65 more questions flagged; the 61 already transcribed stay verified
 - QB-32 Parser fixes from the golden tests: chemical subscripts stay in place (C6H12O6, NH3), a superscript o after a number becomes °, no space before a final ?, printed (Solution: ...) working is dropped from the answer (kept in answer.raw), and ACCEPT lists split on a lower case "or" or on commas between equal numbers. A full parse changes about 700 fields against v1.0.2 and no question's flags
 - QB-05 Golden tests: 50 questions from all 16 middle school sets, hand-checked against their images, in `tests/golden/questions.yaml`; `tests/test_golden.py` compares each field. 7 showed parser bugs, fixed in QB-32
