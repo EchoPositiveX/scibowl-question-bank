@@ -1,5 +1,6 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+# Reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -10,7 +11,7 @@ questions:
     answer:
       text: "19/99"
       latex: "$\\frac{19}{99}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set08-round-17-a-q06-bonus
     question:
@@ -19,4 +20,4 @@ questions:
     answer:
       text: "28"
       latex: "$28$"
-    reviewed: false
+    reviewed: true
