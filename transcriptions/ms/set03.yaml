@@ -1,5 +1,6 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
+# Reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -10,7 +11,7 @@ questions:
     answer:
       text: "MULTIPLICATIVE INVERSE = -3/5; ADDITIVE INVERSE = 5/3"
       latex: "MULTIPLICATIVE INVERSE = $-\\frac{3}{5}$; ADDITIVE INVERSE = $\\frac{5}{3}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-2c-ms-q13-tossup
     question:
@@ -19,7 +20,7 @@ questions:
     answer:
       text: "59/18"
       latex: "$\\frac{59}{18}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-2c-ms-q18-tossup
     question:
@@ -34,7 +35,7 @@ questions:
       X: {text: "one-half of three quarters is three eighths", latex: "one-half of three quarters is three eighths"}
       Y: {text: "a whole number is divisible by 5 if the 'ones' digit is 0 or 5", latex: "a whole number is divisible by $5$ if the 'ones' digit is $0$ or $5$"}
       Z: {text: "an example of a proper fraction is 6/4", latex: "an example of a proper fraction is $\\frac{6}{4}$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-3c-ms-q02-tossup
     question:
@@ -49,7 +50,7 @@ questions:
       X: {text: "2 × ½ = 5 ÷ 5", latex: "$2 \\times \\frac{1}{2} = 5 \\div 5$"}
       Y: {text: "0/5 = 0", latex: "$\\frac{0}{5} = 0$"}
       Z: {text: "5/0 = 5", latex: "$\\frac{5}{0} = 5$"}
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-3c-ms-q07-bonus
     question:
@@ -58,7 +59,7 @@ questions:
     answer:
       text: "-2/3"
       latex: "$-\\frac{2}{3}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-4c-ms-q06-tossup
     question:
@@ -67,7 +68,7 @@ questions:
     answer:
       text: "5/11"
       latex: "$\\frac{5}{11}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-4c-ms-q06-bonus
     question:
@@ -76,7 +77,7 @@ questions:
     answer:
       text: "1 5/9"
       latex: "$1\\frac{5}{9}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-4c-ms-q16-tossup
     question:
@@ -85,7 +86,7 @@ questions:
     answer:
       text: "2/3"
       latex: "$\\frac{2}{3}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-6c-ms-q04-bonus
     question:
@@ -94,7 +95,7 @@ questions:
     answer:
       text: "10/4; 13/18; 7/12; 2/12"
       latex: "$\\frac{10}{4}$; $\\frac{13}{18}$; $\\frac{7}{12}$; $\\frac{2}{12}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-8c-ms-q10-bonus
     question:
@@ -106,7 +107,7 @@ questions:
       accept:
         - text: "THE STATEMENT: ALL NUMBERS LESS THAN OR EQUAL TO 9/4 or 2 1/4"
           latex: "THE STATEMENT: ALL NUMBERS LESS THAN OR EQUAL TO $\\frac{9}{4}$ or $2\\frac{1}{4}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-9c-ms-q09-tossup
     question:
@@ -115,7 +116,7 @@ questions:
     answer:
       text: "3/4"
       latex: "$\\frac{3}{4}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-12c-ms-q06-tossup
     question:
@@ -124,7 +125,7 @@ questions:
     answer:
       text: "3√2/4"
       latex: "$\\frac{3\\sqrt{2}}{4}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-12c-ms-q11-tossup
     question:
@@ -136,7 +137,7 @@ questions:
       accept:
         - text: "z^4/(y^3x)"
           latex: "$\\frac{z^4}{y^3x}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set03-round-14c-ms-q24-bonus
     question:
@@ -145,4 +146,4 @@ questions:
     answer:
       text: "-3/16"
       latex: "$-\\frac{3}{16}$"
-    reviewed: false
+    reviewed: true
