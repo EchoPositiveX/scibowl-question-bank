@@ -1,6 +1,6 @@
 # Text and LaTeX transcribed from the question images (QB-10).
 # See transcriptions/README.md. Set `reviewed: true` only after checking an entry against its image.
-# Reviewed by John on 2026-11-24, except the two "does not equal" questions in set 02.
+# Reviewed by John on 2026-11-24.
 
 source: Read from the printed question images by Claude (no API), 2026-11-24
 questions:
@@ -11,7 +11,7 @@ questions:
     answer:
       text: "1/a"
       latex: "$\\frac{1}{a}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set02-sample-questions-r2-q24-tossup
     question:
@@ -20,7 +20,7 @@ questions:
     answer:
       text: "1/a"
       latex: "$\\frac{1}{a}$"
-    reviewed: false
+    reviewed: true
 
   - id: ms-set02-sample-questions-r6-q18-tossup
     question:
