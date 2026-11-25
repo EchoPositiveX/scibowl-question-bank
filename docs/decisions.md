@@ -2,6 +2,12 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-24: Short-term roadmap
+
+- The roadmap has one short list, **Now**, and everything else is **Later** or **Parked** (Next and Nice to have are folded into Later). Only Now items are worked on.
+- Short term: QB-12 (subject tags only, piloted on one set with John's review) and QB-34. The sub-topic list (QB-11) waits until the subject pass is done.
+- QB-31 (AI vision API) and QB-19 are dropped, not deferred: nothing is flagged any more, and QB-19 was already covered.
+
 ## 2026-11-24: Fraction and root bars mean the text needs review (QB-35)
 
 - John found Set 01 Round 1 bonus 14 on the site reading "convert rd to a decimal: 3"; the PDF prints 1 over 3 with "rd". The parser now flags any question or answer with a fraction or root bar, found as a short horizontal rule with printed characters just above and below it.
