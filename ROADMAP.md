@@ -10,7 +10,6 @@ How this file works:
 ## Now
 
 - QB-12 AI-tag questions, a set or two at a time with John's review. First goal: give every question one of the 2022 subjects (biology, chemistry, physics, earth and space, energy, math) in `tags.disciplines`, so older Life, Physical and General Science questions can be studied with the new grouping (website WEB-07)
-- QB-34 Review pages with KaTeX built in: put the KaTeX script, styles and fonts inside the review HTML so it renders the same in any viewer (John's viewer did not load the fonts from the web, so ≠ showed as a box)
 
 ## Later
 
@@ -32,6 +31,7 @@ How this file works:
 
 ## Done
 
+- QB-34 Review pages now carry KaTeX 0.16.47 (the website's version) with its script, styles and woff2 fonts inside the HTML, so math renders the same offline and in any viewer
 - QB-25 Found the missing questions in sets 02–04: four had misprinted labels (no ")" after the number, "TOSS- UP" with a space) and now parse; the other two are set 3 Round 7C question 8, which the source omits
 - QB-31 Dropped: after QB-37 no question is flagged needs_review, so there is nothing left for an AI vision API to transcribe
 - QB-19 Dropped: covered by `quality.notes` in QB-01

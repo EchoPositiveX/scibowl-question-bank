@@ -2,6 +2,11 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-25: KaTeX built into review pages (QB-34)
+
+- The transcription review page embeds KaTeX (script, styles, fonts) instead of loading it from a CDN, so it renders the same in any viewer, offline too. Without its fonts, KaTeX's ≠ showed as a plain = or a box.
+- KaTeX is vendored in `src/scibowl_qb/vendor/katex/` at the version the website uses (0.16.47). Only the woff2 fonts are kept (about 300 KB), which every current browser reads. When the website moves to a new KaTeX version, update the vendored copy too.
+
 ## 2026-11-25: Tagging sets 10 and 16 (QB-12)
 
 - Second batch: ms/set10 (2016, 782 questions) and ms/set16 (2022, 324), both all text. Same approach as set 15: Claude tags from the text, and John checks only the 10 or so least certain tags.
