@@ -530,6 +530,8 @@ questions:
   ms-set02-sample-questions-r6-q03-bonus: [motion-forces]
   # math: What is the sum of the internal angles of a pentagon: => 540°
   ms-set02-sample-questions-r6-q04-tossup: [plane-geometry]
+  # math: Assuming a year in a dog’s life is equivalent to 7 years of a human’s life, what is 1 hour o... => 7 HOURS
+  ms-set02-sample-questions-r6-q04-bonus: [ratios-rates]
   # math: The longest straight line that can be drawn inside a circle is called its: => DIAMETER
   ms-set02-sample-questions-r6-q05-tossup: [plane-geometry]
   # math: If you walk north for 3 miles along 1st street and make a 90 degree right turn east onto B... => 5 MILES

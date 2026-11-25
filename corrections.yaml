@@ -26,6 +26,10 @@ extract:
     set: {number: 2}
     reason: The PDF numbers this bonus 46; it belongs with toss-up 2.
 
+  - match: {level: ms, set: set02, round: sample_questions_r6, part: bonus, number: 46}
+    set: {number: 4}
+    reason: The PDF numbers this bonus 46 and leaves out the ")"; it belongs with toss-up 4.
+
   - match: {level: ms, set: set02, round: sample_questions_r7, page: 6, number: 10}
     set: {number: 12}
     reason: The PDF prints question 12 as 10 on page 6.
