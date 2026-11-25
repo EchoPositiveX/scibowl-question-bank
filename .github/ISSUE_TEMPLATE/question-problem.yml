@@ -1,5 +1,5 @@
 name: Question problem
-description: Report a question with wrong or missing text, answer, choices, formula, subject or image.
+description: Report a question with wrong or missing text, answer, choices, formula, subject, tag or image.
 title: "Question problem: "
 labels: ["question-problem"]
 body:
@@ -26,6 +26,7 @@ body:
         - Multiple choice options are wrong or missing
         - Math or chemistry formula is garbled
         - Subject / category is wrong
+        - Topic tag is wrong
         - Image is cut off or wrong
         - Question is missing entirely
         - Other
