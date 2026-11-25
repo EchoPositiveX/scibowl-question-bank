@@ -3,25 +3,21 @@
 How this file works:
 
 - Every item has an ID (`QB-NN`) and one line. Add detail in the pull request, not here.
-- Work happens from **Now**, one or two items at a time. When an item's pull request merges, move it to **Done** with the PR number.
-- New ideas go in **Nice to have** or **Parked**. Anyone (person or AI) can add them.
+- **Now** is the short-term list: the only items being worked on, one or two at a time. When an item's pull request merges, move it to **Done** with the PR number.
+- New ideas go in **Later** or **Parked**. Anyone (person or AI) can add them.
 - IDs are never reused, so they stay safe to reference.
 
 ## Now
 
+- QB-12 AI-tag questions, a set or two at a time with John's review. First goal: give every question one of the 2022 subjects (biology, chemistry, physics, earth and space, energy, math) in `tags.disciplines`, so older Life, Physical and General Science questions can be studied with the new grouping (website WEB-07)
+- QB-34 Review pages with KaTeX built in: put the KaTeX script, styles and fonts inside the review HTML so it renders the same in any viewer (John's viewer did not load the fonts from the web, so ≠ showed as a box)
 
-## Next
+## Later
 
+- QB-11 Draft a topic list (disciplines and sub-topics) with AI help, for John to edit, then tag sub-topics (QB-12's second step)
 - QB-20 Grow the sample file into the golden test set (feeds QB-05) and share it with the website for WEB-01
 - QB-03 Cache per-round results so a full run only re-parses PDFs that changed
-- QB-11 Draft a topic list (disciplines and sub-topics) with AI help, for John to edit
-- QB-12 AI-tag questions against the topic list, a set or two at a time. First goal: give every question one of the 2022 subjects (biology, chemistry, physics, earth and space, energy, math) in `tags.disciplines`, so older Life, Physical and General Science questions can be studied with the new grouping
-
-## Nice to have
-
-- QB-34 Review pages with KaTeX built in: put the KaTeX script, styles and fonts inside the review HTML so it renders the same in any viewer (John's viewer did not load the fonts from the web, so ≠ showed as a box)
 - QB-33 Publish the printed "(Solution: ...)" working as its own answer field (schema change) instead of only keeping it in answer.raw
-- QB-31 Run the remaining flagged questions through an AI vision API in batches, writing transcription files for review (needs an API key and a cost OK)
 - QB-30 Smaller images: 150–200 dpi or palette PNGs would cut images.zip (331 MB) to well under half, which matters for hosting
 - QB-25 Find the 6 questions the parser still misses in sets 02–04 (listed in `KNOWN_MISSING` in parse.py)
 - QB-13 High school question sets
@@ -30,7 +26,6 @@ How this file works:
 - QB-16 Difficulty estimates, first from tags, later from real usage
 - QB-17 Detect near-duplicate questions across sets
 - QB-18 Pronunciation hints for the moderator
-- QB-19 ~~Track parse notes per question~~ (covered by `quality.notes` in QB-01)
 
 ## Parked
 
@@ -38,6 +33,8 @@ How this file works:
 
 ## Done
 
+- QB-31 Dropped: after QB-37 no question is flagged needs_review, so there is nothing left for an AI vision API to transcribe
+- QB-19 Dropped: covered by `quality.notes` in QB-01
 - QB-37 Filled in set 04 Round 4 toss-up 21 (OTEC), whose choices X and Y and answer digit are blank images in the PDF: X) 10, Y) 20, answer Y) 20, via corrections.yaml
 - QB-36 Transcribed and John reviewed the 65 questions QB-35 flagged (sets 01, 02, 03, 04, 05, 08 and 13) (#26, #27, #28, #29). Set 13 RR2 toss-up 13's answer is corrected to X) x^10. Published in v1.0.5
 - QB-10 Transcribed text and LaTeX for every question the parser flagged needs_review (sets 01 to 09, 11 and 13), from the question images at no API cost, each set reviewed by John before merging (#15 to #17, #21 to #24). Published in v1.0.3; set 04 Round 4 toss-up 21 stayed flagged because its choices are missing from the PDF (filled in by QB-37)

@@ -9,6 +9,13 @@ Newest first. Each entry: date, decision, and why if it isn't obvious.
 - John can't check every tag, so he reviewed the 10 least certain ones. Wrong tags found later will be reported through the website's report button (WEB-10), which gets a "wrong tag" option.
 - Tagging is costly in usage, so it starts with one set: ms/set15 (2021, 300 questions, all text, no image-only questions), tagged by Claude in a session from the question text with no API. John reviews it before any other set is tagged.
 - Tags fill fields that were already in the format (`tags.source` is "ai", `tags.reviewed` comes from the file), so `schema_version` stays 1.
+- The roadmap says the sub-topic list (QB-11) waits until the subject pass is done. The pilot still drafts one because subjects are worked out from topics; John can edit or trim it.
+
+## 2026-11-24: Short-term roadmap
+
+- The roadmap has one short list, **Now**, and everything else is **Later** or **Parked** (Next and Nice to have are folded into Later). Only Now items are worked on.
+- Short term: QB-12 (subject tags only, piloted on one set with John's review) and QB-34. The sub-topic list (QB-11) waits until the subject pass is done.
+- QB-31 (AI vision API) and QB-19 are dropped, not deferred: nothing is flagged any more, and QB-19 was already covered.
 
 ## 2026-11-24: Fraction and root bars mean the text needs review (QB-35)
 
