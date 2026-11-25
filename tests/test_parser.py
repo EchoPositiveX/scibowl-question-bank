@@ -180,3 +180,20 @@ def test_cli_one_round(tmp_path, capsys):
     assert len(data["questions"]) == 50
     assert (tmp_path / "rounds/ms/set01/m_round01.json").exists()
     assert "valid" in capsys.readouterr().out
+
+
+# Questions the PDFs print with a slip in the label: "17 LIFE SCIENCE" with no ")", and "TOSS- UP" with a space.
+# Each used to be dropped, leaving its tossup or bonus without a partner.
+@pytest.mark.parametrize("pdf, qid, starts", [
+    ("ms/set02/sample_questions_r6.pdf", "ms-set02-sample-questions-r6-q04-bonus", "Assuming a year in a dog"),
+    ("ms/set04/Round6.pdf", "ms-set04-round6-q17-bonus", "There are two main kinds of vaccines"),
+    ("ms/set04/Round8.pdf", "ms-set04-round8-q03-tossup", "In order to figure out what is in a sealed box"),
+    ("ms/set04/Round15.pdf", "ms-set04-round15-q04-tossup", "Which of the following natural resources"),
+])
+def test_question_with_a_misprinted_label_is_read(pdf, qid, starts):
+    from scibowl_qb import corrections as corr
+    questions = {q["id"]: q for q in (to_question(rq) for rq in
+                 extract_round(RAW_DIR / pdf, RAW_DIR, corrections=corr.load()))}
+    assert questions[qid]["question"]["text"].startswith(starts)
+    for q in questions.values():
+        assert "TOSS" not in q["answer"]["text"].upper(), q["id"]
