@@ -32,8 +32,8 @@ def make_dir(tmp_path, set_text=None, topics=TOPICS):
     return tmp_path
 
 
-def question(qid="ms-set15-set-1-ms-2021-q01-tossup", set_name="set15"):
-    return {"id": qid, "source": {"level": "ms", "set": set_name},
+def question(qid="ms-set15-set-1-ms-2021-q01-tossup", set_name="set15", category="physical_science"):
+    return {"id": qid, "source": {"level": "ms", "set": set_name}, "category": category,
             "tags": {"disciplines": [], "topics": [], "source": None, "reviewed": False}}
 
 
@@ -99,6 +99,8 @@ def test_set15_round_1_parses_with_valid_tags():
     assert validate_question_set({"schema_version": 1, "generator": "test", "questions": questions}) == []
     first = next(q for q in questions if q["id"] == "ms-set15-set-1-ms-2021-q01-tossup")
     assert first["tags"]["disciplines"] == ["chemistry"]
+    lab = next(q for q in questions if q["id"] == "ms-set15-set-1-ms-2021-q13-tossup")  # tuberculosis, printed as Energy
+    assert lab["tags"]["disciplines"] == ["energy", "biology"]
 
 
 def test_parse_stops_on_a_tag_for_a_missing_question(tmp_path):
@@ -118,3 +120,17 @@ def test_review_page_lists_every_question():
     page = build(questions, tags.topic_list, "Topic tags: test")
     assert page.count('<div class="q"') == sum(len(q["tags"]["topics"]) for q in questions)
     assert "Printed subject to discipline" in page
+
+
+def test_energy_questions_are_always_filed_under_energy(tmp_path):
+    topics = TOPICS.replace("  chemistry: Chemistry\n", "  chemistry: Chemistry\n  energy: Energy\n")
+    tags = tg.load(make_dir(tmp_path,
+                            "questions:\n  ms-set15-set-1-ms-2021-q01-tossup: [cells]\n", topics))
+    assert tg.apply(question(category="energy"), tags)["tags"]["disciplines"] == ["energy", "biology"]
+    assert tg.apply(question(category="life_science"), tags)["tags"]["disciplines"] == ["biology"]
+
+
+def test_every_discipline_has_a_misc_topic():
+    topic_list = tg.load().topic_list
+    for d in topic_list.disciplines:
+        assert any(t.endswith("-misc") and disc == d for t, (disc, _) in topic_list.topics.items()), d

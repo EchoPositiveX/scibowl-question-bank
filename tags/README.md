@@ -2,6 +2,7 @@
 
 - `topics.yaml` is the topic list: the six disciplines used from 2022 (biology, chemistry, physics, earth and space, energy, math) and the topics under each. It is a first draft for John to edit.
 - `<level>/<set>.yaml` tags every question in one set with one or more topic IDs. A question's `tags.disciplines` come from its topics, so an older Life Science question tagged `genetics` is filed under biology.
+- Each discipline has a `-misc` topic (`biology-misc`, `energy-misc`, ...) for questions that fit none of its topics well.
 
 ```yaml
 source: Who or what made these, and when
@@ -13,7 +14,7 @@ questions:
 ```
 
 - The parser applies tags last. A tags file must cover every question in its set; an unknown topic, a missing question or an ID that matches nothing stops the parse.
-- The DOE-lab "Energy" questions in older sets are tagged by what they ask about (a question about lichens is `ecology`, so biology). The `energy` discipline is for questions about energy itself: batteries, fuels, nuclear power, renewables. The printed subject stays in `category`.
+- Every question printed as Energy gets the `energy` discipline automatically, and is tagged with the topic it asks about: a DOE-lab question about lichens is `ecology`, so its disciplines are energy and biology. The energy topics (batteries, fuels, nuclear power, renewables) are for questions about energy itself.
 - Renaming a topic's label is safe. Changing a topic ID means changing every tags file that uses it.
 
 ## Review

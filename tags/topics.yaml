@@ -4,10 +4,12 @@
 # discipline, and a question's disciplines come from its topics, so tagging an older
 # Life Science question with `genetics` also files it under biology.
 #
-# `energy` here means questions about energy itself (batteries, fuels, power plants).
-# The DOE-lab "Energy" questions in older sets are usually about biology, chemistry or
-# physics research and are tagged by what they ask about; their printed subject stays in
-# `category`.
+# Questions printed as Energy are always filed under energy, and also under the science
+# they ask about: a DOE-lab question about lichens is tagged `ecology`, so its disciplines
+# are energy and biology. The energy topics are for questions about energy itself
+# (batteries, fuels, power plants).
+#
+# Each discipline has a `-misc` topic for questions that fit none of its topics well.
 #
 # Topic IDs are what the data stores, so rename a label freely but change an ID only
 # together with every tags file that uses it.
@@ -33,6 +35,7 @@ topics:
     immunity-disease: Immunity and disease
     ecology: Ecology (populations, ecosystems, symbiosis, succession)
     behavior: Animal behavior
+    biology-misc: Other biology
   chemistry:
     atoms: Atomic structure (subatomic particles, electrons, valence, isotopes)
     periodic-table: Periodic table and element properties (trends, groups, flame tests)
@@ -43,6 +46,7 @@ topics:
     matter-gases: States of matter and gas laws (properties of matter, phases, kinetic theory)
     solutions: Solutions and solubility (concentration, solubility rules)
     thermo-kinetics: Reaction energy and rates (exothermic, catalysts, redox activity)
+    chemistry-misc: Other chemistry
   physics:
     motion-forces: Motion and forces (kinematics, Newton's laws, friction, gravity)
     energy-work: Work, energy and power
@@ -55,6 +59,7 @@ topics:
     magnetism: Magnetism and electromagnetism (magnetic materials, transformers)
     modern-physics: Quantum, nuclear and particle physics, relativity
     measurement: Units and measurement
+    physics-misc: Other physics
   earth_and_space:
     rocks-minerals: Rocks and minerals
     tectonics: Plate tectonics, earthquakes and Earth's interior
@@ -68,12 +73,14 @@ topics:
     stars: The Sun and stars (stellar evolution, spectral classes)
     galaxies-cosmology: Galaxies and cosmology
     observing: Observing the sky (telescopes, parallax, magnitude, sky motion)
+    earth-space-misc: Other earth and space
   energy:
     batteries-storage: Batteries and energy storage
     fuels-combustion: Fossil fuels and combustion
     nuclear-energy: Nuclear power (fission and fusion energy)
     renewables: Renewable energy (solar, wind, hydro, biofuels)
     energy-use: Energy use, efficiency and the grid
+    energy-misc: Other energy and DOE lab research (computing, materials)
   math:
     arithmetic: Arithmetic, fractions, percents and scientific notation
     number-theory: Number theory (primes, divisibility, remainders, factorials)
@@ -87,3 +94,4 @@ topics:
     ratios-rates: Ratios, rates, proportions and variation
     logic-sets: Logic and sets
     trigonometry: Trigonometry
+    math-misc: Other math
