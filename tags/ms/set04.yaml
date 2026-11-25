@@ -582,6 +582,8 @@ questions:
   ms-set04-round6-q16-bonus: [measurement, atoms]
   # life_science: When you are sick with a virus, your body builds up a defense system by making antibodies ... => THE FLU VIRUS MUTATES EVERY YEAR
   ms-set04-round6-q17-tossup: [immunity-disease]
+  # life_science: There are two main kinds of vaccines. One kind contains an altered virus that produces imm... => LIVE
+  ms-set04-round6-q17-bonus: [immunity-disease]
   # math: Which of the following correctly describes the number? => RATIONAL
   ms-set04-round6-q18-tossup: [number-theory]
   # math: What is the cube root of 343? => 7
@@ -726,6 +728,8 @@ questions:
   ms-set04-round8-q02-tossup: [human-body]
   # general_science: Which of the following meals would give humans most of the nutrients needed in a day? => BREAD, VEGETABLES, AND FISH
   ms-set04-round8-q02-bonus: [human-body]
+  # physical_science: In order to figure out what is in a sealed box, you perform some tests. The box seems heav... => MAGNET
+  ms-set04-round8-q03-tossup: [magnetism]
   # physical_science: Which of the following characteristics best describes metals? => LUSTROUS, MALLEABLE, AND ARE GOOD CONDUC
   ms-set04-round8-q03-bonus: [periodic-table]
   # physical_science: What is the name given to the superposition of two or more waves resulting in a new wave p... => INTERFERENCE
@@ -1442,6 +1446,8 @@ questions:
   ms-set04-round15-q03-tossup: [electricity]
   # energy: At high temperatures, the capacitance of a capacitor will: => NOT INCREASE BECAUSE THE VALUE OF CAPACI
   ms-set04-round15-q03-bonus: [electricity]
+  # earth_and_space: Which of the following natural resources is most abundant in the continental United States? => COAL
+  ms-set04-round15-q04-tossup: [fuels-combustion, rocks-minerals]
   # earth_and_space: What is the term for the structural geologic feature in which there is an increased dip in... => MONOCLINE
   ms-set04-round15-q04-bonus: [tectonics]
   # math: What values of p make the following inequality true: - p / 3 < -12 (read as: negative p ov... => p > 36

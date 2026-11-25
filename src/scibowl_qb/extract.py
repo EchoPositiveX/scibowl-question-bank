@@ -44,7 +44,7 @@ SUBJECT_ONLY_REGEX = re.compile(rf"\*?{_NUM}\)\s+{_SUBJ}\s+(.*)", re.IGNORECASE)
 MISSING_SUBJECT_REGEX = re.compile(rf"\*?{_NUM}\)\s+{_TYPE}\s+(.*)", re.IGNORECASE)
 # A choice line. The text can be empty when the choice is a formula drawn as a picture.
 CHOICE_REGEX = re.compile(r"([WXYZ])\)(?:\s+(.*)|\s*$)", re.IGNORECASE)
-NEW_QUESTION_REGEX = re.compile(r"\d+\)\s+")
+NEW_QUESTION_REGEX = re.compile(r"\d+\)?\s+")
 # Page footers ("Round 14 Page 9", "Middle School Regional NSB® PAGE 3") and separator rows.
 FOOTER_REGEX = re.compile(r"\bpage\s*\d+\s*$|^Middle School - Round \d+[A-Z]?$", re.IGNORECASE)
 # The moderator's closing script printed after the last bonus (2022 rounds).
@@ -238,7 +238,8 @@ def _has_bar(bars: list[tuple[float, float, float]], box: "_Box", y1: float | No
 
 def _is_header(text: str) -> str | None:
     upper = text.upper()
-    if "TOSS-UP" in upper:
+    # "TOSS- UP": some PDFs print a space after the hyphen.
+    if re.search(r"TOSS\s*-\s*UP", upper):
         return "tossup"
     if "BONUS" in upper:
         return "bonus"
@@ -256,6 +257,8 @@ KNOWN_SUBJECT_REGEX = re.compile(
 )
 STYLE_AT_START = re.compile(rf"^[\s.:–—-]*{_TYPE}\s*:?\s*", re.IGNORECASE)
 QUESTION_NUMBER_REGEX = re.compile(rf"\*?{_NUM}\)\s+(.*)")
+# "17 LIFE SCIENCE ...": the PDF left out the ")". Only trusted when a known subject follows.
+NO_PAREN_NUMBER_REGEX = re.compile(rf"\*?{_NUM}\s+(.*)")
 # An unknown "subject" this long is really question text (the PDF printed no subject).
 MAX_UNKNOWN_SUBJECT_WORDS = 2
 
@@ -275,7 +278,9 @@ def _match_question_line(text: str):
     """
     m = QUESTION_NUMBER_REGEX.match(text)
     if not m:
-        return None
+        m = NO_PAREN_NUMBER_REGEX.match(text)
+        if not m or not KNOWN_SUBJECT_REGEX.match(m.group(2)):
+            return None
     num, after = m.groups()
 
     known = KNOWN_SUBJECT_REGEX.match(after)
