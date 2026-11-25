@@ -117,6 +117,7 @@ def test_count_problems():
         return [{"source": {"level": "ms", "set": set_name}} for _ in range(n)]
 
     assert count_problems(qs("set16", 324)) == []
-    assert count_problems(qs("set04", 847)) == []  # 3 known missing
+    assert count_problems(qs("set04", 850)) == []
+    assert count_problems(qs("set03", 748)) == []  # question 8 of Round 7C is omitted in the source
     assert count_problems(qs("set16", 323)) == ["ms/set16: found 323, expected 324"]
     assert "no expected count" in count_problems(qs("set99", 5))[0]

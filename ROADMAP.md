@@ -19,7 +19,6 @@ How this file works:
 - QB-03 Cache per-round results so a full run only re-parses PDFs that changed
 - QB-33 Publish the printed "(Solution: ...)" working as its own answer field (schema change) instead of only keeping it in answer.raw
 - QB-30 Smaller images: 150–200 dpi or palette PNGs would cut images.zip (331 MB) to well under half, which matters for hosting
-- QB-25 Find the 6 questions the parser still misses in sets 02–04 (listed in `KNOWN_MISSING` in parse.py)
 - QB-13 High school question sets
 - QB-14 Local review tool: question image next to rendered text, approve or fix with one click
 - QB-15 Accepted alternate answers, for self-check in study mode
@@ -33,6 +32,7 @@ How this file works:
 
 ## Done
 
+- QB-25 Found the missing questions in sets 02–04: four had misprinted labels (no ")" after the number, "TOSS- UP" with a space) and now parse; the other two are set 3 Round 7C question 8, which the source omits
 - QB-31 Dropped: after QB-37 no question is flagged needs_review, so there is nothing left for an AI vision API to transcribe
 - QB-19 Dropped: covered by `quality.notes` in QB-01
 - QB-37 Filled in set 04 Round 4 toss-up 21 (OTEC), whose choices X and Y and answer digit are blank images in the PDF: X) 10, Y) 20, answer Y) 20, via corrections.yaml

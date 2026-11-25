@@ -41,8 +41,9 @@ EXPECTED_MS_SET_COUNTS = {
     "set11": 782, "set12": 782, "set13": 982, "set14": 782, "set15": 300, "set16": 324,
 }
 
-# Questions the parser is known not to find yet (counted as found when checking a release).
-KNOWN_MISSING = {"set02": 1, "set03": 2, "set04": 3}
+# Questions the source leaves out (counted as found when checking a release).
+# set03 Round 7C prints "The toss-up and bonus for Question 8 have been omitted."
+KNOWN_MISSING = {"set03": 2}
 
 
 def count_problems(questions: list[dict]) -> list[str]:
