@@ -9,6 +9,10 @@
 # are energy and biology. The energy topics are for questions about energy itself
 # (batteries, fuels, power plants).
 #
+# A question printed under one of the six disciplines (2022 sets) is always filed under
+# that discipline too. General Science questions about lab safety and the scientific
+# method use `lab-safety-method`, filed under chemistry.
+#
 # Each discipline has a `-misc` topic for questions that fit none of its topics well.
 #
 # Topic IDs are what the data stores, so rename a label freely but change an ID only
@@ -46,6 +50,7 @@ topics:
     matter-gases: States of matter and gas laws (properties of matter, phases, kinetic theory)
     solutions: Solutions and solubility (concentration, solubility rules)
     thermo-kinetics: Reaction energy and rates (exothermic, catalysts, redox activity)
+    lab-safety-method: Lab safety, lab equipment, the scientific method and the history of science
     chemistry-misc: Other chemistry
   physics:
     motion-forces: Motion and forces (kinematics, Newton's laws, friction, gravity)

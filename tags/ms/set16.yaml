@@ -1,0 +1,672 @@
+# Topic tags for ms/set16 (QB-12). One line per question: its topics from tags/topics.yaml.
+# The comment above each line is the start of the question, to make checking easier.
+source: Claude, from each question's text and answer, 2026-11-25. No API was used.
+tagged_by: ai
+reviewed: false
+questions:
+
+  # Round 1
+  # biology: What part of the mammalian female reproductive tract is responsible for making gametes [GA... => OVARY
+  ms-set16-2022-ms-1-q01-tossup: [human-body]
+  # biology: What enzyme is responsible for transcribing DNA to RNA in bacteria? => RNA POLYMERASE
+  ms-set16-2022-ms-1-q01-bonus: [genetics]
+  # chemistry: Consider a graph with the mass of a sample on the y-axis and the sample volume on the x-ax... => RAIN
+  ms-set16-2022-ms-1-q02-tossup: [matter-gases]
+  # chemistry: Barium will form an ionic compound in a one-to-one ratio with which of the following eleme... => SULFUR
+  ms-set16-2022-ms-1-q02-bonus: [bonding]
+  # earth_and_space: Which of the following stars is located closest to the north celestial pole? => POLARIS
+  ms-set16-2022-ms-1-q03-tossup: [observing]
+  # earth_and_space: White dwarfs are found in which of the following regions of the H-R diagram? => BOTTOM LEFT
+  ms-set16-2022-ms-1-q03-bonus: [stars]
+  # energy: Scientists at Oak Ridge National Lab are searching for enzymes that can break down lignin.... => WOOD
+  ms-set16-2022-ms-1-q04-tossup: [plants]
+  # energy: Scientists at Fermi National Accelerator Lab have measured the magnetic moment of the muon... => 0.05
+  ms-set16-2022-ms-1-q04-bonus: [modern-physics]
+  # math: What is the square of the binomial x + 12? => x2 + 24x + 144
+  ms-set16-2022-ms-1-q05-tossup: [algebra]
+  # math: Simplify the fraction with numerator 27 minus 45 and denominator 9 minus 12. => 6
+  ms-set16-2022-ms-1-q05-bonus: [arithmetic]
+  # physics: Which of the following best describes why objects dropped in a vacuum on Earth will all fa... => GRAVITATIONAL FORCE IS PROPORTIONAL TO M
+  ms-set16-2022-ms-1-q06-tossup: [motion-forces]
+  # physics: Which of the following quantities would have the same units as pressure? => FORCE PER AREA
+  ms-set16-2022-ms-1-q06-bonus: [fluids, measurement]
+  # biology: What is the term for the protective caps at the end of eukaryotic chromosomes that tend to... => TELOMERES
+  ms-set16-2022-ms-1-q07-tossup: [genetics, cells]
+  # biology: Botanists successfully created viable offspring between two different bamboos that live in... => TEMPORAL
+  ms-set16-2022-ms-1-q07-bonus: [evolution]
+  # chemistry: What type of reaction combines an acid and a base to form a salt and water? => NEUTRALIZATION
+  ms-set16-2022-ms-1-q08-tossup: [acids-bases, reactions]
+  # chemistry: To the nearest gram, what is the mass of one-half mole of sodium chloride? => 29
+  ms-set16-2022-ms-1-q08-bonus: [reactions]
+  # earth_and_space: What moon is known for its thick nitrogen atmosphere and methane lakes? => TITAN
+  ms-set16-2022-ms-1-q09-tossup: [solar-system]
+  # earth_and_space: What greenhouse gas is primarily responsible for the runaway greenhouse effect on Venus? => CARBON DIOXIDE
+  ms-set16-2022-ms-1-q09-bonus: [solar-system, climate-environment]
+  # energy: Scientists at Lawrence Livermore National Lab have validated the possibility that planets ... => JUPITER
+  ms-set16-2022-ms-1-q10-tossup: [solar-system, matter-gases]
+  # energy: Pacific Northwest National Lab scientists are utilizing magnetic nanoparticles to extract ... => LITHIUM
+  ms-set16-2022-ms-1-q10-bonus: [periodic-table]
+  # math: A 60-foot rope is stretched across 60 feet. How many cuts would be required to cut it into... => 9
+  ms-set16-2022-ms-1-q11-tossup: [arithmetic]
+  # math: What is the product of the two radical expressions 13√5 and 7√5? => 455
+  ms-set16-2022-ms-1-q11-bonus: [algebra]
+  # physics: Which of the following is the term for the phenomenon in which light striking a metal ejec... => PHOTOELECTRIC EFFECT
+  ms-set16-2022-ms-1-q12-tossup: [modern-physics]
+  # physics: In joules, what is the kinetic energy of a 50-gram object at rest? => 0
+  ms-set16-2022-ms-1-q12-bonus: [energy-work]
+  # biology: What general process allows a plant to convert solar energy into chemical energy? => PHOTOSYNTHESIS
+  ms-set16-2022-ms-1-q13-tossup: [plants]
+  # biology: Identify all of the following three organelles that are present in both eukaryotes and pro... => 2
+  ms-set16-2022-ms-1-q13-bonus: [cells]
+  # chemistry: Which of the following atoms has the largest atomic radius? => POTASSIUM
+  ms-set16-2022-ms-1-q14-tossup: [periodic-table]
+  # chemistry: Rank the following three elements in order of increasing valence electron counts: 1) Boron... => 1, 3, 2
+  ms-set16-2022-ms-1-q14-bonus: [atoms]
+  # earth_and_space: The Geodynamo model is used to explain which of the following aspects of the Earth system? => MAGNETIC FIELD
+  ms-set16-2022-ms-1-q15-tossup: [tectonics, magnetism]
+  # earth_and_space: Which of the following best describes how geysers form? => SUPERHEATING OF GROUNDWATER BY A NEARBY 
+  ms-set16-2022-ms-1-q15-bonus: [volcanoes]
+  # energy: Brookhaven National Lab scientists are developing mathematical models of COVID-19 transmis... => HERD IMMUNITY
+  ms-set16-2022-ms-1-q16-tossup: [immunity-disease]
+  # energy: Scientists at SLAC National Accelerator Lab are studying particles with different values o... => 1, 3
+  ms-set16-2022-ms-1-q16-bonus: [modern-physics]
+  # math: Round 4,269.08 to the nearest hundred. => 4,300
+  ms-set16-2022-ms-1-q17-tossup: [arithmetic]
+  # math: What is the y-intercept of the line perpendicular to the line with equation y = 3x – 4 and... => 2 2/3 (ACCEPT: 8/3, (0, 8/3) , (0, 2 2/3
+  ms-set16-2022-ms-1-q17-bonus: [graphs-functions]
+  # physics: Which of the following materials is an electric conductor? => STEEL
+  ms-set16-2022-ms-1-q18-tossup: [electricity]
+  # physics: A car is traveling forwards at 20 meters per second when it begins accelerating forwards a... => 57.5
+  ms-set16-2022-ms-1-q18-bonus: [motion-forces]
+
+  # Round 2
+  # math: What is the coefficent of x2 in the expansion of open parenthesis 5x – 6 close parenthesis... => 25
+  ms-set16-2022-ms-2-q01-tossup: [algebra]
+  # math: What is the volume of a right rectangular prism, or box, with dimensions 3 by 9 by 19? => 513
+  ms-set16-2022-ms-2-q01-bonus: [solid-geometry]
+  # physics: Which of the following modes of heat transfer is responsible for the heating of Earth’s su... => RADIATION
+  ms-set16-2022-ms-2-q02-tossup: [heat-thermo]
+  # physics: Which of the following laws could be used to calculate the current flowing through a resis... => OHM’S LAW
+  ms-set16-2022-ms-2-q02-bonus: [electricity]
+  # biology: The action of the sodium-potassium pump is an example of which of the following types of t... => ACTIVE TRANSPORT
+  ms-set16-2022-ms-2-q03-tossup: [cells]
+  # biology: Decarboxylation [dee-car-box-ill-AY- shun] occurs in two steps of the citric acid cycle. W... => CARBON DIOXIDE
+  ms-set16-2022-ms-2-q03-bonus: [biochemistry]
+  # chemistry: What is the chemical formula of ammonia? => NH3
+  ms-set16-2022-ms-2-q04-tossup: [bonding]
+  # chemistry: Neon has an atomic mass of 20.19 amu. Which of the following explains why this is? => NEON HAS THREE NATURALLY ABUNDANT ISOTOP
+  ms-set16-2022-ms-2-q04-bonus: [atoms]
+  # earth_and_space: Which of the following nuclear reactions is the dominant source of energy in the Sun? => FUSION
+  ms-set16-2022-ms-2-q05-tossup: [stars]
+  # earth_and_space: Hubble’s law relates the distance to a galaxy to what other characteristic? => VELOCITY
+  ms-set16-2022-ms-2-q05-bonus: [galaxies-cosmology]
+  # energy: Scientists supported by the Department of Energy are using machine learning to classify bo... => GALAXIES
+  ms-set16-2022-ms-2-q06-tossup: [galaxies-cosmology, energy-misc]
+  # energy: Researchers at Oak Ridge National Lab are developing microbes that turn waste into the org... => BETWEEN 1 AND 7
+  ms-set16-2022-ms-2-q06-bonus: [acids-bases]
+  # math: What is the multiplicative inverse of –6? => –1/6
+  ms-set16-2022-ms-2-q07-tossup: [arithmetic]
+  # math: What is the quotient 6 3/8 divided by 2 5/6? => 2 1/4
+  ms-set16-2022-ms-2-q07-bonus: [arithmetic]
+  # physics: Alex is riding his bicycle at a speed of 3 meters per second. If he accelerates in the sam... => 7
+  ms-set16-2022-ms-2-q08-tossup: [motion-forces]
+  # physics: Which of the following types of decay occurs when a neutron is converted into a proton and... => BETA
+  ms-set16-2022-ms-2-q08-bonus: [modern-physics]
+  # biology: What taxonomic rank is shared by a group of species that are closely related, and is part ... => GENUS
+  ms-set16-2022-ms-2-q09-tossup: [diversity]
+  # biology: What is the term for the maximum number of individuals in a species that an environment ca... => CARRYING CAPACITY
+  ms-set16-2022-ms-2-q09-bonus: [ecology]
+  # chemistry: What is the term for mixtures that are not uniform throughout? => HETEROGENEOUS
+  ms-set16-2022-ms-2-q10-tossup: [matter-gases]
+  # chemistry: To the nearest degree Celsius, what temperature is absolute zero? => –273
+  ms-set16-2022-ms-2-q10-bonus: [heat-thermo]
+  # earth_and_space: Which type of seismic wave would arrive first at a seismometer recording a distant earthqu... => P-WAVE
+  ms-set16-2022-ms-2-q11-tossup: [tectonics]
+  # earth_and_space: Crater Lake is not really a crater, but a remnant of what igneous structure? => CALDERA
+  ms-set16-2022-ms-2-q11-bonus: [volcanoes]
+  # energy: Lawrence Berkeley National Lab researchers use high-energy charged particles to generate m... => ION
+  ms-set16-2022-ms-2-q12-tossup: [atoms]
+  # energy: Brookhaven National Lab scientists are using low-energy ion-scattering spectroscopy to exa... => HELIUM PLUS
+  ms-set16-2022-ms-2-q12-bonus: [atoms]
+  # math: If the perimeter of a triangle is 31, and the lengths of two of its sides are 12 and 13, w... => 6
+  ms-set16-2022-ms-2-q13-tossup: [plane-geometry]
+  # math: Give one of the linear factors of x2 + 11x – 80. => x – 5 OR x + 16 (must give at least one)
+  ms-set16-2022-ms-2-q13-bonus: [algebra]
+  # physics: If the mass of an object is doubled, by what factor is its gravitational potential energy ... => 2
+  ms-set16-2022-ms-2-q14-tossup: [energy-work]
+  # physics: A photovoltaic cell converts between two different kinds of energy. Which of the following... => RADIANT, ELECTRIC
+  ms-set16-2022-ms-2-q14-bonus: [renewables]
+  # biology: What cellular organelle is responsible for post-translational modification of secreted pro... => GOLGI
+  ms-set16-2022-ms-2-q15-tossup: [cells]
+  # biology: Antibiotics are completely ineffective at treating the causative agent of which of the fol... => INFLUENZA
+  ms-set16-2022-ms-2-q15-bonus: [immunity-disease, microbes]
+  # chemistry: What type of reaction is Na2S + 2HCl yields 2NaCl + H2S an example of? => DOUBLE REPLACEMENT
+  ms-set16-2022-ms-2-q16-tossup: [reactions]
+  # chemistry: Which of the following substances has the highest heat of vaporization? => WATER
+  ms-set16-2022-ms-2-q16-bonus: [matter-gases]
+  # earth_and_space: On what planet is the solar system’s largest volcano? => MARS
+  ms-set16-2022-ms-2-q17-tossup: [solar-system, volcanoes]
+  # earth_and_space: Mars’s seasonal polar ice caps are primarily composed of what molecule? => CARBON DIOXIDE
+  ms-set16-2022-ms-2-q17-bonus: [solar-system]
+  # energy: Brookhaven National Lab scientists are studying how sunlight can cause trace gases in the ... => CONDENSATION NUCLEI
+  ms-set16-2022-ms-2-q18-tossup: [weather]
+  # energy: Argonne National Lab researchers are studying the release of carbon dioxide from the large... => TIBETAN PLATEAU
+  ms-set16-2022-ms-2-q18-bonus: [climate-environment]
+
+  # Round 3
+  # earth_and_space: What is the name of the point directly overhead for an observer viewing the night sky? => ZENITH
+  ms-set16-2022-ms-3-q01-tossup: [observing]
+  # earth_and_space: Identify all of the following three planets that have rings: 1) Jupiter; 2) Neptune; 3) Ur... => ALL
+  ms-set16-2022-ms-3-q01-bonus: [solar-system]
+  # energy: Scientists at SLAC National Accelerator Laboratory are studying particles called tetraquar... => 4
+  ms-set16-2022-ms-3-q02-tossup: [modern-physics]
+  # energy: Scientists at Fermi National Accelerator Lab working on the Dark Energy Survey have measur... => WITH A PROBABILITY OF 68%, THE VALUE OF 
+  ms-set16-2022-ms-3-q02-bonus: [galaxies-cosmology, statistics]
+  # math: What is the leading coefficient of the polynomial 6x3 – 2x2 + 7x – 9? => 6
+  ms-set16-2022-ms-3-q03-tossup: [algebra]
+  # math: A restaurant offers a combo consisting of the diner’s choice of a soda, an appetizer, an e... => 504
+  ms-set16-2022-ms-3-q03-bonus: [counting-probability]
+  # physics: Which of the following types of quantities appears in a free-body diagram? => FORCE
+  ms-set16-2022-ms-3-q04-tossup: [motion-forces]
+  # physics: The specific gravity of a substance is most directly related to which of the following pro... => DENSITY
+  ms-set16-2022-ms-3-q04-bonus: [fluids]
+  # biology: Looking at a picture of all of the chromosomes in a cell can help in the identification of... => KARYOTYPE
+  ms-set16-2022-ms-3-q05-tossup: [genetics]
+  # biology: What is the term for the middle portion of the arthropod body to which the wings are usual... => THORAX
+  ms-set16-2022-ms-3-q05-bonus: [diversity]
+  # chemistry: Mendeleev [mendah-LAY-ev] organized the elements according to their reactivity. Which of t... => SODIUM
+  ms-set16-2022-ms-3-q06-tossup: [periodic-table]
+  # chemistry: What is the empirical formula of the compound formed by aluminum and chlorine? => AlCl3
+  ms-set16-2022-ms-3-q06-bonus: [bonding]
+  # earth_and_space: Gas giant planets are primarily composed of what two elements? => HYDROGEN AND HELIUM
+  ms-set16-2022-ms-3-q07-tossup: [solar-system]
+  # earth_and_space: A lunar eclipse will occur when which of the following happens? => THE FULL MOON MOVES THROUGH EARTH’S SHAD
+  ms-set16-2022-ms-3-q07-bonus: [solar-system]
+  # energy: Scientists at Princeton Plasma Physics Lab are studying B fields in plasma. What is the mo... => MAGNETIC FIELD
+  ms-set16-2022-ms-3-q08-tossup: [magnetism]
+  # energy: Scientists at Brookhaven National Lab are studying the element that is most abundant by ma... => IRON
+  ms-set16-2022-ms-3-q08-bonus: [tectonics]
+  # math: What is the equation of the horizontal line that passes through the point with coordinates... => y = 6
+  ms-set16-2022-ms-3-q09-tossup: [graphs-functions]
+  # math: Evaluate the following expression: 12 plus 6 times 3 minus 7. => 23
+  ms-set16-2022-ms-3-q09-bonus: [arithmetic]
+  # physics: What is the SI base unit of temperature? => KELVIN
+  ms-set16-2022-ms-3-q10-tossup: [measurement]
+  # physics: What is the term for a process in which two or more atomic nuclei are combined to form a s... => NUCLEAR FUSION
+  ms-set16-2022-ms-3-q10-bonus: [modern-physics]
+  # biology: In Earth's history, there have been several instances in which a sizable fraction of the s... => MASS EXTINCTIONS
+  ms-set16-2022-ms-3-q11-tossup: [evolution]
+  # biology: A biologist identifies a new unicellular species lacking a nucleus that can undergo both t... => BACTERIA
+  ms-set16-2022-ms-3-q11-bonus: [microbes]
+  # chemistry: What term is used to describe the number density of water vapor in the air? => HUMIDITY
+  ms-set16-2022-ms-3-q12-tossup: [weather]
+  # chemistry: Which of the following molecules has a tetrahedral geometry? => METHANE
+  ms-set16-2022-ms-3-q12-bonus: [bonding]
+  # earth_and_space: Which of the following units is not used to measure atmospheric pressure? => POUNDS
+  ms-set16-2022-ms-3-q13-tossup: [weather, measurement]
+  # earth_and_space: What is the name of the ductile [DUK-til] region of Earth's mantle that is solid but is so... => ASTHENOSPHERE
+  ms-set16-2022-ms-3-q13-bonus: [tectonics]
+  # energy: Researchers at SLAC National Accelerator Lab are using an x-ray free-electron laser to stu... => PHOTOSYNTHESIS
+  ms-set16-2022-ms-3-q14-tossup: [plants]
+  # energy: Scientists at SLAC National Accelerator Laboratory are studying new ways to measure the Hu... => RATE OF EXPANSION OF THE UNIVERSE
+  ms-set16-2022-ms-3-q14-bonus: [galaxies-cosmology]
+  # math: If a right triangle has an exterior angle of measure 170 degrees, what is the degree measu... => 80
+  ms-set16-2022-ms-3-q15-tossup: [plane-geometry]
+  # math: If f of x = x3 – 3x2 –7x + 4, what is f of –2? => –2
+  ms-set16-2022-ms-3-q15-bonus: [graphs-functions]
+  # physics: Which of the following sets of laws describes how planets orbit stars? => KEPLER’S LAWS
+  ms-set16-2022-ms-3-q16-tossup: [motion-forces, solar-system]
+  # physics: Which of the following is closest to the speed of light in kilometers per second? => 300,000
+  ms-set16-2022-ms-3-q16-bonus: [light-em]
+  # biology: What organelles in plant cells contain chlorophyll? => CHLOROPLASTS
+  ms-set16-2022-ms-3-q17-tossup: [plants, cells]
+  # biology: The chordae tendineae [KOR-day tendin-EE-ah], which are colloquially known as the heartstr... => VALVES
+  ms-set16-2022-ms-3-q17-bonus: [human-body]
+  # chemistry: Which of the following elements is NOT a metalloid [MET-ah-loid]? => CARBON
+  ms-set16-2022-ms-3-q18-tossup: [periodic-table]
+  # chemistry: You dip a piece of pH paper into a one-molar solution of hydrochloric acid. What color doe... => RED
+  ms-set16-2022-ms-3-q18-bonus: [acids-bases]
+
+  # Round 4
+  # physics: What phenomenon results in sound waves bending away from the hot ground on a warm day? => REFRACTION
+  ms-set16-2022-ms-4-q01-tossup: [waves-sound]
+  # physics: A container full of water to the brim weighs 25 pounds. If an 8-pound block of balsa wood ... => 25
+  ms-set16-2022-ms-4-q01-bonus: [fluids]
+  # biology: Which of the following is most likely to be true of a sessile animal? => IT IS A FILTER FEEDER
+  ms-set16-2022-ms-4-q02-tossup: [diversity]
+  # biology: Newborn salmon learn the chemical composition of the water in which they hatch so they can... => IMPRINTING
+  ms-set16-2022-ms-4-q02-bonus: [behavior]
+  # chemistry: The kinetic energies of particles in a gas tend to exhibit what distribution? => MAXWELL-BOLTZMANN
+  ms-set16-2022-ms-4-q03-tossup: [matter-gases]
+  # chemistry: Identify all of the following three substances that are more acidic than distilled water: ... => 1, 2
+  ms-set16-2022-ms-4-q03-bonus: [acids-bases]
+  # earth_and_space: A rock formation is subjected to compressional forces at depths where ductile deformation ... => FOLDS
+  ms-set16-2022-ms-4-q04-tossup: [tectonics]
+  # earth_and_space: Place the following three organic materials in order of increasing metamorphic grade: 1) P... => 1, 3, 2
+  ms-set16-2022-ms-4-q04-bonus: [rocks-minerals]
+  # energy: Scientists at Brookhaven National Lab are making DNA origami. What two purines are found i... => GUANINE AND ADENINE
+  ms-set16-2022-ms-4-q05-tossup: [genetics]
+  # energy: Scientists at Lawrence Berkeley National Lab are studying protoplanets. Identify all of th... => 1
+  ms-set16-2022-ms-4-q05-bonus: [solar-system]
+  # math: What is the remainder when 9876 is divided by 9? => 3
+  ms-set16-2022-ms-4-q06-tossup: [number-theory]
+  # math: How many different ways are there to choose a set of 6 students from a class of 10? => 210
+  ms-set16-2022-ms-4-q06-bonus: [counting-probability]
+  # physics: An ant is walking on the ground following a curving path. The magnitude of its velocity re... => THE SUM OF THE SQUARES
+  ms-set16-2022-ms-4-q07-tossup: [motion-forces]
+  # physics: Consider a plot showing the temperature of water on the x-axis and its density on the y-ax... => 4
+  ms-set16-2022-ms-4-q07-bonus: [matter-gases]
+  # biology: Integral membrane proteins are firmly associated with the cell membrane lipid bilayer and ... => HYDROPHOBIC
+  ms-set16-2022-ms-4-q08-tossup: [cells]
+  # biology: What is the term for the microscopic blood vessels across which gas and nutrient exchange ... => CAPILLARIES
+  ms-set16-2022-ms-4-q08-bonus: [human-body]
+  # chemistry: Benzene’s stability can be ascribed to delocalized electrons in what type of molecular orb... => PI
+  ms-set16-2022-ms-4-q09-tossup: [organic, bonding]
+  # chemistry: What is the term for a molecule that can act as both a Bronsted-Lowry acid and base? => AMPHIPROTIC
+  ms-set16-2022-ms-4-q09-bonus: [acids-bases]
+  # earth_and_space: The intertropical convergence zone, or ITCZ, is found in the area where what set of prevai... => TRADE WINDS
+  ms-set16-2022-ms-4-q10-tossup: [weather]
+  # earth_and_space: Radon, an element that causes lung cancer, may seep into homes and buildings and concentra... => URANIUM IN SURROUNDING ROCKS PRODUCES RA
+  ms-set16-2022-ms-4-q10-bonus: [climate-environment, rocks-minerals]
+  # energy: Scientists supported by the Department of Energy are studying mycorrhizae. These structure... => MUTUALISM
+  ms-set16-2022-ms-4-q11-tossup: [ecology]
+  # energy: Scientists at Brookhaven National Laboratory are studying spintronic devices. Which of the... => ELECTRONS DO NOT NEED TO MOVE FOR SPINTR
+  ms-set16-2022-ms-4-q11-bonus: [electricity, magnetism]
+  # math: What is 7 to the negative one power plus 7 to the negative two power? => 8/49
+  ms-set16-2022-ms-4-q12-tossup: [arithmetic]
+  # math: When applying the Euclidean algorithm to find the greatest common divisor of 238 and 349, ... => 15
+  ms-set16-2022-ms-4-q12-bonus: [number-theory]
+  # physics: What derived SI unit is used to measure force? => NEWTON
+  ms-set16-2022-ms-4-q13-tossup: [measurement]
+  # physics: If sound A is 1000 times as intense as sound B, then, in decibels, how much louder is soun... => 30
+  ms-set16-2022-ms-4-q13-bonus: [waves-sound]
+  # biology: What organelle reads mRNA transcripts to produce proteins? => RIBOSOME
+  ms-set16-2022-ms-4-q14-tossup: [cells]
+  # biology: What is the term for the site on an enzyme that a substrate binds to? => ACTIVE SITE
+  ms-set16-2022-ms-4-q14-bonus: [biochemistry]
+  # chemistry: What is the SI unit for amount of substance? => MOLE
+  ms-set16-2022-ms-4-q15-tossup: [measurement]
+  # chemistry: Rank the following three elements in order of increasing atomic radius: 1) Magnesium; 2) S... => 3, 2, 1
+  ms-set16-2022-ms-4-q15-bonus: [periodic-table]
+  # earth_and_space: Why are tropical regions of Earth warmer than polar regions? => EARTH'S SPHERICAL SHAPE MEANS THAT TROPI
+  ms-set16-2022-ms-4-q16-tossup: [climate-environment]
+  # earth_and_space: Which of the following statements regarding ocean acidification is TRUE? => OCEAN ACIDIFICATION IS HARMFUL TO CALCIF
+  ms-set16-2022-ms-4-q16-bonus: [oceans, climate-environment]
+  # energy: Scientists at Brookhaven National Laboratory have built an electron cooling system, which ... => SECOND LAW OF THERMODYNAMICS
+  ms-set16-2022-ms-4-q17-tossup: [heat-thermo]
+  # energy: Scientists at Pacific Northwest National Lab are utilizing nanoparticles with a magnetite ... => Fe3O4
+  ms-set16-2022-ms-4-q17-bonus: [magnetism]
+  # math: A 10-by-20 rectangular wall is tiled with 200 unit square tiles. If the topmost row and th... => 171
+  ms-set16-2022-ms-4-q18-tossup: [plane-geometry]
+  # math: Find the degree measure of the larger of two supplementary angles if one is 8 degrees less... => 133
+  ms-set16-2022-ms-4-q18-bonus: [plane-geometry]
+
+  # Round 5
+  # math: What is the determinant of the 2-by-2 matrix with first row 3, 10 and second row 2, 5? => –5
+  ms-set16-2022-ms-5-q01-tossup: [algebra]
+  # math: A four-person bowling team’s average score for one game is 178. If the scores for three of... => 224
+  ms-set16-2022-ms-5-q01-bonus: [statistics]
+  # physics: Given that middle C is 261.63 hertz, then, in hertz, what is the frequency of the next ove... => 523.26
+  ms-set16-2022-ms-5-q02-tossup: [waves-sound]
+  # physics: A wave has a wavelength of 2 meters and a frequency of 6 hertz. In meters per second, what... => 12
+  ms-set16-2022-ms-5-q02-bonus: [waves-sound]
+  # biology: One reason that the gene for sickle-cell disease has become fixed in the population is tha... => MALARIA
+  ms-set16-2022-ms-5-q03-tossup: [genetics, evolution]
+  # biology: What bacterial enzymes recognize specific DNA sequences and introduce a double-stranded br... => RESTRICTION ENZYMES
+  ms-set16-2022-ms-5-q03-bonus: [genetics]
+  # chemistry: What is the adjective for a reaction that results in an energy transfer from the surroundi... => ENDOTHERMIC
+  ms-set16-2022-ms-5-q04-tossup: [thermo-kinetics]
+  # chemistry: Consider a chemical reaction with a standard enthalpy change of 10 kilojoules per mole and... => ABOVE 1000 KELVINS
+  ms-set16-2022-ms-5-q04-bonus: [thermo-kinetics]
+  # earth_and_space: The fan-shaped feature that is formed where a river meets the sea is known as what? => DELTA
+  ms-set16-2022-ms-5-q05-tossup: [surface-processes]
+  # earth_and_space: Which of the following best describes the thermocline present in most of the world's ocean... => TEMPERATURE DECREASES WITH DEPTH
+  ms-set16-2022-ms-5-q05-bonus: [oceans]
+  # energy: Scientists supported by the Department of Energy are studying the structures that connect ... => TENDONS
+  ms-set16-2022-ms-5-q06-tossup: [human-body]
+  # energy: Scientists at Oak Ridge National Lab are developing new methods to train statistical learn... => NEURAL NETWORK
+  ms-set16-2022-ms-5-q06-bonus: [energy-misc]
+  # math: Increasing a number by 120% is equivalent to multiplying the number by what decimal? => 2.2
+  ms-set16-2022-ms-5-q07-tossup: [arithmetic]
+  # math: Two cards are drawn from a standard 52-card deck. Which of the following is closest to the... => 0.5%
+  ms-set16-2022-ms-5-q07-bonus: [counting-probability]
+  # physics: What is the term for the tendency of objects to resist changes in motion? => INERTIA
+  ms-set16-2022-ms-5-q08-tossup: [motion-forces]
+  # physics: What phase change is characterized by evaporation below the surface of a liquid? => BOILING
+  ms-set16-2022-ms-5-q08-bonus: [matter-gases]
+  # biology: Decompression sickness, also called "the bends", is primarily the result of what dissolved... => NITROGEN
+  ms-set16-2022-ms-5-q09-tossup: [human-body]
+  # biology: What is the term for the process of programmed cell death that helps structures develop sh... => APOPTOSIS
+  ms-set16-2022-ms-5-q09-bonus: [cells]
+  # chemistry: In a galvanic cell, what is the term for the electrode at which reduction occurs? => CATHODE
+  ms-set16-2022-ms-5-q10-tossup: [reactions]
+  # chemistry: Identify all of the following three factors that can introduce random errors to an experim... => 1, 2
+  ms-set16-2022-ms-5-q10-bonus: [lab-safety-method]
+  # earth_and_space: Lunar terrae are another name for what surface feature? => HIGHLANDS
+  ms-set16-2022-ms-5-q11-tossup: [solar-system]
+  # earth_and_space: What is the densest layer of the Sun’s atmosphere? => PHOTOSPHERE
+  ms-set16-2022-ms-5-q11-bonus: [stars]
+  # energy: Scientists supported by the Department of Energy are studying the two bands closest to the... => CONDUCTION BAND
+  ms-set16-2022-ms-5-q12-tossup: [electricity]
+  # energy: Scientists at Brookhaven National Laboratory are studying particle-collision processes tha... => ELECTRON AND POSITRON
+  ms-set16-2022-ms-5-q12-bonus: [modern-physics]
+  # math: A plane has a groundspeed of 453 miles per hour. To the nearest second, how long does it t... => 8
+  ms-set16-2022-ms-5-q13-tossup: [ratios-rates]
+  # math: Rounding your answer to the nearest tenth, what is the length of a diagonal in a square wi... => 36.8
+  ms-set16-2022-ms-5-q13-bonus: [plane-geometry]
+  # physics: What principle states that the buoyant force on an object is equal to the weight of the li... => ARCHIMEDES’ PRINCIPLE
+  ms-set16-2022-ms-5-q14-tossup: [fluids]
+  # physics: Vince is standing halfway between the center and the outer edge of a merry-go-round, while... => 2
+  ms-set16-2022-ms-5-q14-bonus: [momentum-rotation]
+  # biology: The role of cristae is to increase the surface area of the inner membrane of what eukaryot... => MITOCHONDRIA
+  ms-set16-2022-ms-5-q15-tossup: [cells]
+  # biology: Lettuce wilts when it loses water, which reduces pressure exerted against the cell wall. W... => TURGOR
+  ms-set16-2022-ms-5-q15-bonus: [plants]
+  # chemistry: Identify all of the following three mixtures that are considered heterogeneous mixtures: 1... => 1
+  ms-set16-2022-ms-5-q16-tossup: [solutions]
+  # chemistry: Rank the following three elements in order of increasing first ionization energy: 1) Carbo... => 3, 1, 2
+  ms-set16-2022-ms-5-q16-bonus: [periodic-table]
+  # earth_and_space: The triple alpha process is primarily responsible for directly producing which of the foll... => CARBON-12
+  ms-set16-2022-ms-5-q17-tossup: [stars]
+  # earth_and_space: Venus has the highest albedo of any planet largely due to the presence of what atmospheric... => SULFURIC ACID
+  ms-set16-2022-ms-5-q17-bonus: [solar-system]
+  # energy: Scientists at Brookhaven National Lab are studying particles called neutral pions. Which o... => THEY HAVE NO NET ELECTRIC CHARGE
+  ms-set16-2022-ms-5-q18-tossup: [modern-physics]
+  # energy: Scientists at Brookhaven National Lab are researching metallic catalysts that accelerate t... => PLATINUM
+  ms-set16-2022-ms-5-q18-bonus: [thermo-kinetics, periodic-table]
+
+  # Round 6
+  # energy: Scientists at Oak Ridge National Lab are researching methods to program bacteria to conver... => CARBON DIOXIDE
+  ms-set16-2022-ms-6-q01-tossup: [biochemistry]
+  # energy: Scientists at Argonne National Lab are using density functional theory to model the proper... => 3
+  ms-set16-2022-ms-6-q01-bonus: [bonding]
+  # math: Identify a linear factor of x2 + 4x – 96. => x + 12
+  ms-set16-2022-ms-6-q02-tossup: [algebra]
+  # math: What are the coordinates of the vertex of the parabola with equation y = x2 + 18x + 31? => (–9, –50)
+  ms-set16-2022-ms-6-q02-bonus: [graphs-functions]
+  # physics: A particle is moving along a circular path with a constant speed. What is the term for the... => CENTRIPETAL FORCE
+  ms-set16-2022-ms-6-q03-tossup: [motion-forces]
+  # physics: Rank the following three regions of the electromagnetic spectrum in order of increasing en... => 1, 3, 2
+  ms-set16-2022-ms-6-q03-bonus: [light-em]
+  # biology: In a clinical trial, a pharmacologically- inactive substance is often given as a substitut... => PLACEBO
+  ms-set16-2022-ms-6-q04-tossup: [lab-safety-method]
+  # biology: Which of the classes of biomacromolecules has the highest energy density per unit mass? => FATS
+  ms-set16-2022-ms-6-q04-bonus: [biochemistry]
+  # chemistry: What is the term for the heat content of a system? => ENTHALPY
+  ms-set16-2022-ms-6-q05-tossup: [thermo-kinetics]
+  # chemistry: Rank the following three substances in order of increasing absolute entropy at STP: 1) Eth... => 3, 2, 1
+  ms-set16-2022-ms-6-q05-bonus: [thermo-kinetics]
+  # earth_and_space: Which of the following bodies does NOT have an atmosphere composed predominantly of nitrog... => VENUS
+  ms-set16-2022-ms-6-q06-tossup: [solar-system]
+  # earth_and_space: Identify all of the following three moons that are tidally locked to their planets: 1) Ear... => ALL
+  ms-set16-2022-ms-6-q06-bonus: [solar-system]
+  # energy: Scientists at Brookhaven National Lab are developing technologies to detect dopamine in th... => PARKINSON’S DISEASE
+  ms-set16-2022-ms-6-q07-tossup: [human-body]
+  # energy: Scientists supported by the Department of Energy are studying biopolymers. Identify all of... => 1, 2
+  ms-set16-2022-ms-6-q07-bonus: [biochemistry]
+  # math: If the length of each side of a regular pentagon is decreased by 70%, by what percentage i... => 91
+  ms-set16-2022-ms-6-q08-tossup: [plane-geometry]
+  # math: A square is drawn with one vertex at the origin and another vertex at (6, 8) . Which of th... => 50
+  ms-set16-2022-ms-6-q08-bonus: [plane-geometry, graphs-functions]
+  # physics: What is the term for the positively charged nucleon? => PROTON
+  ms-set16-2022-ms-6-q09-tossup: [atoms]
+  # physics: A 1000-kilogram plane is cruising at constant velocity. Its engines are exerting a constan... => 0
+  ms-set16-2022-ms-6-q09-bonus: [motion-forces]
+  # biology: What phylum are humans part of? => CHORDATA
+  ms-set16-2022-ms-6-q10-tossup: [diversity]
+  # biology: What polysaccharide is the major component of the fungal cell wall? => CHITIN
+  ms-set16-2022-ms-6-q10-bonus: [biochemistry]
+  # chemistry: What is the term for a chemical half-reaction that results in a gain of electrons? => REDUCTION
+  ms-set16-2022-ms-6-q11-tossup: [reactions]
+  # chemistry: Methoxyethane is an example of what class of organic molecule? => ETHER
+  ms-set16-2022-ms-6-q11-bonus: [organic]
+  # earth_and_space: In years, which of the following is closest to the age of Earth? => 4.5 BILLION
+  ms-set16-2022-ms-6-q12-tossup: [earth-history]
+  # earth_and_space: You find an igneous rock that has large, coarse crystals in its structure. Identify all of... => 3
+  ms-set16-2022-ms-6-q12-bonus: [rocks-minerals]
+  # energy: Scientists are using the Atmospheric Radiation Measurement facility to study a cloud type ... => STRATOCUMULUS
+  ms-set16-2022-ms-6-q13-tossup: [weather]
+  # energy: Scientists at Brookhaven National Laboratory are colliding fully-ionized gold atoms. Which... => THEY ARE GREATEST FOR NOBLE GASES
+  ms-set16-2022-ms-6-q13-bonus: [periodic-table]
+  # math: For the function f of x = 3x + 1, what is f inverse of –11? => –4
+  ms-set16-2022-ms-6-q14-tossup: [graphs-functions]
+  # math: What is the 25th term in the arithmetic sequence with third term 7 and sixth term 25? => 139
+  ms-set16-2022-ms-6-q14-bonus: [sequences]
+  # physics: Which of the following is an example of a longitudinal wave? => PRESSURE WAVE
+  ms-set16-2022-ms-6-q15-tossup: [waves-sound]
+  # physics: What principle states that if two waves overlap, their displacements are added? => SUPERPOSITION
+  ms-set16-2022-ms-6-q15-bonus: [waves-sound]
+  # biology: What biochemical process converts glucose to two molecules of pyruvate? => GLYCOLYSIS
+  ms-set16-2022-ms-6-q16-tossup: [biochemistry]
+  # biology: What is the term for the rhythmic muscle contractions that move food through the human dig... => PERISTALSIS
+  ms-set16-2022-ms-6-q16-bonus: [human-body]
+  # chemistry: What is the empirical formula of ammonium sulfate? => (NH4) SO4
+  ms-set16-2022-ms-6-q17-tossup: [bonding]
+  # chemistry: What is the complete electron configuration for neutral boron? => 1S22S22P1
+  ms-set16-2022-ms-6-q17-bonus: [atoms]
+  # earth_and_space: What is the process in Earth's mantle in which hot rock rises and cool rock sinks, driving... => CONVECTION
+  ms-set16-2022-ms-6-q18-tossup: [tectonics]
+  # earth_and_space: In which of the following types of rocks would you be most likely to find a fossil? => SHALE
+  ms-set16-2022-ms-6-q18-bonus: [rocks-minerals]
+
+  # Round 7
+  # chemistry: What is the term for a 50/50 mixture of enantiomers [en-AN-tee-oh-murs]? => RACEMIC MIXTURE
+  ms-set16-2022-ms-7-q01-tossup: [organic]
+  # chemistry: Identify all of the following three factors that can affect the rate of a chemical reactio... => ALL
+  ms-set16-2022-ms-7-q01-bonus: [thermo-kinetics]
+  # earth_and_space: Proteus and Nereid [Nair-ee- id] are moons of what planet? => NEPTUNE
+  ms-set16-2022-ms-7-q02-tossup: [solar-system]
+  # earth_and_space: Early refractor telescopes were hindered by distortion because light rays of different col... => CHROMATIC ABERRATION
+  ms-set16-2022-ms-7-q02-bonus: [observing]
+  # energy: Scientists at Argonne National Lab are developing solar cells made from perovskite [purr-O... => SILICON
+  ms-set16-2022-ms-7-q03-tossup: [renewables]
+  # energy: Scientists at the Thomas Jefferson National Accelerator Facility are studying pions [PIE-o... => UP AND DOWN
+  ms-set16-2022-ms-7-q03-bonus: [modern-physics]
+  # math: In a geometric sequence with first two terms 1 and 3, what is the sum of the first 4 terms... => 40
+  ms-set16-2022-ms-7-q04-tossup: [sequences]
+  # math: What is the ratio of the volume of a sphere to that of a right circular cone whose base ha... => 2
+  ms-set16-2022-ms-7-q04-bonus: [solid-geometry]
+  # physics: Which of the following physical quantities is equal to the rate of change of momentum? => FORCE
+  ms-set16-2022-ms-7-q05-tossup: [momentum-rotation]
+  # physics: A fixed amount of an ideal gas originally has a temperature of 300 kelvins, a volume of 20... => 225
+  ms-set16-2022-ms-7-q05-bonus: [matter-gases]
+  # biology: Thermoregulation in mammals is primarily carried out by what part of the brain? => HYPOTHALAMUS
+  ms-set16-2022-ms-7-q06-tossup: [human-body]
+  # biology: From what primary germ layer does the lens of the mammalian eye develop? => ECTODERM
+  ms-set16-2022-ms-7-q06-bonus: [human-body]
+  # chemistry: Based on their bond-dissociation energies, which of the following bonds is strongest? => N TRIPLE BOND N
+  ms-set16-2022-ms-7-q07-tossup: [bonding]
+  # chemistry: Born-Haber cycles are an application of what law that states that a series of reactions ca... => HESS’S LAW
+  ms-set16-2022-ms-7-q07-bonus: [thermo-kinetics]
+  # earth_and_space: Short-period comets originate beyond the orbit of Neptune in what region of the solar syst... => KUIPER BELT
+  ms-set16-2022-ms-7-q08-tossup: [solar-system]
+  # earth_and_space: A star has a temperature of 2500 kelvins. Which of the following best categorizes the peak... => INFRARED LIGHT
+  ms-set16-2022-ms-7-q08-bonus: [stars, light-em]
+  # energy: Scientists at the Thomas Jefferson National Accelerator Facility are studying a particle d... => NEUTRINOS HAVE MASS
+  ms-set16-2022-ms-7-q09-tossup: [modern-physics]
+  # energy: Argonne National Lab scientists are using machine learning to understand the behavior of h... => 3, 1, 2
+  ms-set16-2022-ms-7-q09-bonus: [energy-misc]
+  # math: Which of the following values is NOT in the range of f of x = ex – 2? => –2
+  ms-set16-2022-ms-7-q10-tossup: [graphs-functions]
+  # math: Two complex numbers have absolute values of 5√3 and 2√3, and angles of 263 degrees and 158... => ABSOLUTE VALUE = 30; ANGLE = 61
+  ms-set16-2022-ms-7-q10-bonus: [math-misc]
+  # physics: Which of the following laws is most useful for calculating the electrical field generated ... => COULOMB'S LAW
+  ms-set16-2022-ms-7-q11-tossup: [electricity]
+  # physics: Rank the following three substances in order of increasing speed of sound in that substanc... => 3, 2, 1
+  ms-set16-2022-ms-7-q11-bonus: [waves-sound]
+  # biology: Which of the following organisms is most likely to be a primary consumer in a lake ecosyst... => ZOOPLANKTON
+  ms-set16-2022-ms-7-q12-tossup: [ecology]
+  # biology: Instead of lungs, many bony fish possess what homologous [ha-MAWL-uh-gus] gas-filled organ... => SWIM BLADDER
+  ms-set16-2022-ms-7-q12-bonus: [diversity]
+  # chemistry: What rule states that electrons will half-fill orbitals before pairing up? => HUND’S RULE
+  ms-set16-2022-ms-7-q13-tossup: [atoms]
+  # chemistry: Which of the following molecules contains carbon-carbon bonds with the most s-character? => ETHYNE
+  ms-set16-2022-ms-7-q13-bonus: [bonding, organic]
+  # earth_and_space: A brine pool containing sulfate and calcium is undergoing evaporation. What mineral will m... => GYPSUM
+  ms-set16-2022-ms-7-q14-tossup: [rocks-minerals]
+  # earth_and_space: Denitrification [dee-ny-trih- fih-KAY-shun] by bacteria in very low oxygen environments ca... => NITROUS OXIDE
+  ms-set16-2022-ms-7-q14-bonus: [climate-environment]
+  # energy: Scientists at Oak Ridge National Lab are fabricating silicon chips doped with vanadium [va... => +4
+  ms-set16-2022-ms-7-q15-tossup: [reactions]
+  # energy: Scientists supported by the Department of Energy are developing materials to serve as arti... => TENDONS
+  ms-set16-2022-ms-7-q15-bonus: [human-body]
+  # math: What is the amplitude of a sinusoidal graph whose maximum value is 15 and minimum value is... => 11
+  ms-set16-2022-ms-7-q16-tossup: [trigonometry]
+  # math: Let f of x be the fraction with numerator 2x + 8 and denominator x2 + x – 12. How many hor... => ONE HORIZONTAL AND ONE VERTICAL
+  ms-set16-2022-ms-7-q16-bonus: [graphs-functions]
+  # physics: If the distance between two gravitationally-bound bodies is tripled, by what factor is the... => 1/9
+  ms-set16-2022-ms-7-q17-tossup: [motion-forces]
+  # physics: Two electrons within the same orbital of an atom must have opposite spins. Which of the fo... => PAULI EXCLUSION PRINCIPLE
+  ms-set16-2022-ms-7-q17-bonus: [atoms]
+  # biology: What type of transmembrane protein is typically involved in attaching epithelial [eh-pih-T... => INTEGRIN
+  ms-set16-2022-ms-7-q18-tossup: [cells]
+  # biology: Identify all of the following three organisms that are chondrichthyans [kon-DRIK-thee-ans]... => 1, 2
+  ms-set16-2022-ms-7-q18-bonus: [diversity]
+
+  # Round 8
+  # biology: During intense periods of exercise, the blood may not be able to provide sufficient oxygen... => LACTIC ACID
+  ms-set16-2022-ms-8-q01-tossup: [biochemistry, human-body]
+  # biology: What is the term for the structure that implants into the endometrium during mammalian dev... => BLASTOCYST
+  ms-set16-2022-ms-8-q01-bonus: [human-body]
+  # chemistry: Which of the following is the best strategy to compensate for random errors during an expe... => MAKING REPEATED INDEPENDENT MEASUREMENTS
+  ms-set16-2022-ms-8-q02-tossup: [lab-safety-method]
+  # chemistry: Biopolymers are, in general, what type of polymer? => CONDENSATION
+  ms-set16-2022-ms-8-q02-bonus: [organic]
+  # earth_and_space: Which of the following statements about rivers is true? => OXBOW LAKES ARE THE REMNANTS OF FORMER R
+  ms-set16-2022-ms-8-q03-tossup: [surface-processes]
+  # earth_and_space: Identify all of the following three plant nutrients that can originate from the atmosphere... => 1, 3
+  ms-set16-2022-ms-8-q03-bonus: [climate-environment]
+  # energy: Argonne National Lab scientists are utilizing lasers and levitation to improve the creatio... => HEAT RESISTANCE
+  ms-set16-2022-ms-8-q04-tossup: [heat-thermo]
+  # energy: Scientists supported by the Department of Energy are studying the most common catecholamin... => DOPAMINE
+  ms-set16-2022-ms-8-q04-bonus: [human-body]
+  # math: If the odds against an event are 8 to 3, what is the probability of the event occurring? => 3/11
+  ms-set16-2022-ms-8-q05-tossup: [counting-probability]
+  # math: Solve the following equation for x: x – 5 equals the square root of open parenthesis, 4x +... => 12
+  ms-set16-2022-ms-8-q05-bonus: [algebra]
+  # physics: Which of the following best describes the difference between resistance and resistivity? => RESISTIVITY IS INTRINSIC, WHILE RESISTAN
+  ms-set16-2022-ms-8-q06-tossup: [electricity]
+  # physics: Liam is test driving a new car. Starting from rest, he presses the gas pedal for 5 seconds... => 100
+  ms-set16-2022-ms-8-q06-bonus: [motion-forces]
+  # biology: What gaseous plant hormone is commonly used to accelerate ripening after shipping and tran... => ETHYLENE
+  ms-set16-2022-ms-8-q07-tossup: [plants]
+  # biology: Individuals with a thymine at position 478 in the MC1R gene will have red hair and freckle... => SINGLE NUCLEOTIDE POLYMORPHISM
+  ms-set16-2022-ms-8-q07-bonus: [genetics]
+  # chemistry: What type of bond is formed in the reaction of a Lewis acid with a Lewis base? => DATIVE
+  ms-set16-2022-ms-8-q08-tossup: [acids-bases, bonding]
+  # chemistry: The mass spectrum for a compound has a parent peak at 80 M over Z and another peak at 65 M... => METHYL
+  ms-set16-2022-ms-8-q08-bonus: [chemistry-misc]
+  # earth_and_space: Earth reflects approximately 30% of the light it receives from the Sun back into space. Wh... => CLOUDS
+  ms-set16-2022-ms-8-q09-tossup: [climate-environment]
+  # earth_and_space: Which of the following is a key characteristic of a protostar? => IT IS SURROUNDED BY AN OPAQUE ENVELOPE
+  ms-set16-2022-ms-8-q09-bonus: [stars]
+  # energy: Scientists at Brookhaven National Laboratory are searching for bound states of gluons. Whi... => PROTON
+  ms-set16-2022-ms-8-q10-tossup: [modern-physics]
+  # energy: Scientists supported by the Department of Energy are making batteries based on the metal p... => ALUMINUM
+  ms-set16-2022-ms-8-q10-bonus: [batteries-storage]
+  # math: How many multiples of 12 are there between 22 and 100? => 7
+  ms-set16-2022-ms-8-q11-tossup: [number-theory]
+  # math: In a parallelogram, two non-congruent angles have degree measures, in terms of a number x,... => 16
+  ms-set16-2022-ms-8-q11-bonus: [plane-geometry]
+  # physics: A 80-kilogram man is standing on the left end of a 200-kilogram rowboat, which is floating... => 0
+  ms-set16-2022-ms-8-q12-tossup: [momentum-rotation]
+  # physics: In meters to two significant figures, what is the wavelength of a sound wave produced by a... => 1.5
+  ms-set16-2022-ms-8-q12-bonus: [waves-sound]
+  # biology: Which of the following complexes breaks the central dogma of molecular biology? => REVERSE TRANSCRIPTASE
+  ms-set16-2022-ms-8-q13-tossup: [genetics]
+  # biology: In which of the following situations would it be most helpful for a patient to take an ant... => DURING AN ALLERGIC REACTION
+  ms-set16-2022-ms-8-q13-bonus: [immunity-disease]
+  # chemistry: What is the term for the state at which the rate of the forward reaction is equal to the r... => EQUILIBRIUM
+  ms-set16-2022-ms-8-q14-tossup: [thermo-kinetics]
+  # chemistry: In which of the following compounds does hydrogen have an oxidation state that is NOT +1? => NaH
+  ms-set16-2022-ms-8-q14-bonus: [reactions]
+  # earth_and_space: What type of unconformity occurs when rocks are tiled and eroded before younger rocks are ... => ANGULAR UNCONFORMITY
+  ms-set16-2022-ms-8-q15-tossup: [earth-history]
+  # earth_and_space: Which of the following statements is FALSE regarding sea and land breezes? => SEA BREEZES TYPICALLY OCCUR AT NIGHT
+  ms-set16-2022-ms-8-q15-bonus: [weather]
+  # energy: Scientists supported by the Department of Energy are studying hexokinase, an enzyme that a... => ATP
+  ms-set16-2022-ms-8-q16-tossup: [biochemistry]
+  # energy: Scientists at Princeton Plasma Physics Lab are studying magnetic reconnection events. Iden... => 1, 2
+  ms-set16-2022-ms-8-q16-bonus: [magnetism]
+  # math: The number of the year 2019 had 4 different digits. What is the next year with 4 different... => 2031
+  ms-set16-2022-ms-8-q17-tossup: [number-theory]
+  # math: What are the radius and the coordinates of the center of the circle with equation x2 + y2 ... => RADIUS 2√10, CENTER (–5, 2)
+  ms-set16-2022-ms-8-q17-bonus: [graphs-functions]
+  # physics: Van travels a distance of 360 kilometers in 240 minutes. In kilometers per hour, what was ... => 90
+  ms-set16-2022-ms-8-q18-tossup: [motion-forces]
+  # physics: Which of the following quantities has the same units as angular momentum per time? => TORQUE
+  ms-set16-2022-ms-8-q18-bonus: [momentum-rotation]
+
+  # Round 9
+  # chemistry: What bi-elemental compound has the most ionic character? => CsF
+  ms-set16-2022-ms-9-q01-tossup: [bonding]
+  # chemistry: Identify all of the following three elements that can commonly be found in coal: 1) Carbon... => ALL
+  ms-set16-2022-ms-9-q01-bonus: [fuels-combustion]
+  # earth_and_space: The Trojan asteroids orbit around the Sun with approximately the same orbital period as wh... => JUPITER
+  ms-set16-2022-ms-9-q02-tossup: [solar-system]
+  # earth_and_space: Identify all of the following three characteristics that are true of all achondrites: 1) T... => 2, 3
+  ms-set16-2022-ms-9-q02-bonus: [solar-system, rocks-minerals]
+  # energy: Scientists at Brookhaven National Lab are researching how atmospheric reactions can genera... => AEROSOL
+  ms-set16-2022-ms-9-q03-tossup: [weather]
+  # energy: Scientists at Lawrence Berkeley National Lab are studying metals that do not have a define... => AMORPHOUS
+  ms-set16-2022-ms-9-q03-bonus: [matter-gases]
+  # math: Given a figure and its image under a dilation, which of the following can most directly be... => TWO INTERSECTING LINES
+  ms-set16-2022-ms-9-q04-tossup: [plane-geometry]
+  # math: An infinite geometric sequence has first term 5/8 and sum 6/7. In fractional form, what is... => 13/48
+  ms-set16-2022-ms-9-q04-bonus: [sequences]
+  # physics: Which of the following characteristics of water best explains why the flow from a faucet g... => INCOMPRESSIBILITY
+  ms-set16-2022-ms-9-q05-tossup: [fluids]
+  # physics: A 500-kilogram boxcar is traveling with an initial speed v when it collides with a 1500-ki... => v/4 (ACCEPT: (1/4) v, 0.25v)
+  ms-set16-2022-ms-9-q05-bonus: [momentum-rotation]
+  # biology: In 1979, the World Health Organization declared which infectious disease eradicated? => SMALLPOX
+  ms-set16-2022-ms-9-q06-tossup: [immunity-disease]
+  # biology: Which of the following is the primary reason for a cell to undergo arrest at the G2-M chec... => INCOMPLETELY-REPLICATED DNA
+  ms-set16-2022-ms-9-q06-bonus: [cells]
+  # chemistry: The organic molecule found in vinegar is an example of what class of organic molecule? => CARBOXYLIC ACID
+  ms-set16-2022-ms-9-q07-tossup: [organic]
+  # chemistry: What functional group can be found in acetyl-salicylic acid that is not found in salicylic... => ESTER
+  ms-set16-2022-ms-9-q07-bonus: [organic]
+  # earth_and_space: At any given moment, which of the following water resources holds the largest fraction of ... => GROUNDWATER
+  ms-set16-2022-ms-9-q08-tossup: [surface-processes]
+  # earth_and_space: An observer standing on the island of Bermuda measures easterly winds during a hurricane. ... => SOUTH
+  ms-set16-2022-ms-9-q08-bonus: [weather]
+  # energy: Scientists at Brookhaven National Laboratory are planning to use the High Luminosity Large... => RATE OF PARTICLE COLLISIONS
+  ms-set16-2022-ms-9-q09-tossup: [modern-physics]
+  # energy: Scientists at Brookhaven National Lab are developing new anodes for lithium-ion batteries.... => sp2
+  ms-set16-2022-ms-9-q09-bonus: [batteries-storage]
+  # math: There are 25 prime numbers less than 100. How many composite numbers are there among the f... => 74
+  ms-set16-2022-ms-9-q10-tossup: [number-theory]
+  # math: According to the rational root theorem, how many different numbers are possible rational r... => 16
+  ms-set16-2022-ms-9-q10-bonus: [algebra]
+  # physics: Jan travels at 40 kilometers per hour for 45 minutes. In kilometers, what distance does sh... => 30
+  ms-set16-2022-ms-9-q11-tossup: [motion-forces]
+  # physics: Elizabeth is trying to tune her violin. If she doubles the tension of a string, then, to t... => 1.4
+  ms-set16-2022-ms-9-q11-bonus: [waves-sound]
+  # biology: Strawberry plants can often be found with runners or stolons. Which of the following is th... => ASEXUAL REPRODUCTION
+  ms-set16-2022-ms-9-q12-tossup: [plants]
+  # biology: Identify all of the following three population-limiting factors that are density-independe... => 1, 3
+  ms-set16-2022-ms-9-q12-bonus: [ecology]
+  # chemistry: What is the chemical formula of the conjugate base of carbonic acid? => HCO3–
+  ms-set16-2022-ms-9-q13-tossup: [acids-bases]
+  # chemistry: What is the oxidation state of chromium in K2Cr2O7? => +6
+  ms-set16-2022-ms-9-q13-bonus: [reactions]
+  # earth_and_space: In millions of years, how long ago are the lunar maria thought to have solidified? => 3000
+  ms-set16-2022-ms-9-q14-tossup: [solar-system]
+  # earth_and_space: Giving your answer to the nearest whole degree, what is the angular diameter of the circle... => 47
+  ms-set16-2022-ms-9-q14-bonus: [observing]
+  # energy: Scientists at Lawrence Berkeley National Lab are studying amoebas. Of what domain are amoe... => EUKARYOTA
+  ms-set16-2022-ms-9-q15-tossup: [diversity]
+  # energy: Scientists at Pacific Northwest National Lab are studying fluorescent crystals that, when ... => FRET
+  ms-set16-2022-ms-9-q15-bonus: [light-em]
+  # math: What is the smallest possible integer edge length, in inches, for a cube so that its surfa... => 5
+  ms-set16-2022-ms-9-q16-tossup: [solid-geometry]
+  # math: What is the minimum number of sides in a regular polygon if its interior angles measure at... => 212
+  ms-set16-2022-ms-9-q16-bonus: [plane-geometry]
+  # physics: X-ray diffraction is a technique typically used to study the structure of what phase of ma... => SOLID
+  ms-set16-2022-ms-9-q17-tossup: [matter-gases]
+  # physics: A three-meter pipe is closed at one end and open at the other. In meters, what is the wave... => 12
+  ms-set16-2022-ms-9-q17-bonus: [waves-sound]
+  # biology: What is the term for animals that are most active during the daytime? => DIURNAL
+  ms-set16-2022-ms-9-q18-tossup: [behavior]
+  # biology: Which of the following best describes the purpose of down feathers? => TRAPPING A LAYER OF AIR TO ACT AS INSULA
+  ms-set16-2022-ms-9-q18-bonus: [diversity]

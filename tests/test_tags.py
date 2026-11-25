@@ -134,3 +134,13 @@ def test_every_discipline_has_a_misc_topic():
     topic_list = tg.load().topic_list
     for d in topic_list.disciplines:
         assert any(t.endswith("-misc") and disc == d for t, (disc, _) in topic_list.topics.items()), d
+
+
+def test_2022_questions_keep_their_printed_subject(tmp_path):
+    tags = tg.load(make_dir(tmp_path, "questions:\n  ms-set15-set-1-ms-2021-q01-tossup: [cells]\n"))
+    assert tg.apply(question(category="chemistry"), tags)["tags"]["disciplines"] == ["chemistry", "biology"]
+
+
+def test_repo_tagged_sets_cover_their_questions():
+    sets = tg.load().sets
+    assert {k: len(v.questions) for k, v in sets.items()} == {("ms", "set10"): 782, ("ms", "set15"): 300, ("ms", "set16"): 324}

@@ -8,8 +8,8 @@ tags/<level>/<set>.yaml tags every question of one set with one or more topic ID
     questions:
       ms-set15-set-1-ms-2021-q01-tossup: [atoms]
 
-A question's `tags.disciplines` come from its topics, plus `energy` for every question printed
-as Energy, so they can't disagree. A tags file
+A question's `tags.disciplines` come from its topics, plus the printed subject when it is one
+of the disciplines (Energy, or any 2022 subject), so they can't disagree. A tags file
 must cover every question in its set, and every ID must match a question, or the parse stops.
 `tags.source` is "ai" and `tags.reviewed` follows the file's `reviewed` until John checks it.
 """
@@ -127,8 +127,10 @@ def apply(question: dict, tags: Tags | None) -> dict:
     if topics is None:
         raise TagsError(f"{st.file}: {question['id']} has no tags; a tags file must cover every question in its set")
     st.used.add(question["id"])
-    # A question printed as Energy is always filed under energy too, besides the science it asks about.
-    disciplines = ["energy"] if question.get("category") == "energy" and "energy" in tags.topic_list.disciplines else []
+    # A question printed under a discipline (Energy, or any 2022 subject) is always filed under it,
+    # besides the science its topics point to.
+    category = question.get("category")
+    disciplines = [category] if category in tags.topic_list.disciplines else []
     for t in topics:
         d = tags.topic_list.topics[t][0]
         if d not in disciplines:
