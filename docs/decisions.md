@@ -2,6 +2,15 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-25: Topic tags, piloted on one set (QB-11, QB-12)
+
+- Tags live in data files like transcriptions: `tags/topics.yaml` is the topic list, and `tags/<level>/<set>.yaml` gives every question in a set one or more topic IDs. Each topic belongs to one discipline, and a question's disciplines are worked out from its topics, so the two can't disagree.
+- Disciplines are the six 2022 subjects. After John's review: every question printed as Energy is filed under energy and also under the science it asks about (a DOE-lab question about lichens is energy and biology). Each discipline has a `-misc` topic for questions that fit no topic well, such as the DOE question about supervised learning (`energy-misc`).
+- John can't check every tag, so he reviewed the 10 least certain ones. Wrong tags found later will be reported through the website's report button (WEB-10), which gets a "wrong tag" option.
+- Tagging is costly in usage, so it starts with one set: ms/set15 (2021, 300 questions, all text, no image-only questions), tagged by Claude in a session from the question text with no API. John reviews it before any other set is tagged.
+- Tags fill fields that were already in the format (`tags.source` is "ai", `tags.reviewed` comes from the file), so `schema_version` stays 1.
+- The roadmap says the sub-topic list (QB-11) waits until the subject pass is done. The pilot still drafts one because subjects are worked out from topics; John can edit or trim it.
+
 ## 2026-11-24: Short-term roadmap
 
 - The roadmap has one short list, **Now**, and everything else is **Later** or **Parked** (Next and Nice to have are folded into Later). Only Now items are worked on.
