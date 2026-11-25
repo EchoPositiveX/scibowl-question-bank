@@ -10,7 +10,6 @@ How this file works:
 ## Now
 
 - QB-12 AI-tag questions, a set or two at a time with John's review. First goal: give every question one of the 2022 subjects (biology, chemistry, physics, earth and space, energy, math) in `tags.disciplines`, so older Life, Physical and General Science questions can be studied with the new grouping (website WEB-07)
-- QB-34 Review pages with KaTeX built in: put the KaTeX script, styles and fonts inside the review HTML so it renders the same in any viewer (John's viewer did not load the fonts from the web, so ≠ showed as a box)
 
 ## Later
 
@@ -33,6 +32,7 @@ How this file works:
 
 ## Done
 
+- QB-34 Review pages now carry KaTeX 0.16.47 (the website's version) with its script, styles and woff2 fonts inside the HTML, so math renders the same offline and in any viewer
 - QB-31 Dropped: after QB-37 no question is flagged needs_review, so there is nothing left for an AI vision API to transcribe
 - QB-19 Dropped: covered by `quality.notes` in QB-01
 - QB-37 Filled in set 04 Round 4 toss-up 21 (OTEC), whose choices X and Y and answer digit are blank images in the PDF: X) 10, Y) 20, answer Y) 20, via corrections.yaml

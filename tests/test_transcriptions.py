@@ -160,3 +160,21 @@ def test_printed_accept_must_be_transcribed(tmp_path):
 def test_accept_needs_latex(tmp_path):
     with pytest.raises(tr.TranscriptionError, match="must have text and latex"):
         tr.load(write(tmp_path, ACCEPT_ENTRY % 'accept: ["0.88"]'))
+
+
+def test_review_page_has_katex_built_in(tmp_path):
+    """QB-34: the review page renders math with no web access, so every viewer shows the same thing."""
+    import re
+
+    from scibowl_qb import transcription_review
+
+    folder = write(tmp_path, ENTRY % "false")
+    data = tmp_path / "questions.json"
+    data.write_text(json.dumps({"questions": [{"id": "ms-set01-m-round03-q07-bonus", "images": {}}]}), encoding="utf-8")
+    page = transcription_review.render(folder / "ms" / "set01.yaml", data)
+    fonts = list((transcription_review.KATEX_DIR / "fonts").glob("*.woff2"))
+    assert len(fonts) == 20
+    assert page.count("data:font/woff2;base64,") == len(fonts)
+    assert "url(fonts/" not in page
+    assert not re.search(r'(src|href)="https?:', page)
+    assert "katex.renderToString" in page and 'addEventListener("DOMContentLoaded", renderAll)' in page

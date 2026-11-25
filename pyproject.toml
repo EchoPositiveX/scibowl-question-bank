@@ -20,7 +20,7 @@ dev = ["pytest>=8"]
 where = ["src"]
 
 [tool.setuptools.package-data]
-scibowl_qb = ["schema/*.json"]
+scibowl_qb = ["schema/*.json", "vendor/katex/*", "vendor/katex/fonts/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

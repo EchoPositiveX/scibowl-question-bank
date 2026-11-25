@@ -4,8 +4,8 @@ the transcribed text, with the LaTeX rendered.
     python -m scibowl_qb.parse --set set01            # writes output/questions.json and output/images
     python -m scibowl_qb.transcription_review transcriptions/ms/set01.yaml
 
-The page is one self-contained HTML file (images are embedded), so it can be opened locally
-or shared. Mark entries `reviewed: true` in the YAML file once they match the image.
+The page is one self-contained HTML file: images, and KaTeX's script, styles and fonts, are
+embedded (QB-34), so it renders the same in any viewer, offline too. Mark entries `reviewed: true` in the YAML file once they match the image.
 """
 
 from __future__ import annotations
@@ -14,18 +14,41 @@ import argparse
 import base64
 import html
 import json
+import re
 import sys
 from pathlib import Path
 
 from . import transcriptions as tr
 
-KATEX = "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist"
+# KaTeX 0.16.47 (MIT, see vendor/katex/LICENSE), the version the website uses. Only the woff2
+# fonts are kept: every current browser reads them.
+KATEX_DIR = Path(__file__).parent / "vendor" / "katex"
+_FONT_SRC = re.compile(r'src:url\(fonts/([\w-]+\.woff2)\) format\("woff2"\)[^;}]*')
+
+
+def katex_css() -> str:
+    """katex.min.css with each font embedded as a data: URL instead of a fonts/ link."""
+    def embed(m: re.Match) -> str:
+        data = base64.b64encode((KATEX_DIR / "fonts" / m.group(1)).read_bytes()).decode()
+        return f'src:url(data:font/woff2;base64,{data}) format("woff2")'
+    css, n = _FONT_SRC.subn(embed, (KATEX_DIR / "katex.min.css").read_text(encoding="utf-8"))
+    if n == 0 or "url(fonts/" in css:
+        raise RuntimeError("katex.min.css has a font rule this code does not embed")
+    return css
+
+
+def katex_js() -> str:
+    js = (KATEX_DIR / "katex.min.js").read_text(encoding="utf-8")
+    if "</script" in js.lower():
+        raise RuntimeError("katex.min.js can't be inlined as is")
+    return js
+
 
 PAGE = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
-<link rel="stylesheet" href="{katex}/katex.min.css">
-<script defer src="{katex}/katex.min.js" onload="renderAll()"></script>
+<style>{katex_css}</style>
+<script>{katex_js}</script>
 <script>
 // Same rules as the website (lib/math.ts): $...$ is math in display style, \$ is a dollar sign,
 // and \textbf{{...}} outside math is bold text.
@@ -41,6 +64,7 @@ function renderAll() {{
     }} catch (e) {{ el.classList.add("bad"); el.title = String(e); }}
   }}
 }}
+document.addEventListener("DOMContentLoaded", renderAll);
 </script>
 <style>
   body {{ font: 16px/1.5 system-ui, sans-serif; margin: 0 auto; max-width: 1200px; padding: 16px; color: #111; background: #fff; }}
@@ -99,7 +123,7 @@ def render(path: Path, data_file: Path, todo_only: bool = False) -> str:
     intro = (f"{shown}{reviewed} of {len(tr.load_file(path))} questions reviewed. Left: the printed question. Right: the transcription, "
              "rendered, with the plain text below it. Check the rendered version against the printed question, including any ACCEPT answers. "
              f"Approved entries get <code>reviewed: true</code> in <code>{html.escape(path.as_posix())}</code>.")
-    return PAGE.format(title=html.escape(title), intro=intro, body="\n".join(parts), katex=KATEX)
+    return PAGE.format(title=html.escape(title), intro=intro, body="\n".join(parts), katex_css=katex_css(), katex_js=katex_js())
 
 
 def main(argv: list[str] | None = None) -> int:
