@@ -9,7 +9,12 @@
 # are energy and biology. The energy topics are for questions about energy itself
 # (batteries, fuels, power plants).
 #
+# A question printed under one of the six disciplines (2022 sets) is always filed under
+# that discipline too.
+#
 # Each discipline has a `-misc` topic for questions that fit none of its topics well.
+# Keep the list broad so students can practise similar ideas together: when a question
+# doesn't fit, use misc rather than adding a new topic.
 #
 # Topic IDs are what the data stores, so rename a label freely but change an ID only
 # together with every tags file that uses it.

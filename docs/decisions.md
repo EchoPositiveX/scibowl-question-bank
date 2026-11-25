@@ -2,6 +2,12 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-25: Tagging sets 10 and 16 (QB-12)
+
+- Second batch: ms/set10 (2016, 782 questions) and ms/set16 (2022, 324), both all text. Same approach as set 15: Claude tags from the text, and John checks only the 10 or so least certain tags.
+- The Energy rule now covers every printed subject that is one of the six disciplines, so 2022 questions always keep their printed subject (a 2022 Chemistry question about humidity is chemistry and earth and space).
+- General Science (set 10 has 102) has no 2022 subject. Its questions are tagged by what they ask about. After John's review: no new topics for what doesn't fit. Lab safety, the scientific method and history of science go to the closest discipline's misc topic (mostly `chemistry-misc`, `biology-misc` for dissection and microbe lab work). The topic list stays broad so students can practise similar ideas together; NSB's printed answers are not second-guessed.
+
 ## 2026-11-25: Topic tags, piloted on one set (QB-11, QB-12)
 
 - Tags live in data files like transcriptions: `tags/topics.yaml` is the topic list, and `tags/<level>/<set>.yaml` gives every question in a set one or more topic IDs. Each topic belongs to one discipline, and a question's disciplines are worked out from its topics, so the two can't disagree.

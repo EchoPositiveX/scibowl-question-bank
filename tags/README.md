@@ -14,7 +14,8 @@ questions:
 ```
 
 - The parser applies tags last. A tags file must cover every question in its set; an unknown topic, a missing question or an ID that matches nothing stops the parse.
-- Every question printed as Energy gets the `energy` discipline automatically, and is tagged with the topic it asks about: a DOE-lab question about lichens is `ecology`, so its disciplines are energy and biology. The energy topics (batteries, fuels, nuclear power, renewables) are for questions about energy itself.
+- A question printed under one of the six disciplines (Energy in any set, or any subject in the 2022 sets) gets that discipline automatically, so a 2022 Chemistry question about humidity is chemistry and earth and space. Every question printed as Energy gets the `energy` discipline, and is tagged with the topic it asks about: a DOE-lab question about lichens is `ecology`, so its disciplines are energy and biology. The energy topics (batteries, fuels, nuclear power, renewables) are for questions about energy itself.
+- Keep the topic list broad, so students can practise similar ideas together. A question that fits no topic goes to its discipline's `-misc` topic rather than a new topic. General Science questions are tagged by what they ask about; lab safety, the scientific method and history of science go to the closest discipline's misc (mostly `chemistry-misc`).
 - Renaming a topic's label is safe. Changing a topic ID means changing every tags file that uses it.
 
 ## Review
