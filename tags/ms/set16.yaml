@@ -341,7 +341,7 @@ questions:
   # chemistry: In a galvanic cell, what is the term for the electrode at which reduction occurs? => CATHODE
   ms-set16-2022-ms-5-q10-tossup: [reactions]
   # chemistry: Identify all of the following three factors that can introduce random errors to an experim... => 1, 2
-  ms-set16-2022-ms-5-q10-bonus: [lab-safety-method]
+  ms-set16-2022-ms-5-q10-bonus: [chemistry-misc]
   # earth_and_space: Lunar terrae are another name for what surface feature? => HIGHLANDS
   ms-set16-2022-ms-5-q11-tossup: [solar-system]
   # earth_and_space: What is the densest layer of the Sun’s atmosphere? => PHOTOSPHERE
@@ -389,7 +389,7 @@ questions:
   # physics: Rank the following three regions of the electromagnetic spectrum in order of increasing en... => 1, 3, 2
   ms-set16-2022-ms-6-q03-bonus: [light-em]
   # biology: In a clinical trial, a pharmacologically- inactive substance is often given as a substitut... => PLACEBO
-  ms-set16-2022-ms-6-q04-tossup: [lab-safety-method]
+  ms-set16-2022-ms-6-q04-tossup: [biology-misc]
   # biology: Which of the classes of biomacromolecules has the highest energy density per unit mass? => FATS
   ms-set16-2022-ms-6-q04-bonus: [biochemistry]
   # chemistry: What is the term for the heat content of a system? => ENTHALPY
@@ -529,7 +529,7 @@ questions:
   # biology: What is the term for the structure that implants into the endometrium during mammalian dev... => BLASTOCYST
   ms-set16-2022-ms-8-q01-bonus: [human-body]
   # chemistry: Which of the following is the best strategy to compensate for random errors during an expe... => MAKING REPEATED INDEPENDENT MEASUREMENTS
-  ms-set16-2022-ms-8-q02-tossup: [lab-safety-method]
+  ms-set16-2022-ms-8-q02-tossup: [chemistry-misc]
   # chemistry: Biopolymers are, in general, what type of polymer? => CONDENSATION
   ms-set16-2022-ms-8-q02-bonus: [organic]
   # earth_and_space: Which of the following statements about rivers is true? => OXBOW LAKES ARE THE REMNANTS OF FORMER R
