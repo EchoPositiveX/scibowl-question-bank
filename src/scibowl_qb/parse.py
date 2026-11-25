@@ -26,6 +26,7 @@ from pathlib import Path
 
 from . import RAW_DIR, REPO_ROOT, __version__
 from . import corrections as corr
+from . import tags as tg
 from . import transcriptions as tr
 from .convert import to_question, to_question_set
 from .extract import extract_round
@@ -66,11 +67,13 @@ def find_pdfs(raw_dir: Path, level: str | None, set_name: str | None, round_name
 
 
 def parse_one(pdf: Path, raw_dir: Path, out_dir: Path, images: bool, corrections: corr.Corrections,
-              transcriptions: dict[str, tr.Transcription] | None = None) -> tuple[Path, list[dict]]:
-    """Parse one PDF, apply corrections and transcriptions, and write its round file."""
+              transcriptions: dict[str, tr.Transcription] | None = None,
+              tags: tg.Tags | None = None) -> tuple[Path, list[dict]]:
+    """Parse one PDF, apply corrections, transcriptions and topic tags, and write its round file."""
     rel = pdf.relative_to(raw_dir)
     raw = extract_round(pdf, raw_dir, images_dir=out_dir / "images" if images else None, corrections=corrections)
-    questions = [tr.apply(corr.apply_question_corrections(to_question(rq), corrections), transcriptions or {}) for rq in raw]
+    questions = [tg.apply(tr.apply(corr.apply_question_corrections(to_question(rq), corrections), transcriptions or {}), tags)
+                 for rq in raw]
     round_file = out_dir / "rounds" / rel.with_suffix(".json")
     round_file.parent.mkdir(parents=True, exist_ok=True)
     round_file.write_text(json.dumps(to_question_set(questions, GENERATOR), indent=2, ensure_ascii=False), encoding="utf-8")
@@ -78,27 +81,32 @@ def parse_one(pdf: Path, raw_dir: Path, out_dir: Path, images: bool, corrections
 
 
 def _parse_one_in_worker(args) -> tuple[Path, list[dict]]:
-    pdf, raw_dir, out_dir, images, corrections_path, transcriptions_dir = args
+    pdf, raw_dir, out_dir, images, corrections_path, transcriptions_dir, tags_dir = args
     logging.getLogger("pdfminer").setLevel(logging.WARNING)
-    return parse_one(pdf, raw_dir, out_dir, images, corr.load(corrections_path), tr.load(transcriptions_dir))
+    return parse_one(pdf, raw_dir, out_dir, images, corr.load(corrections_path), tr.load(transcriptions_dir),
+                     tg.load(tags_dir))
 
 
 def parse_pdfs(
     pdfs: list[Path], raw_dir: Path, out_dir: Path, images: bool, corrections: corr.Corrections,
     jobs: int = 1, corrections_path: Path | None = None, transcriptions_dir: Path | None = None,
+    tags_dir: Path | None = None,
 ) -> dict[Path, list[dict]]:
     """Parse each PDF and return {round file: questions}. With jobs > 1, PDFs are parsed in parallel."""
     written = {}
     transcriptions_dir = transcriptions_dir or tr.DEFAULT_DIR
+    tags_dir = tags_dir or tg.DEFAULT_DIR
     if jobs <= 1:
         transcriptions = tr.load(transcriptions_dir)
+        tags = tg.load(tags_dir)
         for n, pdf in enumerate(pdfs, 1):
             log.info("[%d/%d] %s", n, len(pdfs), pdf.relative_to(raw_dir).as_posix())
-            round_file, questions = parse_one(pdf, raw_dir, out_dir, images, corrections, transcriptions)
+            round_file, questions = parse_one(pdf, raw_dir, out_dir, images, corrections, transcriptions, tags)
             written[round_file] = questions
         return written
 
-    work = [(pdf, raw_dir, out_dir, images, corrections_path or corr.DEFAULT_PATH, transcriptions_dir) for pdf in pdfs]
+    work = [(pdf, raw_dir, out_dir, images, corrections_path or corr.DEFAULT_PATH, transcriptions_dir, tags_dir)
+            for pdf in pdfs]
     with ProcessPoolExecutor(max_workers=jobs) as pool:
         for n, (round_file, questions) in enumerate(pool.map(_parse_one_in_worker, work), 1):
             log.info("[%d/%d] %s", n, len(pdfs), round_file.relative_to(out_dir / "rounds").as_posix())
@@ -136,6 +144,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--out", type=Path, default=REPO_ROOT / "output")
     ap.add_argument("--corrections", type=Path, default=corr.DEFAULT_PATH)
     ap.add_argument("--transcriptions", type=Path, default=tr.DEFAULT_DIR, help="folder of transcriptions/<level>/<set>.yaml")
+    ap.add_argument("--tags", type=Path, default=tg.DEFAULT_DIR, help="folder with topics.yaml and <level>/<set>.yaml topic tags")
     ap.add_argument("--no-images", action="store_true", help="skip image cropping (much faster)")
     ap.add_argument("-j", "--jobs", type=int, default=1, help="PDFs to parse in parallel (e.g. the number of CPU cores)")
     ap.add_argument("-v", "--verbose", action="store_true")
@@ -152,14 +161,16 @@ def main(argv: list[str] | None = None) -> int:
     try:
         corrections = corr.load(args.corrections)
         transcriptions = tr.load(args.transcriptions)
-    except (corr.CorrectionsError, tr.TranscriptionError) as exc:
+        tags = tg.load(args.tags)
+    except (corr.CorrectionsError, tr.TranscriptionError, tg.TagsError) as exc:
         log.error("%s", exc)
         return 1
 
     try:
         written = parse_pdfs(pdfs, args.raw_dir, args.out, images=not args.no_images, corrections=corrections,
-                             jobs=args.jobs, corrections_path=args.corrections, transcriptions_dir=args.transcriptions)
-    except (corr.CorrectionsError, tr.TranscriptionError) as exc:
+                             jobs=args.jobs, corrections_path=args.corrections, transcriptions_dir=args.transcriptions,
+                             tags_dir=args.tags)
+    except (corr.CorrectionsError, tr.TranscriptionError, tg.TagsError) as exc:
         log.error("%s", exc)
         return 1
 
@@ -169,7 +180,11 @@ def main(argv: list[str] | None = None) -> int:
               if any(c.id.startswith(r) for r in parsed_rounds) and c.id not in parsed_ids]
     unused += [t for t in transcriptions.values()
                if any(t.id.startswith(r) for r in parsed_rounds) and t.id not in parsed_ids]
-    if unused:
+    unused_tags = [(st.file, qid) for st in tags.sets.values() for qid in st.questions
+                   if any(qid.startswith(r) for r in parsed_rounds) and qid not in parsed_ids]
+    for file, qid in unused_tags:
+        log.error("%s: %s matched no question (check the ID)", file, qid)
+    if unused or unused_tags:
         for c in unused:
             where = c.file if isinstance(c, tr.Transcription) else "corrections.yaml"
             log.error("%s: %s matched no question (check the ID)", where, c.id)

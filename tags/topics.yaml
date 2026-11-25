@@ -1,0 +1,89 @@
+# Topic list (QB-11): a first draft by Claude for John to edit.
+#
+# Disciplines are the six middle school subjects used from 2022. Every topic belongs to one
+# discipline, and a question's disciplines come from its topics, so tagging an older
+# Life Science question with `genetics` also files it under biology.
+#
+# `energy` here means questions about energy itself (batteries, fuels, power plants).
+# The DOE-lab "Energy" questions in older sets are usually about biology, chemistry or
+# physics research and are tagged by what they ask about; their printed subject stays in
+# `category`.
+#
+# Topic IDs are what the data stores, so rename a label freely but change an ID only
+# together with every tags file that uses it.
+
+disciplines:
+  biology: Biology
+  chemistry: Chemistry
+  physics: Physics
+  earth_and_space: Earth and Space
+  energy: Energy
+  math: Math
+
+topics:
+  biology:
+    cells: Cells and organelles (structure, membranes, cell cycle, division)
+    biochemistry: Biomolecules and enzymes (carbohydrates, lipids, proteins, metabolism)
+    genetics: Genetics and heredity (DNA, genes, mutations, crosses, gene expression)
+    evolution: Evolution and the history of life (natural selection, drift, cladograms)
+    diversity: Classification and diversity (kingdoms, animal and protist groups)
+    microbes: Microbes and viruses (bacteria, viruses, fungi as microbes)
+    plants: Plants (structure, transport, reproduction, plant groups)
+    human-body: Human and animal body systems (nervous, endocrine, digestive, circulatory, respiratory)
+    immunity-disease: Immunity and disease
+    ecology: Ecology (populations, ecosystems, symbiosis, succession)
+    behavior: Animal behavior
+  chemistry:
+    atoms: Atomic structure (subatomic particles, electrons, valence, isotopes)
+    periodic-table: Periodic table and element properties (trends, groups, flame tests)
+    bonding: Bonding and molecules (bond types, polarity, Lewis structures, shapes)
+    reactions: Chemical reactions and stoichiometry (types, balancing, moles)
+    acids-bases: Acids, bases and pH
+    organic: Organic chemistry (functional groups, hydrocarbons, polymers)
+    matter-gases: States of matter and gas laws (properties of matter, phases, kinetic theory)
+    solutions: Solutions and solubility (concentration, solubility rules)
+    thermo-kinetics: Reaction energy and rates (exothermic, catalysts, redox activity)
+  physics:
+    motion-forces: Motion and forces (kinematics, Newton's laws, friction, gravity)
+    energy-work: Work, energy and power
+    momentum-rotation: Momentum and rotation (impulse, angular momentum, rolling)
+    fluids: Fluids and pressure (buoyancy, pressure, barometers)
+    heat-thermo: Heat and thermodynamics (temperature, specific heat, engines)
+    waves-sound: Waves and sound
+    light-em: Light and the electromagnetic spectrum (optics, radiation)
+    electricity: Electricity and circuits
+    magnetism: Magnetism and electromagnetism (magnetic materials, transformers)
+    modern-physics: Quantum, nuclear and particle physics, relativity
+    measurement: Units and measurement
+  earth_and_space:
+    rocks-minerals: Rocks and minerals
+    tectonics: Plate tectonics, earthquakes and Earth's interior
+    volcanoes: Volcanoes and igneous activity
+    earth-history: Earth history (geologic time, dating, stratigraphy, fossils)
+    surface-processes: Weathering, erosion, glaciers and soils
+    oceans: Oceans and coasts
+    weather: Weather and the atmosphere
+    climate-environment: Climate, Earth's cycles and the environment (carbon and nutrient cycles, pollution)
+    solar-system: The solar system (planets, moons, comets, asteroids, Moon phases)
+    stars: The Sun and stars (stellar evolution, spectral classes)
+    galaxies-cosmology: Galaxies and cosmology
+    observing: Observing the sky (telescopes, parallax, magnitude, sky motion)
+  energy:
+    batteries-storage: Batteries and energy storage
+    fuels-combustion: Fossil fuels and combustion
+    nuclear-energy: Nuclear power (fission and fusion energy)
+    renewables: Renewable energy (solar, wind, hydro, biofuels)
+    energy-use: Energy use, efficiency and the grid
+  math:
+    arithmetic: Arithmetic, fractions, percents and scientific notation
+    number-theory: Number theory (primes, divisibility, remainders, factorials)
+    algebra: Algebra (equations, expressions, polynomials)
+    graphs-functions: Lines, graphs and functions (slope, coordinates, transformations)
+    plane-geometry: Plane geometry (angles, triangles, polygons, circles, area)
+    solid-geometry: Solid geometry (volume, surface area, polyhedra)
+    counting-probability: Counting and probability
+    statistics: Statistics (mean, median, data)
+    sequences: Sequences and series
+    ratios-rates: Ratios, rates, proportions and variation
+    logic-sets: Logic and sets
+    trigonometry: Trigonometry

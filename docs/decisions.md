@@ -2,6 +2,13 @@
 
 Newest first. Each entry: date, decision, and why if it isn't obvious.
 
+## 2026-11-25: Topic tags, piloted on one set (QB-11, QB-12)
+
+- Tags live in data files like transcriptions: `tags/topics.yaml` is the topic list, and `tags/<level>/<set>.yaml` gives every question in a set one or more topic IDs. Each topic belongs to one discipline, and a question's disciplines are worked out from its topics, so the two can't disagree.
+- Disciplines are the six 2022 subjects. Older DOE-lab "Energy" questions are tagged by what they ask about (biology, chemistry, physics and so on); the `energy` discipline is kept for questions about energy itself. The printed subject stays in `category`, so energy-round practice still works.
+- Tagging is costly in usage, so it starts with one set: ms/set15 (2021, 300 questions, all text, no image-only questions), tagged by Claude in a session from the question text with no API. John reviews it before any other set is tagged.
+- Tags fill fields that were already in the format (`tags.source` is "ai", `tags.reviewed` comes from the file), so `schema_version` stays 1.
+
 ## 2026-11-24: Fraction and root bars mean the text needs review (QB-35)
 
 - John found Set 01 Round 1 bonus 14 on the site reading "convert rd to a decimal: 3"; the PDF prints 1 over 3 with "rd". The parser now flags any question or answer with a fraction or root bar, found as a short horizontal rule with printed characters just above and below it.
