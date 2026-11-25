@@ -1,0 +1,1604 @@
+# Topic tags for ms/set08 (QB-12). One line per question: its topics from tags/topics.yaml.
+# The comment above each line is the start of the question, to make checking easier.
+source: Claude, from each question's text and answer, 2026-11-25. No API was used.
+tagged_by: ai
+reviewed: false
+questions:
+
+  # Round 1-a
+  # general_science: In plants and animals, what class of nucleic acid polymer is the primary form of genetic m... => DEOXYRIBOSE NUCLEIC ACIDS
+  ms-set08-round-1-a-q01-tossup: [genetics]
+  # general_science: What part of the pistil forms a closed receptacle for the ovules? => CARPEL
+  ms-set08-round-1-a-q01-bonus: [plants]
+  # math: Identify the 21st term of the arithmetic sequence with first three terms 5, 10, 15. => 105
+  ms-set08-round-1-a-q02-tossup: [sequences]
+  # math: There are 5 different paths through a maze designated as Path 1, Path 2, Path 3, Path 4, a... => 80%
+  ms-set08-round-1-a-q02-bonus: [counting-probability]
+  # physical_science: Which of the following does NOT represent a chemical reaction? => WATER FALLING FROM A TAP
+  ms-set08-round-1-a-q03-tossup: [reactions]
+  # physical_science: Thomas Edison championed the use of direct current for homes and industry. Who favored the... => NIKOLA TESLA
+  ms-set08-round-1-a-q03-bonus: [electricity]
+  # life_science: What is the common name of the members of the class Aves? => BIRDS
+  ms-set08-round-1-a-q04-tossup: [diversity]
+  # life_science: Which of the following organisms were the earliest life forms to evolve in the ocean? => BACTERIA
+  ms-set08-round-1-a-q04-bonus: [evolution]
+  # earth_and_space: Ocean waves are created by which of the following? => WIND
+  ms-set08-round-1-a-q05-tossup: [oceans]
+  # earth_and_space: What type of earthquakes occurring on the island of Hawaii are a result of magma movement ... => HARMONIC TREMORS
+  ms-set08-round-1-a-q05-bonus: [volcanoes, tectonics]
+  # general_science: Sand dollars, sea stars, sea cucumbers, and sea urchins all belong to what phylum [FY-luhm... => ECHINODERMATA
+  ms-set08-round-1-a-q06-tossup: [diversity]
+  # general_science: Which of the following are NOT found in both prokaryotes [proh-KAR-ee-ohts] and eukaryotes... => MITOCHONDRIA
+  ms-set08-round-1-a-q06-bonus: [cells]
+  # math: Assuming that the Earth is a sphere of radius r, what is the surface area of the Northern ... => 2πr2
+  ms-set08-round-1-a-q07-tossup: [solid-geometry]
+  # math: How many positive integers are between √3 and√82? => 8
+  ms-set08-round-1-a-q07-bonus: [number-theory]
+  # energy: Coal and natural gas are the leading sources of fuel for electricity production in the U.S... => NUCLEAR
+  ms-set08-round-1-a-q08-tossup: [nuclear-energy, energy-use]
+  # energy: In most geothermal applications, what substance is used to rotate the generation turbines? => STEAM
+  ms-set08-round-1-a-q08-bonus: [renewables]
+  # physical_science: Which of the following materials best prevents the flow of electricity? => DISTILLED WATER
+  ms-set08-round-1-a-q09-tossup: [electricity]
+  # physical_science: In the periodic table, elements are arranged by which of the following? => ATOMIC NUMBER
+  ms-set08-round-1-a-q09-bonus: [periodic-table]
+  # life_science: Which of the following has the function of modifying, sorting, and preparing substances fo... => GOLGI APPARATUS
+  ms-set08-round-1-a-q10-tossup: [cells]
+  # life_science: Which of the following marine organisms would be considered ectothermic? => SEA TURTLE
+  ms-set08-round-1-a-q10-bonus: [diversity]
+  # earth_and_space: In the deep ocean, the continuous shower of mostly organic detritus falling from the upper... => MARINE SNOW
+  ms-set08-round-1-a-q11-tossup: [oceans]
+  # earth_and_space: Which of the following is NOT considered a rift valley? => MISSISSIPPI RIVER VALLEY
+  ms-set08-round-1-a-q11-bonus: [tectonics]
+  # general_science: You are setting up an experiment looking at the effects of increased phosphorus concentrat... => INDEPENDENT
+  ms-set08-round-1-a-q12-tossup: [plants]
+  # general_science: Which of the following BEST describes a hypothesis? => A POSSIBLE EXPLANATION BASED ON PRIOR EV
+  ms-set08-round-1-a-q12-bonus: [biology-misc]
+  # math: What is the standard form of the following equation: 2x = 3y – 5? => 2x – 3y = –5
+  ms-set08-round-1-a-q13-tossup: [graphs-functions]
+  # math: How many parallel pairs of faces does a right regular hexagonal prism have? => 4
+  ms-set08-round-1-a-q13-bonus: [solid-geometry]
+  # physical_science: An atom’s ability to react with other atoms is determined by what type of subatomic partic... => ELECTRONS
+  ms-set08-round-1-a-q14-tossup: [atoms]
+  # physical_science: The atomic weight (in amu) of an element most nearly reflects the atom's total number of w... => PROTONS AND NEUTRONS
+  ms-set08-round-1-a-q14-bonus: [atoms]
+  # life_science: In which part of the plant would you expect to find the largest concentration of photosynt... => LEAVES
+  ms-set08-round-1-a-q15-tossup: [plants]
+  # life_science: What is the vector for the organism that causes malaria? => MOSQUITO
+  ms-set08-round-1-a-q15-bonus: [immunity-disease]
+  # earth_and_space: The hardness of a mineral determines how resistant it is to which of the following? => SCRATCHING
+  ms-set08-round-1-a-q16-tossup: [rocks-minerals]
+  # earth_and_space: The early atmosphere of the Earth probably was rich in all EXCEPT which of the following g... => OXYGEN
+  ms-set08-round-1-a-q16-bonus: [earth-history]
+  # energy: DC/DC converters operate on the principle of volt-second balance. Based on this assumption... => VOLTAGE ACROSS THE INDUCTOR(S)
+  ms-set08-round-1-a-q17-tossup: [electricity]
+  # energy: What is thought to be driving the rapid (and accelerating) expansion of the universe, whil... => DARK ENERGY
+  ms-set08-round-1-a-q17-bonus: [galaxies-cosmology]
+  # general_science: Which group of plants enclose their seeds within a fruit? => ANGIOSPERMS
+  ms-set08-round-1-a-q18-tossup: [plants]
+  # general_science: Atopic dermatitis is a medical condition predominantly affecting which organ system? => INTEGUMENTRY
+  ms-set08-round-1-a-q18-bonus: [human-body]
+  # math: Mike buys hot dogs that come in packages of 10. If hot dog buns come in packages of 8, wha... => 4
+  ms-set08-round-1-a-q19-tossup: [number-theory]
+  # math: Which of the following conditions is NOT used for similarity of two triangles? => SSA
+  ms-set08-round-1-a-q19-bonus: [plane-geometry]
+  # physical_science: According to the Richter scale, which of the following is closest to the ratio of the ener... => 1000
+  ms-set08-round-1-a-q20-tossup: [tectonics]
+  # physical_science: Atoms of which of these elements tend to form three covalent bonds? => NITROGEN
+  ms-set08-round-1-a-q20-bonus: [bonding]
+  # energy: Ozone is an important gas in the stratosphere. What is the chemical formula of ozone? => O3
+  ms-set08-round-1-a-q21-tossup: [chemistry-misc, climate-environment]
+  # energy: Which of the following rates, referring to costs for peak hour cost versus off-peak hour c... => $3 PER KILOWATT AND $0.10 PER KILOWATT H
+  ms-set08-round-1-a-q21-bonus: [energy-use]
+  # life_science: In what organelle of a plant cell does photosynthesis occur? => CHLOROPLAST
+  ms-set08-round-1-a-q22-tossup: [plants]
+  # life_science: In addition to being birds, what do the Great Auk, moa, passenger pigeon, and Carolina par... => THEY ARE ALL EXTINCT
+  ms-set08-round-1-a-q22-bonus: [diversity]
+  # earth_and_space: What must a glacier meet in order to form an ice shelf? => AN OCEAN
+  ms-set08-round-1-a-q23-tossup: [surface-processes]
+  # earth_and_space: What major geologic forces operate at the shoreline? => WAVES AND TIDES
+  ms-set08-round-1-a-q23-bonus: [surface-processes]
+
+  # Round 2-a
+  # life_science: Which scientist is credited with discovering cells? => ROBERT HOOKE
+  ms-set08-round-2-a-q01-tossup: [cells]
+  # life_science: What outer structure possessed by plant cells protects them from environmental changes and... => CELL WALL
+  ms-set08-round-2-a-q01-bonus: [plants]
+  # physical_science: The electron volt is a measure of which of the following? => ENERGY
+  ms-set08-round-2-a-q02-tossup: [energy-work]
+  # physical_science: What is the term given to the result of adding multiple waves together? => SUPERPOSITION
+  ms-set08-round-2-a-q02-bonus: [waves-sound]
+  # energy: Which of the following energy sources produces the greatest carbon dioxide emissions? => COAL
+  ms-set08-round-2-a-q03-tossup: [fuels-combustion, climate-environment]
+  # energy: In the coming years, most of the increases in U.S. natural gas production is expected to c... => SHALE
+  ms-set08-round-2-a-q03-bonus: [fuels-combustion]
+  # general_science: Which of the following atmospheric layers contains the ozone layer? => STRATOSPHERE
+  ms-set08-round-2-a-q04-tossup: [weather]
+  # general_science: Which of the following organelles is full of digestive enzymes? => LYSOSOME
+  ms-set08-round-2-a-q04-bonus: [cells]
+  # earth_and_space: The wavelength of an ocean wave is defined by which of the following? => THE DISTANCE BETWEEN CRESTS
+  ms-set08-round-2-a-q05-tossup: [oceans]
+  # earth_and_space: Which class of star cluster is most spherical in shape? => GLOBULAR CLUSTERS
+  ms-set08-round-2-a-q05-bonus: [stars]
+  # math: Which of the following pairs of angles is supplementary? => 75° AND 105°
+  ms-set08-round-2-a-q06-tossup: [plane-geometry]
+  # math: Use the distributive property to rewrite the following expression: 6t(4s - 3t + 7) [6t tim... => 24ts - 18t2 + 42t
+  ms-set08-round-2-a-q06-bonus: [algebra]
+  # life_science: Which of the following animals feeds by standing on its head and kicking food in its mouth... => BARNACLE
+  ms-set08-round-2-a-q07-tossup: [diversity]
+  # life_science: In a marine environment, what name is given to the collective group of organisms that serv... => PHYTOPLANKTON
+  ms-set08-round-2-a-q07-bonus: [ecology]
+  # physical_science: The smallest particle that maintains the chemical properties of a compound is called which... => A MOLECULE
+  ms-set08-round-2-a-q08-tossup: [atoms]
+  # physical_science: How far will an object travel, in meters, if it is moving at 30 meters per second for 20 s... => 600
+  ms-set08-round-2-a-q08-bonus: [motion-forces]
+  # general_science: Which of the following best describes the overall process of meiosis [my-OH-sis]? => ONE PARENT CELL PRODUCES FOUR DAUGHTER C
+  ms-set08-round-2-a-q09-tossup: [genetics]
+  # general_science: Carbon has three isotopes: carbon-12, carbon-13, and carbon-14. How many protons are in th... => 6, 6, 6
+  ms-set08-round-2-a-q09-bonus: [atoms]
+  # earth_and_space: Which of the following does NOT increase ocean wave height? => IRREGULAR WATER DEPTH
+  ms-set08-round-2-a-q10-tossup: [oceans]
+  # earth_and_space: Temperature increases with height in the stratosphere due to the absorption of UV energy b... => OZONE
+  ms-set08-round-2-a-q10-bonus: [weather]
+  # math: Which of the following fractions is the SMALLEST? => 3/8
+  ms-set08-round-2-a-q11-tossup: [arithmetic]
+  # math: Find the height of a right triangle whose area and base are 10 and 5, respectively. => 4
+  ms-set08-round-2-a-q11-bonus: [plane-geometry]
+  # energy: Which molecule is used for energy transfer and storage inside cells? => ATP
+  ms-set08-round-2-a-q12-tossup: [biochemistry]
+  # energy: Destruction of Earth’s ozone layer is expected to increase the incidence of all but which ... => DIABETES
+  ms-set08-round-2-a-q12-bonus: [climate-environment, human-body]
+  # life_science: Which of the following groups are all invertebrates? => SNAILS, HONEYBEES, SEA STAR, AND SEA SPO
+  ms-set08-round-2-a-q13-tossup: [diversity]
+  # life_science: Which of the following terms is used by microbiologists to describe a bacterium with a rod... => BACILLUS
+  ms-set08-round-2-a-q13-bonus: [microbes]
+  # physical_science: Which of the following subatomic particles are charged? => ELECTRONS AND PROTONS
+  ms-set08-round-2-a-q14-tossup: [atoms]
+  # physical_science: What are the reactants in the equation: NaOH + HCl → H2O + NaCl? => NaOH, HCl
+  ms-set08-round-2-a-q14-bonus: [reactions]
+  # general_science: What era are we currently living in? => CENOZOIC
+  ms-set08-round-2-a-q15-tossup: [earth-history]
+  # general_science: In an aquatic system, what are the TWO major microbial producers? => ALGAE AND PHYTOPLANKTON
+  ms-set08-round-2-a-q15-bonus: [ecology, microbes]
+  # energy: Which of the following gases is being captured at landfills and used as a fuel? => METHANE
+  ms-set08-round-2-a-q16-tossup: [renewables]
+  # energy: Which country is expected to have the largest shale gas reserves in the world? => CHINA
+  ms-set08-round-2-a-q16-bonus: [fuels-combustion]
+  # earth_and_space: Where do the charged particles that strike the Earth's atmosphere near the poles and cause... => THE SUN
+  ms-set08-round-2-a-q17-tossup: [solar-system]
+  # earth_and_space: A Keplerian [kep-LEER-ee-uhn] orbit is a description of an orbiting body considering the g... => REULEAUX CURVE
+  ms-set08-round-2-a-q17-bonus: [solar-system]
+  # math: All vertices of a triangle are within quadrant 3. If the triangle is rotated clockwise abo... => QUADRANT I
+  ms-set08-round-2-a-q18-tossup: [graphs-functions]
+  # math: Convert 2 1/8 to a decimal and to a percent. => 2.125 AND 212.5%
+  ms-set08-round-2-a-q18-bonus: [arithmetic]
+  # life_science: A dinoflagellate [din-uh-FLAJ-uh-layt] is responsible for what phenomenon, which ultimatel... => RED TIDE
+  ms-set08-round-2-a-q19-tossup: [microbes]
+  # life_science: Which of the following is the primary feeding pattern for Cnidarians [ny-DAIR-ee-uhns]? => CARNIVORES
+  ms-set08-round-2-a-q19-bonus: [diversity]
+  # physical_science: What makes a material a good insulator? => HAVING ELECTRONS THAT ARE BOUND AND CANN
+  ms-set08-round-2-a-q20-tossup: [electricity]
+  # physical_science: In general terms, an electric generator converts which of the following? => MECHANICAL ENERGY TO ELECTRICAL ENERGY
+  ms-set08-round-2-a-q20-bonus: [electricity]
+  # general_science: Which of the following is an example of vascular tissue in plants? => XYLEM
+  ms-set08-round-2-a-q21-tossup: [plants]
+  # general_science: Put the following four in order from LEAST to MOST complex: 1) organs, 2) molecules, 3) ti... => MOLECULES, CELLS, TISSUES, AND ORGANS
+  ms-set08-round-2-a-q21-bonus: [biology-misc]
+  # earth_and_space: What is the main mechanism of marine transport of most terrigenous [te-RIJ-uh-nuhs] sedime... => GRAVITY
+  ms-set08-round-2-a-q22-tossup: [oceans]
+  # earth_and_space: The part of a sea, lake, or river that is close to the shore is called which of the follow... => LITTORAL ZONE
+  ms-set08-round-2-a-q22-bonus: [surface-processes]
+  # math: John's height is 0.23 meters less than Mike's height. Given that Mike's height is 1.88 met... => 1.65
+  ms-set08-round-2-a-q23-tossup: [arithmetic]
+  # math: What length of packing tape, in inches, is needed to wrap 3 times around a circular mirror... => 48π
+  ms-set08-round-2-a-q23-bonus: [plane-geometry]
+
+  # Round 3-a
+  # earth_and_space: What sedimentary rock consists of angular rock fragments that are cemented together in a f... => BRECCIA
+  ms-set08-round-3-a-q01-tossup: [rocks-minerals]
+  # earth_and_space: Put the following three minerals in order of increasing hardness: 1) plagioclase [PLAY-jee... => 3, 1, 2
+  ms-set08-round-3-a-q01-bonus: [rocks-minerals]
+  # general_science: When two tectonic plates meet in a subduction zone and a mountain forms over time, what ty... => CONVERGENT
+  ms-set08-round-3-a-q02-tossup: [tectonics]
+  # general_science: Isotopes are atoms of an element that are different because they have a different number o... => NEUTRONS
+  ms-set08-round-3-a-q02-bonus: [atoms]
+  # physical_science: As a ball rolls down an inclined plane in free motion, what is the normal force acting on ... => LESS THAN THE BALL’S WEIGHT
+  ms-set08-round-3-a-q03-tossup: [motion-forces]
+  # physical_science: The molecular weight of sodium is 22.99 grams per mole, and the molecular weight of chlori... => 58.44
+  ms-set08-round-3-a-q03-bonus: [chemistry-misc]
+  # math: What is the mean of the set of four numbers: 5, -5, 5, -5? => 0
+  ms-set08-round-3-a-q04-tossup: [statistics]
+  # math: In centimeters, how long is a sweater that is woven at a rate of 70 centimeters per hour i... => 255
+  ms-set08-round-3-a-q04-bonus: [ratios-rates]
+  # life_science: A sea star would NOT be found in which of the following marine environments? => PELAGIC ZONE
+  ms-set08-round-3-a-q05-tossup: [diversity]
+  # life_science: Which of the following is NOT an illness caused by bacteria? => INFLUENZA
+  ms-set08-round-3-a-q05-bonus: [immunity-disease]
+  # earth_and_space: Which of Jupiter's moons shows the most volcanic activity? => IO
+  ms-set08-round-3-a-q06-tossup: [solar-system]
+  # earth_and_space: Which of the following is NOT part of a delta? => DELTA LAKE
+  ms-set08-round-3-a-q06-bonus: [surface-processes]
+  # energy: When ingested, which of the following provides the greatest number of calories per gram? => FAT
+  ms-set08-round-3-a-q07-tossup: [biochemistry]
+  # energy: Where is the site of the most significant accident in the U.S. commercial nuclear energy i... => THREE MILE ISLAND
+  ms-set08-round-3-a-q07-bonus: [nuclear-energy]
+  # general_science: What is the name for the process by which plants absorb light from the Sun and convert it ... => PHOTOSYNTHESIS
+  ms-set08-round-3-a-q08-tossup: [plants]
+  # general_science: A convex lens will cause parallel beams of light to converge. What will happen to parallel... => THEY DIVERGE
+  ms-set08-round-3-a-q08-bonus: [light-em]
+  # physical_science: An atom containing only a single proton and no electrons is which of the following? => A CATION
+  ms-set08-round-3-a-q09-tossup: [atoms]
+  # physical_science: The carbon atoms in diamond are held together by what type of bond? => COVALENT
+  ms-set08-round-3-a-q09-bonus: [bonding]
+  # math: What is the thousandths place digit in the decimal form of 11/9? => 2
+  ms-set08-round-3-a-q10-tossup: [arithmetic]
+  # math: The price of a certain cell phone was originally marked $250 on Thursday. On Friday, the p... => $240
+  ms-set08-round-3-a-q10-bonus: [ratios-rates]
+  # life_science: Human epidermis is MOSTLY composed of which of the following basic animal tissue types? => EPITHELIAL
+  ms-set08-round-3-a-q11-tossup: [human-body]
+  # life_science: Which type of jawed fish can detect prey under the sand through electrical sensitivity? => SHARK
+  ms-set08-round-3-a-q11-bonus: [diversity]
+  # earth_and_space: What process is responsible for the first appearance of oxygen in our atmosphere? => PHOTOSYNTHESIS
+  ms-set08-round-3-a-q12-tossup: [earth-history]
+  # earth_and_space: What two very valuable gemstones are variations of the mineral corundum? => RUBY AND SAPPHIRE
+  ms-set08-round-3-a-q12-bonus: [rocks-minerals]
+  # general_science: Imagine that you are conducting an experiment to test the effects of temperature on plant ... => DEPENDENT VARIABLE
+  ms-set08-round-3-a-q13-tossup: [biology-misc]
+  # general_science: What are the three major climatic zones? => TROPICAL, TEMPERATE, AND POLAR
+  ms-set08-round-3-a-q13-bonus: [climate-environment]
+  # energy: The ultimate energy source for geothermal energy is which of the following? => RADIOACTIVE DECAY OF ELEMENTS IN THE EAR
+  ms-set08-round-3-a-q14-tossup: [renewables]
+  # energy: Petroleum is a non-renewable resource. What term refers to the point in the future when th... => PEAK OIL
+  ms-set08-round-3-a-q14-bonus: [fuels-combustion]
+  # physical_science: If a reaction is carried out and there is no change in temperature, it would be considered... => ISOTHERMIC
+  ms-set08-round-3-a-q15-tossup: [thermo-kinetics]
+  # physical_science: During science lab, several students discovered that iodine dissolved readily in ethanol. ... => A SOLVENT
+  ms-set08-round-3-a-q15-bonus: [solutions]
+  # math: Express 81x [81 raised to the power of x] with a prime base. => 34x
+  ms-set08-round-3-a-q16-tossup: [algebra]
+  # math: Ignoring dimensions, the volume of a sphere of radius r is equal to how many times its sur... => r/3
+  ms-set08-round-3-a-q16-bonus: [solid-geometry]
+  # life_science: Which of the following is NOT a monomer? => MALTOSE
+  ms-set08-round-3-a-q17-tossup: [biochemistry]
+  # life_science: On a sunny day, if the stomata on a plant leaf are forced to close, what two molecules, us... => OXYGEN AND WATER
+  ms-set08-round-3-a-q17-bonus: [plants]
+  # earth_and_space: What is the cataclysmic event in which a star with a mass 15 times that of the Sun will en... => SUPERNOVA
+  ms-set08-round-3-a-q18-tossup: [stars]
+  # earth_and_space: Which of the following is not true of seawater? => SEAWATER IS UNIFORMLY SALINE THROUGHOUT 
+  ms-set08-round-3-a-q18-bonus: [oceans]
+  # general_science: What is true about lines of longitude? => THEY ARE MEASURED EAST OR WEST OF THE PR
+  ms-set08-round-3-a-q19-tossup: [observing]
+  # general_science: What enzyme catalyzes the formation of DNA from deoxyribonucleoside [dee-ok-si-ry-boh-NOO-... => DNA POLYMERASE
+  ms-set08-round-3-a-q19-bonus: [genetics]
+  # physical_science: When four moles of solid aluminum react with three moles of oxygen gas to form aluminum ox... => SYNTHESIS
+  ms-set08-round-3-a-q20-tossup: [reactions]
+  # physical_science: A man stands in front of a concave mirror with a focal length of 200 centimeters and sees ... => 100
+  ms-set08-round-3-a-q20-bonus: [light-em]
+  # math: What is the value of x that makes the following equation true: x = -3(x – 4)? => 3
+  ms-set08-round-3-a-q21-tossup: [algebra]
+  # math: Simplify the expression (12a3 b4 c2) −2[open parenthesis, 12 times a cubed times b raised ... => 1⁄(cid:4666) 144(cid:1853) (cid:2874) (c
+  ms-set08-round-3-a-q21-bonus: [algebra]
+  # energy: What happens as the activation energy of a reaction increases? => THE REACTION RATE DECREASES
+  ms-set08-round-3-a-q22-tossup: [thermo-kinetics]
+  # energy: A weight is suspended from a string. You pull back on the weight and release it. Identify ... => 1, 2
+  ms-set08-round-3-a-q22-bonus: [motion-forces]
+  # life_science: What environmental condition is mandatory for yeast to complete fermentation? => ABSENCE OF OXYGEN
+  ms-set08-round-3-a-q23-tossup: [microbes]
+  # life_science: Which of the following is the most basic function of human eye lashes? => TO PREVENT SMALL PARTICLES FROM ENTERING
+  ms-set08-round-3-a-q23-bonus: [human-body]
+
+  # Round 4-a
+  # physical_science: What is the primary component of natural gas? => METHANE
+  ms-set08-round-4-a-q01-tossup: [fuels-combustion]
+  # physical_science: The second electron shell in an atom can hold up to how many electrons, and contains how m... => 8, 2
+  ms-set08-round-4-a-q01-bonus: [atoms]
+  # earth_and_space: Which of the following types of organisms does NOT utilize oxygen for respiration? => ANAEROBIC
+  ms-set08-round-4-a-q02-tossup: [microbes]
+  # earth_and_space: On what part of the Earth does every day have exactly the same number of hours of day and ... => EQUATOR
+  ms-set08-round-4-a-q02-bonus: [solar-system]
+  # math: What is the equation of the line parallel to the x-axis and four units above the x-axis? => y = 4
+  ms-set08-round-4-a-q03-tossup: [graphs-functions]
+  # math: Simplify the expression: -3x + 12x3 – 17x2 + 5x3 – 7x + 11x2. => 17x3 – 6x2 – 10x
+  ms-set08-round-4-a-q03-bonus: [algebra]
+  # energy: What SI unit is used to describe the power of a motor or electric heater? => WATT
+  ms-set08-round-4-a-q04-tossup: [energy-work]
+  # energy: Why is it best to hit a baseball on the sweet spot of a bat? => LESS ENERGY IS LOST TO BAT VIBRATIONS WH
+  ms-set08-round-4-a-q04-bonus: [energy-work]
+  # life_science: Charles Darwin used what process to illustrate the mechanisms of natural selection? => ARTIFICIAL SELECTION
+  ms-set08-round-4-a-q05-tossup: [evolution]
+  # life_science: The majority of ocean organisms living in hydrothermal vents are believed to be which of t... => BACTERIA
+  ms-set08-round-4-a-q05-bonus: [microbes]
+  # general_science: What is the reproductive part of an angiosperm that will eventually develop into a seed? => OVULE
+  ms-set08-round-4-a-q06-tossup: [plants]
+  # general_science: In aerobic respiration, what is the terminal electron acceptor in the electron transport c... => OXYGEN
+  ms-set08-round-4-a-q06-bonus: [cells]
+  # physical_science: Why does the same side of the Moon always face the Earth? => THE MOON ROTATES ABOUT ITS AXIS ABOUT ON
+  ms-set08-round-4-a-q07-tossup: [solar-system]
+  # physical_science: You have some old silver coins and want to buy some more at the flea market. The seller sh... => DENSITY
+  ms-set08-round-4-a-q07-bonus: [measurement]
+  # energy: As a swing rises in the air, which of the following types of energy increases in the rider... => POTENTIAL
+  ms-set08-round-4-a-q08-tossup: [energy-work]
+  # energy: Of the approximately 12% of U.S. electricity production that comes from renewable resource... => HYDROPOWER
+  ms-set08-round-4-a-q08-bonus: [renewables]
+  # earth_and_space: Cyclones forming in the northern hemisphere spin in what direction? => COUNTERCLOCKWISE
+  ms-set08-round-4-a-q09-tossup: [weather]
+  # earth_and_space: Which of the following is NOT considered part of the nitrogen cycle? => METHANOGENESIS
+  ms-set08-round-4-a-q09-bonus: [ecology]
+  # math: Consider the following expression: 5x2 + 16xy – 7y2. What is the coefficient of the second... => 16
+  ms-set08-round-4-a-q10-tossup: [algebra]
+  # math: If the radius of a sphere is cut in half, what is the ratio of the volume of the new spher... => 1 TO 8
+  ms-set08-round-4-a-q10-bonus: [solid-geometry]
+  # life_science: In what specific phase of meiosis [my-OH-sis] do homologous [huh-MOL-uh-guhs] chromosomes ... => PROPHASE I
+  ms-set08-round-4-a-q11-tossup: [genetics]
+  # life_science: Which organism has a lateral line system? => SHARK
+  ms-set08-round-4-a-q11-bonus: [diversity]
+  # general_science: What is an eddy? => A CIRCULAR CURRENT OF WATER
+  ms-set08-round-4-a-q12-tossup: [oceans]
+  # general_science: What is the name for the type of viruses that specifically infect bacteria? => BACTERIOPHAGES
+  ms-set08-round-4-a-q12-bonus: [microbes]
+  # physical_science: Which of the following is NOT one of the properties of forces? => FORCES IN OPPOSITE DIRECTIONS ALWAYS RES
+  ms-set08-round-4-a-q13-tossup: [motion-forces]
+  # physical_science: How many moles of carbon dioxide are required to react with 2 moles of water to form carbo... => 2
+  ms-set08-round-4-a-q13-bonus: [reactions]
+  # earth_and_space: When a stone weathers, its tendency to become more rounded is known as what kind of weathe... => SPHEROIDAL
+  ms-set08-round-4-a-q14-tossup: [surface-processes]
+  # earth_and_space: New oceanic crust is formed at which of the following? => MID-OCEAN RIDGES
+  ms-set08-round-4-a-q14-bonus: [tectonics]
+  # math: Three pages are randomly chosen out of a textbook. The number of words on each page is 450... => 451
+  ms-set08-round-4-a-q15-tossup: [statistics]
+  # math: Your phone company charges 50 cents to place a long distance phone call and 17 cents per m... => 24
+  ms-set08-round-4-a-q15-bonus: [algebra]
+  # life_science: What organ in the human body is responsible for storing glucose in the form of glycogen [G... => LIVER
+  ms-set08-round-4-a-q16-tossup: [human-body]
+  # life_science: A biologist wants to test the effect of a new food additive on growth in rats. An experime... => A GROUP OF RATS THAT WERE FED THE SAME R
+  ms-set08-round-4-a-q16-bonus: [biology-misc]
+  # general_science: Bats use what system to navigate in darkness? => ECHOLOCATION
+  ms-set08-round-4-a-q17-tossup: [behavior]
+  # general_science: Of the types of radiation involving the decay of the nucleus [NOO-klee-uhs] of an atom, wh... => BETA
+  ms-set08-round-4-a-q17-bonus: [modern-physics]
+  # physical_science: If a fireman turns on his water hose and is knocked backwards; of which of Newton’s three ... => THE THIRD LAW
+  ms-set08-round-4-a-q18-tossup: [motion-forces]
+  # physical_science: Which of the following is a metalloid? => SILICON
+  ms-set08-round-4-a-q18-bonus: [periodic-table]
+  # energy: What is the term for a chemical reaction that absorbs heat as the reaction proceeds? => ENDOTHERMIC
+  ms-set08-round-4-a-q19-tossup: [thermo-kinetics]
+  # energy: Which of the following is the most common and likely source of exposure to harmful radiati... => RADON EXPOSURE IN THE HOME
+  ms-set08-round-4-a-q19-bonus: [nuclear-energy]
+  # earth_and_space: If a telescope is left unguided, what will be observed in long-exposure photographs taken ... => STAR TRAILS
+  ms-set08-round-4-a-q20-tossup: [observing]
+  # earth_and_space: Most continents contain large central areas in which very ancient rocks are exposed. What ... => CRATONS
+  ms-set08-round-4-a-q20-bonus: [tectonics]
+  # math: A mission to an alien planet discovers sentient beings that have developed a currency syst... => TRANSITIVE
+  ms-set08-round-4-a-q21-tossup: [logic-sets]
+  # math: Solve for x: √(cid:1876) (cid:3398) 4 = -7 [the square root of the quantity x minus 4 equa... => ∅
+  ms-set08-round-4-a-q21-bonus: [algebra]
+  # life_science: The kingdom Plantae [PLAN-tee] consists of members that are which of the following? => PHOTOSYNTHETIC, MULTICELLULAR, AND EUKAR
+  ms-set08-round-4-a-q22-tossup: [plants]
+  # life_science: What is the source of light in the deep ocean? => BIOLUMINESCENT ANIMALS
+  ms-set08-round-4-a-q22-bonus: [oceans]
+  # general_science: What term describes the outer solid part of the Earth, including the crust and uppermost m... => LITHOSPHERE
+  ms-set08-round-4-a-q23-tossup: [tectonics]
+  # general_science: You are trying to decide what to wear to school today and feel like wearing something gree... => THE SHIRT REFLECTS THE GREEN WAVELENGTHS
+  ms-set08-round-4-a-q23-bonus: [light-em]
+
+  # Round 5-a
+  # math: The sum of the measures of complementary angles is equal to which of the following? => 90°
+  ms-set08-round-5-a-q01-tossup: [plane-geometry]
+  # math: Two hikers set off from the same point. One hikes due south for 0.7 miles, the other hikes... => 2.5
+  ms-set08-round-5-a-q01-bonus: [plane-geometry]
+  # life_science: In the late 1800s, who was the first person to isolate and grow numerous pathogenic monera... => ROBERT KOCH
+  ms-set08-round-5-a-q02-tossup: [microbes]
+  # life_science: Which of the following are generally unable to generate organic carbon from inorganic carb... => FUNGI
+  ms-set08-round-5-a-q02-bonus: [diversity]
+  # earth_and_space: The energy of a photon is given by Planck’s constant multiplied by frequency. As wavelengt... => IT INCREASES
+  ms-set08-round-5-a-q03-tossup: [light-em]
+  # earth_and_space: The principle asserting that processes operating in the present world can be used to inter... => UNIFORMITARIANISM
+  ms-set08-round-5-a-q03-bonus: [earth-history]
+  # general_science: The prime meridian is the line of what degree longitude? => 0
+  ms-set08-round-5-a-q04-tossup: [observing]
+  # general_science: In the northern hemisphere, the thickest ice sheet is found in which of the following? => GREENLAND
+  ms-set08-round-5-a-q04-bonus: [surface-processes]
+  # physical_science: A space heater converts what forms of energy? => ELECTRIC ENERGY TO HEAT ENERGY
+  ms-set08-round-5-a-q05-tossup: [energy-work]
+  # physical_science: The specific heat of water is 1 calorie per gram Kelvin. How many thermal calories of ener... => 150
+  ms-set08-round-5-a-q05-bonus: [heat-thermo]
+  # math: Which of the following fractions has a decimal representation that terminates? => 6/15
+  ms-set08-round-5-a-q06-tossup: [number-theory]
+  # math: For a roll of one six-sided die numbered 1 through 6, what is the percent probability that... => 50%
+  ms-set08-round-5-a-q06-bonus: [counting-probability]
+  # energy: Ocean thermal energy conversion utilizes the difference in temperature between cold and wa... => A HEAT ENGINE
+  ms-set08-round-5-a-q07-tossup: [renewables]
+  # energy: Which of the following is the relationship comparing the kinetic energy of an object movin... => ONE-FOURTH AS MUCH
+  ms-set08-round-5-a-q07-bonus: [energy-work]
+  # life_science: Which of the following ocean organisms is the predator of an oyster? => SEA STAR
+  ms-set08-round-5-a-q08-tossup: [ecology]
+  # life_science: What is the term for the general class of chemical substances within cells that help to ma... => BUFFERS
+  ms-set08-round-5-a-q08-bonus: [biochemistry]
+  # earth_and_space: The city of Los Angeles is famous for its hazy “smoggy” days. Which of the following pollu... => OZONE
+  ms-set08-round-5-a-q09-tossup: [weather, climate-environment]
+  # earth_and_space: By weight, what is the dominant chemical compound constituent of granites? => SILICON DIOXIDE
+  ms-set08-round-5-a-q09-bonus: [rocks-minerals]
+  # general_science: Which of the following is a type of rock that forms from cooling magma? => IGNEOUS
+  ms-set08-round-5-a-q10-tossup: [rocks-minerals]
+  # general_science: What is the electrical insulation that surrounds the axons of many neurons? => MYELIN
+  ms-set08-round-5-a-q10-bonus: [human-body]
+  # physical_science: What is the term for the length of time it takes for half of a radioactive material to dec... => HALF-LIFE
+  ms-set08-round-5-a-q11-tossup: [modern-physics]
+  # physical_science: Why do noble gases almost never form chemical bonds? => THEY HAVE COMPLETELY FILLED OUTER VALENC
+  ms-set08-round-5-a-q11-bonus: [periodic-table]
+  # math: A music player can be bought either by $1800 cash in full, or $800 cash as down payment an... => 10%
+  ms-set08-round-5-a-q12-tossup: [ratios-rates]
+  # math: The following five numbers represent student’s scores on a math test. Find the median and ... => MEDIAN SCORE = 90, MEAN SCORE = 88.4
+  ms-set08-round-5-a-q12-bonus: [statistics]
+  # life_science: Given typical environmental abundances, which would you expect to be MOST abundant in a dr... => VIRUSES
+  ms-set08-round-5-a-q13-tossup: [microbes]
+  # life_science: What two inorganic compounds are required for photosynthesis? => CARBON DIOXIDE AND WATER
+  ms-set08-round-5-a-q13-bonus: [plants]
+  # earth_and_space: Which of the following is NOT associated with fumaroles [FYOO-muh-rohls]? => HOT-WATER FOUNTAIN SPOUTING INTERMITTENT
+  ms-set08-round-5-a-q14-tossup: [volcanoes]
+  # earth_and_space: Give the velocity, in meters per second, for a typical wave with a wavelength of 32 meters... => 4
+  ms-set08-round-5-a-q14-bonus: [oceans]
+  # general_science: The ability of the skin to stretch and recoil is largely due to the presence of which of t... => COLLAGEN
+  ms-set08-round-5-a-q15-tossup: [human-body]
+  # general_science: What group of fungi reproduces only by asexual means or has a sexual cycle that has not ye... => FUNGI IMPERFECTI
+  ms-set08-round-5-a-q15-bonus: [diversity]
+  # energy: Which of the following is NOT an environmental concern associated with hydraulic fracturin... => OVERHEATING OF LAND SURFACE
+  ms-set08-round-5-a-q16-tossup: [fuels-combustion, climate-environment]
+  # energy: What is the final output voltage if the following batteries are connected in series: 1.5 v... => 8.2
+  ms-set08-round-5-a-q16-bonus: [electricity]
+  # physical_science: Which of the following energy sources is considered a fossil fuel? => CRUDE OIL
+  ms-set08-round-5-a-q17-tossup: [fuels-combustion]
+  # physical_science: Identify all of the following four properties of matter that are extensive: 1) hardness, 2... => 2 AND 3
+  ms-set08-round-5-a-q17-bonus: [matter-gases]
+  # math: What is the least common denominator of 1/8, 4/9, 2/3 and 5/2? => 72
+  ms-set08-round-5-a-q18-tossup: [arithmetic]
+  # math: Convert the following equation to slope-intercept form: y – 14 = 6(x – 5) . => y = 6x – 16
+  ms-set08-round-5-a-q18-bonus: [graphs-functions]
+  # life_science: In insects, what is the name for chemicals that can travel many miles and are capable of i... => PHEROMONES
+  ms-set08-round-5-a-q19-tossup: [behavior]
+  # life_science: Hormones regulate the concentration of glucose in the blood. Which of the following hormon... => INSULIN DECREASES BLOOD GLUCOSE LEVELS
+  ms-set08-round-5-a-q19-bonus: [human-body]
+  # energy: According to the U.S. Energy Information Administration, which of the following sectors co... => INDUSTRIAL
+  ms-set08-round-5-a-q20-tossup: [energy-use]
+  # energy: What are the DC voltages from conventional A, AA and D cell batteries? => ALL ARE 1.5 VOLTS
+  ms-set08-round-5-a-q20-bonus: [batteries-storage]
+  # earth_and_space: Which of the following properties characterizes a water mass? => SALINITY AND TEMPERATURE
+  ms-set08-round-5-a-q21-tossup: [oceans]
+  # earth_and_space: The United States Geologic Survey has replaced the Richter scale with what scale to help b... => MOMENT MAGNITUDE SCALE
+  ms-set08-round-5-a-q21-bonus: [tectonics]
+  # general_science: You are a community ecologist studying the population dynamics of sea urchins on the West ... => KEYSTONE SPECIES
+  ms-set08-round-5-a-q22-tossup: [ecology]
+  # general_science: What is the name given to chromosomes acquired from different parents? => HOMOLOGOUS CHROMOSOMES
+  ms-set08-round-5-a-q22-bonus: [genetics]
+  # physical_science: For an ideal simple pendulum [PEN-juh-luhm], where is the position of maximum speed of the... => AT THE EQUILIBRIUM POSITION
+  ms-set08-round-5-a-q23-tossup: [energy-work]
+  # physical_science: A stone of mass m is tossed directly above to a height h. If the acceleration due to gravi... => mg
+  ms-set08-round-5-a-q23-bonus: [motion-forces]
+
+  # Round 6-a
+  # general_science: Which of the following is true? => MITOSIS RESULTS IN IDENTICAL DAUGHTER CE
+  ms-set08-round-6-a-q01-tossup: [genetics]
+  # general_science: What is the smallest of the world’s five oceans? => ARCTIC
+  ms-set08-round-6-a-q01-bonus: [oceans]
+  # math: What type of quadrilateral has only one set of parallel sides with congruent non-parallel ... => ISOSCELES TRAPEZOID
+  ms-set08-round-6-a-q02-tossup: [plane-geometry]
+  # math: What is the probability that an integer chosen at random from the set of all positive inte... => 19/99
+  ms-set08-round-6-a-q02-bonus: [counting-probability]
+  # physical_science: Which of the following wave types has the longest wavelength? => RADIO
+  ms-set08-round-6-a-q03-tossup: [light-em]
+  # physical_science: What is the momentum, in newton seconds, of an object with a mass of 25 kilograms moving a... => 625
+  ms-set08-round-6-a-q03-bonus: [momentum-rotation]
+  # life_science: Which of these organisms get energy directly from the Sun? => CYANOBACTERIA
+  ms-set08-round-6-a-q04-tossup: [microbes]
+  # life_science: Which division of the nervous system contains axons of sensory and motor neurons bundled t... => PERIPHERAL NERVOUS SYSTEM
+  ms-set08-round-6-a-q04-bonus: [human-body]
+  # earth_and_space: The Cascade Mountains and the Andes Mountains are part of what is called the Ring of Fire.... => SUBDUCTION ZONE
+  ms-set08-round-6-a-q05-tossup: [volcanoes, tectonics]
+  # earth_and_space: The ocean crust is composed mostly of which of the following rock types? => BASALT
+  ms-set08-round-6-a-q05-bonus: [rocks-minerals]
+  # general_science: What is the layer just below the canopy in the vertical stratification of a forest? => UNDERSTORY
+  ms-set08-round-6-a-q06-tossup: [ecology]
+  # general_science: Which of the following gives the primary components of the Earth’s mass in order from larg... => MANTLE, CORE, CRUST
+  ms-set08-round-6-a-q06-bonus: [tectonics]
+  # math: Which of the following is an example of a linear equation? => 7x + 11y – 4 = 9x + 22y
+  ms-set08-round-6-a-q07-tossup: [algebra]
+  # math: You earn two extra credit points on a test that is graded on a 25 point scale. If you had ... => 96
+  ms-set08-round-6-a-q07-bonus: [ratios-rates]
+  # energy: As the spring constant (k) of a spring increases, what happens to its energy storage poten... => IT INCREASES LINEARLY
+  ms-set08-round-6-a-q08-tossup: [energy-work]
+  # energy: To prevent lithium ion batteries from catching fire and exploding, which of the following ... => MONITORING CIRCUIT
+  ms-set08-round-6-a-q08-bonus: [batteries-storage]
+  # physical_science: A sound wave hits a wall, causing a reflection. Which of the following statements about th... => THE SPEED OF THE WAVE MAY CHANGE
+  ms-set08-round-6-a-q09-tossup: [waves-sound]
+  # physical_science: Which of the following scientists did NOT study electricity and its properties? => JOHN DALTON
+  ms-set08-round-6-a-q09-bonus: [electricity]
+  # life_science: What is the name of the barrier that surrounds all cells and regulates what may enter and ... => PLASMA MEMBRANE
+  ms-set08-round-6-a-q10-tossup: [cells]
+  # life_science: When two species compete for the same resources and one species is eliminated, the outcome... => COMPETITIVE EXCLUSION
+  ms-set08-round-6-a-q10-bonus: [ecology]
+  # earth_and_space: Which of the following is a characteristic mound-like structure that represents trace foss... => STROMATOLITE
+  ms-set08-round-6-a-q11-tossup: [earth-history]
+  # earth_and_space: Water ice is a significant constituent of the outer planets and moons of the solar system ... => DENSITY
+  ms-set08-round-6-a-q11-bonus: [solar-system]
+  # general_science: The base represented by the letter “T” in DNA is replaced by which base in RNA? => URACIL
+  ms-set08-round-6-a-q12-tossup: [genetics]
+  # general_science: What digestive organ has parts including the fundus, cardiac region, body, and pyloric reg... => STOMACH
+  ms-set08-round-6-a-q12-bonus: [human-body]
+  # math: Which of the following is a rational number? => THE RADIUS OF A CIRCLE WITH CIRCUMFERENC
+  ms-set08-round-6-a-q13-tossup: [number-theory]
+  # math: The graph of a line passes through the points with coordinates (a, b) and (c, -b). The slo... => 4b
+  ms-set08-round-6-a-q13-bonus: [graphs-functions]
+  # physical_science: Providing your answer to two significant figures, what is the density, in grams per millil... => 2.0
+  ms-set08-round-6-a-q14-tossup: [measurement]
+  # physical_science: An object traveling from Earth to Venus experiences equal gravitational pull by Earth and ... => IT IS CLOSER TO VENUS’S SURFACE
+  ms-set08-round-6-a-q14-bonus: [motion-forces]
+  # life_science: What is the term for the rapid, automatic response to stimuli in which a particular stimul... => REFLEX
+  ms-set08-round-6-a-q15-tossup: [human-body]
+  # life_science: Which of the following traits would you expect an ornithopod [AWR-nuh-thuh-pod] dinosaur t... => BIRD-LIKE FEET
+  ms-set08-round-6-a-q15-bonus: [evolution]
+  # earth_and_space: What are the three most common cementing agents of sedimentary rocks? => CALCITE, SILICA , IRON OXIDE
+  ms-set08-round-6-a-q16-tossup: [rocks-minerals]
+  # earth_and_space: Radiometric dating is a method of obtaining the age for a rock. This method utilizes which... => SPONTANEOUS DECAY OF RADIOACTIVE ELEMENT
+  ms-set08-round-6-a-q16-bonus: [earth-history]
+  # energy: What is the lowest point of land in the United States, where pure water does not boil unti... => DEATH VALLEY
+  ms-set08-round-6-a-q17-tossup: [matter-gases]
+  # energy: To date, most of the shale gas production has taken place in which U.S. state? => TEXAS
+  ms-set08-round-6-a-q17-bonus: [fuels-combustion]
+  # general_science: Which of the following types of cloud are associated with supercell thunderstorms? => CUMULONIMBUS
+  ms-set08-round-6-a-q18-tossup: [weather]
+  # general_science: What marsupial is native to the United States and Canada? => OPOSSUM
+  ms-set08-round-6-a-q18-bonus: [diversity]
+  # math: The diameters of two circular gears of Ben’s bicycle are in the ratio of 3 to 1. If the la... => 8π
+  ms-set08-round-6-a-q19-tossup: [plane-geometry]
+  # math: Which of the following values of c provides an integer value for the expression 0.3c + 4.2... => 6
+  ms-set08-round-6-a-q19-bonus: [arithmetic]
+  # physical_science: The acceleration of a stone thrown upwards is which of the following? => THE SAME AS THAT OF A STONE THROWN DOWNW
+  ms-set08-round-6-a-q20-tossup: [motion-forces]
+  # physical_science: Identify all of the following four materials that are good insulators: 1) copper, 2) glass... => 2, 3, 4
+  ms-set08-round-6-a-q20-bonus: [electricity]
+  # energy: Carbon Capture and Sequestration (CCS) in deep ocean is no longer considered a promising a... => ACIDIFICATION
+  ms-set08-round-6-a-q21-tossup: [climate-environment]
+  # energy: With regard to water heaters, which of the following options presents energy savings of up... => REPLACING THE TANK WATER HEATER BY AN ON
+  ms-set08-round-6-a-q21-bonus: [energy-use]
+  # life_science: Mixotrophic organisms, such as dinoflagellates [din-uh- FLAJ-uh-layts], are able to live b... => HETEROTROPHY
+  ms-set08-round-6-a-q22-tossup: [microbes]
+  # life_science: What is the ancient type of Archaean [ahr-KEE-uhn] metabolism that uses molecular hydrogen... => METHANOGENESIS
+  ms-set08-round-6-a-q22-bonus: [microbes]
+  # earth_and_space: Many cities on the U.S. east coast are at greater risk from rising sea levels than cities ... => THE SEA LEVEL WILL RISE MORE ON THE EAST
+  ms-set08-round-6-a-q23-tossup: [oceans, climate-environment]
+  # earth_and_space: What is the term for the underwater equivalent of hypsometry [hip-SOM-i-tree]? => BATHYMETRY
+  ms-set08-round-6-a-q23-bonus: [oceans]
+
+  # Round 7-a
+  # life_science: Which species of tuna is in immediate danger of extinction due to overfishing? => SOUTHERN BLUEFIN TUNA
+  ms-set08-round-7-a-q01-tossup: [ecology]
+  # life_science: What four categories of biological macromolecules make up cells? => PROTEINS, NUCLEIC ACIDS, CARBOHYDRATES, 
+  ms-set08-round-7-a-q01-bonus: [biochemistry]
+  # physical_science: Which of the following best describes how a chemical change occurs in a substance? => IT GAINS, LOSES, OR SHARES ELECTRONS
+  ms-set08-round-7-a-q02-tossup: [reactions]
+  # physical_science: Every ocean wave is generated by an energy source. What is the most likely cause of waves ... => EARTHQUAKES
+  ms-set08-round-7-a-q02-bonus: [oceans]
+  # energy: In which of the following states would you be more likely to find a methane digester on a ... => WISCONSIN
+  ms-set08-round-7-a-q03-tossup: [renewables]
+  # energy: The amount of CO2 produced from burning natural gas will be what percent of the CO2 produc... => 50%
+  ms-set08-round-7-a-q03-bonus: [fuels-combustion, climate-environment]
+  # general_science: If you have a parent flower that has red petals and the other parent has white petals and ... => INCOMPLETE DOMINANCE
+  ms-set08-round-7-a-q04-tossup: [genetics]
+  # general_science: What organ system, unique to aquatic vertebrae, is used to detect movements and pressure c... => LATERAL LINE
+  ms-set08-round-7-a-q04-bonus: [diversity]
+  # earth_and_space: What is the spectral class of the Sun? => G
+  ms-set08-round-7-a-q05-tossup: [stars]
+  # earth_and_space: Which of the following accurately describes the structure of the Sun? => RADIATIVE CORE, CONVECTIVE ENVELOPE
+  ms-set08-round-7-a-q05-bonus: [stars]
+  # math: A couple bought a house and calculated that they would pay 30% of their combined monthly i... => $1,710
+  ms-set08-round-7-a-q06-tossup: [ratios-rates]
+  # math: The perimeter of your garden is 10 4/5 [10 and four-fifths] yards. You purchased wooden pl... => 1 8/15
+  ms-set08-round-7-a-q06-bonus: [arithmetic]
+  # life_science: In the spring of 2013, scientists from the University of Michigan and Louisiana State Univ... => GULF OF MEXICO
+  ms-set08-round-7-a-q07-tossup: [ecology]
+  # life_science: What is the MOST common term for the general type of nourishment characteristic of mushroo... => SAPROPHYTIC
+  ms-set08-round-7-a-q07-bonus: [diversity]
+  # physical_science: Which of the following is NOT correct about the gravitational force between two objects? => IT BEHAVES INDEPENDENTLY OF THE LAW OF C
+  ms-set08-round-7-a-q08-tossup: [motion-forces]
+  # physical_science: What substances, by definition, produce ions when dissolved in water? => ELECTROLYTES
+  ms-set08-round-7-a-q08-bonus: [solutions]
+  # general_science: What term refers to the tip of a plant shoot or root that produces auxin [AWK-sin], causin... => APICAL MERISTEM
+  ms-set08-round-7-a-q09-tossup: [plants]
+  # general_science: Which of these trees does NOT belong to the family Juglandaceae [joo-gluhn-DAH-cee-ee]? => TREE OF HEAVEN
+  ms-set08-round-7-a-q09-bonus: [plants]
+  # earth_and_space: The dark low-lying areas of the Moon are composed of which type of rock? => BASALT
+  ms-set08-round-7-a-q10-tossup: [solar-system]
+  # earth_and_space: Nephrite is a metamorphic rock that is better known as what green ornamental stone? => JADE
+  ms-set08-round-7-a-q10-bonus: [rocks-minerals]
+  # math: The mean of four observations is 15. What is the new mean after an additional observation ... => 17
+  ms-set08-round-7-a-q11-tossup: [statistics]
+  # math: When $500 is divided between three people, one person gets 2/5 of the money, and another g... => $150
+  ms-set08-round-7-a-q11-bonus: [arithmetic]
+  # energy: What is the largest component of solar irradiance on a clear day? => DIRECT NORMAL IRRADIANCE
+  ms-set08-round-7-a-q12-tossup: [renewables]
+  # energy: Coal plants, hydroelectric plants, nuclear power plants, and wind farms all have what two ... => TURBINES AND GENERATORS
+  ms-set08-round-7-a-q12-bonus: [energy-use]
+  # life_science: Which organism existed over 3.5 billion years ago and is considered a living fossil? => STROMATOLITE
+  ms-set08-round-7-a-q13-tossup: [earth-history]
+  # life_science: Which of the following leukocytes [LOO-kuh-sits] occurs in the LEAST abundance in the heal... => BASOPHIL
+  ms-set08-round-7-a-q13-bonus: [immunity-disease]
+  # physical_science: The largest voltage drop would be measured across which of the following circuit component... => CONDUCTION LOOP WITH 4 AMP CURRENT AND 4
+  ms-set08-round-7-a-q14-tossup: [electricity]
+  # physical_science: A diffraction grating for light acts somewhat like a prism: when light is viewed through i... => RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO
+  ms-set08-round-7-a-q14-bonus: [light-em]
+  # general_science: Which is the FARTHEST planet from the Sun? => NEPTUNE
+  ms-set08-round-7-a-q15-tossup: [solar-system]
+  # general_science: Identify all of the following four features that serve to distinguish vascular plants from... => 2 AND 4 (ACCEPT: SPECIALIZED CONDUCTING 
+  ms-set08-round-7-a-q15-bonus: [plants]
+  # energy: The United States imports most of its crude oil from what country? => CANADA
+  ms-set08-round-7-a-q16-tossup: [fuels-combustion]
+  # energy: A 100 watt light bulb is on for 10 hours in the U.S. What is the average approximate cost ... => $.10
+  ms-set08-round-7-a-q16-bonus: [energy-use]
+  # earth_and_space: The solar wind is essentially the Sun's atmosphere boiling off. What ion makes up 96% of t... => HYDROGEN
+  ms-set08-round-7-a-q17-tossup: [stars]
+  # earth_and_space: Which of the following plates is NOT a past or present tectonic plate? => LAURENTIAN
+  ms-set08-round-7-a-q17-bonus: [tectonics]
+  # math: A florist buys roses at 50 cents apiece and sells them for one dollar apiece. If there are... => 600
+  ms-set08-round-7-a-q18-tossup: [ratios-rates]
+  # math: Arrange the following three numbers in order from least to greatest: π, √10, and 22/7. => π, 22/7, √10
+  ms-set08-round-7-a-q18-bonus: [number-theory]
+  # life_science: What is the location of the biceps femoris muscle? => THIGH
+  ms-set08-round-7-a-q19-tossup: [human-body]
+  # life_science: In the U.S., what potentially lethal disease is carried by deer mice and transferred to hu... => HANTAVIRUS
+  ms-set08-round-7-a-q19-bonus: [immunity-disease]
+  # physical_science: LHC is an acronym for an instrument used in particle physics experiments located in Europe... => LARGE HADRON COLLIDER
+  ms-set08-round-7-a-q20-tossup: [modern-physics]
+  # physical_science: A universal property of waves is that they transfer what quantity? => ENERGY
+  ms-set08-round-7-a-q20-bonus: [waves-sound]
+  # general_science: A monsoon refers to which of the following? => A SEASONALLY, DOMINANT WIND PATTERN
+  ms-set08-round-7-a-q21-tossup: [weather]
+  # general_science: Zebra mussels, Burmese pythons, silver carp, and nutria are all examples of what type of e... => INVASIVE SPECIES
+  ms-set08-round-7-a-q21-bonus: [ecology]
+  # earth_and_space: Geysers are located near what kind of areas? => VOLCANIC
+  ms-set08-round-7-a-q22-tossup: [volcanoes]
+  # earth_and_space: In which of the following depositional settings will sedimentary rock layers be deposited ... => PROGRADING DELTA
+  ms-set08-round-7-a-q22-bonus: [surface-processes]
+  # math: What is the value of y if (3, y) [the ordered pair 3, y] is a solution to the equation: 5x... => -1
+  ms-set08-round-7-a-q23-tossup: [graphs-functions]
+  # math: In the arithmetic operation long division, answers are often expressed as a whole number q... => MIXED FRACTION AND DECIMAL
+  ms-set08-round-7-a-q23-bonus: [arithmetic]
+
+  # Round 8-a
+  # earth_and_space: Compressive forces that result in brittle deformation yield what formation? => REVERSE FAULTS
+  ms-set08-round-8-a-q01-tossup: [tectonics]
+  # earth_and_space: In which constellation is the nearest major galaxy, M31? => ANDROMEDA
+  ms-set08-round-8-a-q01-bonus: [galaxies-cosmology]
+  # general_science: Why is coal a non-renewable fuel source? => IT IS USED FASTER THAN IT IS FORMED
+  ms-set08-round-8-a-q02-tossup: [fuels-combustion]
+  # general_science: Unlike prokaryotic [proh-KAR-ee-oh-tik] cells, the cytoplasm [SY-tuh-plaz-uhm] of eukaryot... => ORGANELLES
+  ms-set08-round-8-a-q02-bonus: [cells]
+  # physical_science: The combination of two deuterium [doo-TEER-ee- uhm] atoms to form a single helium atom is ... => NUCLEAR FUSION
+  ms-set08-round-8-a-q03-tossup: [modern-physics]
+  # physical_science: On the periodic table, potassium is in what family? => ALKALI METAL
+  ms-set08-round-8-a-q03-bonus: [periodic-table]
+  # math: After 3 tests, a student has an average score of 80%. What does the student need to score ... => 96%
+  ms-set08-round-8-a-q04-tossup: [statistics]
+  # math: If a, b and c are numbers such that a/b = 3 [a over b equals 3] and b/c = 7 [b over c equa... => 7/2
+  ms-set08-round-8-a-q04-bonus: [algebra]
+  # life_science: What is the purpose of the lateral line in fish? => DETECTING VIBRATION
+  ms-set08-round-8-a-q05-tossup: [diversity]
+  # life_science: Which of the following would be an example of a mycorrhizal [my-kuh-RY-zuhl] symbiosis? => THE BACTERIUM RHIZOBIUM INFECTING THE RO
+  ms-set08-round-8-a-q05-bonus: [ecology]
+  # earth_and_space: Which of the following rocks is NOT metamorphic? => LIMESTONE
+  ms-set08-round-8-a-q06-tossup: [rocks-minerals]
+  # earth_and_space: Not including brown dwarfs, what is the second coolest class of star? => K
+  ms-set08-round-8-a-q06-bonus: [stars]
+  # energy: Which of the following sources of radiation is most commonly used to irradiate food? => COBALT-60
+  ms-set08-round-8-a-q07-tossup: [nuclear-energy]
+  # energy: Over time, the amplitude of a swing decreases. This is because the rider’s mechanical ener... => HEAT
+  ms-set08-round-8-a-q07-bonus: [energy-work]
+  # general_science: Name the method by which new genetic material can be introduced into a population. => MUTATION
+  ms-set08-round-8-a-q08-tossup: [evolution]
+  # general_science: Lateritic [lat-uh-RIT-ik] soils would be found in which biome? => TROPICAL RAIN FOREST
+  ms-set08-round-8-a-q08-bonus: [surface-processes]
+  # physical_science: Central processing units have evolved heavily over the past 30 years. They are responsible... => TRANSISTORS
+  ms-set08-round-8-a-q09-tossup: [electricity]
+  # physical_science: Which of the following statements about precipitation is FALSE? => RESULTS IN A HIGHER PURITY SOLID IF HIGH
+  ms-set08-round-8-a-q09-bonus: [solutions]
+  # math: Add 8x to 2x and then subtract 5 from the sum. If x is a positive integer, the result must... => 5
+  ms-set08-round-8-a-q10-tossup: [number-theory]
+  # math: If x varies directly as the square of y and x equals 0.5 when y is 1, what is x when y = 4... => 8
+  ms-set08-round-8-a-q10-bonus: [algebra]
+  # life_science: In human extremities what term is used to describe the evidence that veins are weakening a... => VARICOSE VEINS
+  ms-set08-round-8-a-q11-tossup: [human-body]
+  # life_science: Which is NOT one of the essential activities that occurs in the digestive process? => ADSORPTION
+  ms-set08-round-8-a-q11-bonus: [human-body]
+  # earth_and_space: Which of the following is NOT considered part of a beach’s foreshore environment? => BERM
+  ms-set08-round-8-a-q12-tossup: [oceans]
+  # earth_and_space: Around what two points do stars appear to rotate in the sky over the course of a day? => NORTH AND SOUTH CELESTIAL POLES
+  ms-set08-round-8-a-q12-bonus: [observing]
+  # general_science: Mendel’s experiments crossing different colored pea plants demonstrated what genetic conce... => RECESSIVE AND DOMINANT GENES
+  ms-set08-round-8-a-q13-tossup: [genetics]
+  # general_science: What specific chamber of the heart is responsible for pumping blood to the lungs? => RIGHT VENTRICLE
+  ms-set08-round-8-a-q13-bonus: [human-body]
+  # energy: The energy stored in a candle that can be changed into heat and light energy in burning is... => CHEMICAL
+  ms-set08-round-8-a-q14-tossup: [energy-work]
+  # energy: What is the amperage in a circuit with a 14 volt power source and three 6 ohm light bulbs ... => 7
+  ms-set08-round-8-a-q14-bonus: [electricity]
+  # physical_science: The escape velocity from the event horizon of a black hole is which of the following? => THE SPEED OF LIGHT
+  ms-set08-round-8-a-q15-tossup: [galaxies-cosmology]
+  # physical_science: In what type of current do electrons frequently reverse their direction of travel? => ALTERNATING CURRENT
+  ms-set08-round-8-a-q15-bonus: [electricity]
+  # math: What is the value of (1/2) -2 [one-half raised to the negative two power]? => 4
+  ms-set08-round-8-a-q16-tossup: [algebra]
+  # math: Evaluate the following: log2166 [log base two hundred sixteen of 6]. => 1/3
+  ms-set08-round-8-a-q16-bonus: [algebra]
+  # life_science: In which ocean zone would coral reside? => NERITIC
+  ms-set08-round-8-a-q17-tossup: [oceans]
+  # life_science: What is the correct term for a marine organism whose internal salt concentration varies wi... => OSMOCONFORMERS
+  ms-set08-round-8-a-q17-bonus: [diversity]
+  # earth_and_space: What is the source of the helium-3 found in the lunar regolith? => THE SUN
+  ms-set08-round-8-a-q18-tossup: [solar-system]
+  # earth_and_space: Which of the following is the reason that a lunar eclipse does not occur during every full... => THE MOON'S ORBIT IS INCLINED RELATIVE TO
+  ms-set08-round-8-a-q18-bonus: [solar-system]
+  # general_science: Which of the following does NOT contribute to eutrophication [yoo-tro-fi-KAY-shun]? => INCREASED OXYGEN INPUTS
+  ms-set08-round-8-a-q19-tossup: [ecology]
+  # general_science: What is true about the drifting of North America and Europe? => IT IS AWAY FROM EACH OTHER AT APPROXIMAT
+  ms-set08-round-8-a-q19-bonus: [tectonics]
+  # physical_science: Two objects have the same size and shape, but one is twice as heavy as the other. They are... => THEY LAND ON THE GROUND AT THE SAME TIME
+  ms-set08-round-8-a-q20-tossup: [motion-forces]
+  # physical_science: What is the term that describes the factor by which the speed of light is decreased when t... => REFRACTIVE INDEX
+  ms-set08-round-8-a-q20-bonus: [light-em]
+  # math: If an event has a 45% chance of success in any single trial, how many successful events wo... => 2,250
+  ms-set08-round-8-a-q21-tossup: [counting-probability]
+  # math: In which quadrants do the solutions to the inequality 2x + 3 < y < -(1/2) x – 5 [two x plu... => II AND III
+  ms-set08-round-8-a-q21-bonus: [graphs-functions]
+  # energy: Other than a battery, what else will produce a direct current with no moving parts? => THERMOCOUPLES
+  ms-set08-round-8-a-q22-tossup: [electricity]
+  # energy: In a northern climate, what should be the orientation of windows in a passively heated sol... => SOUTH
+  ms-set08-round-8-a-q22-bonus: [renewables]
+  # life_science: What is the primary chemical constituent of the cell wall in plants? => CELLULOSE
+  ms-set08-round-8-a-q23-tossup: [plants]
+  # life_science: The process of nitrogen fixation is extremely energy intensive due to which of the followi... => ATOMS OF FREE NITROGEN ARE TRIPLY BOUND 
+  ms-set08-round-8-a-q23-bonus: [bonding]
+
+  # Round 9-a
+  # physical_science: How many neutrons does fluorine-19 have? => 10
+  ms-set08-round-9-a-q01-tossup: [atoms]
+  # physical_science: What is the frequency of a wave with a velocity of 10 meters per second and wavelength of ... => 0.5 Hz
+  ms-set08-round-9-a-q01-bonus: [waves-sound]
+  # earth_and_space: What is the term for the dark, broad plains on the surface of the Moon? => MARIA
+  ms-set08-round-9-a-q02-tossup: [solar-system]
+  # earth_and_space: A long stretch of beach is east facing with a southerly longshore current. The constructio... => LOSS OF BEACH SOUTH OF THE GROIN
+  ms-set08-round-9-a-q02-bonus: [oceans]
+  # math: A jar contains only red marbles and green marbles. If a marble is selected at random from ... => 72
+  ms-set08-round-9-a-q03-tossup: [counting-probability]
+  # math: What is the base-ten equivalent of the base-six number “four five”? => 29
+  ms-set08-round-9-a-q03-bonus: [number-theory]
+  # energy: Photovoltaic [foh-toh-vol-TAY-ik] solar trackers can track which of the following in order... => AZIMUTH ANGLE
+  ms-set08-round-9-a-q04-tossup: [renewables]
+  # energy: How much energy is released when converting 1.5 kilograms of iron oxide to iron if the hea... => 0
+  ms-set08-round-9-a-q04-bonus: [heat-thermo]
+  # life_science: Bacteria are commonly used to produce which of the following? => VINEGAR
+  ms-set08-round-9-a-q05-tossup: [microbes]
+  # life_science: Which of the following terms is used to define benthic organisms that live in the spaces b... => MEIOFAUNA
+  ms-set08-round-9-a-q05-bonus: [oceans]
+  # general_science: Many ducks have oils on their feathers so that their feathers do not get wet. What type of... => HYDROPHOBIC
+  ms-set08-round-9-a-q06-tossup: [bonding]
+  # general_science: Which cambium [KAM-bee-uhm] layer gives rise to secondary phloem [FLOH-em] and secondary x... => SECONDARY
+  ms-set08-round-9-a-q06-bonus: [plants]
+  # physical_science: Which of the following is a force that will always decrease the efficiency of a mechanical... => FRICTION
+  ms-set08-round-9-a-q07-tossup: [motion-forces]
+  # physical_science: The mass of most distant stars is estimated by astronomers by measuring which of the follo... => THE GRAVITATION ATTRACTION OF THE STAR A
+  ms-set08-round-9-a-q07-bonus: [stars]
+  # energy: What element is being produced in abundance by the nuclear reaction in the Sun? => HELIUM
+  ms-set08-round-9-a-q08-tossup: [nuclear-energy]
+  # energy: What mineral is used in its molten state as a necessary part of the Hall-Heroult process? => CRYOLITE
+  ms-set08-round-9-a-q08-bonus: [rocks-minerals]
+  # earth_and_space: What is the period of semi-diurnal tides? => 12 HOURS AND 25 MINUTES
+  ms-set08-round-9-a-q09-tossup: [oceans]
+  # earth_and_space: What ocean floor feature is found along the South Pacific Ocean that is not found along th... => DEEP-OCEAN TRENCH
+  ms-set08-round-9-a-q09-bonus: [tectonics]
+  # math: For two particular numbers x and y, the values of x – y and 2x − y are consecutive odd int... => 2
+  ms-set08-round-9-a-q10-tossup: [algebra]
+  # math: Simplify the expression: 3/(5 − √10) [3 divided by the quantity 5 minus the square root of... => 1 + √10/5
+  ms-set08-round-9-a-q10-bonus: [algebra]
+  # life_science: Within the chloroplast, where do the light-dependent reactions and light-independent react... => THYLAKOID MEMBRANES , STROMA
+  ms-set08-round-9-a-q11-tossup: [plants]
+  # life_science: A photosynthetic cell might have more of what organelle than a non-photosynthetic cell? => PEROXISOMES
+  ms-set08-round-9-a-q11-bonus: [cells]
+  # general_science: Ribosomes [RY-buh-sohms] are cellular structures critical for protein synthesis. In what s... => NUCLEOLUS
+  ms-set08-round-9-a-q12-tossup: [cells]
+  # general_science: El Niño Southern Oscillation can cause all EXCEPT which of the following? => INCREASED PRODUCTIVITY IN SOUTH AMERICAN
+  ms-set08-round-9-a-q12-bonus: [oceans, weather]
+  # physical_science: Why does the pressure exerted by a gas against a sealed container increase as the temperat... => THE GAS MOLECULES MOVE FASTER AND STRIKE
+  ms-set08-round-9-a-q13-tossup: [matter-gases]
+  # physical_science: During winter in the northern hemisphere, what is the northernmost latitude at which the S... => ARCTIC CIRCLE
+  ms-set08-round-9-a-q13-bonus: [solar-system]
+  # earth_and_space: What kind of telescope lens will focus two colors of light at the same distance? => ACHROMATIC
+  ms-set08-round-9-a-q14-tossup: [observing]
+  # earth_and_space: Which of the following margins is considered active? => NORTHEASTERN EURASIAN
+  ms-set08-round-9-a-q14-bonus: [tectonics]
+  # math: Casey poured sand into a box measuring 4 inches by 16 inches by 8 inches until it was comp... => 8
+  ms-set08-round-9-a-q15-tossup: [solid-geometry]
+  # math: Provided x is a value for which it is defined, simplify the expression ((cid:1876) √8(cid:... => (2√2) /(x+2)
+  ms-set08-round-9-a-q15-bonus: [algebra]
+  # life_science: A sea dragon mimics what to stay camouflaged? => SEAWEED
+  ms-set08-round-9-a-q16-tossup: [behavior]
+  # life_science: What is the term for the process of breaking up a molecule with water? => HYDROLYSIS
+  ms-set08-round-9-a-q16-bonus: [biochemistry]
+  # general_science: Which of the following lists the primary gases found in the Earth’s atmosphere from the mo... => NITROGEN, OXYGEN, ARGON, CARBON DIOXIDE
+  ms-set08-round-9-a-q17-tossup: [weather]
+  # general_science: Rank the following mountain chains from shortest to longest: Andes, Himalayas, Trans-Arcti... => URALS, TRANS-ARCTIC, HIMALAYAS, ANDES
+  ms-set08-round-9-a-q17-bonus: [tectonics]
+  # physical_science: Air drag opposes any motion of an object through air and is proportional to the velocity o... => TERMINAL VELOCITY
+  ms-set08-round-9-a-q18-tossup: [motion-forces]
+  # physical_science: A modern camera allows light to hit its sensor through a circular opening called an apertu... => √2
+  ms-set08-round-9-a-q18-bonus: [light-em]
+  # energy: What is the theoretical maximum voltage that can be produced from a hydrogen fuel cell? => 1.23 VOLTS PER CELL
+  ms-set08-round-9-a-q19-tossup: [batteries-storage]
+  # energy: What is the total resistance of a circuit with the following resistors in series: 6 ohm, 0... => 24/11 OHMS
+  ms-set08-round-9-a-q19-bonus: [electricity]
+  # earth_and_space: What constellation occupies the largest area in the sky? => HYDRA
+  ms-set08-round-9-a-q20-tossup: [observing]
+  # earth_and_space: The lack of foraminiferal [fuh-ram-uh-NIF-er-uhl] and other carbonate oozes at depths grea... => CARBONATE SHELLS DISSOLVE AT DEPTHS BELO
+  ms-set08-round-9-a-q20-bonus: [oceans]
+  # math: For real values of n and k, which of the following expressions is equal to: 5n * 5k [5 rai... => 5n+k
+  ms-set08-round-9-a-q21-tossup: [algebra]
+  # math: What is the tangent of angle A if the cosine of angle A measures 3/5 and the sine of angle... => 4/3
+  ms-set08-round-9-a-q21-bonus: [trigonometry]
+  # life_science: What are the four traditional kingdoms of the domain Eukarya? => PROTISTA, PLANTAE, ANIMALIA, AND FUNGI
+  ms-set08-round-9-a-q22-tossup: [diversity]
+  # life_science: What is the purpose of the Eustachian tube [yoo-STAY- shuhn]? => IT CLEARS MUCOUS FROM THE MIDDLE EAR INT
+  ms-set08-round-9-a-q22-bonus: [human-body]
+  # general_science: Which of the following models primary succession of a region? => BARE ROCK, PIONEER COMMUNITY, CLIMAX COM
+  ms-set08-round-9-a-q23-tossup: [ecology]
+  # general_science: What is the difference between basic and applied science? => BASIC SCIENCE DESCRIBES FUNDAMENTAL PHEN
+  ms-set08-round-9-a-q23-bonus: [biology-misc]
+
+  # Round 10-a
+  # math: If 1 [theta sub 1] and 2 [theta sub 2] are complementary angles then which of the follow... => sin1 = cos 2
+  ms-set08-round-10-a-q01-tossup: [trigonometry]
+  # math: Evaluate the expression x2 – 6x + 9 when x = 3 − 27: => 28
+  ms-set08-round-10-a-q01-bonus: [algebra]
+  # life_science: Which of the following organisms has a carapace [KAR-uh- pays]? => CRAYFISH
+  ms-set08-round-10-a-q02-tossup: [diversity]
+  # life_science: Which of the following is NOT a main class of connective tissue in humans? => CELLULAR
+  ms-set08-round-10-a-q02-bonus: [human-body]
+  # earth_and_space: What is the term for an earthquake’s initial rupture point? => FOCUS
+  ms-set08-round-10-a-q03-tossup: [tectonics]
+  # earth_and_space: Which of the following is NOT a consequence of a drought? => INCREASED ELECTRICITY DUE TO WIND GENERA
+  ms-set08-round-10-a-q03-bonus: [weather, climate-environment]
+  # general_science: Which of the following colors has the highest energy photons? => BLUE
+  ms-set08-round-10-a-q04-tossup: [light-em]
+  # general_science: Performing electrolysis on water results in the production of which two diatomic gasses? => HYDROGEN AND OXYGEN
+  ms-set08-round-10-a-q04-bonus: [reactions]
+  # physical_science: What happens to the wavelength and frequency of a wave when the amplitude of a wave increa... => IT STAYS THE SAME
+  ms-set08-round-10-a-q05-tossup: [waves-sound]
+  # physical_science: What temperature in degrees Fahrenheit is equivalent to 10 degrees Celsius? => 50°
+  ms-set08-round-10-a-q05-bonus: [measurement]
+  # math: Jared has two standard 6-sided dice, one white and one red. If Jared tosses the dice, what... => 1/12
+  ms-set08-round-10-a-q06-tossup: [counting-probability]
+  # math: What fraction of the non-negative integers less than 30 are prime? => 1/3
+  ms-set08-round-10-a-q06-bonus: [number-theory]
+  # energy: What is the amperage in the following circuit: 14 volt power source and four 7-ohm light b... => 1/2 AMP
+  ms-set08-round-10-a-q07-tossup: [electricity]
+  # energy: What is the name of the process by which humans extract energy from the chemical bonds in ... => RESPIRATION
+  ms-set08-round-10-a-q07-bonus: [biochemistry]
+  # life_science: Which of the following types of interactions will NOT occur between enzymes and their subs... => COVALENT BONDING
+  ms-set08-round-10-a-q08-tossup: [biochemistry]
+  # life_science: Until recently, it was thought that the ecologically significant process of nitrogen fixat... => OXYGEN
+  ms-set08-round-10-a-q08-bonus: [microbes]
+  # earth_and_space: Which of the following is a stratovolcano? => MOUNT ST. HELENS
+  ms-set08-round-10-a-q09-tossup: [volcanoes]
+  # earth_and_space: The United States hosts a geologic sword of Damocles [DAM-uh-kleez]: the supervolcano. Und... => YELLOWSTONE NATIONAL PARK
+  ms-set08-round-10-a-q09-bonus: [volcanoes]
+  # general_science: Which organelle is one of the defining characteristics of eukaryotic [yoo-KAR-ee-oh-tik] c... => NUCLEUS
+  ms-set08-round-10-a-q10-tossup: [cells]
+  # general_science: Which of the following is NOT a trait of RNA which has been used to explain why it may hav... => RNA IS MORE STABLE THAN DNA
+  ms-set08-round-10-a-q10-bonus: [genetics, evolution]
+  # physical_science: Stars are composed of a number of elements at their birth. Which of the following elements... => HYDROGEN
+  ms-set08-round-10-a-q11-tossup: [stars]
+  # physical_science: Which of the following best describes chlorine at room temperature? => GREENISH-YELLOW GAS
+  ms-set08-round-10-a-q11-bonus: [periodic-table]
+  # math: Which of the following CANNOT be the lengths of the sides of a triangle? => 1, 2, 4
+  ms-set08-round-10-a-q12-tossup: [plane-geometry]
+  # math: The average of a set of 6 numbers is 9. When one more number is added, the average increas... => 23
+  ms-set08-round-10-a-q12-bonus: [statistics]
+  # life_science: Which animal might live in a kelp forest? => OTTER
+  ms-set08-round-10-a-q13-tossup: [ecology]
+  # life_science: The seed coat of angiosperm seeds typically develops from which of the following? => INTEGUMENTS
+  ms-set08-round-10-a-q13-bonus: [plants]
+  # earth_and_space: Which of the following is NOT an important component of the hydrologic cycle? => RESPIRATION
+  ms-set08-round-10-a-q14-tossup: [surface-processes]
+  # earth_and_space: What kind of tide should be expected on June 10 if the last full moon was May 21? => SPRING TIDE
+  ms-set08-round-10-a-q14-bonus: [oceans]
+  # general_science: Endoplasmic reticulum [EN-duh-plaz-mik ri-TIK-yuh- luhm] is the site inside the cell where... => RIBOSOMES
+  ms-set08-round-10-a-q15-tossup: [cells]
+  # general_science: What is another name for hurricanes or tropical cyclones in the western Pacific area and C... => TYPHOON
+  ms-set08-round-10-a-q15-bonus: [weather]
+  # energy: Which of the following represents a typical rechargeable battery? => NICKEL CADMIUM
+  ms-set08-round-10-a-q16-tossup: [batteries-storage]
+  # energy: Some devices use electricity even after they are turned off. What is the term for this phe... => PHANTOM LOAD
+  ms-set08-round-10-a-q16-bonus: [energy-use]
+  # physical_science: Which of the following loses its valence electrons the most readily? => ACTIVE METAL
+  ms-set08-round-10-a-q17-tossup: [periodic-table]
+  # physical_science: What is happening when an atom gives up an electron to another atom, thus forming two ions... => FORMATION OF AN IONIC BOND
+  ms-set08-round-10-a-q17-bonus: [bonding]
+  # math: At what point do the lines x = 4 and y = x – 4 intersect when graphed in the coordinate pl... => (4, 0)
+  ms-set08-round-10-a-q18-tossup: [graphs-functions]
+  # math: What is the 21st term of the arithmetic sequence with first three terms -18, -12, -6? => 102
+  ms-set08-round-10-a-q18-bonus: [sequences]
+  # life_science: Which of the following is a major reason for “dead zones” in the ocean? => USE OF FERTILIZERS
+  ms-set08-round-10-a-q19-tossup: [ecology, oceans]
+  # life_science: In an experiment, you expect a plant to photosynthesize optimally with 440 nm of light. In... => CHLOROPHYLL B
+  ms-set08-round-10-a-q19-bonus: [plants]
+  # energy: What type of highly efficient battery is used for electric vehicles? => LITHIUM-ION BATTERY
+  ms-set08-round-10-a-q20-tossup: [batteries-storage]
+  # energy: In watts, how much power is consumed by a circuit that has a resistance of 10 ohms at a cu... => 90
+  ms-set08-round-10-a-q20-bonus: [electricity]
+  # earth_and_space: Which of the following is NOT associated with active margins? => HOT SPOT VOLCANISM
+  ms-set08-round-10-a-q21-tossup: [tectonics]
+  # earth_and_space: A long straight shoreline faces northeast. Waves approach the beach from the north and wav... => SOUTHEAST
+  ms-set08-round-10-a-q21-bonus: [oceans]
+  # general_science: What is a common example of a seasonal immune system response? => ALLERGIES
+  ms-set08-round-10-a-q22-tossup: [immunity-disease]
+  # general_science: How many phases does the Moon have? => 8
+  ms-set08-round-10-a-q22-bonus: [solar-system]
+  # physical_science: Thermal energy spontaneously flows from which of the following? => A WARMER REGION TO A COOLER REGION
+  ms-set08-round-10-a-q23-tossup: [heat-thermo]
+  # physical_science: The penultimate fate of most low mass stars is which of the following? => WHITE DWARF
+  ms-set08-round-10-a-q23-bonus: [stars]
+
+  # Round 11-a
+  # general_science: Phytoplankton [fy-tuh-PLANGK-tuhn] blooms in the North Atlantic happen on a predictable an... => MAY
+  ms-set08-round-11-a-q01-tossup: [ecology, oceans]
+  # general_science: Ants can lift large masses relative to their body mass. Which of the following mathematica... => FORCE/MASS
+  ms-set08-round-11-a-q01-bonus: [biology-misc]
+  # math: Pete the dog breeder is fencing in two square areas in order to separate his male and fema... => 76
+  ms-set08-round-11-a-q02-tossup: [plane-geometry]
+  # math: The length of a rectangle is increased by 20%, and the width of the rectangle is increased... => 56
+  ms-set08-round-11-a-q02-bonus: [ratios-rates]
+  # physical_science: What happens to the amount of light reflected as the angle of incidence increases when lig... => IT INCREASES
+  ms-set08-round-11-a-q03-tossup: [light-em]
+  # physical_science: What impurity found in coal contributes to acid rain? => SULFUR
+  ms-set08-round-11-a-q03-bonus: [climate-environment]
+  # life_science: Which of the following species thrives in a salt marsh? => BLUE CRABS
+  ms-set08-round-11-a-q04-tossup: [ecology]
+  # life_science: Another bacterium living in the mud utilizes the hydrogen sulfide in its own metabolism. W... => NITRATE
+  ms-set08-round-11-a-q04-bonus: [microbes]
+  # earth_and_space: Which of the following is farthest from the Sun? => OORT CLOUD
+  ms-set08-round-11-a-q05-tossup: [solar-system]
+  # earth_and_space: An iceberg is formed by the breakage of an ice shelf. What is the term for this event? => CALVING
+  ms-set08-round-11-a-q05-bonus: [surface-processes]
+  # general_science: What is the name of the mechanism responsible for the evolution of a species? => NATURAL SELECTION
+  ms-set08-round-11-a-q06-tossup: [evolution]
+  # general_science: What is the primary type of intermolecular bond that water molecules are able to form beca... => HYDROGEN
+  ms-set08-round-11-a-q06-bonus: [bonding]
+  # math: Which of the following lines is perpendicular to y = 6x – 4? => y = -x/6 + 5
+  ms-set08-round-11-a-q07-tossup: [graphs-functions]
+  # math: Evaluate the expression: (cid:3496) (cid:4666) 617(cid:3397) (cid:3495) (cid:4666) 48(cid:... => 25
+  ms-set08-round-11-a-q07-bonus: [arithmetic]
+  # energy: Name the four parts of the operating cycle of an internal combustion engine. => INTAKE, COMPRESSION, POWER AND EXHAUST
+  ms-set08-round-11-a-q08-tossup: [fuels-combustion]
+  # energy: The key factor in deciding an electric car’s lifespan is the battery life. Once the electr... => ENERGY STORAGE UNITS IN NEIGHBORHOODS
+  ms-set08-round-11-a-q08-bonus: [batteries-storage]
+  # physical_science: Which family would an element belong to if it was placed in the 7th row, first column of t... => ALKALI METALS
+  ms-set08-round-11-a-q09-tossup: [periodic-table]
+  # physical_science: The Doppler effect occurs in which of the following? => IN ALL TYPES OF WAVES
+  ms-set08-round-11-a-q09-bonus: [waves-sound]
+  # life_science: What are primarily responsible for maintenance of and changes in posture, locomotion in an... => MUSCLES
+  ms-set08-round-11-a-q10-tossup: [human-body]
+  # life_science: You would like to evaluate the distribution of mRNA in a microbial population. Which metho... => TRANSCRIPTOMICS
+  ms-set08-round-11-a-q10-bonus: [genetics, microbes]
+  # earth_and_space: Which of the following is NOT considered a rare earth element? => URANIUM
+  ms-set08-round-11-a-q11-tossup: [periodic-table]
+  # earth_and_space: Of the planets visible to the naked eye, which moves the slowest across the sky on average... => SATURN
+  ms-set08-round-11-a-q11-bonus: [solar-system]
+  # general_science: What internal layer of Earth allows for isostacy [eye- SOS-tuh-see] of the crust? => ATHENOSPHERE
+  ms-set08-round-11-a-q12-tossup: [tectonics]
+  # general_science: Imagine that you conducted an experiment where you tested the effects of different fertili... => PLANT HEIGHT
+  ms-set08-round-11-a-q12-bonus: [biology-misc]
+  # math: If a/b = −1 [a over b equals negative 1] then what is a + b? => 0
+  ms-set08-round-11-a-q13-tossup: [algebra]
+  # math: Convert 147 in base 10 to base 6. => 403
+  ms-set08-round-11-a-q13-bonus: [number-theory]
+  # physical_science: When a hydrogen atom is in its ground state, what is TRUE about its electron? => IT IS IN ITS LOWEST ENERGY LEVEL
+  ms-set08-round-11-a-q14-tossup: [atoms]
+  # physical_science: Which of the following is NOT a characteristic of a decaying unstable isotope? => IT IS MORE CHAOTIC THAN RANDOM
+  ms-set08-round-11-a-q14-bonus: [modern-physics]
+  # life_science: Which of the following elements is found in DNA? => PHOSPHOROUS
+  ms-set08-round-11-a-q15-tossup: [biochemistry]
+  # life_science: Phosphorus is critical to the formation of nucleic acids, ATP and other energy storing mol... => SEDIMENTARY ROCKS OF MARINE ORIGIN
+  ms-set08-round-11-a-q15-bonus: [ecology]
+  # earth_and_space: Which of the following is NOT considered one of the major volcano types? => BASALT DOME
+  ms-set08-round-11-a-q16-tossup: [volcanoes]
+  # earth_and_space: What is the name of the type of volcano that is built almost entirely of low viscosity bas... => SHIELD VOLCANO
+  ms-set08-round-11-a-q16-bonus: [volcanoes]
+  # energy: Calculate the potential energy, in joules, of a 30 kilogram mass 15 meters above the Earth... => 4500
+  ms-set08-round-11-a-q17-tossup: [energy-work]
+  # energy: UV radiation is most damaging to which human organ? => SKIN
+  ms-set08-round-11-a-q17-bonus: [climate-environment, human-body]
+  # general_science: Protein shape that results from having multiple polypeptides [pol-ee-PEP-tyds] is a part o... => QUATERNARY
+  ms-set08-round-11-a-q18-tossup: [biochemistry]
+  # general_science: Place the following four items in order from smallest to largest: nucleus, ribosomes [RY-b... => MYOGLOBIN, RIBOSOMES, MITOCHONDRIA, NUCL
+  ms-set08-round-11-a-q18-bonus: [cells]
+  # math: The slope of the line 2y = 10 - 10x is which of the following? => - 5
+  ms-set08-round-11-a-q19-tossup: [graphs-functions]
+  # math: The endpoints of the diameter of a semicircle are represented by the coordinates (0, a) an... => 8
+  ms-set08-round-11-a-q19-bonus: [plane-geometry]
+  # physical_science: Force is equivalent to mass times the acceleration of an object. How could you guarantee a... => INCREASE THE MASS AND DECREASE THE FORCE
+  ms-set08-round-11-a-q20-tossup: [motion-forces]
+  # physical_science: Why are old documents preserved by sealing them in containers filled with helium? => HELIUM IS A GAS THAT WILL NOT REACT WITH
+  ms-set08-round-11-a-q20-bonus: [periodic-table]
+  # energy: The rate of a reaction is directly dependent on which of the following? => ACTIVATION ENERGY
+  ms-set08-round-11-a-q21-tossup: [thermo-kinetics]
+  # energy: What is the quantity obtained by multiplying a uniform object’s specific heat by its mass? => HEAT CAPACITY
+  ms-set08-round-11-a-q21-bonus: [heat-thermo]
+  # life_science: A periwinkle is what type of organism? => SNAIL
+  ms-set08-round-11-a-q22-tossup: [diversity]
+  # life_science: Which of the following statements regarding corals and zooxanthellae [zoh-uh-zan-THEL-ee] ... => WHEN A CORAL BLEACHES THE ZOOXANTHELLAE 
+  ms-set08-round-11-a-q22-bonus: [ecology]
+  # earth_and_space: Fossils found in the deep ocean are cemented in what kind of rock? => SEDIMENTARY
+  ms-set08-round-11-a-q23-tossup: [rocks-minerals]
+  # earth_and_space: Rank the following in terms of largest to smallest carbon reservoirs: biosphere, atmospher... => SEDIMENTARY CARBONATES, OCEAN, BIOSPHERE
+  ms-set08-round-11-a-q23-bonus: [climate-environment]
+
+  # Round 12-a
+  # life_science: Which of the following species thrives in a mangrove? => ALLIGATORS
+  ms-set08-round-12-a-q01-tossup: [ecology]
+  # life_science: Flow cytometry [SY-to-muh-tree] is emerging as a valuable tool for quantifying photosynthe... => FLUORESCENCE
+  ms-set08-round-12-a-q01-bonus: [microbes]
+  # physical_science: What is the name of the collection of galaxies that contains the Milky Way, M31, M33 and t... => THE LOCAL GROUP
+  ms-set08-round-12-a-q02-tossup: [galaxies-cosmology]
+  # physical_science: A neutrally charged atom has an atomic number of 11 and a mass number of 23. Identify the ... => PROTONS: 11; NEUTRONS: 12; ELECTRONS: 11
+  ms-set08-round-12-a-q02-bonus: [atoms]
+  # energy: Windows can be rated on the rate at which heat flows through them through which of the fol... => U-FACTOR
+  ms-set08-round-12-a-q03-tossup: [energy-use]
+  # energy: What is the major end product of glycolysis [gly-KOL-uh-sis]? => PYRUVATE
+  ms-set08-round-12-a-q03-bonus: [biochemistry]
+  # general_science: Clusters of lymph nodes can be found in all EXCEPT which of the following areas? => BRAIN
+  ms-set08-round-12-a-q04-tossup: [human-body]
+  # general_science: Name the three subdivisions of the small intestine. => DUODENUM, JEJUNUM, ILEUM (IN ANY ORDER)
+  ms-set08-round-12-a-q04-bonus: [human-body]
+  # earth_and_space: Mid-ocean ridge valleys are lined with what kind of faults? => NORMAL
+  ms-set08-round-12-a-q05-tossup: [tectonics]
+  # earth_and_space: At what point in an inferior planet's orbit will it appear largest in the sky? => INFERIOR CONJUNCTION
+  ms-set08-round-12-a-q05-bonus: [solar-system]
+  # math: If (x2) 3 [the quantity x squared cubed] = 64, what is the value of x? => 2
+  ms-set08-round-12-a-q06-tossup: [algebra]
+  # math: If the length of each edge of a cube is increased by 10%, by what percentage is its volume... => 33.1
+  ms-set08-round-12-a-q06-bonus: [solid-geometry]
+  # life_science: How does coral reproduce? => EGGS AND SPERM ARE RELEASED IN THE OPEN 
+  ms-set08-round-12-a-q07-tossup: [diversity]
+  # life_science: What cellular component, common to bacteria, archaea [AHR- kee-uh], and eukaryotes [yoo-KA... => THE RIBOSOME
+  ms-set08-round-12-a-q07-bonus: [cells]
+  # physical_science: What phase must the Moon be in for a solar eclipse to occur? => NEW
+  ms-set08-round-12-a-q08-tossup: [solar-system]
+  # physical_science: A particular material absorbs violet, blue, and green light. Which of the following colors... => BLUE GREEN
+  ms-set08-round-12-a-q08-bonus: [light-em]
+  # general_science: Which of the following would be the most accurate glassware to use to measure a volume of ... => GRADUATED CYLINDER
+  ms-set08-round-12-a-q09-tossup: [measurement]
+  # general_science: A population crash is most likely when which of the following occurs? => THE POPULATION OVERSHOOTS CARRYING CAPAC
+  ms-set08-round-12-a-q09-bonus: [ecology]
+  # earth_and_space: The galactic center appears in which constellation? => SAGITTARIUS
+  ms-set08-round-12-a-q10-tossup: [galaxies-cosmology]
+  # earth_and_space: Which of the following describes the relationship between water particles and ocean waves? => WATER MOVES IN VERTICAL ORBITS IN THE DI
+  ms-set08-round-12-a-q10-bonus: [oceans]
+  # math: Evaluate the following expression for r = 7: ((4r-7) /3) 2/7 [open parenthesis, the fracti... => 7
+  ms-set08-round-12-a-q11-tossup: [algebra]
+  # math: Which of the following ordered pairs is a solution to this set of inequalities: x < 0 [x i... => (-1,3)
+  ms-set08-round-12-a-q11-bonus: [graphs-functions]
+  # energy: If 10 incandescent 100 watt light bulbs are replaced with 10 LED lights of equivalent lume... => 830
+  ms-set08-round-12-a-q12-tossup: [energy-use]
+  # energy: In order to achieve maximum power point tracking in a renewable energy source, a signal is... => THE TRANSISTORS/SWITCHES
+  ms-set08-round-12-a-q12-bonus: [renewables, electricity]
+  # life_science: A bacterium is suddenly immersed in a high salt media. What is the MOST likely response of... => ACTIVELY TRANSPORT POTASSIUM INTO THE CE
+  ms-set08-round-12-a-q13-tossup: [microbes]
+  # life_science: For decades the Gram stain was the primary tool for distinguishing between broad groups of... => THE CELL WALL
+  ms-set08-round-12-a-q13-bonus: [microbes]
+  # physical_science: Vinegar is a liquid solution containing acetic acid and water. It could be accurately clas... => A HOMOGENEOUS MIXTURE
+  ms-set08-round-12-a-q14-tossup: [solutions]
+  # physical_science: What particle is the smallest indivisible unit of light? => PHOTON
+  ms-set08-round-12-a-q14-bonus: [light-em]
+  # general_science: What type of solution has a higher concentration of hydroxide ions than hydronium ions? => BASE
+  ms-set08-round-12-a-q15-tossup: [acids-bases]
+  # general_science: Which of the following would NOT be a good characteristic of an index fossil? => THE SPECIES SURVIVED FOR MILLIONS OF YEA
+  ms-set08-round-12-a-q15-bonus: [earth-history]
+  # energy: Why is the angle of incidence of sunlight important for solar panels? => THE CLOSER THE ANGLE IS TO NORMAL, THE M
+  ms-set08-round-12-a-q16-tossup: [renewables]
+  # energy: How many kilowatt-hours does a heater running at 100 watts consume per 24 hour period? => 2.4
+  ms-set08-round-12-a-q16-bonus: [energy-use]
+  # earth_and_space: What is the approximate mass of the largest stars? => 100 SOLAR MASSES
+  ms-set08-round-12-a-q17-tossup: [stars]
+  # earth_and_space: Which of the following is a sedimentary rock made of microscopic fossil marine shells? => CHALK
+  ms-set08-round-12-a-q17-bonus: [rocks-minerals]
+  # math: A triangle has vertices (6, 7) , (11, 9) and (3, 8) . After undergoing a particular transf... => TRANSLATION
+  ms-set08-round-12-a-q18-tossup: [plane-geometry]
+  # math: Which of the following angles cannot be trisected using only compass and straightedge? => 120
+  ms-set08-round-12-a-q18-bonus: [plane-geometry]
+  # life_science: Which of the following was a top predator during the Devonian period? => DUNKLEOSTEUS
+  ms-set08-round-12-a-q19-tossup: [earth-history]
+  # life_science: A peptide sequence with the amino acid composition proline-glycine [GLY-seen]-glycine-tyro... => 25%
+  ms-set08-round-12-a-q19-bonus: [biochemistry]
+  # physical_science: Which of the following statements is NOT part of the standard model of frictional force as... => FRICTIONAL COEFFICIENT IS PROPORTIONAL T
+  ms-set08-round-12-a-q20-tossup: [motion-forces]
+  # physical_science: What mysterious type of matter is hypothesized to comprise over 80% of the mass of our gal... => DARK MATTER
+  ms-set08-round-12-a-q20-bonus: [galaxies-cosmology]
+  # general_science: Which of the following is NOT a steroid? => TRIACYLGLYCEROLS
+  ms-set08-round-12-a-q21-tossup: [biochemistry]
+  # general_science: Kepler’s laws of planetary motion describe the path of two objects, one orbiting the other... => ELLIPTICAL WITH THE SUN AT ONE OF THE FO
+  ms-set08-round-12-a-q21-bonus: [solar-system]
+  # earth_and_space: What draws the charged particles from the solar wind to the polar regions of the Earth? => EARTH’S MAGNETIC FIELD
+  ms-set08-round-12-a-q22-tossup: [magnetism, solar-system]
+  # earth_and_space: Which of the following Appalachian Mountain provinces is the eroded remnant of a folded mo... => VALLEY AND RIDGE BELT
+  ms-set08-round-12-a-q22-bonus: [tectonics]
+  # math: A rectangular box has a volume of 200 cubic inches. The length of the box is 10 inches, an... => 1:2
+  ms-set08-round-12-a-q23-tossup: [solid-geometry]
+  # math: A group of 3 boys and 3 girls are taking a photograph, standing side- by-side in a line. I... => 72
+  ms-set08-round-12-a-q23-bonus: [counting-probability]
+
+  # Round 13-a
+  # earth_and_space: Non-storm wave action can move fine sand particles in depths of up to how many meters? => 20
+  ms-set08-round-13-a-q01-tossup: [oceans]
+  # earth_and_space: The Paleocene-Eocene [PAY-lee- uh-seen EE-uh- seen] Thermal Maximum (PETM) was an event ma... => GREENHOUSE GASES SUCH AS CO2 WERE MUCH L
+  ms-set08-round-13-a-q01-bonus: [earth-history, climate-environment]
+  # general_science: Which of the following is NOT a process of plate tectonics? => UPWELLING
+  ms-set08-round-13-a-q02-tossup: [tectonics]
+  # general_science: Geological time charts use Latin or Greek for naming. What is the English translation of t... => MIDDLE LIFE
+  ms-set08-round-13-a-q02-bonus: [earth-history]
+  # physical_science: Which of the following best classifies iodine? => HALOGEN
+  ms-set08-round-13-a-q03-tossup: [periodic-table]
+  # physical_science: In the jungle, Curious George is swinging from a vine between two trees, like a pendulum [... => 3.0
+  ms-set08-round-13-a-q03-bonus: [motion-forces]
+  # math: The sum of the ages of 5 people 5 years ago was 50. The sum of their ages 5 years from now... => 100
+  ms-set08-round-13-a-q04-tossup: [algebra]
+  # math: Triangle ABC is isosceles. If angle A has a measure of 40°, what are all of the possible d... => 40, 70, 100
+  ms-set08-round-13-a-q04-bonus: [plane-geometry]
+  # life_science: Which of the following determines the sex of a turtle egg? => TEMPERATURE OF THE SAND
+  ms-set08-round-13-a-q05-tossup: [diversity]
+  # life_science: Which of the following is least likely to be impacted by decreased environmental pH? => DIATOMS
+  ms-set08-round-13-a-q05-bonus: [ecology, climate-environment]
+  # earth_and_space: Worldwide, over 70% of the total length of beaches has retreated at a rate of 10 centimete... => DAMMING OF THE WORLD’S RIVERS
+  ms-set08-round-13-a-q06-tossup: [surface-processes, climate-environment]
+  # earth_and_space: Black holes are thought to eventually evaporate away due to what phenomenon? => HAWKING RADIATION
+  ms-set08-round-13-a-q06-bonus: [stars]
+  # energy: Harmonics, an issue of power quality, causes which of the following effects? => DISTORTS THE VOLTAGE AND CURRENT WAVEFOR
+  ms-set08-round-13-a-q07-tossup: [electricity]
+  # energy: The heat engine utilized in a typical ocean thermal energy conversion system has an effici... => 0-10%
+  ms-set08-round-13-a-q07-bonus: [renewables, heat-thermo]
+  # general_science: Today we often hear of politicians being given the litmus test to determine their characte... => ACIDITY
+  ms-set08-round-13-a-q08-tossup: [acids-bases]
+  # general_science: Which of the following is NOT a product of the Krebs, or tricarboxylic [trahy-kahr-bok-SIL... => H2O
+  ms-set08-round-13-a-q08-bonus: [biochemistry]
+  # physical_science: Formation of a precipitate is one sign that a chemical reaction has occurred. Which of the... => SULFIDE
+  ms-set08-round-13-a-q09-tossup: [solutions]
+  # physical_science: 10 grams of Substance A requires 500 Joules of heat to increase the temperature from 17°C ... => 0.33
+  ms-set08-round-13-a-q09-bonus: [heat-thermo]
+  # math: A parabola has x-intercept 3 and y-intercept 5. Which of the following can be determined? => WHETHER THE PARABOLA HAS VALUES IN QUADR
+  ms-set08-round-13-a-q10-tossup: [graphs-functions]
+  # math: If angle ABC is inscribed in a circle and measures 75 degrees, what is the degree measure ... => 210
+  ms-set08-round-13-a-q10-bonus: [plane-geometry]
+  # life_science: Which of the following organisms is most closely related to sharks, rays, and skates? => CHIMAERA
+  ms-set08-round-13-a-q11-tossup: [diversity]
+  # life_science: Two proteins share similar tertiary structure and function, but do NOT have a common ances... => CONVERGENT EVOLUTION
+  ms-set08-round-13-a-q11-bonus: [evolution]
+  # earth_and_space: What kind of spectrum would you expect to see when observing a hot gas through a spectrogr... => EMISSION SPECTRUM
+  ms-set08-round-13-a-q12-tossup: [light-em, observing]
+  # earth_and_space: What is the name for the specific landscape formed from the dissolution of soluble rocks i... => KARST
+  ms-set08-round-13-a-q12-bonus: [surface-processes]
+  # general_science: As the ice freezes around Antarctica in the winter months, what happens to the continent’s... => DOUBLES
+  ms-set08-round-13-a-q13-tossup: [oceans]
+  # general_science: Apis mellifera [AY-pis muh-LIF-er-uh] is the scientific name for what insect? => HONEY BEE
+  ms-set08-round-13-a-q13-bonus: [diversity]
+  # energy: Solar panels derive their power from sunlight. The maximum amount of solar irradiance rece... => SOLAR CONSTANT, 1,368 WATTS PER METER SQ
+  ms-set08-round-13-a-q14-tossup: [renewables]
+  # energy: A heat engine operates between temperatures of 100 and 400 degrees Celsius. The maximum po... => 45%
+  ms-set08-round-13-a-q14-bonus: [heat-thermo]
+  # physical_science: What device can be constructed by supplying a wire wrapped in loops around an iron core wi... => AN ELECTROMAGNET
+  ms-set08-round-13-a-q15-tossup: [magnetism]
+  # physical_science: Harry is exerting a force of 10 newtons on a box of mass 5 kilograms in the positive x dir... => 1
+  ms-set08-round-13-a-q15-bonus: [motion-forces]
+  # math: Your average on your first three math tests was an 84. What is the minimum grade you need ... => 100
+  ms-set08-round-13-a-q16-tossup: [statistics]
+  # math: Solve for x: 2^(4x) = 1/16 [2 to the 4x power equals 1/16]. => −1
+  ms-set08-round-13-a-q16-bonus: [algebra]
+  # life_science: Which of the following events would lead to increased diversity in a population? => MUTATION
+  ms-set08-round-13-a-q17-tossup: [evolution]
+  # life_science: Which of the following neurons would be capable of conducting an action potential more qui... => A MYELINATED NERVE FIBER WITH A WIDE DIA
+  ms-set08-round-13-a-q17-bonus: [human-body]
+  # earth_and_space: The Pleistocene [PLAY-stuh-seen] megafauna is a set of species of large animals that lived... => PTERODACTYL
+  ms-set08-round-13-a-q18-tossup: [earth-history]
+  # earth_and_space: Which of the following occurs for you to witness a partial solar eclipse? => THE PENUMBRA PASSES OVER YOU, BUT THE UM
+  ms-set08-round-13-a-q18-bonus: [solar-system]
+  # general_science: Some people joke that California is going to “break off” from the rest of the United State... => CONVERGENT
+  ms-set08-round-13-a-q19-tossup: [tectonics]
+  # general_science: Which of the following genetic disorders is caused by a deletion of a gene on a chromosome... => DUCHENNE MUSCULAR DYSTROPHY
+  ms-set08-round-13-a-q19-bonus: [genetics]
+  # physical_science: An isoelectronic series consists of a neutral atom, an anion [AN-y-uhn], and a cation [KAT... => CATION, NEUTRAL ATOM, ANION
+  ms-set08-round-13-a-q20-tossup: [periodic-table]
+  # physical_science: Identify which of the following factors must be measured in order to apply Archimedes’ pri... => DENSITY OF LIQUID IN WHICH AN OBJECT IS 
+  ms-set08-round-13-a-q20-bonus: [fluids]
+  # math: The area of square B is 25% greater than the area of square A. If the area of square B is ... => 32
+  ms-set08-round-13-a-q21-tossup: [plane-geometry]
+  # math: What is the sum of the first 50 terms of the arithmetic sequence with second term 11 and f... => 7600
+  ms-set08-round-13-a-q21-bonus: [sequences]
+  # energy: Name two of the three major components of syngas. => HYDROGEN, CARBON MONOXIDE, CARBON DIOXID
+  ms-set08-round-13-a-q22-tossup: [fuels-combustion]
+  # energy: A resistive AC circuit supplied by a voltage of 120 root mean squared dissipates 120 watts... => THE VOLTAGE SOURCE FROM CIRCUIT #2 CONTA
+  ms-set08-round-13-a-q22-bonus: [electricity]
+  # life_science: Which of the following DNA mutations is most likely to occur? => A TO G
+  ms-set08-round-13-a-q23-tossup: [genetics]
+  # life_science: By number, identify all of the following four characteristics that distinguish fungi from ... => 1, 2, 3, 4
+  ms-set08-round-13-a-q23-bonus: [diversity]
+
+  # Round 14-a
+  # physical_science: A car rounds a curve on a level road. What most directly provides the centripetal force on... => FRICTION BETWEEN THE TIRES AND THE ROAD
+  ms-set08-round-14-a-q01-tossup: [motion-forces]
+  # physical_science: Two resistors of equal resistance R are in parallel. What is the equivalent resistance of ... => ½ R
+  ms-set08-round-14-a-q01-bonus: [electricity]
+  # earth_and_space: The Basin and Range region of Nevada is characterized by an abundance of what kind of faul... => NORMAL
+  ms-set08-round-14-a-q02-tossup: [tectonics]
+  # earth_and_space: You are looking west, at a fault in a region of shear. Across the fault, on the western si... => LEFT-LATERAL FAULT
+  ms-set08-round-14-a-q02-bonus: [tectonics]
+  # math: What is the smallest integer radius of a circle centered at the point (3, 4) such that the... => 8
+  ms-set08-round-14-a-q03-tossup: [plane-geometry]
+  # math: In triangle ABC, angle C measures 90 degrees and angle A measures 41 degrees. The length o... => 5 tan 41
+  ms-set08-round-14-a-q03-bonus: [trigonometry]
+  # energy: Which group of gases, commonly produced from refrigerator coolants, is largely responsible... => CHLOROFLUOROCARBONS
+  ms-set08-round-14-a-q04-tossup: [climate-environment]
+  # energy: What prevents most of the consequences of a solar flare from reaching the Earth’s surface? => EARTH’S MAGNETIC FIELD
+  ms-set08-round-14-a-q04-bonus: [magnetism]
+  # life_science: Which of the following parts of the cytoskeleton is involved in moving chromosomes during ... => MICROTUBULES
+  ms-set08-round-14-a-q05-tossup: [cells]
+  # life_science: A plant cell contains two external layers. One layer gives support to the cell but does no... => CELL WALL AND PLASMA MEMBRANE
+  ms-set08-round-14-a-q05-bonus: [cells]
+  # general_science: Which of the following best describes hypothesis- based inquiry? => DEDUCTIVE REASONING
+  ms-set08-round-14-a-q06-tossup: [logic-sets]
+  # general_science: Put the following four solutions in order from least acidic to most acidic: vinegar, human... => SEAWATER, HUMAN BLOOD, VINEGAR, BATTERY 
+  ms-set08-round-14-a-q06-bonus: [acids-bases]
+  # physical_science: Which of the following electromagnetic waves has a shorter wavelength than visible light w... => ULTRAVIOLET
+  ms-set08-round-14-a-q07-tossup: [light-em]
+  # physical_science: Which of the following properties of an atomic electron is not associated with a quantum n... => MASS
+  ms-set08-round-14-a-q07-bonus: [atoms]
+  # energy: What highly efficient technology is currently employed to allow satellites to maintain the... => ION THRUSTER
+  ms-set08-round-14-a-q08-tossup: [energy-misc]
+  # energy: By number, in descending order, rank the potential energy of an object in the following th... => 3, 2, 1
+  ms-set08-round-14-a-q08-bonus: [energy-work]
+  # earth_and_space: At the most basic level, wind is caused by differences in atmospheric pressure. When there... => HIGHER TO LOWER PRESSURE AREA
+  ms-set08-round-14-a-q09-tossup: [weather]
+  # earth_and_space: Which of the following is NOT true of the Cretaceous [kri-TAY-shuhs] geologic time period? => THE PERIOD BEGAN WITH A LARGE MASS EXTIN
+  ms-set08-round-14-a-q09-bonus: [earth-history]
+  # math: What is the remainder when 6(cid:2872) [6 raised to the power of 4] is divided by 5? => 1
+  ms-set08-round-14-a-q10-tossup: [number-theory]
+  # math: Given a line segment in a plane, how many different 30-60-90 right triangles in the plane ... => 12
+  ms-set08-round-14-a-q10-bonus: [plane-geometry]
+  # life_science: Which of the following traits is NOT a characteristic of modern birds? => A THREE-CHAMBERED HEART
+  ms-set08-round-14-a-q11-tossup: [diversity]
+  # life_science: What are the two major organs that degrade hormones? => LIVER AND KIDNEYS
+  ms-set08-round-14-a-q11-bonus: [human-body]
+  # general_science: Which of the following can be found in both prokaryotic [proh-KAR-ee-oh-tik] and eukaryoti... => FLAGELLA
+  ms-set08-round-14-a-q12-tossup: [cells]
+  # general_science: Which of the following best describes how metamorphic rock turn into igneous rock [IG-nee-... => MELTING FOLLOWED BY CRYSTALLIZATION
+  ms-set08-round-14-a-q12-bonus: [rocks-minerals]
+  # physical_science: The speed needed to put a satellite into orbit does NOT depend on which of the following? => THE MASS OF THE SATELLITE
+  ms-set08-round-14-a-q13-tossup: [motion-forces]
+  # physical_science: Which of these types of heat transfer explains how the water molecules in coffee carry sce... => CONVECTION
+  ms-set08-round-14-a-q13-bonus: [heat-thermo]
+  # earth_and_space: Which of the following is NOT a component of the continental margin of western South Ameri... => SHALLOW ABYSSAL PLAIN
+  ms-set08-round-14-a-q14-tossup: [tectonics]
+  # earth_and_space: You are walking along an eroded dome structure. How will the age of strata change if you s... => DECREASE IN AGE
+  ms-set08-round-14-a-q14-bonus: [earth-history]
+  # math: In a coordinate system, a lattice point is a location with integer coordinates. How many l... => 12
+  ms-set08-round-14-a-q15-tossup: [graphs-functions]
+  # math: A manufacturing facility wants to stack identical boxes along the side wall of a storage r... => 48
+  ms-set08-round-14-a-q15-bonus: [solid-geometry]
+  # life_science: What is the name of a mat of absorptive filaments of fungus? => MYCELIUM
+  ms-set08-round-14-a-q16-tossup: [diversity]
+  # life_science: Which of the following is an example of metamorphosis? => A BUMBLE BEE LARVA FORMING A PUPA AND EM
+  ms-set08-round-14-a-q16-bonus: [diversity]
+  # general_science: Which of the following archipelagos is an example of a geologic “hot spot”? => HAWAIIAN ISLANDS
+  ms-set08-round-14-a-q17-tossup: [volcanoes, tectonics]
+  # general_science: What are the two types of human cells that are haploid? => EGG AND SPERM CELLS
+  ms-set08-round-14-a-q17-bonus: [genetics]
+  # physical_science: Which of the following is a physical change? => SUBLIMATION
+  ms-set08-round-14-a-q18-tossup: [matter-gases]
+  # physical_science: Why does sodium becomes positively charged when it combines with chlorine? => IT LOSES ONE ELECTRON
+  ms-set08-round-14-a-q18-bonus: [bonding]
+  # energy: How is energy transported in the layer of the Sun just below the photosphere? => CONVECTION
+  ms-set08-round-14-a-q19-tossup: [stars]
+  # energy: A conventional home pressure cooker can increase the pressure to about twice that of atmos... => 250
+  ms-set08-round-14-a-q19-bonus: [matter-gases]
+  # earth_and_space: Dip-slip faults are associated with what two kinds of forces? => COMPRESSIONAL AND TENSIONAL
+  ms-set08-round-14-a-q20-tossup: [tectonics]
+  # earth_and_space: How do sediments found on continental shelves of active margins compare to those at passiv... => ACTIVE MARGINS ARE MORE LIKELY TO HAVE A
+  ms-set08-round-14-a-q20-bonus: [oceans]
+  # math: What is the product of the unique prime factors of 72? => 6
+  ms-set08-round-14-a-q21-tossup: [number-theory]
+  # math: Given that a particular right triangle has two sides of length 5 and 11, what are the poss... => 4√6 AND √146
+  ms-set08-round-14-a-q21-bonus: [plane-geometry]
+  # life_science: Which of the following birds dives below the ocean surface to find fish? => PETRELS
+  ms-set08-round-14-a-q22-tossup: [diversity]
+  # life_science: Which of the following statements about flatworms is NOT correct? => THERE ARE TRUE BLOOD VESSELS PRESENT IN 
+  ms-set08-round-14-a-q22-bonus: [diversity]
+  # general_science: Which of the following is NOT an anticipated result of global climate change? => INCREASED PERMAFROST COVERAGE
+  ms-set08-round-14-a-q23-tossup: [climate-environment]
+  # general_science: Petrified wood is formed by which of the following fossilization types? => PERMINERALIZATION
+  ms-set08-round-14-a-q23-bonus: [earth-history]
+
+  # Round 15-a
+  # math: Which of the following figures can result when a plane intersects a cube? => PENTAGON
+  ms-set08-round-15-a-q01-tossup: [solid-geometry]
+  # math: If dog food can be purchased in packages of either 3 pounds or 5 pounds, in how many diffe... => 11
+  ms-set08-round-15-a-q01-bonus: [counting-probability]
+  # life_science: In the Kingdom Animalia, what is the only phylum that lacks true tissues? => SPONGES
+  ms-set08-round-15-a-q02-tossup: [diversity]
+  # life_science: Which of the following processes is directly related to coral bleaching? => LOSS OF THE ZOOXANTHELLAE
+  ms-set08-round-15-a-q02-bonus: [ecology, climate-environment]
+  # earth_and_space: Which of the following is a good way to prevent erosion? => GROWING CROPS IN TERRACES
+  ms-set08-round-15-a-q03-tossup: [surface-processes]
+  # earth_and_space: Tornado alley is a region in the Midwest including parts of Texas, Oklahoma, Kansas and Ne... => WARM MOIST AIR
+  ms-set08-round-15-a-q03-bonus: [weather]
+  # general_science: What is the name for the in vitro technique that rapidly generates large amounts of DNA fr... => POLYMERASE CHAIN REACTION
+  ms-set08-round-15-a-q04-tossup: [genetics]
+  # general_science: Which of the following was NOT a component of the Earth’s early atmosphere? => OXYGEN
+  ms-set08-round-15-a-q04-bonus: [earth-history]
+  # physical_science: How is the speed of a wave affected when the amplitude increases? => IT REMAINS THE SAME
+  ms-set08-round-15-a-q05-tossup: [waves-sound]
+  # physical_science: Which of the following are NOT emitted by radioactive materials? => PHONONS
+  ms-set08-round-15-a-q05-bonus: [modern-physics]
+  # math: The volume of a cube with an edge that is an integer is represented by the value 72n, wher... => 3
+  ms-set08-round-15-a-q06-tossup: [number-theory]
+  # math: Suppose a two digit number is added to the number formed by interchanging its digits. The ... => 11
+  ms-set08-round-15-a-q06-bonus: [number-theory]
+  # energy: Particle Man is attacking a video game hero with gamma rays. A shield made from which of t... => LEAD
+  ms-set08-round-15-a-q07-tossup: [modern-physics]
+  # energy: What is the difference in kinetic energy of a 10 pound object moving at 10 feet per second... => THERE IS NO DIFFERENCE
+  ms-set08-round-15-a-q07-bonus: [energy-work]
+  # life_science: What age-related process in plants is characterized by fruits, flowers, and leaves falling... => SENESCENCE
+  ms-set08-round-15-a-q08-tossup: [plants]
+  # life_science: If a flower is said to be incomplete and perfect, which of the following would apply? => THE FLOWER IS MISSING PETALS
+  ms-set08-round-15-a-q08-bonus: [plants]
+  # earth_and_space: Which of the following is NOT true of a lahar? => IT MUST INVOLVE MATERIAL AT HIGH TEMPERA
+  ms-set08-round-15-a-q09-tossup: [volcanoes]
+  # earth_and_space: Compressive forces dominate which of the following tectonic plate boundaries? => ARABIAN AND EURASIAN
+  ms-set08-round-15-a-q09-bonus: [tectonics]
+  # general_science: Which of the following is the oldest mountain chain, geologically? => APPALACHIANS
+  ms-set08-round-15-a-q10-tossup: [tectonics]
+  # general_science: List the four lobes of the cerebral cortex. => FRONTAL, PARIETAL, OCCIPITAL, AND TEMPOR
+  ms-set08-round-15-a-q10-bonus: [human-body]
+  # physical_science: The production of water from barium hydroxide and ammonium chloride is an example of what ... => ENDOTHERMIC
+  ms-set08-round-15-a-q11-tossup: [thermo-kinetics]
+  # physical_science: Assume the acceleration due to gravity is 10 meters per second squared, and you are holdin... => 7
+  ms-set08-round-15-a-q11-bonus: [motion-forces]
+  # math: If √x = √a +√b [the square root of x equals the square root of a plus the square root of b... => a + b + 2√(cid:1853) (cid:1854)
+  ms-set08-round-15-a-q12-tossup: [algebra]
+  # math: Arrange the following four in historical order, earliest to most recent: 1) Newton’s calcu... => PYTHAGOREAN THEOREM, EUCLIDEAN GEOMETRY,
+  ms-set08-round-15-a-q12-bonus: [math-misc]
+  # life_science: Photosynthesis has both light and dark reactions. Which of the following occurs WITHOUT th... => CARBON DIOXIDE IS TRANSFORMED TO SUGAR
+  ms-set08-round-15-a-q13-tossup: [plants]
+  # life_science: You come home from school to discover your grandmother making fresh bread from scratch. Yo... => YEAST
+  ms-set08-round-15-a-q13-bonus: [microbes]
+  # earth_and_space: Which of the following is NOT a mechanism of erosion? => PHOTOLYTIC BREAKDOWN
+  ms-set08-round-15-a-q14-tossup: [surface-processes]
+  # earth_and_space: A space plasma is a combination of what two things? => ELECTRONS AND IONS
+  ms-set08-round-15-a-q14-bonus: [stars]
+  # general_science: What term is used to refer to all of a person’s genetic information, including the DNA in ... => HUMAN GENOME
+  ms-set08-round-15-a-q15-tossup: [genetics]
+  # general_science: Which of the following diseases is NOT caused by a microbial infection? => CYSTIC FIBROSIS
+  ms-set08-round-15-a-q15-bonus: [immunity-disease]
+  # energy: What is the major source of energy for protostars? => GRAVITATIONAL POTENTIAL ENERGY
+  ms-set08-round-15-a-q16-tossup: [stars]
+  # energy: What is the temperature, in degrees Fahrenheit, of 15 pounds of water at atmospheric press... => 212
+  ms-set08-round-15-a-q16-bonus: [heat-thermo]
+  # physical_science: Copper is known for many properties, two of which in particular make it excellent for powe... => DUCTILITY
+  ms-set08-round-15-a-q17-tossup: [electricity]
+  # physical_science: In a sample of a radioactive element, 75% of the nuclei have undergone radioactive decay a... => 5 YEARS
+  ms-set08-round-15-a-q17-bonus: [modern-physics]
+  # math: Mrs. Brooks gave Devon and Coco each a red rod and a blue rod. Each red rod was equal in m... => POSSIBLY BUT NOT NECESSARILY CONGRUENT
+  ms-set08-round-15-a-q18-tossup: [algebra]
+  # math: Solve the following inequality for d: │(7 + 8d)│ < 14 [absolute value of the quantity 7 pl... => -21/8 < d < 7/8
+  ms-set08-round-15-a-q18-bonus: [algebra]
+  # life_science: What small, regularly-shaped cell fragments circulate in the blood of mammals and lead to ... => PLATELETS
+  ms-set08-round-15-a-q19-tossup: [human-body]
+  # life_science: What do mad-cow disease, hantavirus, and malaria all have in common? => THEY ARE ALL PASSED FROM ANIMALS TO HUMA
+  ms-set08-round-15-a-q19-bonus: [immunity-disease]
+  # energy: What is the primary reason for irradiating food? => TO KILL PATHOGENS IN THE FOOD
+  ms-set08-round-15-a-q20-tossup: [nuclear-energy]
+  # energy: What is a tremendous source of natural gas in the U.S. that is responsible for the current... => MARCELLUS SHALE
+  ms-set08-round-15-a-q20-bonus: [fuels-combustion]
+  # earth_and_space: Saturn’s moon, Enceladus [en-SEL-uh-duhs], has a surface reflectivity of about 100% and an... => IT IS ICE
+  ms-set08-round-15-a-q21-tossup: [solar-system]
+  # earth_and_space: Which of the follow is NOT true about terrigenous [te-RIJ-uh-nuhs] ocean sediments? => BED LOAD TENDS TO SETTLE OUT AND BE DEPO
+  ms-set08-round-15-a-q21-bonus: [oceans]
+  # general_science: Mitosis is the process by which nuclei [NOO-klee- eye] divide, creating two new nuclei, ea... => SEX CELLS
+  ms-set08-round-15-a-q22-tossup: [genetics]
+  # general_science: Which of the following is NOT part of humans’ innate immune system? => ANTIBODIES
+  ms-set08-round-15-a-q22-bonus: [immunity-disease]
+  # physical_science: Which of the following types of radiation has the greatest ability to penetrate matter? => GAMMA RAYS
+  ms-set08-round-15-a-q23-tossup: [modern-physics]
+  # physical_science: Which of the following statements best describes a vehicle traveling at 60 miles per hour ... => THE VEHICLE EXPERIENCES AN ACCELERATION 
+  ms-set08-round-15-a-q23-bonus: [motion-forces]
+
+  # Round 16-a
+  # general_science: In an RNA molecule, a codon is AUG. What is the 5’ to 3’ [5-prime to 3-prime] sequence of ... => CAU
+  ms-set08-round-16-a-q01-tossup: [genetics]
+  # general_science: Which of the following could be viewed with an electron microscope but not with a light mi... => RIBOSOMES
+  ms-set08-round-16-a-q01-bonus: [cells]
+  # math: In base-3, what is the product of 100 and 110? => 11000
+  ms-set08-round-16-a-q02-tossup: [number-theory]
+  # math: In a right triangle with legs of length 8 and 15, expressing your answer in simplest form,... => 120/17
+  ms-set08-round-16-a-q02-bonus: [plane-geometry]
+  # physical_science: A chisel would represent what type of simple machine? => WEDGE
+  ms-set08-round-16-a-q03-tossup: [energy-work]
+  # physical_science: Which of the following best demonstrates the mass continuity of fluid flow? => WATER FLOWS FASTEST THROUGH THE NARROWES
+  ms-set08-round-16-a-q03-bonus: [fluids]
+  # life_science: Which of the following characteristics will a lake that has undergone eutrophication exhib... => THE LAKE WILL BE HIGH IN NUTRIENTS
+  ms-set08-round-16-a-q04-tossup: [ecology]
+  # life_science: Which of the following animal products has NOT been correctly paired with the animal that ... => LANOLIN, GOAT
+  ms-set08-round-16-a-q04-bonus: [diversity]
+  # earth_and_space: What type of galaxy usually occupies the central regions of a galaxy cluster? => ELLIPTICAL
+  ms-set08-round-16-a-q05-tossup: [galaxies-cosmology]
+  # earth_and_space: Which atmospheric element is converted into a bioavailable form through the Haber-Bosch pr... => NITROGEN
+  ms-set08-round-16-a-q05-bonus: [reactions]
+  # general_science: Which of the following distinguishes different isotopes of an element? => THEIR MASS
+  ms-set08-round-16-a-q06-tossup: [atoms]
+  # general_science: List the following four geologic time scale divisions in order from largest to smallest: 1... => 4, 2, 1, 3
+  ms-set08-round-16-a-q06-bonus: [earth-history]
+  # math: Which of the following theorems does NOT allow one to conclude directly that two triangles... => SIDE-SIDE-ANGLE
+  ms-set08-round-16-a-q07-tossup: [plane-geometry]
+  # math: The diameter of a circle is increased by 50%. By what percentage is the area of the circle... => 125
+  ms-set08-round-16-a-q07-bonus: [plane-geometry]
+  # energy: What fuel is used in a nuclear reactor? => URANIUM -235
+  ms-set08-round-16-a-q08-tossup: [nuclear-energy]
+  # energy: The U.S. Department of Energy is currently developing methods aimed at carbon capture, uti... => INCREASED OUTPUT AT OIL FIELDS
+  ms-set08-round-16-a-q08-bonus: [climate-environment]
+  # physical_science: Which of the following metals is the most reactive with water? => K
+  ms-set08-round-16-a-q09-tossup: [periodic-table]
+  # physical_science: Providing your answer to the nearest hundred, what is the half-life in years of carbon-14? => 5,700
+  ms-set08-round-16-a-q09-bonus: [modern-physics]
+  # life_science: Which of the following statements does NOT support the cell theory? => CELLS ARISE DE NOVO (FROM NOTHING)
+  ms-set08-round-16-a-q10-tossup: [cells]
+  # life_science: Which of the following are the result of the 5’ to 3’ [5-prime to 3-prime] directionality ... => OKAZAKI FRAGMENTS
+  ms-set08-round-16-a-q10-bonus: [genetics]
+  # earth_and_space: To the nearest Kelvin, what is the temperature of the Cosmic Microwave Background? => 3
+  ms-set08-round-16-a-q11-tossup: [galaxies-cosmology]
+  # earth_and_space: Which of the following would be affected the least by the Coriolis effect? => A TORNADO
+  ms-set08-round-16-a-q11-bonus: [weather]
+  # general_science: What structure of the brain, referred to as “little brain,” is responsible for maintaining... => CEREBELLUM
+  ms-set08-round-16-a-q12-tossup: [human-body]
+  # general_science: Which of the following organelles is found in motile cells of higher order animals, but NO... => CENTRIOLES
+  ms-set08-round-16-a-q12-bonus: [cells]
+  # math: The secant of 70 is equivalent to which of the following expressions? => 1/cos(70)
+  ms-set08-round-16-a-q13-tossup: [trigonometry]
+  # math: 230 is nearest which of the following powers of 10? => 109
+  ms-set08-round-16-a-q13-bonus: [arithmetic]
+  # physical_science: The source of the tremendous energy and rapid rotations of stars detected at the center of... => SUPERMASSIVE BLACK HOLE
+  ms-set08-round-16-a-q14-tossup: [galaxies-cosmology]
+  # physical_science: One common way to express the distance from the Earth to the Sun is in light-minutes, whic... => 510
+  ms-set08-round-16-a-q14-bonus: [light-em]
+  # life_science: What is the first amino acid encoded by all eukaryotic mRNAs [yoo-KAR-ee-oh-tik]? => METHIONINE
+  ms-set08-round-16-a-q15-tossup: [genetics]
+  # life_science: Which of the following is the role of DNA ligase [LY-gayz] in DNA replication? => JOINING THE 3’ END OF THE DNA THAT REPLA
+  ms-set08-round-16-a-q15-bonus: [genetics]
+  # earth_and_space: What is the term that refers to waves at high tide during a spring tide? => TIDAL SURGES
+  ms-set08-round-16-a-q16-tossup: [oceans]
+  # earth_and_space: What is the term for the surface where the water pressure head is equal to the atmospheric... => WATER TABLE
+  ms-set08-round-16-a-q16-bonus: [surface-processes]
+  # energy: What will raising water temperature (under pressure) from 100˚C to 110˚C do to the cooking... => DECREASE IT BY 50%
+  ms-set08-round-16-a-q17-tossup: [heat-thermo]
+  # energy: At what specific angle of incidence should the irradiance hit a solar panel in order to pr... => 0 DEGREES
+  ms-set08-round-16-a-q17-bonus: [renewables]
+  # general_science: Which of the following is NOT a way in which bacteria can obtain foreign DNA? => TRANSCRIPTION
+  ms-set08-round-16-a-q18-tossup: [microbes, genetics]
+  # general_science: What is the term for a volcano that has NOT erupted for tens of thousands of years and is ... => EXTINCT
+  ms-set08-round-16-a-q18-bonus: [volcanoes]
+  # math: Given that a particular right triangle contains one 45° angle and one side of length 6, wh... => 3√2; 6; 6√2
+  ms-set08-round-16-a-q19-tossup: [plane-geometry]
+  # math: On the domain 5 ≤ x ≤ 12 [5 is less than or equal to x is less than or equal to 12], what ... => -127
+  ms-set08-round-16-a-q19-bonus: [graphs-functions]
+  # physical_science: While on the side of the road, a student is approached and passed by an emergency vehicle ... => DOPPLER EFFECT
+  ms-set08-round-16-a-q20-tossup: [waves-sound]
+  # physical_science: Which of the following best explains why diamond is much harder than graphite even though ... => GRAPHITE IS ARRANGED IN SHEETS WHEREAS D
+  ms-set08-round-16-a-q20-bonus: [bonding]
+  # energy: In ecology, GPP is the amount of light energy that is converted to chemical energy via pho... => GROSS PRIMARY PRODUCTION
+  ms-set08-round-16-a-q21-tossup: [plants, ecology]
+  # energy: Which of the following is one of the main disadvantages of molten carbonate fuel cells, wh... => RISK OF CORROSION AT HIGH TEMPERATURES
+  ms-set08-round-16-a-q21-bonus: [batteries-storage]
+  # life_science: The ocean’s distinct smell comes from dimethyl [dy-METH- uhl] sulfide (DMS), which is rele... => PHYTOPLANKTON
+  ms-set08-round-16-a-q22-tossup: [microbes, oceans]
+  # life_science: Which organ in the human body is sometimes referred to as the “graveyard” for red blood ce... => SPLEEN
+  ms-set08-round-16-a-q22-bonus: [human-body]
+  # earth_and_space: What is the term used to describe the period when Jupiter is directly opposite the Sun as ... => OPPOSITION
+  ms-set08-round-16-a-q23-tossup: [solar-system]
+  # earth_and_space: The presence of oxygen in our atmosphere makes it which of the following? => AN OXIDIZING ATMOSPHERE
+  ms-set08-round-16-a-q23-bonus: [weather]
+
+  # Round 17-a
+  # life_science: During the Deep Water Horizon oil spill, marine microbes were observed to consume some of ... => ETHANE
+  ms-set08-round-17-a-q01-tossup: [microbes]
+  # life_science: Which of the following is the most detrimental type of point mutation? => FRAMESHIFT MUTATION
+  ms-set08-round-17-a-q01-bonus: [genetics]
+  # physical_science: What property must be known to calculate the de Broglie [duh broh-GLEE] wavelength of a pa... => MOMENTUM
+  ms-set08-round-17-a-q02-tossup: [modern-physics]
+  # physical_science: Determine the speed of sound, in m/s to two significant figures, traveling through air at ... => 360
+  ms-set08-round-17-a-q02-bonus: [waves-sound]
+  # energy: Identify the maximum power point tracking algorithm that is easier to implement, does not ... => PERTURB AND OBSERVE
+  ms-set08-round-17-a-q03-tossup: [renewables]
+  # energy: The energy in a thunderstorm comes from which of the following? => CONDENSATION OF WATER DROPS THAT FORM TH
+  ms-set08-round-17-a-q03-bonus: [weather]
+  # general_science: Which of the following instruments can take measurements as small as one microliter and is... => PIPETTE
+  ms-set08-round-17-a-q04-tossup: [measurement]
+  # general_science: What is the primary control device when using flammable and toxic chemicals in the laborat... => FUME HOOD
+  ms-set08-round-17-a-q04-bonus: [chemistry-misc]
+  # earth_and_space: When limestone is exposed to increasing pressure and temperature; it metamorphoses into wh... => MARBLE
+  ms-set08-round-17-a-q05-tossup: [rocks-minerals]
+  # earth_and_space: Typically, how many spring tides occur during a month? => TWO
+  ms-set08-round-17-a-q05-bonus: [oceans]
+  # math: Find the solutions of the quadratic equation: x2 - 4x - 12 = 0. => -2, 6
+  ms-set08-round-17-a-q06-tossup: [algebra]
+  # math: A student leaves for school on the bus. Her bus travels 25 miles per hour, but stops for 1... => 28
+  ms-set08-round-17-a-q06-bonus: [ratios-rates]
+  # life_science: You are constructing a simple ecosystem model to predict microbial growth in a marine envi... => SULFUR
+  ms-set08-round-17-a-q07-tossup: [microbes, ecology]
+  # life_science: Tiktaalik [tik-TA-lik] is a transitional fossil that serves to fill the gap between what t... => FISH AND AMPHIBIANS
+  ms-set08-round-17-a-q07-bonus: [evolution]
+  # physical_science: A particular gem has no refraction at angles above 40.7°, there is only total internal ref... => CRITICAL ANGLE
+  ms-set08-round-17-a-q08-tossup: [light-em]
+  # physical_science: The discovery that stars emit energy across the entire electromagnetic spectrum spurred th... => RADIO TELESCOPE
+  ms-set08-round-17-a-q08-bonus: [observing]
+  # general_science: What medical equipment uses high powered magnets and radio waves to produce high resolutio... => MAGNETIC RESONANCE IMAGING
+  ms-set08-round-17-a-q09-tossup: [magnetism, human-body]
+  # general_science: Which of the following is NOT a function of the hypothalamus [hy-puh-THAL-uh-muhs]? => REGULATING INVOLUNTARY MOVEMENTS
+  ms-set08-round-17-a-q09-bonus: [human-body]
+  # earth_and_space: What kind of nebula is the Cat's Eye Nebula? => PLANETARY NEBULA
+  ms-set08-round-17-a-q10-tossup: [stars]
+  # earth_and_space: Which of the following wavelengths of light best passes through Earth's atmosphere and thu... => RADIO
+  ms-set08-round-17-a-q10-bonus: [observing]
+  # math: Assuming that x is not 0, simplify the expression -3x0 - (2) -3 [negative 3 times x raised... => -25/8
+  ms-set08-round-17-a-q11-tossup: [algebra]
+  # math: A fair coin is flipped three times. Given that one of the flips is a head, what is the pro... => 4/7
+  ms-set08-round-17-a-q11-bonus: [counting-probability]
+  # energy: In a regenerative fuel cell system, the byproducts of a fuel cell are utilized to do which... => PRODUCE REACTANTS THAT ARE RESUPPLIED TO
+  ms-set08-round-17-a-q12-tossup: [batteries-storage]
+  # energy: Researchers are beginning to focus on butanol instead of ethanol as a replacement for gaso... => BUTANOL CAN BE USED IN CARS WITHOUT ANY 
+  ms-set08-round-17-a-q12-bonus: [fuels-combustion]
+  # life_science: The nutrient flow in an ecosystem can often be represented with a simple box model. What i... => STEADY STATE
+  ms-set08-round-17-a-q13-tossup: [ecology]
+  # life_science: Where would you find squalene? => IN THE LIVER OF A SHARK
+  ms-set08-round-17-a-q13-bonus: [diversity]
+  # physical_science: Which of the following is a property that is shared by both mixtures and compounds? => THEY CAN BE BROKEN DOWN INTO THEIR INDIV
+  ms-set08-round-17-a-q14-tossup: [solutions]
+  # physical_science: A neon light does NOT produce which of the following? => ABSORPTION SPECTRUM
+  ms-set08-round-17-a-q14-bonus: [light-em]
+  # general_science: What fossil type is formed when a mineral replaces the plant or animal tissue of the organ... => PETRIFIED
+  ms-set08-round-17-a-q15-tossup: [earth-history]
+  # general_science: Name the three main protein filaments that make up the cytoskeleton. => MICROFILAMENTS, INTERMEDIATE FILAMENTS, 
+  ms-set08-round-17-a-q15-bonus: [cells]
+  # energy: Beta Pictoris has a mass about 2 times that of the Sun. In this star, how is hydrogen turn... => CNO CYCLE
+  ms-set08-round-17-a-q16-tossup: [stars]
+  # energy: Which of the following elements is commonly reduced from its oxide with electricity? => ALUMINUM
+  ms-set08-round-17-a-q16-bonus: [reactions]
+  # earth_and_space: Rounding your answer to the nearest tenth, a difference of one in the apparent magnitudes ... => 2.5
+  ms-set08-round-17-a-q17-tossup: [stars]
+  # earth_and_space: What part of a sundial is responsible for casting a shadow on the dial? => GNOMON
+  ms-set08-round-17-a-q17-bonus: [observing]
+  # math: Find the product of 111 and 89. => 9879
+  ms-set08-round-17-a-q18-tossup: [arithmetic]
+  # math: What is the y-intercept of the line that passes through (5, 10) and is perpendicular to th... => 40/3
+  ms-set08-round-17-a-q18-bonus: [graphs-functions]
+  # life_science: Which of the following is the difference between a viroid [VY-roid] and a virus? => VIROIDS DO NOT CONTAIN A PROTEIN COAT; V
+  ms-set08-round-17-a-q19-tossup: [microbes]
+  # life_science: What is the ecological term for the phenomenon of a harmless species mimicking a harmful o... => BATESIAN MIMICRY
+  ms-set08-round-17-a-q19-bonus: [evolution]
+  # physical_science: What fictitious curved motion force is present only in rotating reference frames? => CENTRIFUGAL
+  ms-set08-round-17-a-q20-tossup: [motion-forces]
+  # physical_science: The magnitude of the velocity of an object in uniform circular motion is tripled. What wil... => IT WILL BE MULTIPLIED BY 9
+  ms-set08-round-17-a-q20-bonus: [motion-forces]
+  # general_science: How many nucleotide [NOO-klee-uh-tyd] base pairs are there in the haploid human genome? => 3.2 BILLION BASE PAIRS
+  ms-set08-round-17-a-q21-tossup: [genetics]
+  # general_science: A proper understanding of our genetic make-up can help us understand disorders that are pr... => HERITABLE
+  ms-set08-round-17-a-q21-bonus: [genetics]
+  # earth_and_space: What type of solar eclipse occurs when the Moon passes completely in front of the Sun, but... => ANNULAR
+  ms-set08-round-17-a-q22-tossup: [solar-system]
+  # earth_and_space: A star with a declination of 23.5 degrees and a right ascension of 6 hours will be eclipse... => SUMMER SOLSTICE
+  ms-set08-round-17-a-q22-bonus: [observing]
+  # math: A cycloid is generated by tracing a point on the edge of a circle as the circle is rolled ... => 1/4
+  ms-set08-round-17-a-q23-tossup: [plane-geometry]
+  # math: The point (4, 5) is reflected across the graph of y = 1 and the resulting point is then re... => (3, -4)
+  ms-set08-round-17-a-q23-bonus: [graphs-functions]
