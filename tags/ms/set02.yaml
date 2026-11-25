@@ -1,0 +1,1024 @@
+# Topic tags for ms/set02 (QB-12). One line per question: its topics from tags/topics.yaml.
+# The comment above each line is the start of the question, to make checking easier.
+source: Claude, from each question's text and answer, 2026-11-25. No API was used.
+tagged_by: ai
+reviewed: false
+questions:
+
+  # Round sample-questions-r1
+  # life_science: Living organisms are often divided into five Kingdoms. In which of the 5 Kingdoms would E.... => MONERA
+  ms-set02-sample-questions-r1-q01-tossup: [diversity, microbes]
+  # life_science: What is the binomial scientific genus and species name for humans? => HOMO SAPIENS
+  ms-set02-sample-questions-r1-q01-bonus: [diversity]
+  # earth_and_space: The Triassic, Jurassic, and Cretaceous are all periods in what era? => MESOZOIC
+  ms-set02-sample-questions-r1-q02-tossup: [earth-history]
+  # earth_and_space: Which of the following is the correct term for a large crack in ice: => CREVASSE
+  ms-set02-sample-questions-r1-q02-bonus: [surface-processes]
+  # physical_science: What is the density given as specific gravity, of a one centimeter cube of a metal that we... => 5
+  ms-set02-sample-questions-r1-q03-tossup: [measurement]
+  # physical_science: Which of the following has the greatest density: => 1 KILOGRAM OF GOLD
+  ms-set02-sample-questions-r1-q03-bonus: [measurement]
+  # math: Peter bought a soda from a vending machine with a dollar bill. The soda cost 35 cents. Wha... => FOUR
+  ms-set02-sample-questions-r1-q04-tossup: [arithmetic]
+  # math: What is the integer value of 105 divided by 103? => 100
+  ms-set02-sample-questions-r1-q04-bonus: [arithmetic]
+  # general_science: Rickets, which was a common disease in the early twentieth century, is caused by a deficie... => VITAMIN D
+  ms-set02-sample-questions-r1-q05-tossup: [human-body]
+  # general_science: Exposure to sunlight converts cholesterol found in human skin into what vitamin? => VITAMIN D
+  ms-set02-sample-questions-r1-q05-bonus: [human-body]
+  # earth_and_space: Which of the following is present only where benthic organisms reside: => DEEP SEA VENTS
+  ms-set02-sample-questions-r1-q06-tossup: [oceans, ecology]
+  # earth_and_space: What is the name of the rapid rise of coastal water that accompanies the arrival of a cycl... => TIDAL SURGE
+  ms-set02-sample-questions-r1-q06-bonus: [weather, oceans]
+  # physical_science: Which of the following metals is attracted to a magnet? => IRON
+  ms-set02-sample-questions-r1-q07-tossup: [magnetism]
+  # physical_science: The reaction of hydrocarbons found in such things as wood and paper with oxygen to produce... => COMBUSTION
+  ms-set02-sample-questions-r1-q07-bonus: [reactions]
+  # earth_and_space: Metamorphism transforms limestone into a metamorphic rock called: => MARBLE
+  ms-set02-sample-questions-r1-q08-tossup: [rocks-minerals]
+  # earth_and_space: What are the icicle-shaped deposits of limestone hanging from the roof of a cave called: => STALACTITES
+  ms-set02-sample-questions-r1-q08-bonus: [surface-processes]
+  # life_science: Which of the following is the region of the body where the stapes bone is located: => EAR
+  ms-set02-sample-questions-r1-q09-tossup: [human-body]
+  # life_science: Sharks belong the class Chondricthyes because they have a skeleton made of what substance? => CARTILAGE
+  ms-set02-sample-questions-r1-q09-bonus: [diversity]
+  # general_science: Engineers in the USA often report pressure in PSI’s. What does the abbreviation PSI stand ... => POUNDS per SQUARE INCH
+  ms-set02-sample-questions-r1-q10-tossup: [measurement]
+  # general_science: Which planet does not have an element named after it? => MARS
+  ms-set02-sample-questions-r1-q10-bonus: [periodic-table]
+  # math: A parallelogram whose adjacent sides are unequal is a: => RHOMBOID
+  ms-set02-sample-questions-r1-q11-tossup: [plane-geometry]
+  # math: Solve the following equation: 9x – 13 = 14 => 3
+  ms-set02-sample-questions-r1-q11-bonus: [algebra]
+  # general_science: On the Centigrade temperature scale give the whole number value that is the closest to abs... => MINUS 273
+  ms-set02-sample-questions-r1-q12-tossup: [heat-thermo]
+  # general_science: Which of the following is NOT seen by reflection of sun light: => THE NORTH STAR
+  ms-set02-sample-questions-r1-q12-bonus: [solar-system]
+  # physical_science: Metals that can be hammered into thin sheets are called: => MALLEABLE
+  ms-set02-sample-questions-r1-q13-tossup: [periodic-table]
+  # physical_science: A white-colored object illuminated by a blue light will appear as what color to the human ... => BLUE
+  ms-set02-sample-questions-r1-q13-bonus: [light-em]
+  # life_science: Which of the following is an intracellular parasite: => MALARIA
+  ms-set02-sample-questions-r1-q14-tossup: [immunity-disease]
+  # life_science: In mammals, what teeth are evolved primarily to function in gripping and tearing => CANINES
+  ms-set02-sample-questions-r1-q14-bonus: [human-body]
+  # earth_and_space: Each day, most coastal beaches encounter: => TWO HIGH TIDES AND TWO LOW TIDES
+  ms-set02-sample-questions-r1-q15-tossup: [oceans]
+  # earth_and_space: Which of the following is a metamorphic rock: => MARBLE
+  ms-set02-sample-questions-r1-q15-bonus: [rocks-minerals]
+  # math: What is the cube root of 8? => 2
+  ms-set02-sample-questions-r1-q16-tossup: [arithmetic]
+  # math: Solve the following equation: 3x + 15 = -12 => -9
+  ms-set02-sample-questions-r1-q16-bonus: [algebra]
+  # general_science: At its greatest possible brightness, which is the brightest planet in the night sky? => VENUS
+  ms-set02-sample-questions-r1-q17-tossup: [solar-system]
+  # general_science: The largest of the suns planets are: => JUPITER AND SATURN
+  ms-set02-sample-questions-r1-q17-bonus: [solar-system]
+  # earth_and_space: By our current estimations, the Earth is approximately how many billions of years old: => 4.6
+  ms-set02-sample-questions-r1-q18-tossup: [earth-history]
+  # earth_and_space: The Earth's mantle is approximately how many miles thick: => 1800
+  ms-set02-sample-questions-r1-q18-bonus: [tectonics]
+  # life_science: Which of these organisms in not a kind of worm? => CENTIPEDE
+  ms-set02-sample-questions-r1-q19-tossup: [diversity]
+  # life_science: What is the common specific name for the bond that joins two amino acids to form a growing... => PEPTIDE BOND
+  ms-set02-sample-questions-r1-q19-bonus: [biochemistry]
+  # math: Four divided by zero is: => UNDEFINED
+  ms-set02-sample-questions-r1-q20-tossup: [arithmetic]
+  # math: Find the value of x2 – y2 when x = -5 and y = -2: => 21
+  ms-set02-sample-questions-r1-q20-bonus: [algebra]
+  # physical_science: What is the common scientific term for the ratio of the density of a material to that of w... => SPECIFIC GRAVITY
+  ms-set02-sample-questions-r1-q21-tossup: [measurement]
+  # physical_science: Starch is made of what simple sugar? => GLUCOSE
+  ms-set02-sample-questions-r1-q21-bonus: [biochemistry]
+  # earth_and_space: A large mass of ice, formed on land by the compaction and recrystallization of snow, that ... => A GLACIER
+  ms-set02-sample-questions-r1-q22-tossup: [surface-processes]
+  # earth_and_space: A flat-topped plateau bordered on all sides by cliffs is called a: => BUTTE
+  ms-set02-sample-questions-r1-q22-bonus: [surface-processes]
+  # general_science: How many microgams are in a single milligram? => 1000
+  ms-set02-sample-questions-r1-q23-tossup: [measurement]
+  # general_science: The moon moves around the earth traveling primarily: => WEST TO EAST
+  ms-set02-sample-questions-r1-q23-bonus: [solar-system]
+  # math: If a ≠ 0 (read as: a does not equal 0), what is the multiplicative inverse of a? => 1/a
+  ms-set02-sample-questions-r1-q24-tossup: [arithmetic]
+  # math: What is the square root of 169? => 13
+  ms-set02-sample-questions-r1-q24-bonus: [arithmetic]
+  # earth_and_space: The Tropic of Cancer lies at which of the following latitudes: => 23 ½° NORTH
+  ms-set02-sample-questions-r1-q25-tossup: [earth-space-misc]
+  # earth_and_space: Magma that reached the Earth’s surface is called what? => LAVA
+  ms-set02-sample-questions-r1-q25-bonus: [volcanoes]
+
+  # Round sample-questions-r2
+  # math: The sum of all the interior angles of a triangle equals how many degrees? => 180°
+  ms-set02-sample-questions-r2-q01-tossup: [plane-geometry]
+  # math: What is the total angular distance in degrees over a sphere? => 360°
+  ms-set02-sample-questions-r2-q01-bonus: [solid-geometry]
+  # life_science: During the life-cycle of amphibians, which is not a means through which respiration can oc... => AIR BLADDER
+  ms-set02-sample-questions-r2-q02-tossup: [diversity]
+  # life_science: In many arthropods, the segments of the body are grouped into 3 distinct parts. Name all t... => HEAD, THORAX, AND ABDOMEN
+  ms-set02-sample-questions-r2-q02-bonus: [diversity]
+  # physical_science: The electrical potential or power of a battery is an expression of its: => VOLTAGE
+  ms-set02-sample-questions-r2-q03-tossup: [electricity]
+  # physical_science: A typical pair of scissors would be considered: => A CLASS ONE LEVER
+  ms-set02-sample-questions-r2-q03-bonus: [energy-work]
+  # general_science: How many milliliters are in a liter? => 1000
+  ms-set02-sample-questions-r2-q04-tossup: [measurement]
+  # general_science: The Moon orbits the earth about once every: => MONTH
+  ms-set02-sample-questions-r2-q04-bonus: [solar-system]
+  # math: The number 0.13 is written with a bar drawn over the last two digits. This means that: => THE PAIR OF DIGITS 13 REPEATS FOREVER
+  ms-set02-sample-questions-r2-q05-tossup: [arithmetic]
+  # math: The following number in Roman numerals is equivalent to what decimal number: C L X X X X I... => 199
+  ms-set02-sample-questions-r2-q05-bonus: [math-misc]
+  # earth_and_space: About what percentage of the Earth surface is covered by water? => 71%
+  ms-set02-sample-questions-r2-q06-tossup: [oceans]
+  # earth_and_space: Name the equinoxes when day and night are of equal length around the world: => AUTUMNAL AND VERNAL EQUINOXES
+  ms-set02-sample-questions-r2-q06-bonus: [solar-system]
+  # physical_science: Which of the following metals is attracted to a magnet? => IRON
+  ms-set02-sample-questions-r2-q07-tossup: [magnetism]
+  # physical_science: The reaction of hydrocarbons found in such things as wood and paper with oxygen to produce... => COMBUSTION
+  ms-set02-sample-questions-r2-q07-bonus: [reactions]
+  # earth_and_space: Metamorphism transforms limestone into a metamorphic rock called: => MARBLE
+  ms-set02-sample-questions-r2-q08-tossup: [rocks-minerals]
+  # earth_and_space: What are the icicle-shaped deposits of limestone hanging from the roof of a cave called: => STALACTITES
+  ms-set02-sample-questions-r2-q08-bonus: [surface-processes]
+  # life_science: Which of the following is the region of the body where the stapes bone is located: => EAR
+  ms-set02-sample-questions-r2-q09-tossup: [human-body]
+  # life_science: Sharks belong the class Chondricthyes because they have a skeleton made of what substance? => CARTILAGE
+  ms-set02-sample-questions-r2-q09-bonus: [diversity]
+  # general_science: Engineers in the USA often report pressure in PSI’s. What does the abbreviation PSI stand ... => POUNDS per SQUARE INCH
+  ms-set02-sample-questions-r2-q10-tossup: [measurement]
+  # general_science: Which planet does not have an element named after it? => MARS
+  ms-set02-sample-questions-r2-q10-bonus: [periodic-table]
+  # math: A parallelogram whose adjacent sides are unequal is a: => RHOMBOID
+  ms-set02-sample-questions-r2-q11-tossup: [plane-geometry]
+  # math: Solve the following equation: 9x – 13 = 14 => 3
+  ms-set02-sample-questions-r2-q11-bonus: [algebra]
+  # general_science: On the Centigrade temperature scale give the whole number value that is the closest to abs... => MINUS 273
+  ms-set02-sample-questions-r2-q12-tossup: [heat-thermo]
+  # general_science: Which of the following is NOT seen by reflection of sun light: => THE NORTH STAR
+  ms-set02-sample-questions-r2-q12-bonus: [solar-system]
+  # physical_science: Metals that can be hammered into thin sheets are called: => MALLEABLE
+  ms-set02-sample-questions-r2-q13-tossup: [periodic-table]
+  # physical_science: A white-colored object illuminated by a blue light will appear as what color to the human ... => BLUE
+  ms-set02-sample-questions-r2-q13-bonus: [light-em]
+  # life_science: Which of the following is an intracellular parasite: => MALARIA
+  ms-set02-sample-questions-r2-q14-tossup: [immunity-disease]
+  # life_science: In mammals, what teeth are evolved primarily to function in gripping and tearing => CANINES
+  ms-set02-sample-questions-r2-q14-bonus: [human-body]
+  # earth_and_space: Each day, most coastal beaches encounter: => TWO HIGH TIDES AND TWO LOW TIDES
+  ms-set02-sample-questions-r2-q15-tossup: [oceans]
+  # earth_and_space: Which of the following is a metamorphic rock: => MARBLE
+  ms-set02-sample-questions-r2-q15-bonus: [rocks-minerals]
+  # math: What is the cube root of 8? => 2
+  ms-set02-sample-questions-r2-q16-tossup: [arithmetic]
+  # math: Solve the following equation: 3x + 15 = -12 => -9
+  ms-set02-sample-questions-r2-q16-bonus: [algebra]
+  # general_science: At its greatest possible brightness, which is the brightest planet in the night sky? => VENUS
+  ms-set02-sample-questions-r2-q17-tossup: [solar-system]
+  # general_science: The largest of the suns planets are: => JUPITER AND SATURN
+  ms-set02-sample-questions-r2-q17-bonus: [solar-system]
+  # earth_and_space: By our current estimations, the Earth is approximately how many billions of years old: => 4.6
+  ms-set02-sample-questions-r2-q18-tossup: [earth-history]
+  # earth_and_space: The Earth's mantle is approximately how many miles thick: => 1800
+  ms-set02-sample-questions-r2-q18-bonus: [tectonics]
+  # life_science: Which of these organisms in not a kind of worm? => CENTIPEDE
+  ms-set02-sample-questions-r2-q19-tossup: [diversity]
+  # life_science: What is the common specific name for the bond that joins two amino acids to form a growing... => PEPTIDE BOND
+  ms-set02-sample-questions-r2-q19-bonus: [biochemistry]
+  # math: Four divided by zero is: => UNDEFINED
+  ms-set02-sample-questions-r2-q20-tossup: [arithmetic]
+  # math: Find the value of x2 – y2 when x = -5 and y = -2: => 21
+  ms-set02-sample-questions-r2-q20-bonus: [algebra]
+  # physical_science: What is the common scientific term for the ratio of the density of a material to that of w... => SPECIFIC GRAVITY
+  ms-set02-sample-questions-r2-q21-tossup: [measurement]
+  # physical_science: Starch is made of what simple sugar? => GLUCOSE
+  ms-set02-sample-questions-r2-q21-bonus: [biochemistry]
+  # earth_and_space: A large mass of ice, formed on land by the compaction and recrystallization of snow, that ... => A GLACIER
+  ms-set02-sample-questions-r2-q22-tossup: [surface-processes]
+  # earth_and_space: A flat-topped plateau bordered on all sides by cliffs is called a: => BUTTE
+  ms-set02-sample-questions-r2-q22-bonus: [surface-processes]
+  # general_science: How many microgams are in a single milligram? => 1000
+  ms-set02-sample-questions-r2-q23-tossup: [measurement]
+  # general_science: The moon moves around the earth traveling primarily: => WEST TO EAST
+  ms-set02-sample-questions-r2-q23-bonus: [solar-system]
+  # math: If a ≠ 0 (read as: a does not equal 0), what is the multiplicative inverse of a? => 1/a
+  ms-set02-sample-questions-r2-q24-tossup: [arithmetic]
+  # math: What is the square root of 169? => 13
+  ms-set02-sample-questions-r2-q24-bonus: [arithmetic]
+  # earth_and_space: The Tropic of Cancer lies at which of the following latitudes: => 23 ½° NORTH
+  ms-set02-sample-questions-r2-q25-tossup: [earth-space-misc]
+  # earth_and_space: Magma that reached the Earth’s surface is called what? => LAVA
+  ms-set02-sample-questions-r2-q25-bonus: [volcanoes]
+
+  # Round sample-questions-r3
+  # life_science: Vestigial (pronounced VES-ti-gee-al) structures: => HAVE NO KNOWN FUNCTION IN THEIR PRESENT 
+  ms-set02-sample-questions-r3-q01-tossup: [evolution]
+  # life_science: Mallus ioeusis and Mallus sylvestris are the genera and species of what common tree? => APPLE
+  ms-set02-sample-questions-r3-q01-bonus: [plants]
+  # physical_science: What is the decibel scale most often used to measure? => LOUDNESS OF A SOUND
+  ms-set02-sample-questions-r3-q02-tossup: [waves-sound]
+  # physical_science: What is the name of the lowest energy subshell of an atom where electrons are found: => S
+  ms-set02-sample-questions-r3-q02-bonus: [atoms]
+  # earth_and_space: Which of the following are the highest of the clouds in the troposphere and are composed e... => CIRRUS
+  ms-set02-sample-questions-r3-q03-tossup: [weather]
+  # earth_and_space: In the Northern Hemisphere, when is the Earth the greatest distance from the sun: => SUMMER
+  ms-set02-sample-questions-r3-q03-bonus: [solar-system]
+  # math: The identity element for addition is what number? => 0
+  ms-set02-sample-questions-r3-q04-tossup: [arithmetic]
+  # math: On a math test, 20 students averaged a score of 80% while 10 students averaged 90%. To the... => 83%
+  ms-set02-sample-questions-r3-q04-bonus: [statistics]
+  # physical_science: Which of the following units is used to measure electric current: => AMPERES
+  ms-set02-sample-questions-r3-q05-tossup: [electricity]
+  # physical_science: What is the current, in amperes, running through a 200-watt light bulb running on a 100 vo... => 2 AMPERE
+  ms-set02-sample-questions-r3-q05-bonus: [electricity]
+  # general_science: What is the scientific term often used by astronomers and geoscientists that refers to the... => ZENITH
+  ms-set02-sample-questions-r3-q06-tossup: [observing]
+  # general_science: The light year is a useful unit of measure for the distance between: => STARS
+  ms-set02-sample-questions-r3-q06-bonus: [observing]
+  # life_science: Which of the following parts of a plant produces pollen: => STAMEN
+  ms-set02-sample-questions-r3-q07-tossup: [plants]
+  # life_science: Plant cells differ from animal cells in that only plant cells possess: => A CELL WALL
+  ms-set02-sample-questions-r3-q07-bonus: [cells]
+  # math: Solve the following equation: 3x/4 = −12 => −16
+  ms-set02-sample-questions-r3-q08-tossup: [algebra]
+  # math: Convert the periodic decimal 0.8333 or 0.83 “bar” into a fraction: => 5/6
+  ms-set02-sample-questions-r3-q08-bonus: [arithmetic]
+  # earth_and_space: When, in the geological time scale, did dinosaurs roam the Earth in large numbers: => JURASSIC
+  ms-set02-sample-questions-r3-q09-tossup: [earth-history]
+  # earth_and_space: Meteor showers are composed of: => DUST AND OTHER DEBRIS FROM COMETS
+  ms-set02-sample-questions-r3-q09-bonus: [solar-system]
+  # general_science: Rounded to the nearest whole number, how many centimeters are in 2 inches? => 5
+  ms-set02-sample-questions-r3-q10-tossup: [measurement]
+  # general_science: Which of the following is NOT true of comets: => THEY CAN ONLY BE SEEN WHEN THEY PASS THR
+  ms-set02-sample-questions-r3-q10-bonus: [solar-system]
+  # earth_and_space: What is the name for the apparent force that causes hurricanes to be deflected to the righ... => THE CORIOLIS EFFECT
+  ms-set02-sample-questions-r3-q11-tossup: [weather]
+  # earth_and_space: The supercontinent Pangea started to break apart into our present day continents approxima... => 200
+  ms-set02-sample-questions-r3-q11-bonus: [tectonics]
+  # math: Add the following numbers: 0.5 + 0.05 + 0.005 => 0.555
+  ms-set02-sample-questions-r3-q12-tossup: [arithmetic]
+  # math: Remove the grouping symbols in the following expression: -3x(2 – 5z) => -6x + 15xz
+  ms-set02-sample-questions-r3-q12-bonus: [algebra]
+  # physical_science: Which of the following is the least dense at standard temperature and pressure: => 10 kilogram of pure water
+  ms-set02-sample-questions-r3-q13-tossup: [measurement]
+  # physical_science: How many electron does the s subshell of an atom hold? => 2
+  ms-set02-sample-questions-r3-q13-bonus: [atoms]
+  # life_science: Which of the following is the scientific name for the knee cap: => PATELLA
+  ms-set02-sample-questions-r3-q14-tossup: [human-body]
+  # life_science: Organize the following 3 tooth layers from the outermost to the innermost of a tooth: dent... => ENAMEL, DENTIN, PULP
+  ms-set02-sample-questions-r3-q14-bonus: [human-body]
+  # general_science: How much does one cubic centimeter of water weigh at standard temperature and pressure? => 1 gram
+  ms-set02-sample-questions-r3-q15-tossup: [measurement]
+  # general_science: Craters on the moon is evidence of : => ASTEROID IMPACTS
+  ms-set02-sample-questions-r3-q15-bonus: [solar-system]
+  # physical_science: The particles in an atom that determine which element it is are the: => PROTONS
+  ms-set02-sample-questions-r3-q16-tossup: [atoms]
+  # physical_science: All metals: => CONDUCT HEAT AND ELECTRICITY
+  ms-set02-sample-questions-r3-q16-bonus: [periodic-table]
+  # life_science: Which of the following parts of a cell is most directly responsible for synthesizing prote... => RIBOSOMES
+  ms-set02-sample-questions-r3-q17-tossup: [cells]
+  # life_science: This structure that develops in the wall of the uterus functions in the pregnant mammals t... => PLACENTA
+  ms-set02-sample-questions-r3-q17-bonus: [human-body]
+  # earth_and_space: Which equinox marks the beginning of spring in the Northern Hemisphere? => VERNAL EQUINOX
+  ms-set02-sample-questions-r3-q18-tossup: [solar-system]
+  # earth_and_space: Steep-sided volcanoes such as Mounts Rainier, Hood, and Fuji, are examples of what kind of... => STRATOVOLCANOES
+  ms-set02-sample-questions-r3-q18-bonus: [volcanoes]
+  # general_science: The Sahara Desert in Africa is what type of desert? => SUBTROPICAL
+  ms-set02-sample-questions-r3-q19-tossup: [climate-environment]
+  # general_science: What are the 4 physical states of matter? => SOLID, LIQUID, GAS, PLASMA
+  ms-set02-sample-questions-r3-q19-bonus: [matter-gases]
+  # life_science: Which of the following is the scientific name for the thigh bone: => FEMUR
+  ms-set02-sample-questions-r3-q20-tossup: [human-body]
+  # life_science: When a nerve message reaches the end of an axon it sends a message or impulse across the s... => SYNAPSE
+  ms-set02-sample-questions-r3-q20-bonus: [human-body]
+  # physical_science: When a car turns a corner on dry pavement, the wheels do not slide sideways and the car co... => FRICTION
+  ms-set02-sample-questions-r3-q21-tossup: [motion-forces]
+  # physical_science: Complex carbohydrates are called: => POLYSACCHARIDES
+  ms-set02-sample-questions-r3-q21-bonus: [biochemistry]
+  # math: What kind of fraction has the absolute value of the numerator greater than the denominator... => IMPROPER FRACTION
+  ms-set02-sample-questions-r3-q22-tossup: [arithmetic]
+  # math: Which of the following numbers is divisible by 3: => 5,163
+  ms-set02-sample-questions-r3-q22-bonus: [number-theory]
+  # earth_and_space: With a Mohs’ hardness of 1, what is the softest mineral known? => TALC
+  ms-set02-sample-questions-r3-q23-tossup: [rocks-minerals]
+  # earth_and_space: The first scientist to propose the hypothesis of the past existence of the supercontinent ... => ALFRED WEGENER
+  ms-set02-sample-questions-r3-q23-bonus: [tectonics]
+  # general_science: What vitamin is the most directly associated with the disease scurvy? => VITAMIN C
+  ms-set02-sample-questions-r3-q24-tossup: [human-body]
+  # general_science: Which of the following is the best estimate of what a gallon of water weighs in kilograms? => 4 KILOGRAMS
+  ms-set02-sample-questions-r3-q24-bonus: [measurement]
+  # math: What is the name for a set that contains no elements? => EMPTY SET
+  ms-set02-sample-questions-r3-q25-tossup: [logic-sets]
+  # math: Solve the following expression: 2 25 + 25 ÷ 5 => 15
+  ms-set02-sample-questions-r3-q25-bonus: [arithmetic]
+
+  # Round sample-questions-r4
+  # physical_science: A child’s seesaw would be considered: => A CLASS ONE LEVER
+  ms-set02-sample-questions-r4-q01-tossup: [energy-work]
+  # physical_science: A 100-watt light bulb is lighted by a 100 volt power source. What is the current, in amper... => 1 AMPERE
+  ms-set02-sample-questions-r4-q01-bonus: [electricity]
+  # life_science: Which of the following is the scientific name for the part of the human brain where higher... => CEREBRAL CORTEX
+  ms-set02-sample-questions-r4-q02-tossup: [human-body]
+  # life_science: What is the common botanical term for the response a cell or plant has towards or away fro... => TAXIS
+  ms-set02-sample-questions-r4-q02-bonus: [plants, behavior]
+  # general_science: What layer of the Sun’s atmosphere is immediately interior to the corona? => THE CHROMOSPHERE
+  ms-set02-sample-questions-r4-q03-tossup: [stars]
+  # general_science: How many angstroms are in 1 micron? => 10,000
+  ms-set02-sample-questions-r4-q03-bonus: [measurement]
+  # life_science: What is the joint that is formed by the articulation of the tibia, fibula, and femur? => KNEE
+  ms-set02-sample-questions-r4-q04-tossup: [human-body]
+  # life_science: The exchange of gases between blood and the tissue occurs normally in: => CAPILLARIES
+  ms-set02-sample-questions-r4-q04-bonus: [human-body]
+  # math: What does 12 times 13 divided by 2 equal? => 78
+  ms-set02-sample-questions-r4-q05-tossup: [arithmetic]
+  # math: Four factorial equals what number? => 24
+  ms-set02-sample-questions-r4-q05-bonus: [counting-probability]
+  # earth_and_space: During which month does the vernal equinox occur? => MARCH
+  ms-set02-sample-questions-r4-q06-tossup: [solar-system]
+  # earth_and_space: The temperature at which the relative humidity reaches 100% and condensation starts is cal... => DEW POINT
+  ms-set02-sample-questions-r4-q06-bonus: [weather]
+  # general_science: Sigmund Freud proposed the idea that the subconscious mind exited in three separate divisi... => THE ID
+  ms-set02-sample-questions-r4-q07-tossup: [biology-misc]
+  # general_science: Galaxies are: => CLUSTERS OF BILLION OF STARS
+  ms-set02-sample-questions-r4-q07-bonus: [galaxies-cosmology]
+  # physical_science: The amount of heat needed to increase the temperature of 1.00 gram of water from 14.5°C to... => CALORIE
+  ms-set02-sample-questions-r4-q08-tossup: [heat-thermo, measurement]
+  # physical_science: What is the chemical formula for hydrogen peroxide? => H2O2
+  ms-set02-sample-questions-r4-q08-bonus: [chemistry-misc]
+  # earth_and_space: Which of the following minerals best illustrates the property of cleavage: => MICA
+  ms-set02-sample-questions-r4-q09-tossup: [rocks-minerals]
+  # earth_and_space: Based on how it was formed, slate is classified as what type of rock: => METAMORPHIC
+  ms-set02-sample-questions-r4-q09-bonus: [rocks-minerals]
+  # math: What is the name of the famous theorem of geometry that states the sum of the squares of a... => PYTHAGOREAN THEOREM (ACCEPT: PYTHAGOREAN
+  ms-set02-sample-questions-r4-q10-tossup: [plane-geometry]
+  # math: What is the following Roman Numeral number equal to in an Arabic number: MCMLXI => 1961
+  ms-set02-sample-questions-r4-q10-bonus: [math-misc]
+  # physical_science: The mass of a quantity of matter divided by its volume provides which specific property? => DENSITY
+  ms-set02-sample-questions-r4-q11-tossup: [matter-gases]
+  # physical_science: Assuming friction is negligible, if a lever has a mechanical advantage of 5, how much effo... => 2 NEWTONS
+  ms-set02-sample-questions-r4-q11-bonus: [energy-work]
+  # life_science: In 1665, what person, using a microscope he built, observed perforations in plant stems, w... => ROBERT HOOKE
+  ms-set02-sample-questions-r4-q12-tossup: [cells]
+  # life_science: What are the four main human blood types? => O, A, B, AND AB
+  ms-set02-sample-questions-r4-q12-bonus: [human-body]
+  # math: Solve the following equation: x/6 = −8 => −48
+  ms-set02-sample-questions-r4-q13-tossup: [algebra]
+  # math: Find the area of a circle when the radius equals 10: => 314
+  ms-set02-sample-questions-r4-q13-bonus: [plane-geometry]
+  # earth_and_space: What is the name of the phenomenon that causes an accumulation of heat in the lower atmosp... => GREENHOUSE EFFECT
+  ms-set02-sample-questions-r4-q14-tossup: [climate-environment]
+  # earth_and_space: A meteor that reaches the surface of the Earth is more accurately called a: => METEORITE
+  ms-set02-sample-questions-r4-q14-bonus: [solar-system]
+  # life_science: Which of the following is the region of the body where the thyroid gland is located: => NECK
+  ms-set02-sample-questions-r4-q15-tossup: [human-body]
+  # life_science: Encephalitis is an inflammation of what organ? => BRAIN
+  ms-set02-sample-questions-r4-q15-bonus: [human-body, immunity-disease]
+  # general_science: Ring, Helix, Dumbbell and Veil are all names of what specific type of heavenly bodies? => NEBULA
+  ms-set02-sample-questions-r4-q16-tossup: [stars]
+  # general_science: Rounded to the nearest whole number, what is the temperature in Fahrenheit of a substance ... => 212°
+  ms-set02-sample-questions-r4-q16-bonus: [measurement]
+  # earth_and_space: Which equinox marks the moment when fall begins in the Northern Hemisphere? => AUTUMNAL EQUINOX
+  ms-set02-sample-questions-r4-q17-tossup: [earth-space-misc]
+  # earth_and_space: Underwater volcanoes that have a flat top are called: => GUYOTS
+  ms-set02-sample-questions-r4-q17-bonus: [oceans, tectonics]
+  # math: What is the smallest two-digit whole number? => 10
+  ms-set02-sample-questions-r4-q18-tossup: [number-theory]
+  # math: On your first math test you scored a 56% and on the second test you scored 70%. By what pe... => 25% (Solution = 70-56= 14, 14/56=25%)
+  ms-set02-sample-questions-r4-q18-bonus: [ratios-rates]
+  # general_science: What term do physicists and engineers use most commonly to describe a change in the veloci... => ACCELERATION
+  ms-set02-sample-questions-r4-q19-tossup: [motion-forces]
+  # general_science: Which list is out of order of closest to furthest distance from the sun: => VENUS, MARS, EARTH
+  ms-set02-sample-questions-r4-q19-bonus: [solar-system]
+  # physical_science: A color made from the addition of two primary colors is called a: => SECONDARY COLOR
+  ms-set02-sample-questions-r4-q20-tossup: [light-em]
+  # physical_science: At 100 degrees Fahrenheit, which of the following substances would feel hottest to touch? => GOLD
+  ms-set02-sample-questions-r4-q20-bonus: [heat-thermo]
+  # general_science: In a compound light microscope, the lens closest to the specimen is usually called the => OBJECTIVE
+  ms-set02-sample-questions-r4-q21-tossup: [observing, biology-misc]
+  # general_science: What is the nearest star to Earth in the Milky Way? => THE SUN
+  ms-set02-sample-questions-r4-q21-bonus: [stars]
+  # physical_science: What property of waves allows them to bend around the edges of obstacle: => DIFFRACTION
+  ms-set02-sample-questions-r4-q22-tossup: [waves-sound]
+  # physical_science: For a toaster that draws 12 amps on a 120 volt line, what is the resistance of the toaster... => 10 OHMS
+  ms-set02-sample-questions-r4-q22-bonus: [electricity]
+  # life_science: Which of the following is not a case of symbiosis: => FORMATISM
+  ms-set02-sample-questions-r4-q23-tossup: [ecology]
+  # life_science: What is the name of the protein which is primarily responsible for the varying shades of c... => MELANIN
+  ms-set02-sample-questions-r4-q23-bonus: [human-body]
+  # earth_and_space: What is the name of a mixture of molten rock, suspended mineral grains, and dissolved gase... => MAGMA
+  ms-set02-sample-questions-r4-q24-tossup: [volcanoes]
+  # earth_and_space: In what geological period did the first organisms with shells first become abundant: => CAMBRIAN
+  ms-set02-sample-questions-r4-q24-bonus: [earth-history]
+  # math: What is the standard formula for the surface area of a sphere? => 4πr2
+  ms-set02-sample-questions-r4-q25-tossup: [solid-geometry]
+  # math: Multiply the following 5 numbers: (-2) (-5) (-4) (-3) (-1) => -120
+  ms-set02-sample-questions-r4-q25-bonus: [arithmetic]
+
+  # Round sample-questions-r5
+  # physical_science: When an airplane’s ailerons move in opposite directions they usually cause a plane to: => ROLL
+  ms-set02-sample-questions-r5-q01-tossup: [fluids]
+  # physical_science: Calcium, strontium, and barium are commonly called what kind of elements? => ALKALINE
+  ms-set02-sample-questions-r5-q01-bonus: [periodic-table]
+  # earth_and_space: In which of the geological time periods, did dinosaurs first appear: => TRIASSIC
+  ms-set02-sample-questions-r5-q02-tossup: [earth-history]
+  # earth_and_space: In what layer of the Earth’s atmosphere does most of our weather occur? => TROPOSPHERE
+  ms-set02-sample-questions-r5-q02-bonus: [weather]
+  # math: If 2 sides of a quadrilateral are parallel and the other sides are equal but NOT parallel,... => TRAPEZOID
+  ms-set02-sample-questions-r5-q03-tossup: [plane-geometry]
+  # math: Find the area of a triangle whose base is 8 and whose height is 6: => 24
+  ms-set02-sample-questions-r5-q03-bonus: [plane-geometry]
+  # life_science: A series of amino acids joined together will make a: => PROTEIN
+  ms-set02-sample-questions-r5-q04-tossup: [biochemistry]
+  # life_science: When a nerve message reaches the end of an axon it sends a message or impulse across the s... => NEUROTRANSMITTERS
+  ms-set02-sample-questions-r5-q04-bonus: [human-body]
+  # physical_science: Which of the following moves in the form of a longitudinal compression wave: => SOUND WAVE
+  ms-set02-sample-questions-r5-q05-tossup: [waves-sound]
+  # physical_science: What is the resistance of an electric drill that draws 8 amps on a 120 volt line? => 15 OHMS
+  ms-set02-sample-questions-r5-q05-bonus: [electricity]
+  # general_science: Ergot, Amanita muscaris, Penicillium and smut are all organisms that belong to which one o... => FUNGI
+  ms-set02-sample-questions-r5-q06-tossup: [diversity, microbes]
+  # general_science: When the moon appears through the night as a thin crescent, the suns light: => STILL ILLUMINATES ABOUT HALF THE SURFACE
+  ms-set02-sample-questions-r5-q06-bonus: [solar-system]
+  # math: If a biker traveled at an average speed of 3 meters/second for 100 seconds, the length of ... => 300 METERS
+  ms-set02-sample-questions-r5-q07-tossup: [ratios-rates]
+  # math: If a perfect number is an integer equal to the sum of all its divisors, except the number ... => 6
+  ms-set02-sample-questions-r5-q07-bonus: [number-theory]
+  # life_science: Most animal eukaryotic cells have: => A PLASMA MEMBRANE, NUCLEUS, AND CYTOPLAS
+  ms-set02-sample-questions-r5-q08-tossup: [cells]
+  # life_science: What is the term used by Charles Darwin that he believed was the principle mechanism of ev... => NATURAL SELECTION
+  ms-set02-sample-questions-r5-q08-bonus: [evolution]
+  # general_science: In order from the beginning, what are the first 5 letters of the Greek alphabet? => alpha, beta, gamma, delta, epsilon
+  ms-set02-sample-questions-r5-q09-tossup: [math-misc]
+  # general_science: Rounded to the nearest whole number, what is the temperature in Fahrenheit of a substance ... => -40
+  ms-set02-sample-questions-r5-q09-bonus: [measurement]
+  # math: Identify the quotient, dividend, and divisor for 15 ÷ 3: => QUOTIENT = 5; DIVIDEND = 15; DIVISOR = 3
+  ms-set02-sample-questions-r5-q10-tossup: [arithmetic]
+  # math: Give the product of (x + 7) 2 in standard form: => x2 + 14 x + 49
+  ms-set02-sample-questions-r5-q10-bonus: [algebra]
+  # physical_science: Ultrasonic sound frequencies are typically considered to be => ABOVE 20,000 HERTZ
+  ms-set02-sample-questions-r5-q11-tossup: [waves-sound]
+  # physical_science: Predict which object made of the following metal will sink in a pool of Mercury, which has... => URANIUM, WHICH HAS A DENSITY OF 19.5 GRA
+  ms-set02-sample-questions-r5-q11-bonus: [matter-gases]
+  # earth_and_space: In what layer of the Earth’s atmosphere does most of our weather occur? => TROPOSPHERE
+  ms-set02-sample-questions-r5-q12-tossup: [weather]
+  # earth_and_space: Lines on a weather map connecting places of equal air pressure are called: => ISOBARS
+  ms-set02-sample-questions-r5-q12-bonus: [weather]
+  # life_science: What main artery carries oxygenated blood immediately away from left ventricle of the hear... => AORTA
+  ms-set02-sample-questions-r5-q13-tossup: [human-body]
+  # life_science: What is the vector that transmits Rocky Mountain Spotted Fever to humans? => THE TICK
+  ms-set02-sample-questions-r5-q13-bonus: [immunity-disease]
+  # general_science: On the Kelvin temperature scale give the whole number value that is the closest to absolut... => 0
+  ms-set02-sample-questions-r5-q14-tossup: [measurement, heat-thermo]
+  # general_science: Stars appear to have different colors because they have different: => TEMPERATURES
+  ms-set02-sample-questions-r5-q14-bonus: [stars]
+  # math: Solve the following equation: -4 + x = -5 => -1
+  ms-set02-sample-questions-r5-q15-tossup: [algebra]
+  # math: Give the median for the following data set: 32, 59, 68, 70, 84 => 68
+  ms-set02-sample-questions-r5-q15-bonus: [statistics]
+  # earth_and_space: Identify the type of structure associated with the following man-made structures in the Un... => DAMS
+  ms-set02-sample-questions-r5-q16-tossup: [renewables, surface-processes]
+  # earth_and_space: What is the name of the boundary between the troposphere and the stratosphere? => TROPOPAUSE
+  ms-set02-sample-questions-r5-q16-bonus: [weather]
+  # physical_science: The electrons that are shared in chemical bonds between atoms are most accurately called: => VALENCE ELECTRONS
+  ms-set02-sample-questions-r5-q17-tossup: [bonding]
+  # physical_science: In grams per milliliter, which of the following is closest to the density of ice: => .99
+  ms-set02-sample-questions-r5-q17-bonus: [matter-gases]
+  # life_science: What is the protein found in red blood cells that carries oxygen: => HEMOGLOBIN
+  ms-set02-sample-questions-r5-q18-tossup: [human-body, biochemistry]
+  # life_science: What is the vector for the germ which caused the black plague? => FLEA
+  ms-set02-sample-questions-r5-q18-bonus: [immunity-disease]
+  # earth_and_space: With a Mohs’ hardness of 10, what is the hardest mineral known? => DIAMOND
+  ms-set02-sample-questions-r5-q19-tossup: [rocks-minerals]
+  # earth_and_space: Most of the ozone in the Earth’s atmosphere is present in which layer? => STRATOSPHERE
+  ms-set02-sample-questions-r5-q19-bonus: [weather, climate-environment]
+  # general_science: What is the mineral that has tricked so many people into thinking it was the real precious... => IRON PYRITE
+  ms-set02-sample-questions-r5-q20-tossup: [rocks-minerals]
+  # general_science: Early astronomers observed lights that wandered among the stars, today we know these are: => PLANETS
+  ms-set02-sample-questions-r5-q20-bonus: [solar-system]
+  # general_science: What is the term used for the unusual infectious agents that cause mad cow disease? => PRIONS
+  ms-set02-sample-questions-r5-q21-tossup: [immunity-disease, microbes]
+  # general_science: George Washington Carver found over 100 uses for the organic molecules derived from what c... => PEANUT
+  ms-set02-sample-questions-r5-q21-bonus: [plants]
+  # earth_and_space: What is the name of the form of oxygen that is present in the atmosphere that protects lif... => OZONE
+  ms-set02-sample-questions-r5-q22-tossup: [climate-environment]
+  # earth_and_space: What are the names of the tides that occur when the sun’s tidal bulges and the moon’s tida... => NEAP TIDES
+  ms-set02-sample-questions-r5-q22-bonus: [oceans]
+  # math: The identity element for multiplication is what number? => 1
+  ms-set02-sample-questions-r5-q23-tossup: [arithmetic]
+  # math: After a discount of 20%, the price of a motorcycle was $10,000. What was the original pric... => $12,500.00
+  ms-set02-sample-questions-r5-q23-bonus: [ratios-rates]
+  # life_science: Mendel did most of his original experimentation using this type of plant: => PEA
+  ms-set02-sample-questions-r5-q24-tossup: [genetics]
+  # life_science: Where is intercellular fluid normally found? => OUTSIDE OF CELLS
+  ms-set02-sample-questions-r5-q24-bonus: [cells, human-body]
+  # physical_science: Whole multiples of the fundamental tone are usually called: => HARMONICS
+  ms-set02-sample-questions-r5-q25-tossup: [waves-sound]
+  # physical_science: If an atom of fluorine has an atomic number of 9 and an atomic mass of 18.998 , how many p... => 9 PROTONS, 10 NEUTRONS
+  ms-set02-sample-questions-r5-q25-bonus: [atoms]
+
+  # Round sample-questions-r6
+  # life_science: Which of the following accounts for the largest increase in cancer death rate in the USA b... => LUNG
+  ms-set02-sample-questions-r6-q01-tossup: [immunity-disease]
+  # life_science: The structure of DNA proposed by Watson and Crick was partly based on the x-ray work of: => ROSALIND FRANKLIN
+  ms-set02-sample-questions-r6-q01-bonus: [genetics]
+  # physical_science: If light is passed through two pin holes and the patterns allowed to overlap on a wall, th... => AN INTERFERENCE PATTERN
+  ms-set02-sample-questions-r6-q02-tossup: [light-em]
+  # physical_science: Add a second proton and two neutrons to the hydrogen nucleus and you have which element? => HELIUM
+  ms-set02-sample-questions-r6-q02-bonus: [atoms]
+  # general_science: To guard against sparks causing a fire, mechanics aboard submarines during World War II of... => BRONZE
+  ms-set02-sample-questions-r6-q03-tossup: [chemistry-misc]
+  # general_science: The shape of galaxies, stars, planets and their orbits is mostly attributed to: => GRAVITY
+  ms-set02-sample-questions-r6-q03-bonus: [motion-forces]
+  # math: What is the sum of the internal angles of a pentagon: => 540°
+  ms-set02-sample-questions-r6-q04-tossup: [plane-geometry]
+  # math: The longest straight line that can be drawn inside a circle is called its: => DIAMETER
+  ms-set02-sample-questions-r6-q05-tossup: [plane-geometry]
+  # math: If you walk north for 3 miles along 1st street and make a 90 degree right turn east onto B... => 5 MILES
+  ms-set02-sample-questions-r6-q05-bonus: [plane-geometry]
+  # earth_and_space: If air masses move toward mountains from the west, most of the moisture will fall on the => WEST SIDE OF THE MOUNTAINS
+  ms-set02-sample-questions-r6-q06-tossup: [weather]
+  # earth_and_space: Order the following periods of geological time from oldest to youngest: Jurassic, Cambrian... => CAMBRIAN; TRIASSIC; JURASSIC
+  ms-set02-sample-questions-r6-q06-bonus: [earth-history]
+  # physical_science: Which planet is the brightest when viewed from Earth? => VENUS
+  ms-set02-sample-questions-r6-q07-tossup: [solar-system]
+  # physical_science: If an atom of carbon has an atomic number of 6 and an atomic mass of 12.01, how many proto... => 6 PROTONS, 6 NEUTRONS
+  ms-set02-sample-questions-r6-q07-bonus: [atoms]
+  # life_science: In the traditional 5 Kingdom classification of organisms, four of the 5 Kingdoms are Anima... => MONERA
+  ms-set02-sample-questions-r6-q08-tossup: [diversity]
+  # life_science: Give the scientific names for the four chambers of the human heart: => LEFT VENTRICLE, RIGHT VENTRICLE, LEFT AT
+  ms-set02-sample-questions-r6-q08-bonus: [human-body]
+  # earth_and_space: Which of the following dominates the gasses in the Earth’s atmosphere, making up some 78% ... => NITROGEN
+  ms-set02-sample-questions-r6-q09-tossup: [weather]
+  # earth_and_space: Metamorphism transforms limestone into a metamorphic rock called: => MARBLE
+  ms-set02-sample-questions-r6-q09-bonus: [rocks-minerals]
+  # general_science: This powerful telescope weighs about 11 tons, has a primary mirror 7.9 feet in diameter, a... => THE HUBBLE TELESCOPE
+  ms-set02-sample-questions-r6-q10-tossup: [observing]
+  # general_science: Which of the following is NOT commonly thought of as an input device: => PRINTER
+  ms-set02-sample-questions-r6-q10-bonus: [physics-misc]
+  # life_science: Which of the following is a feeding structure in arachnids: => CHELICERAE
+  ms-set02-sample-questions-r6-q11-tossup: [diversity]
+  # life_science: In humans, ovulation usually occurs how many days before the start of the next menstrual p... => 14
+  ms-set02-sample-questions-r6-q11-bonus: [human-body]
+  # physical_science: What color light is produced by adding equal amounts of red, green, and blue light? => WHITE
+  ms-set02-sample-questions-r6-q12-tossup: [light-em]
+  # physical_science: Name the most common disaccharide, known as milk sugar, that is found in milk. => LACTOSE
+  ms-set02-sample-questions-r6-q12-bonus: [organic, biochemistry]
+  # math: Convert 3/20 into a percentage: => 15% (Solution = 15/100 = 15%)
+  ms-set02-sample-questions-r6-q13-tossup: [ratios-rates]
+  # math: Solve the following equation: 6x – 8 = 8 – 10x => 1
+  ms-set02-sample-questions-r6-q13-bonus: [algebra]
+  # life_science: Which of the following plants traps and digests insects: => SUN DEW
+  ms-set02-sample-questions-r6-q14-tossup: [plants]
+  # life_science: In human nerves, the nerve impulse or message occurs primarily because of the movement of ... => SODIUM AND POTASSIUM
+  ms-set02-sample-questions-r6-q14-bonus: [human-body]
+  # general_science: An autoclave would often be used by which of the following scientists? => MICROBIOLOGIST
+  ms-set02-sample-questions-r6-q15-tossup: [microbes, biology-misc]
+  # general_science: Which ones, if any, of the following elements are liquids at standard temperature and pres... => BROMINE AND MERCURY
+  ms-set02-sample-questions-r6-q15-bonus: [periodic-table]
+  # earth_and_space: What happened in 1815 to cause that year to be named “the year without a summer?” => A LARGE VOLCANO ERUPTED
+  ms-set02-sample-questions-r6-q16-tossup: [volcanoes, climate-environment]
+  # earth_and_space: When, in the geologic column, did dinosaurs become extinct? => AT THE CRETACEOUS-TERTIARY BOUNDARY
+  ms-set02-sample-questions-r6-q16-bonus: [earth-history]
+  # general_science: The common mineral beryl, when found in its green crystalline form, is most commonly known... => EMERALD
+  ms-set02-sample-questions-r6-q17-tossup: [rocks-minerals]
+  # general_science: The unique property of carbon that is important to living organisms is its ability to: => FORM LONG CHAINS OF CARBON ATOMS
+  ms-set02-sample-questions-r6-q17-bonus: [organic, bonding]
+  # math: Convert the decimal fraction 0.055 into its common fraction: => 55/1000
+  ms-set02-sample-questions-r6-q18-tossup: [arithmetic]
+  # math: Solve the following equation: -2 + x = 5 => 7
+  ms-set02-sample-questions-r6-q18-bonus: [algebra]
+  # physical_science: When Natalie rides in a circle on her horse she perceives a force which tends to throw her... => CENTRIFUGAL FORCE
+  ms-set02-sample-questions-r6-q19-tossup: [motion-forces]
+  # physical_science: If an atom of gold has an atomic number of 79 and an atomic mass of 197, how many protons ... => 79 PROTONS, 118 NEUTRONS
+  ms-set02-sample-questions-r6-q19-bonus: [atoms]
+  # life_science: Which of the following is the organ mainly responsible for producing digestive enzymes and... => PANCREAS
+  ms-set02-sample-questions-r6-q20-tossup: [human-body]
+  # life_science: Made up of barbs, calami, and shafts these are one of the most distinctive structures of t... => FEATHERS
+  ms-set02-sample-questions-r6-q20-bonus: [diversity]
+  # physical_science: Which of the following musical instruments can produce a pure tone: => ELECTRONIC SYNTHESIZER
+  ms-set02-sample-questions-r6-q21-tossup: [waves-sound]
+  # physical_science: Which is the lightest metal in the group known in the periodic table as the alkali metals? => LITHIUM
+  ms-set02-sample-questions-r6-q21-bonus: [periodic-table]
+  # earth_and_space: What is the name given to the tides that occur during the new moon and full moon? => SPRING TIDES
+  ms-set02-sample-questions-r6-q22-tossup: [oceans]
+  # earth_and_space: In limestone formations, the development of caves requires water and which of the followin... => CARBON DIOXIDE
+  ms-set02-sample-questions-r6-q22-bonus: [surface-processes]
+  # math: What is the formula for the volume of a sphere of radius R: => 4/3 πR^3
+  ms-set02-sample-questions-r6-q23-tossup: [solid-geometry]
+  # math: Which of the following are rational numbers: -8, - 3 , 1/5, 0, π (pronounced: pie) => -8, 1/5, 0
+  ms-set02-sample-questions-r6-q23-bonus: [number-theory]
+  # general_science: What is the name for the outermost layer of the sun? => CORONA
+  ms-set02-sample-questions-r6-q24-tossup: [stars]
+  # general_science: Kevin wishes to look at the stars with his binoculars. He also wants to look at a star cha... => RED
+  ms-set02-sample-questions-r6-q24-bonus: [observing]
+  # earth_and_space: The typical thunderstorm clouds of summer, sometimes referred to as hammerheads or thunder... => CUMULONIMBUS
+  ms-set02-sample-questions-r6-q25-tossup: [weather]
+  # earth_and_space: About how far away is the closest star to the Earth? => 93 MILLION MILES
+  ms-set02-sample-questions-r6-q25-bonus: [stars]
+
+  # Round sample-questions-r7
+  # general_science: Which of the following acids is NOT a flavoring used in foods? => NITRIC ACID
+  ms-set02-sample-questions-r7-q01-tossup: [acids-bases]
+  # general_science: Which of the following is used to focus the electron beam in an electron microscope? => ELECTROMAGNETS
+  ms-set02-sample-questions-r7-q01-bonus: [magnetism]
+  # math: What is the square root of 0.49? => 0.7
+  ms-set02-sample-questions-r7-q02-tossup: [arithmetic]
+  # math: Simplify the following algebraic expression: 3x2 + 4 – (3x + 2 – x2) => 4x2 – 3x + 2
+  ms-set02-sample-questions-r7-q02-bonus: [algebra]
+  # life_science: Which is not a basic muscle type in the human body? => VENTRICULAR
+  ms-set02-sample-questions-r7-q03-tossup: [human-body]
+  # life_science: Stamen is to anther as carpel is to: => OVARY
+  ms-set02-sample-questions-r7-q03-bonus: [plants]
+  # earth_and_space: Eighty percent of the magma that results from a volcanic eruption is of what substance? => BASALT
+  ms-set02-sample-questions-r7-q04-tossup: [volcanoes]
+  # earth_and_space: Each day, most coastal beaches encounter: => TWO HIGH TIDES AND TWO LOW TIDES
+  ms-set02-sample-questions-r7-q04-bonus: [oceans]
+  # general_science: Which of the following is most typically used as a unit of measurement for pressure: => PASCAL
+  ms-set02-sample-questions-r7-q05-tossup: [measurement]
+  # general_science: Which of the following household items is the best example of containing matter in the pla... => FLUORESCENT LIGHT
+  ms-set02-sample-questions-r7-q05-bonus: [matter-gases]
+  # earth_and_space: The last two stars in the bowl of the big dipper point to which of the following? => POLARIS
+  ms-set02-sample-questions-r7-q06-tossup: [observing]
+  # earth_and_space: What is an area on earth that does not receive seismic waves during an earthquake called? => SHADOW ZONE
+  ms-set02-sample-questions-r7-q06-bonus: [tectonics]
+  # physical_science: Certain products have been designed so that people wearing headphones do not hear the obje... => DESTRUCTIVE INTERFERENCE
+  ms-set02-sample-questions-r7-q07-tossup: [waves-sound]
+  # physical_science: In chemical reactions when bonds between atoms are broken which of the following is most c... => ENERGY IS ALWAYS NEEDED
+  ms-set02-sample-questions-r7-q07-bonus: [thermo-kinetics]
+  # math: If the average speed of a bicyclist is 2 meters/second for one kilometer, then the biker m... => TOOK 500 SECONDS
+  ms-set02-sample-questions-r7-q08-tossup: [ratios-rates]
+  # math: Simplify the following algebraic expression: 2x + 3(y + 3z + x) => 5x + 3y + 9z
+  ms-set02-sample-questions-r7-q08-bonus: [algebra]
+  # physical_science: If the distance separating two charges is tripled, the force between them decreases by wha... => 9
+  ms-set02-sample-questions-r7-q09-tossup: [electricity]
+  # physical_science: The reason why a beach ball held under the surface will pop up when released is because: => THE BUOYANT FORCE HAS A NET UPWARD DIREC
+  ms-set02-sample-questions-r7-q09-bonus: [fluids]
+  # math: Reduce 18/54 to its lowest fraction: => 1/3
+  ms-set02-sample-questions-r7-q10-tossup: [arithmetic]
+  # math: Find the value of 4x – 6y if x = -2 and y = -3: => 10
+  ms-set02-sample-questions-r7-q10-bonus: [algebra]
+  # life_science: The receptors in the retina of the eye that detect faint light and transfer non-color impu... => RODS
+  ms-set02-sample-questions-r7-q11-tossup: [human-body]
+  # life_science: Which of the following does NOT occur in mitosis: => DNA SYNTHESIS
+  ms-set02-sample-questions-r7-q11-bonus: [cells]
+  # physical_science: Which of the following is the emission source for microwaves in a typical microwave oven: => MAGNETRON
+  ms-set02-sample-questions-r7-q12-tossup: [light-em]
+  # physical_science: The red color in firework displays on the Fourth of July is caused by which element? => LITHIUM
+  ms-set02-sample-questions-r7-q12-bonus: [atoms]
+  # earth_and_space: Which of the following is a calcite-rich carbonate rock: => LIMESTONE
+  ms-set02-sample-questions-r7-q13-tossup: [rocks-minerals]
+  # earth_and_space: What is the hot, putty like layer of Earth's mantle located from about 75 to 300 kilometer... => ASTHENOSPHERE
+  ms-set02-sample-questions-r7-q13-bonus: [tectonics]
+  # life_science: Which of the following is an example of a multiple fruit? => PINEAPPLE
+  ms-set02-sample-questions-r7-q14-tossup: [plants]
+  # life_science: Binomial nomenclature is classically made up of what two taxonomical terms? => GENUS and SPECIES
+  ms-set02-sample-questions-r7-q14-bonus: [diversity]
+  # earth_and_space: What is the name of a mixture of molten rock, suspended mineral grains, and dissolved gase... => MAGMA
+  ms-set02-sample-questions-r7-q15-tossup: [volcanoes]
+  # earth_and_space: A famous downslope wind that occurs in North America on the East side of the Rocky Mountai... => CHINOOK
+  ms-set02-sample-questions-r7-q15-bonus: [weather]
+  # life_science: Spallanzani, Reti and Pasteur were all: => HELPFUL IN DISPROVING THE THEORY OF SPON
+  ms-set02-sample-questions-r7-q16-tossup: [microbes, biology-misc]
+  # life_science: What organ of the human body is primarily responsible for removing abnormal red blood cell... => SPLEEN
+  ms-set02-sample-questions-r7-q16-bonus: [human-body]
+  # general_science: Which of the following is a gas which presents a serious risk for cancer to thousands of A... => RADON
+  ms-set02-sample-questions-r7-q17-tossup: [periodic-table]
+  # general_science: What fibrous protein found in nature is well known by scientists to be stronger by weight ... => SILK
+  ms-set02-sample-questions-r7-q17-bonus: [biochemistry]
+  # general_science: Which of the following is the boiling point of water in the Kelvin temperature scale: => 373.18
+  ms-set02-sample-questions-r7-q18-tossup: [measurement]
+  # general_science: If you want to specify the position of an object you must use: => A REFERENCE POINT
+  ms-set02-sample-questions-r7-q18-bonus: [motion-forces]
+  # earth_and_space: A rising barometer and clear skies indicate an approaching: => HIGH-PRESSURE AREA
+  ms-set02-sample-questions-r7-q19-tossup: [weather]
+  # earth_and_space: You find a mineral in the local rock shop. You know it is composed of carbonate, that it h... => CALCITE
+  ms-set02-sample-questions-r7-q19-bonus: [rocks-minerals]
+  # math: What is the least common denominator for the following operation: 1/2 + 2/3 + 4/5 => 30
+  ms-set02-sample-questions-r7-q20-tossup: [arithmetic]
+  # math: If in a sequence of natural numbers, starting with 2, you begin eliminating every second n... => PRIME NUMBERS
+  ms-set02-sample-questions-r7-q20-bonus: [number-theory]
+  # physical_science: Where is the gravitational force the greatest for a uniform spherical planet: => AT ITS SURFACE
+  ms-set02-sample-questions-r7-q21-tossup: [motion-forces]
+  # physical_science: Which best explains the idea of conservation of matter in chemical reactions: => ATOMS ARE NEITHER CREATED OR DESTROYED
+  ms-set02-sample-questions-r7-q21-bonus: [reactions]
+  # general_science: In a mercury barometer, which of the following is the typically reported height of the col... => 760 MILLIMETERS
+  ms-set02-sample-questions-r7-q22-tossup: [fluids, measurement]
+  # general_science: For a given compound, motion at the molecular level is: => GREATEST FOR GASES
+  ms-set02-sample-questions-r7-q22-bonus: [matter-gases]
+  # physical_science: What is the following statement most commonly known as: “A body immersed in a fluid is sup... => ARCHIMEDES’ PRINCIPLE
+  ms-set02-sample-questions-r7-q23-tossup: [fluids]
+  # physical_science: Boats made of iron and steel will float because: => THE WATER DISPLACED BY THE BOAT WEIGHS M
+  ms-set02-sample-questions-r7-q23-bonus: [fluids]
+  # life_science: A potato is a swollen underground stem that stores food for the plant. What is the scienti... => TUBER
+  ms-set02-sample-questions-r7-q24-tossup: [plants]
+  # life_science: Give the common colloquial names in respective order for the following 3 anatomical struct... => KNEE CAP, SHOULDER BLADE, BIG TOE
+  ms-set02-sample-questions-r7-q24-bonus: [human-body]
+  # math: What is the length of the hypotenuse of a right triangle whose other two sides are 6 and 8... => 10
+  ms-set02-sample-questions-r7-q25-tossup: [plane-geometry]
+  # math: If you were to invest $1000 in a savings account that pays 5% simple annual interest, how ... => $50
+  ms-set02-sample-questions-r7-q25-bonus: [ratios-rates]
+
+  # Round sample-questions-r8
+  # math: For numbers < 10 (read as: less than or equal to 10) , and not including the number 1, how... => 4
+  ms-set02-sample-questions-r8-q01-tossup: [number-theory]
+  # math: Factor the expression: x2 + 3x – 10 => (x + 5) (x – 2)
+  ms-set02-sample-questions-r8-q01-bonus: [algebra]
+  # life_science: A summary reaction for photosynthesis is: => CO2 + H2O AND LIGHT YIELDS CARBOHYDRATE 
+  ms-set02-sample-questions-r8-q02-tossup: [plants]
+  # life_science: It is generally believed that most of the oxygen in the air today came from: => PHOTOSYNTHESIS
+  ms-set02-sample-questions-r8-q02-bonus: [earth-history, plants]
+  # life_science: Osmosis is: => THE MOVEMENT OF WATER THROUGH A SEMI-PER
+  ms-set02-sample-questions-r8-q03-tossup: [cells]
+  # life_science: Which of the following is most accurate about the pasteurization of milk: => IT REDUCES THE POPULATION OF BACTERIA BY
+  ms-set02-sample-questions-r8-q03-bonus: [microbes]
+  # earth_and_space: The hard rock under the topsoil in eastern Washington state was laid down over millions of... => BASALT
+  ms-set02-sample-questions-r8-q04-tossup: [volcanoes, rocks-minerals]
+  # earth_and_space: Wind speed is measured by what instrument? => ANEMOMETER
+  ms-set02-sample-questions-r8-q04-bonus: [weather]
+  # general_science: Doubling a musical note's amplitude: => INCREASES ITS LOUDNESS
+  ms-set02-sample-questions-r8-q05-tossup: [waves-sound]
+  # general_science: Physicists believe there are four fundamental forces of nature. Name any two of them. => GRAVITATIONAL, ELECTROMAGNETIC, STRONG, 
+  ms-set02-sample-questions-r8-q05-bonus: [physics-misc]
+  # physical_science: Spanky swings a ball on the end of a string and maintains it in uniform circular motion, w... => CENTRIPETAL
+  ms-set02-sample-questions-r8-q06-tossup: [motion-forces]
+  # physical_science: The density of an object is a property that depends on: => NONE OF THE ABOVE
+  ms-set02-sample-questions-r8-q06-bonus: [matter-gases]
+  # physical_science: Amplitude modulation is typically associated with what common form of communication: => RADIO TRANSMISSION
+  ms-set02-sample-questions-r8-q07-tossup: [waves-sound, light-em]
+  # physical_science: Which of the following elements does not occur naturally in nature: => TECHNETIUM
+  ms-set02-sample-questions-r8-q07-bonus: [periodic-table]
+  # math: Which of the following is NOT true: => ALL NUMBERS CAN BE BOTH A RATIONAL NUMBE
+  ms-set02-sample-questions-r8-q08-tossup: [number-theory]
+  # math: Factor the following equation: x2 – 6x + 5 = 0 => (x – 5) (x – 1) = 0
+  ms-set02-sample-questions-r8-q08-bonus: [algebra]
+  # earth_and_space: As more fossil fuels are burned to produce energy, the greenhouse effect will continue to ... => CARBON DIOXIDE
+  ms-set02-sample-questions-r8-q09-tossup: [climate-environment]
+  # earth_and_space: Which of the following is sometimes called volcanic glass because of its shiny appearance: => OBSIDIAN
+  ms-set02-sample-questions-r8-q09-bonus: [rocks-minerals]
+  # general_science: Which of the following is the most common cause of deaths in American women between the ag... => BREAST CANCER
+  ms-set02-sample-questions-r8-q10-tossup: [immunity-disease]
+  # general_science: Order the following from the SMALLEST unit of distance to the LARGEST: mile, rod, feet, ki... => FOOT, ROD, KILOMETER, MILE
+  ms-set02-sample-questions-r8-q10-bonus: [measurement]
+  # physical_science: For two objects separated by a distance d, if the mass of one of the objects increases by ... => TWO
+  ms-set02-sample-questions-r8-q11-tossup: [motion-forces]
+  # physical_science: Which of the following elements is found in Period 2 and Group 4A of the Periodic Table: => CARBON
+  ms-set02-sample-questions-r8-q11-bonus: [periodic-table]
+  # general_science: Tomorrow's weather forecast report for Venus would be: => OVERCAST & HOT
+  ms-set02-sample-questions-r8-q12-tossup: [solar-system]
+  # general_science: What part of the cotton plant produces what is used to make cotton fabric. => FLOWERS OR SEED PODS
+  ms-set02-sample-questions-r8-q12-bonus: [plants]
+  # math: In standard form, give the product of (a + b)2: => a2 + 2ab + b2
+  ms-set02-sample-questions-r8-q13-tossup: [algebra]
+  # math: Solve the following equation: 2x + 4 = 6 + 2x => NO SOLUTION
+  ms-set02-sample-questions-r8-q13-bonus: [algebra]
+  # life_science: In bean and corn seeds, the food supply that is used by the seed to germinate and grow is ... => COTYLEDON
+  ms-set02-sample-questions-r8-q14-tossup: [plants]
+  # life_science: Which of the following infectious diseases cannot be cured with current antibiotics: => INFLUENZA
+  ms-set02-sample-questions-r8-q14-bonus: [immunity-disease]
+  # life_science: The green pigment in plants that captures the energy of sunlight and initiates photosynthe... => CHLOROPHYLL
+  ms-set02-sample-questions-r8-q15-tossup: [plants]
+  # life_science: Which of the following is an ectoparasite: => LICE
+  ms-set02-sample-questions-r8-q15-bonus: [ecology]
+  # earth_and_space: What is the name for the fossilized sap of ancient conifer trees that has become brittle a... => AMBER
+  ms-set02-sample-questions-r8-q16-tossup: [earth-history]
+  # earth_and_space: Which of the following minerals constitute approximately 60% of the Earth’s crust: => FELDSPAR
+  ms-set02-sample-questions-r8-q16-bonus: [rocks-minerals]
+  # general_science: In humans, fertilization of the egg occurs most typically in which of the following? => FALLOPIAN TUBE
+  ms-set02-sample-questions-r8-q17-tossup: [human-body]
+  # general_science: Which of the following is closest to the length of a U.S. five dollar bill? => 16 CM
+  ms-set02-sample-questions-r8-q17-bonus: [measurement]
+  # general_science: In a typical four cycle gasoline car engine, what are the most common names for the third ... => IGNITION
+  ms-set02-sample-questions-r8-q18-tossup: [fuels-combustion]
+  # general_science: Order the following from the least used energy source to produce electricity in the U.S.A.... => HYDROELECTRICITY, OIL, NUCLEAR, COAL
+  ms-set02-sample-questions-r8-q18-bonus: [energy-use]
+  # physical_science: A manual laborer moves 40 kilograms of flour 5 feet above the ground in 5 seconds. If she ... => POWER
+  ms-set02-sample-questions-r8-q19-tossup: [energy-work]
+  # physical_science: What is the chemical symbol for the toxic element that causes mental retardation and is me... => Pb
+  ms-set02-sample-questions-r8-q19-bonus: [periodic-table]
+  # earth_and_space: Which of the following is primarily involved in the movement of a glacier: => GRAVITY
+  ms-set02-sample-questions-r8-q20-tossup: [surface-processes]
+  # earth_and_space: The Saffir-Simpson Scale is used to classify intensities of: => HURRICANES
+  ms-set02-sample-questions-r8-q20-bonus: [weather]
+  # math: The equation, x = -4, is which of the following: => A CONDITIONAL EQUATION
+  ms-set02-sample-questions-r8-q21-tossup: [algebra]
+  # math: Express the square root of 75 in its simplest radical form: => 5 3
+  ms-set02-sample-questions-r8-q21-bonus: [arithmetic]
+  # physical_science: This person established the “one fluid theory” of electricity and performed some of the fi... => BEN FRANKLIN
+  ms-set02-sample-questions-r8-q22-tossup: [electricity]
+  # physical_science: What is always unchanged in any chemical reaction as reactants form products: => THE KIND AND NUMBER OF ATOMS
+  ms-set02-sample-questions-r8-q22-bonus: [reactions]
+  # earth_and_space: A continental glacier is found in which of the following locations: => GREENLAND
+  ms-set02-sample-questions-r8-q23-tossup: [surface-processes]
+  # earth_and_space: The ability of mica to split into flat planar flakes resembling the leaves of a book is ca... => CLEAVAGE
+  ms-set02-sample-questions-r8-q23-bonus: [rocks-minerals]
+  # math: What is the square root of ¼? => ½
+  ms-set02-sample-questions-r8-q24-tossup: [arithmetic]
+  # math: Simplify the following algebraic expression: 4x – 3(a – b) => 4x – 3a + 3b
+  ms-set02-sample-questions-r8-q24-bonus: [algebra]
+  # life_science: Which of the following is the hormone produced by the human body to control blood sugar an... => INSULIN
+  ms-set02-sample-questions-r8-q25-tossup: [human-body]
+  # life_science: The wing of a bird and the arm of a human are considered: => HOMOLOGOUS STRUCTURES
+  ms-set02-sample-questions-r8-q25-bonus: [evolution]
+
+  # Round sample-questions-r9
+  # physical_science: Which of the following components corresponds to the pitch of a sound wave: => FREQUENCY
+  ms-set02-sample-questions-r9-q01-tossup: [waves-sound]
+  # physical_science: In a closed container, if a gas is heated, which of the following occurs: => THE PRESSURE WILL INCREASE
+  ms-set02-sample-questions-r9-q01-bonus: [matter-gases]
+  # life_science: Which of the following is NOT true: => ALL THE DNA IN A EUKARYOTIC CELL IS CONT
+  ms-set02-sample-questions-r9-q02-tossup: [genetics]
+  # life_science: What is the name of the layer of cells that are produced by the phellogen and, as they mat... => CORK
+  ms-set02-sample-questions-r9-q02-bonus: [plants]
+  # life_science: Which of the following is the correct botanical term for the stem of a flower: => PEDUNCLE
+  ms-set02-sample-questions-r9-q03-tossup: [plants]
+  # life_science: When reading the level of a fluid in a graduated cylinder, what part of the meniscus is li... => THE BOTTOM OF THE MENISCUS
+  ms-set02-sample-questions-r9-q03-bonus: [chemistry-misc]
+  # earth_and_space: The Arctic Circle lies at which of the following latitudes: => 66 ½° NORTH
+  ms-set02-sample-questions-r9-q04-tossup: [earth-space-misc]
+  # earth_and_space: What is the only common mineral to be strongly magnetic other than magnetite: => PYRRHOTITE
+  ms-set02-sample-questions-r9-q04-bonus: [rocks-minerals]
+  # math: A graph of a stationary object graphed with position on the vertical axis and time on the ... => A HORIZONTAL LINE
+  ms-set02-sample-questions-r9-q05-tossup: [graphs-functions]
+  # math: Combine the terms in the following expression: 5 + 3x – 2y – 10 => 3x – 2y – 5
+  ms-set02-sample-questions-r9-q05-bonus: [algebra]
+  # general_science: Which of the following would typically be the most accurate for measuring exactly 1 liter ... => a pyrex 1 liter graduated cylinder
+  ms-set02-sample-questions-r9-q06-tossup: [chemistry-misc]
+  # general_science: Pavlov is noted to have developed what is called classical conditioning. Which of the foll... => A DOG HEARS ITS OWNER OPENING A CAN OF F
+  ms-set02-sample-questions-r9-q06-bonus: [behavior]
+  # general_science: Which of the following is the most effective means of preventing the spread of infections ... => WASHING HANDS FREQUENTLY
+  ms-set02-sample-questions-r9-q07-tossup: [immunity-disease]
+  # general_science: Which of the following best describes what most experts believe about Homo sapiens? => THEY AROSE OUT OF AFRICA LESS THAN 200,0
+  ms-set02-sample-questions-r9-q07-bonus: [evolution]
+  # earth_and_space: An increase in chlorine in the stratosphere is believed to be the cause of which of the fo... => THE ANTARCTIC OZONE HOLE
+  ms-set02-sample-questions-r9-q08-tossup: [climate-environment]
+  # earth_and_space: Order the following minerals from the hardest to the softest: Calcite; Talc; Quartz; Diamo... => DIAMOND; QUARTZ; CALCITE; TALC
+  ms-set02-sample-questions-r9-q08-bonus: [rocks-minerals]
+  # physical_science: At which temperature would water most likely boil on Mount McKinley: => 90°C
+  ms-set02-sample-questions-r9-q09-tossup: [matter-gases]
+  # physical_science: If one holds a piece of notebook paper vertically in front of and below the mouth and blow... => BERNOULLI’S LAW
+  ms-set02-sample-questions-r9-q09-bonus: [fluids]
+  # math: In the following set of numbers, which is NOT a prime number: 3, 5, 11, 17, 25, 29 => 25
+  ms-set02-sample-questions-r9-q10-tossup: [number-theory]
+  # math: A farmer wants to make a square fenced-in area for his cows, with an area of 1600 square f... => 12
+  ms-set02-sample-questions-r9-q10-bonus: [plane-geometry]
+  # physical_science: The property of water which permits an insect to “walk” on water is: => SURFACE TENSION
+  ms-set02-sample-questions-r9-q11-tossup: [fluids]
+  # physical_science: Molecules that have the same chemical formula but have different shapes or geometric arran... => ISOMERS
+  ms-set02-sample-questions-r9-q11-bonus: [organic]
+  # earth_and_space: Which of the following is NOT true regarding the far side of the moon: => IT IS ALWAYS DARK
+  ms-set02-sample-questions-r9-q12-tossup: [solar-system]
+  # earth_and_space: The Fujita Scale is used to classify intensities of: => TORNADOES
+  ms-set02-sample-questions-r9-q12-bonus: [weather]
+  # math: Continuing up the number sequence of natural numbers, prime numbers become which of the fo... => LESS AND LESS FREQUENT
+  ms-set02-sample-questions-r9-q13-tossup: [number-theory]
+  # math: If you begin with 1 and double it 12 times, what will the total be? => 4,096
+  ms-set02-sample-questions-r9-q13-bonus: [arithmetic]
+  # earth_and_space: Most of the rain that reaches the ground is from which of the following clouds? => NIMBUS
+  ms-set02-sample-questions-r9-q14-tossup: [weather]
+  # earth_and_space: A tropical storm will be declared a hurricane when: => THERE IS EVIDENCE OF EYE FORMATION AND S
+  ms-set02-sample-questions-r9-q14-bonus: [weather]
+  # life_science: Which of the following is the most specific place where the subunits of ribosomes are made... => NUCLEOLUS
+  ms-set02-sample-questions-r9-q15-tossup: [cells]
+  # life_science: Which of the following is NOT characteristic of mitosis: => CROSSING OVER
+  ms-set02-sample-questions-r9-q15-bonus: [cells]
+  # general_science: What substance, because of its ability to dissolve so many different things, is usually co... => Water
+  ms-set02-sample-questions-r9-q16-tossup: [solutions]
+  # general_science: In typical U.S. household wiring, which of the following colored wires is properly matched... => GREEN FOR GROUND
+  ms-set02-sample-questions-r9-q16-bonus: [electricity]
+  # earth_and_space: Which of the following occurs during a lunar eclipse? => THE EARTH PASSES BETWEEN THE SUN AND THE
+  ms-set02-sample-questions-r9-q17-tossup: [solar-system]
+  # earth_and_space: Magnetite is composed of what two elements? => IRON AND OXYGEN
+  ms-set02-sample-questions-r9-q17-bonus: [rocks-minerals]
+  # physical_science: By passing current through a wire wrapped around an iron rod, William Sturgeon invented th... => ELECTROMAGNET
+  ms-set02-sample-questions-r9-q18-tossup: [magnetism]
+  # physical_science: In pursuit of an insect, a lizard, braced against a rock, accelerates with a horizontal ma... => 45 NEWTONS
+  ms-set02-sample-questions-r9-q18-bonus: [motion-forces]
+  # math: The equation y (5+2y) = y × 5 + y × 2y (read as: y times, parentheses, five plus two y, cl... => DISTRIBUTIVE PROPERTY
+  ms-set02-sample-questions-r9-q19-tossup: [algebra]
+  # math: Combine the terms in the following expression: 12xy – 4x + 6y – 20yx => -10xy – 4x + 6y
+  ms-set02-sample-questions-r9-q19-bonus: [algebra]
+  # general_science: Barney and Fred are looking at a star chart listing the brightness of stars to observers o... => THE MOON
+  ms-set02-sample-questions-r9-q20-tossup: [stars]
+  # general_science: Which two of the following 5 elements are named after famous female scientists? Berkelium,... => MEITNERIUM, CURIUM
+  ms-set02-sample-questions-r9-q20-bonus: [periodic-table]
+  # general_science: Where will you most likely absorb the most ionizing radiation? => IN A SPACE SHUTTLE 30 MILES ABOVE THE EA
+  ms-set02-sample-questions-r9-q21-tossup: [modern-physics]
+  # general_science: Rounded to the nearest hundred, what is the temperature in Fahrenheit of a substance at 10... => 1800
+  ms-set02-sample-questions-r9-q21-bonus: [measurement]
+  # life_science: The presence of which of the following is what makes rough endoplasmic reticulum appear ro... => RIBOSOMES
+  ms-set02-sample-questions-r9-q22-tossup: [cells]
+  # life_science: A lack of the neurotransmitter dopamine in the brain of humans causes what disease that af... => PARKINSON’S
+  ms-set02-sample-questions-r9-q22-bonus: [human-body]
+  # math: The price of a postage stamp changes from 33 cents to 34 cents. What is the percent increa... => 3
+  ms-set02-sample-questions-r9-q23-tossup: [ratios-rates]
+  # math: Simplify the following equation: 7x^2/x^3 => 7/x
+  ms-set02-sample-questions-r9-q23-bonus: [algebra]
+  # life_science: Which of the following is NOT a protist? => ANABAENA
+  ms-set02-sample-questions-r9-q24-tossup: [microbes, diversity]
+  # life_science: Give the respective common name for the following tissues: hepatic, cardiac, epidermis. => LIVER, HEART, SKIN
+  ms-set02-sample-questions-r9-q24-bonus: [human-body]
+  # physical_science: The ability of a semiconductor to carry a current is increased by a process called: => DOPING
+  ms-set02-sample-questions-r9-q25-tossup: [electricity]
+  # physical_science: Order the following from the LOWEST to the HIGHEST temperature: water boils, iron melts, a... => AMMONIA BOILS, WATER BOILS, TIN MELTS, I
+  ms-set02-sample-questions-r9-q25-bonus: [matter-gases]
+
+  # Round sample-questions-r10
+  # general_science: Fungi are usually spread most effectively by: => AIRBORNE SPORES
+  ms-set02-sample-questions-r10-q01-tossup: [microbes]
+  # general_science: When using a compound light microscope, which of the following is the proper procedure for... => BEGIN WITH A LOW POWER OBJECTIVE AND USE
+  ms-set02-sample-questions-r10-q01-bonus: [observing, biology-misc]
+  # math: Factor the following quadratic equation: x^2 + 6x + 9 => (x + 3)(x + 3) or (x + 3)^2
+  ms-set02-sample-questions-r10-q02-tossup: [algebra]
+  # math: If you count from 1 to 100, how many 9's will you pass on the way? => 20
+  ms-set02-sample-questions-r10-q02-bonus: [counting-probability]
+  # math: Which of the following is a binomial? => x − 2
+  ms-set02-sample-questions-r10-q03-tossup: [algebra]
+  # math: What are all the integral factors of the number 22? => 1, 2, 11, 22
+  ms-set02-sample-questions-r10-q03-bonus: [number-theory]
+  # life_science: During photosynthesis, for every molecule of glucose that is made, how many molecules of c... => SIX CARBON DIOXIDE MOLECULES AND SIX WAT
+  ms-set02-sample-questions-r10-q04-tossup: [plants, biochemistry]
+  # life_science: Which of the following best describes antibodies: => A GROUP OF PROTEINS MADE BY PLASMA CELLS
+  ms-set02-sample-questions-r10-q04-bonus: [immunity-disease]
+  # earth_and_space: If wind speeds in a storm are clocked in excess of 200 mph, this is most likely a measurem... => TORNADO
+  ms-set02-sample-questions-r10-q05-tossup: [weather]
+  # earth_and_space: S-waves produced by earthquakes, do not travel through the Earth’s: => OUTER CORE
+  ms-set02-sample-questions-r10-q05-bonus: [tectonics]
+  # physical_science: What causes skin to sunburn after prolonged exposure to sunlight? => ULTRAVIOLET LIGHT
+  ms-set02-sample-questions-r10-q06-tossup: [light-em]
+  # physical_science: An automobile traveling at 100 kilometers per hour has how many more times the kinetic ene... => 4 TIMES
+  ms-set02-sample-questions-r10-q06-bonus: [energy-work]
+  # physical_science: The melting of lead, the freezing of water, and the sublimation of dry ice, are all exampl... => PHYSICAL CHANGES
+  ms-set02-sample-questions-r10-q07-tossup: [matter-gases]
+  # physical_science: If a 90 kilogram object displaces 30 kilograms of water when immersed, what will its appar... => 60 KILOGRAMS
+  ms-set02-sample-questions-r10-q07-bonus: [fluids]
+  # general_science: Which of the following temperatures in degrees Centigrade most likely corresponds to the h... => 57 DEGREES C
+  ms-set02-sample-questions-r10-q08-tossup: [weather]
+  # general_science: We know from solar eclipses that the Moon and the Sun appear in the sky to be: => ABOUT THE SAME DIAMETER
+  ms-set02-sample-questions-r10-q08-bonus: [solar-system]
+  # life_science: The spines of cacti are a modification of what plant structure? => LEAF
+  ms-set02-sample-questions-r10-q09-tossup: [plants]
+  # life_science: Which of the following cells would typically be capable of the greatest amount of phagocyt... => MACROPHAGES
+  ms-set02-sample-questions-r10-q09-bonus: [immunity-disease]
+  # math: Which of the following is TRUE of the following equation: 3x + 9 = 9 + 3x => THE EQUATION IS AN IDENTITY
+  ms-set02-sample-questions-r10-q10-tossup: [algebra]
+  # math: What 3 consecutive numbers add up to 39? => 12, 13, AND 14
+  ms-set02-sample-questions-r10-q10-bonus: [algebra]
+  # earth_and_space: The San Andreas Fault in California is an example of what type of plate margin: => TRANSFORM FAULT MARGIN
+  ms-set02-sample-questions-r10-q11-tossup: [tectonics]
+  # earth_and_space: Order the following minerals from the hardest to the softest: Corundum; Quartz; Fluorite => CORUNDUM; QUARTZ; FLUORITE
+  ms-set02-sample-questions-r10-q11-bonus: [rocks-minerals]
+  # physical_science: Which of the following is largely responsible for the characteristic bad odor of a rotten ... => HYDROGEN SULFIDE
+  ms-set02-sample-questions-r10-q12-tossup: [reactions]
+  # physical_science: Which of the following solutions will conduct electricity the best? => SODIUM CHLORIDE AND DISTILLER WATER
+  ms-set02-sample-questions-r10-q12-bonus: [solutions, electricity]
+  # general_science: If Todd weighs 88 pounds, rounded to the nearest whole number, how much does he weigh in k... => 40
+  ms-set02-sample-questions-r10-q13-tossup: [measurement]
+  # general_science: Which of the following U.S. year 2001 coins is closest in diameter to 2 cm? => A PENNY
+  ms-set02-sample-questions-r10-q13-bonus: [measurement]
+  # earth_and_space: How many times does the Moon appear as half-full during a single lunar cycle? => 2
+  ms-set02-sample-questions-r10-q14-tossup: [solar-system]
+  # earth_and_space: Which of the following is true of the Hawaiian chain of islands: => THEY ARE THOUGHT TO BE THE RESULT OF THE
+  ms-set02-sample-questions-r10-q14-bonus: [tectonics, volcanoes]
+  # physical_science: A figure skater who, while spinning in place, pulls her arms in to increase her rotational... => CONSERVATION OF ANGULAR MOMENTUM
+  ms-set02-sample-questions-r10-q15-tossup: [momentum-rotation]
+  # physical_science: The centrifugal effect perceived by a person on a carousel is most accurately attributed t... => INERTIA
+  ms-set02-sample-questions-r10-q15-bonus: [motion-forces]
+  # math: Add the following: 3 1/2 + 2 1/3 + 1 1/12 = => 6 11/12
+  ms-set02-sample-questions-r10-q16-tossup: [arithmetic]
+  # math: What is the average speed, in miles per hour, of a person who travels 120 miles in 3 hours... => 24.5
+  ms-set02-sample-questions-r10-q16-bonus: [ratios-rates]
+  # earth_and_space: The red color of Navajo sand stone is primarily because of the presence of what element? => IRON
+  ms-set02-sample-questions-r10-q17-tossup: [rocks-minerals]
+  # earth_and_space: It is estimated that the temperature of the Earth’s core is: => AS HOT AS THE SURFACE OF THE SUN
+  ms-set02-sample-questions-r10-q17-bonus: [tectonics]
+  # earth_and_space: If the full moon rises in Nebraska at about 9 p.m., which of the following will most likel... => 9:50 P.M.
+  ms-set02-sample-questions-r10-q18-tossup: [solar-system]
+  # earth_and_space: Name 2 places on earth where continental glaciers exist: => ANTARCTICA AND GREENLAND
+  ms-set02-sample-questions-r10-q18-bonus: [surface-processes]
+  # life_science: Which of the following is a monocot: => Zea maize
+  ms-set02-sample-questions-r10-q19-tossup: [plants]
+  # life_science: Which of the following is TRUE about a typical liver cell: => MOST OF THE DNA DOES NOT CODE FOR PROTEI
+  ms-set02-sample-questions-r10-q19-bonus: [cells]
+  # math: How many degrees are in one internal angle of a regular pentagon? => 108°
+  ms-set02-sample-questions-r10-q20-tossup: [plane-geometry]
+  # math: A farmer wishes to make a straight barbed wire fence 80 feet long. He wants to have a fenc... => 11
+  ms-set02-sample-questions-r10-q20-bonus: [arithmetic]
+  # life_science: Which of the following is the best description of a cell membrane also known as the plasma... => IT IS SEMI-PERMEABLE AND MADE MOSTLY OF 
+  ms-set02-sample-questions-r10-q21-tossup: [cells]
+  # life_science: The development of embryonic cells that allows them to become different specialized cells ... => DIFFERENT GENES ARE EXPRESSED OR TURNED 
+  ms-set02-sample-questions-r10-q21-bonus: [cells]
+  # physical_science: To describe a force you must give: => ITS DIRECTION AND MAGNITUDE
+  ms-set02-sample-questions-r10-q22-tossup: [motion-forces]
+  # physical_science: Order the following substances from the LEAST dense to the MOST dense: gold, water at 1°C,... => WATER AT 1°C; WATER AT 4°C; IRON; GOLD
+  ms-set02-sample-questions-r10-q22-bonus: [matter-gases]
+  # general_science: A person who had polydactylia would have too many of what? => DIGITS
+  ms-set02-sample-questions-r10-q23-tossup: [human-body, genetics]
+  # general_science: Consider a tree that grows 20 centimeters taller each year. If you marked a spot 100 centi... => 100 CENTIMETERS
+  ms-set02-sample-questions-r10-q23-bonus: [plants]
+  # general_science: Which of the following is the largest in length? A light year, 1,860,000 miles, a parsec, ... => A PARSEC
+  ms-set02-sample-questions-r10-q24-tossup: [measurement]
+  # general_science: Order the following from the most acidic to the most basic: household liquid ammonia, milk... => TOMATO JUICE, PURE WATER, MILK, HOUSEHOL
+  ms-set02-sample-questions-r10-q24-bonus: [acids-bases]
+  # life_science: Passive transport differs mostly from active transport since passive transport requires: => NO ENERGY
+  ms-set02-sample-questions-r10-q25-tossup: [cells]
+  # life_science: After taking 20 readings of the outside winter air temperature during an experiment, Kathy... => REPEAT THE EXPERIMENT AND AVERAGE IN THE
+  ms-set02-sample-questions-r10-q25-bonus: [biology-misc]
