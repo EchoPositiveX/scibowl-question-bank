@@ -1,0 +1,1604 @@
+# Topic tags for ms/set09 (QB-12). One line per question: its topics from tags/topics.yaml.
+# The comment above each line is the start of the question, to make checking easier.
+source: Claude, from each question's text and answer, 2026-11-25. No API was used.
+tagged_by: ai
+reviewed: false
+questions:
+
+  # Round 1
+  # life_science: In the human body, the gallbladder is in immediate proximity to what organ? => LIVER
+  ms-set09-regionalms-1-q01-tossup: [human-body]
+  # life_science: Flowering plants are grouped into what 2 classes named after their number of seed leaves? => MONOCOTS AND DICOTS
+  ms-set09-regionalms-1-q01-bonus: [plants]
+  # earth_and_space: Most volcanic rocks are porous due to: => GASES TRAPPED INSIDE LAVA
+  ms-set09-regionalms-1-q02-tossup: [volcanoes]
+  # earth_and_space: What impurity found in coal contributes most significantly to acid rain? => SULFUR
+  ms-set09-regionalms-1-q02-bonus: [climate-environment]
+  # general_science: Which of the following is not considered a piece of laboratory safety equipment? => BUNSEN BURNER
+  ms-set09-regionalms-1-q03-tossup: [chemistry-misc]
+  # general_science: What organ, located in the ventral cavity, is identified by its four lobes? => LIVER
+  ms-set09-regionalms-1-q03-bonus: [human-body]
+  # math: A right triangle has 1 angle that measures 27 degrees. In degrees, which of the following ... => 63
+  ms-set09-regionalms-1-q04-tossup: [plane-geometry]
+  # math: Solve the following equation for x: 8 to the 6 – x power = 4 to the x – 1 power? => 4
+  ms-set09-regionalms-1-q04-bonus: [algebra]
+  # physical_science: The strength of the gravitational force between the earth and an airplane flying above its... => VELOCITY OF THE PLANE
+  ms-set09-regionalms-1-q05-tossup: [motion-forces]
+  # physical_science: X-rays are composed of beams of what particles? => PHOTONS
+  ms-set09-regionalms-1-q05-bonus: [light-em]
+  # energy: What is the term used to describe the medium in nuclear reactors that is used to reduce th... => MODERATOR
+  ms-set09-regionalms-1-q06-tossup: [nuclear-energy]
+  # energy: What is the term that refers to the minimum amount of Uranium-235 necessary to produce a s... => CRITICAL MASS
+  ms-set09-regionalms-1-q06-bonus: [nuclear-energy]
+  # earth_and_space: By what process does fallen precipitation trickle into the ground and become part of the g... => INFILTRATION
+  ms-set09-regionalms-1-q07-tossup: [surface-processes]
+  # earth_and_space: An eclipse of the moon occurs when: => THE EARTH PASSES DIRECTLY BETWEEN THE SU
+  ms-set09-regionalms-1-q07-bonus: [solar-system]
+  # general_science: What chemical compound makes up the genetic material found inside of the nucleus? => DEOXYRIBONUCLEIC ACID
+  ms-set09-regionalms-1-q08-tossup: [genetics]
+  # general_science: To the nearest whole number, eleven pounds is approximately equal to how many kilograms? => 5
+  ms-set09-regionalms-1-q08-bonus: [measurement]
+  # life_science: What cells consist of cell bodies, dendrites, and axons? => NEURONS
+  ms-set09-regionalms-1-q09-tossup: [human-body]
+  # life_science: Which of the following has the steps of mitosis placed in the correct order? => PROPHASE, METAPHASE, ANAPHASE, TELOPHASE
+  ms-set09-regionalms-1-q09-bonus: [cells]
+  # math: What is the value of 23 + negative s when s = -17? => 40
+  ms-set09-regionalms-1-q10-tossup: [arithmetic]
+  # math: Sarah left home at 8:00 a.m. and arrived at 11:45 a.m. If the distance she traveled is 225... => 60
+  ms-set09-regionalms-1-q10-bonus: [ratios-rates]
+  # energy: Which of the following inventions is Alessandro Volta credited with? => BATTERY
+  ms-set09-regionalms-1-q11-tossup: [batteries-storage]
+  # energy: What type of chemical reaction is used in car engines and involves combining hydrocarbons ... => COMBUSTION
+  ms-set09-regionalms-1-q11-bonus: [fuels-combustion]
+  # physical_science: What is the smallest particle that retains the chemical properties of an element? => ATOM
+  ms-set09-regionalms-1-q12-tossup: [atoms]
+  # physical_science: At what point on a pressure-volume diagram are liquid and gas no longer distinct? => CRITICAL POINT
+  ms-set09-regionalms-1-q12-bonus: [matter-gases]
+  # life_science: Which of the following organisms has spines? => SEA URCHIN
+  ms-set09-regionalms-1-q13-tossup: [diversity]
+  # life_science: What term is used to describe rings of muscle that usually control entry and exit from a b... => SPHINCTER
+  ms-set09-regionalms-1-q13-bonus: [human-body]
+  # math: What is the perimeter of a right triangle with legs of length 3 and 4? => 12
+  ms-set09-regionalms-1-q14-tossup: [plane-geometry]
+  # math: Given f(x)= x – 4 and g(x) = 1 over open parenthesis x + 5 close parenthesis, calculate g ... => 1/3
+  ms-set09-regionalms-1-q14-bonus: [graphs-functions]
+  # physical_science: What term describes the bending of a wave as it moves between two mediums? => REFRACTION
+  ms-set09-regionalms-1-q15-tossup: [waves-sound]
+  # physical_science: Sodium becomes positively charged when it combines with chlorine because sodium: => LOSES AN ELECTRON
+  ms-set09-regionalms-1-q15-bonus: [bonding]
+  # general_science: The eyeball rests in a socket framed primarily by which cheekbone? => ZYGOMATIC
+  ms-set09-regionalms-1-q16-tossup: [human-body]
+  # general_science: How many significant figures are in the number 0.000320? => 3
+  ms-set09-regionalms-1-q16-bonus: [measurement]
+  # earth_and_space: What era is also known as the Age of Mammals? => CENOZOIC
+  ms-set09-regionalms-1-q17-tossup: [earth-history]
+  # earth_and_space: Calving is the process that forms which of the following? => ICEBERGS
+  ms-set09-regionalms-1-q17-bonus: [surface-processes]
+  # energy: To the nearest ten percent, what portion of the electricity produced in the United States ... => 20
+  ms-set09-regionalms-1-q18-tossup: [nuclear-energy, energy-use]
+  # energy: Gasoline is mostly composed of which of the following? => HYDROCARBONS
+  ms-set09-regionalms-1-q18-bonus: [fuels-combustion]
+  # earth_and_space: What is the study of the atmosphere and the weather called? => METEOROLOGY
+  ms-set09-regionalms-1-q19-tossup: [weather]
+  # earth_and_space: Eventually, a meander will cut off due to erosion and create a lake. What are these lakes ... => OXBOW LAKES
+  ms-set09-regionalms-1-q19-bonus: [surface-processes]
+  # general_science: Healthy humans have many bacteria living on or in them. To the nearest whole numbers, what... => 1 HUMAN CELL TO 10 BACTERIAL CELLS
+  ms-set09-regionalms-1-q20-tossup: [microbes, human-body]
+  # general_science: Theodor [Tee-o-door] Schwann and Matthias Schleiden [schli- den] are known for: => APPLYING THE CONCEPT OF CELLS TO PLANTS 
+  ms-set09-regionalms-1-q20-bonus: [cells]
+  # life_science: What is the name of the fourth and final stomach chamber in ruminants and is the location ... => ABOMASUM
+  ms-set09-regionalms-1-q21-tossup: [diversity]
+  # life_science: What higher plant cell organelle is responsible for using sunlight to convert carbon dioxi... => CHLOROPLAST
+  ms-set09-regionalms-1-q21-bonus: [plants]
+  # math: Abby reads 10 pages of a 150 page book on Monday. Each subsequent day, she plans to read t... => THURSDAY
+  ms-set09-regionalms-1-q22-tossup: [sequences]
+  # math: Solve the following equation for x: open parenthesis 2x – 9 close parenthesis squared = 81... => x = 0 or x = 9 (MUST GIVE BOTH ANSWERS)
+  ms-set09-regionalms-1-q22-bonus: [algebra]
+  # physical_science: What happens to the pH of an acidic solution as pure water is added? => pH INCREASES
+  ms-set09-regionalms-1-q23-tossup: [acids-bases]
+  # physical_science: A rollercoaster car has a mass of 200 kilograms and a kinetic energy of 22.5 kilojoules. W... => 15
+  ms-set09-regionalms-1-q23-bonus: [energy-work]
+
+  # Round 2
+  # earth_and_space: Specific gravity is a measure of what? => RELATIVE DENSITY
+  ms-set09-regionalms-2-q01-tossup: [rocks-minerals]
+  # earth_and_space: What is the term for a contour line connecting points of equal temperature on a weather ma... => ISOTHERM
+  ms-set09-regionalms-2-q01-bonus: [weather]
+  # math: Solve the following equation for s: -143 = -11s => 13
+  ms-set09-regionalms-2-q02-tossup: [algebra]
+  # math: What is the least common denominator of the three fractions 1/6, 3/10, and 1/28? => 420
+  ms-set09-regionalms-2-q02-bonus: [arithmetic]
+  # physical_science: An atom that loses its outer electron or electrons readily is which of the following? => ACTIVE METAL
+  ms-set09-regionalms-2-q03-tossup: [periodic-table]
+  # physical_science: Two objects have the same size and shape but one is twice as heavy as the other. If air re... => THEY LAND ON THE GROUND AT THE SAME TIME
+  ms-set09-regionalms-2-q03-bonus: [motion-forces]
+  # energy: How many kilowatt-hours, rounded to the nearest tenth, does it require to light a 100-watt... => 0.1
+  ms-set09-regionalms-2-q04-tossup: [energy-use]
+  # energy: The energy stored in a uranium atom can be released via what type of nuclear reaction? => FISSION
+  ms-set09-regionalms-2-q04-bonus: [nuclear-energy]
+  # general_science: Doppler radar is best used in which of the following applications? => FORECASTING WEATHER
+  ms-set09-regionalms-2-q05-tossup: [weather]
+  # general_science: Plates on the Earth’s surface interact at three different types of tectonic boundaries. Wh... => SEAFLOOR SPREADING, TRANSFORM FAULTS, AN
+  ms-set09-regionalms-2-q05-bonus: [tectonics]
+  # life_science: What is the name of the triplet of bases in the mRNA that codes for a specific amino acid? => CODON
+  ms-set09-regionalms-2-q06-tossup: [genetics]
+  # life_science: What is a large community of plants and animals that live in the same place? => BIOME
+  ms-set09-regionalms-2-q06-bonus: [ecology]
+  # physical_science: Which of the following is the SI unit of mass? => KILOGRAM
+  ms-set09-regionalms-2-q07-tossup: [measurement]
+  # physical_science: What is the term for the change in enthalpy that must occur for ice to become water at zer... => HEAT OF FUSION
+  ms-set09-regionalms-2-q07-bonus: [thermo-kinetics]
+  # general_science: What element makes up about 24% of the Sun’s mass? => HELIUM
+  ms-set09-regionalms-2-q08-tossup: [stars]
+  # general_science: A researcher designs an experiment in which she compares the predation on a group of white... => INDEPENDENT
+  ms-set09-regionalms-2-q08-bonus: [biology-misc]
+  # math: Which of the following integers is a perfect square? => 225
+  ms-set09-regionalms-2-q09-tossup: [number-theory]
+  # math: If k, m, and n are 3 different non-zero numbers and 1/k + 1/m = 1/n, what is k in terms of... => mn OVER OPEN PARENTHESIS m – n CLOSE PAR
+  ms-set09-regionalms-2-q09-bonus: [algebra]
+  # life_science: Forest fires are important in some ecosystems for all of the following reasons except: => THEY CREATE A WARMER CLIMATE, INCREASING
+  ms-set09-regionalms-2-q10-tossup: [ecology]
+  # life_science: Which of the following organelles regulates what enters and leaves the cell? => CELL MEMBRANE
+  ms-set09-regionalms-2-q10-bonus: [cells]
+  # earth_and_space: The common mineral quartz is composed of what two elements? => SILICON AND OXYGEN
+  ms-set09-regionalms-2-q11-tossup: [rocks-minerals]
+  # earth_and_space: Which of the following makes up 97% of the Earth’s water? => SALT WATER
+  ms-set09-regionalms-2-q11-bonus: [oceans]
+  # physical_science: To the nearest kilometer, how far away was a lightning strike if thunder was heard 6 secon... => 2
+  ms-set09-regionalms-2-q12-tossup: [waves-sound]
+  # physical_science: What general type of elements is characterized as shiny and good conductors of electricity... => METALS
+  ms-set09-regionalms-2-q12-bonus: [periodic-table]
+  # earth_and_space: What is the term for celestial masses that have collapsed to such a small volume that thei... => BLACK HOLES
+  ms-set09-regionalms-2-q13-tossup: [stars]
+  # earth_and_space: Bronze is an alloy of what two metals? => COPPER AND TIN
+  ms-set09-regionalms-2-q13-bonus: [chemistry-misc]
+  # life_science: What are the names of the four chambers of the human heart? => LEFT VENTRICLE, RIGHT VENTRICLE, LEFT AT
+  ms-set09-regionalms-2-q14-tossup: [human-body]
+  # life_science: Gram staining is used to differentiate what general type of organism? => BACTERIA
+  ms-set09-regionalms-2-q14-bonus: [microbes]
+  # general_science: Which of the following is the correct chemical formula of rock salt? => NaCl
+  ms-set09-regionalms-2-q15-tossup: [bonding]
+  # general_science: What series of elements, which includes thorium, uranium, and plutonium, are characterized... => ACTINIDES
+  ms-set09-regionalms-2-q15-bonus: [periodic-table]
+  # math: Find the volume of the circular cylinder formed by rotating a 9 by 10 rectangle about one ... => 900π
+  ms-set09-regionalms-2-q16-tossup: [solid-geometry]
+  # math: Solve the following equation for y: 3y - open parenthesis 2 - 2y close parenthesis + 5 = 1... => 2
+  ms-set09-regionalms-2-q16-bonus: [algebra]
+  # earth_and_space: What constellation, found on the celestial equator, is named for a hunter and contains the... => ORION
+  ms-set09-regionalms-2-q17-tossup: [observing]
+  # earth_and_space: What is the term for the rapidly moving atoms and ions that escape from the solar corona a... => SOLAR WIND
+  ms-set09-regionalms-2-q17-bonus: [stars]
+  # energy: Transesterification [trans-es-ter-if-ik-ay-shun] is a process commonly used to produce wha... => BIODIESEL
+  ms-set09-regionalms-2-q18-tossup: [renewables]
+  # energy: Which of the following is NOT necessarily an effect of global warming? => ADVANCEMENT OF GLACIERS
+  ms-set09-regionalms-2-q18-bonus: [climate-environment]
+  # physical_science: If the kinetic energy of a non-rotating rigid object is nonzero, which of the following mu... => MASS AND VELOCITY
+  ms-set09-regionalms-2-q19-tossup: [energy-work]
+  # physical_science: Which of the following is not part of Dalton’s atomic theory? => ATOMS ARE COMPOSED OF PROTONS, NEUTRONS 
+  ms-set09-regionalms-2-q19-bonus: [atoms]
+  # math: What is the value of 30 + 2–1 – 3? => -1.5
+  ms-set09-regionalms-2-q20-tossup: [arithmetic]
+  # math: The owners of an office building are painting the rooms in their building. Each room requi... => 3
+  ms-set09-regionalms-2-q20-bonus: [arithmetic]
+  # general_science: Which of the following is not a bird of prey? => CROW
+  ms-set09-regionalms-2-q21-tossup: [diversity]
+  # general_science: What is the hexadecimal equivalent of the binary number 10101? => 15
+  ms-set09-regionalms-2-q21-bonus: [number-theory]
+  # life_science: How many walking legs are found in arachnids? => 8
+  ms-set09-regionalms-2-q22-tossup: [diversity]
+  # life_science: A geneticist breeds two pea plants that are heterozygous for seed color. Given that 2001 o... => 6006
+  ms-set09-regionalms-2-q22-bonus: [genetics]
+  # energy: Iceland, the world’s leader in generating electricity by no-carbon production methods, use... => GEOTHERMAL AND HYDROELECTRIC
+  ms-set09-regionalms-2-q23-tossup: [renewables]
+  # energy: Order the following three fuels from highest to lowest by the amount of carbon dioxide pro... => 3, 2, 1
+  ms-set09-regionalms-2-q23-bonus: [fuels-combustion, climate-environment]
+
+  # Round 3a
+  # physical_science: What kind of collision conserves both kinetic energy and linear momentum? => ELASTIC
+  ms-set09-regionalms-3a-q01-tossup: [momentum-rotation]
+  # physical_science: An object in free-fall on the Earth will eventually stop accelerating. What is the term fo... => TERMINAL VELOCITY
+  ms-set09-regionalms-3a-q01-bonus: [motion-forces]
+  # earth_and_space: What term is used to describe the fraction of light that is reflected by a surface? => ALBEDO
+  ms-set09-regionalms-3a-q02-tossup: [climate-environment]
+  # earth_and_space: At which of the following locations is seafloor spreading occurring? => MID-ATLANTIC RIDGE
+  ms-set09-regionalms-3a-q02-bonus: [tectonics]
+  # energy: Ethanol in the US is primarily produced from what crop? => CORN
+  ms-set09-regionalms-3a-q03-tossup: [renewables]
+  # energy: Which of the following is closest to the percentage of electricity produced in the US usin... => 10%
+  ms-set09-regionalms-3a-q03-bonus: [renewables, energy-use]
+  # general_science: To guard against sparks causing a fire, mechanics aboard submarines during World War II of... => BRONZE
+  ms-set09-regionalms-3a-q04-tossup: [chemistry-misc]
+  # general_science: Life on Earth is based on building blocks of what element? => CARBON
+  ms-set09-regionalms-3a-q04-bonus: [biochemistry]
+  # life_science: The exchange of gases between blood and the tissue occurs normally in: => CAPILLARIES
+  ms-set09-regionalms-3a-q05-tossup: [human-body]
+  # life_science: In what phylum are all vertebrate organisms? => CHORDATA
+  ms-set09-regionalms-3a-q05-bonus: [diversity]
+  # math: The county fair charges a $4 entrance fee. The cost of each ride is $2. Which of the follo... => y = 4 + 2x
+  ms-set09-regionalms-3a-q06-tossup: [graphs-functions]
+  # math: If a circle has a circumference of 10 meters, what is its area, to the nearest whole squar... => 8
+  ms-set09-regionalms-3a-q06-bonus: [plane-geometry]
+  # energy: If a transformer has an input voltage of 440 volts and an output voltage of 110 volts, wha... => 4 to 1
+  ms-set09-regionalms-3a-q07-tossup: [electricity]
+  # energy: What method is currently used to produce most of the world’s renewable energy? => HYDROPOWER
+  ms-set09-regionalms-3a-q07-bonus: [renewables]
+  # physical_science: Which of the following provides a measure of the amount of matter in a substance? => MASS
+  ms-set09-regionalms-3a-q08-tossup: [measurement]
+  # physical_science: What derived SI unit is used to express power? => WATT
+  ms-set09-regionalms-3a-q08-bonus: [energy-work]
+  # general_science: Through which of the following mediums does sound travel the slowest? => AIR
+  ms-set09-regionalms-3a-q09-tossup: [waves-sound]
+  # general_science: Continental rifts and mid-ocean ridges are found at which type of plate boundary? => DIVERGENT
+  ms-set09-regionalms-3a-q09-bonus: [tectonics]
+  # earth_and_space: What type of lava flows can be observed at the volcanic hot spots in Hawaii? => BASALTIC
+  ms-set09-regionalms-3a-q10-tossup: [volcanoes]
+  # earth_and_space: What type of telescope uses convex lenses to bend light? => REFRACTING TELESCOPE
+  ms-set09-regionalms-3a-q10-bonus: [observing]
+  # life_science: Which of the following organisms is known to only produce a small number of offspring at a... => CHIMPANZEE
+  ms-set09-regionalms-3a-q11-tossup: [ecology]
+  # life_science: Which of the following is an example of a change in the primary structure of a protein? => AN AMINO ACID SUBSTITUTION
+  ms-set09-regionalms-3a-q11-bonus: [biochemistry]
+  # math: Donna rolls two standard dice. What is the most likely sum of the results of the two dice? => 7
+  ms-set09-regionalms-3a-q12-tossup: [counting-probability]
+  # math: You are given the following list of 9 numbers: 71, 80, 93, 101, 83, 19, 54, 80, 74. Calcul... => 0
+  ms-set09-regionalms-3a-q12-bonus: [statistics]
+  # energy: Landfills are a potential source of what kind of biofuel? => BIOGAS
+  ms-set09-regionalms-3a-q13-tossup: [renewables]
+  # energy: Identify all of the following three units that correspond to energy: 1) Watts; 2) Joules; ... => 2 AND 3
+  ms-set09-regionalms-3a-q13-bonus: [measurement]
+  # math: How many vertices does a pentagonal prism have? => 10
+  ms-set09-regionalms-3a-q14-tossup: [solid-geometry]
+  # math: Sherman’s car holds 20 gallons of gas. He drove 375 miles, using 3/4 of a tank. How many m... => 25
+  ms-set09-regionalms-3a-q14-bonus: [ratios-rates]
+  # life_science: In bean and corn seeds, the food supply that is used by the seed to germinate and grow is ... => COTYLEDON
+  ms-set09-regionalms-3a-q15-tossup: [plants]
+  # life_science: Identify all of the following four choices that would not be visible under a standard labo... => 1 AND 2
+  ms-set09-regionalms-3a-q15-bonus: [cells]
+  # earth_and_space: What layer of the mantle is found below the lithosphere? => ASTHENOSPHERE
+  ms-set09-regionalms-3a-q16-tossup: [tectonics]
+  # earth_and_space: Order the following four choices from lowest altitude to highest altitude: 1) Weather ball... => 3, 1, 2, 4
+  ms-set09-regionalms-3a-q16-bonus: [weather]
+  # general_science: The movement of lithospheric plates over the asthenosphere is explained by which theory? => CONTINENTAL DRIFT
+  ms-set09-regionalms-3a-q17-tossup: [tectonics]
+  # general_science: When crossing two heterozygous plants, what percentage of the offspring do you expect to b... => 50
+  ms-set09-regionalms-3a-q17-bonus: [genetics]
+  # physical_science: A balanced chemical equation must possess which of the following? => THE SAME NUMBER OF EACH KIND OF ATOM ON 
+  ms-set09-regionalms-3a-q18-tossup: [reactions]
+  # physical_science: What statistical law of thermodynamics states that entropy increases in a closed system? => SECOND LAW OF THERMODYNAMICS
+  ms-set09-regionalms-3a-q18-bonus: [thermo-kinetics]
+  # life_science: A nucleotide contains all except which of the following? => AMINO ACID
+  ms-set09-regionalms-3a-q19-tossup: [biochemistry]
+  # life_science: What group of plants, characterized by the presence of bundle-sheath and mesophyll cells, ... => C4 PLANTS
+  ms-set09-regionalms-3a-q19-bonus: [plants]
+  # earth_and_space: Arêtes [a-reets] and drumlins are formed by what agent of weathering? => GLACIERS
+  ms-set09-regionalms-3a-q20-tossup: [surface-processes]
+  # earth_and_space: An example of a source region for continental arctic air is: => SIBERIA
+  ms-set09-regionalms-3a-q20-bonus: [weather]
+  # physical_science: An electron in the second main energy level and the second sublevel of an atom is describe... => 2p
+  ms-set09-regionalms-3a-q21-tossup: [atoms]
+  # physical_science: Which of the following is the oxidation number of fluorine gas? => 0
+  ms-set09-regionalms-3a-q21-bonus: [reactions]
+  # math: The measure of angle B in isosceles trapezoid BIRD [B-I-R-D] is 40 degrees. What is the me... => 140
+  ms-set09-regionalms-3a-q22-tossup: [plane-geometry]
+  # math: Order the following three numbers from least to greatest: 1) 42%; 2) 0.402; 3) 2/5. => 2/5; 0.402; 42%
+  ms-set09-regionalms-3a-q22-bonus: [arithmetic]
+  # general_science: If a microscope has an ocular lens with a magnification of 10 and an objective lens with a... => 400
+  ms-set09-regionalms-3a-q23-tossup: [light-em]
+  # general_science: What is the name of the process in which sediments compact under pressure and gradually be... => LITHIFICATION
+  ms-set09-regionalms-3a-q23-bonus: [rocks-minerals]
+
+  # Round 4a
+  # math: Express 0.0009013 in scientific notation. => 9.013 × 10-4
+  ms-set09-regionalms-4a-q01-tossup: [arithmetic]
+  # math: While eating out, you and your friend each tip the server 8 dollars on your separate bills... => 40 DOLLARS
+  ms-set09-regionalms-4a-q01-bonus: [ratios-rates]
+  # physical_science: What state of matter has a definite volume but not a definite shape? => LIQUID
+  ms-set09-regionalms-4a-q02-tossup: [matter-gases]
+  # physical_science: A balloon is filled with air at room temperature and is then dipped into liquid nitrogen. ... => IT WILL COLLAPSE
+  ms-set09-regionalms-4a-q02-bonus: [matter-gases]
+  # life_science: Where are DNA molecules located in prokaryotes? => CYTOPLASM
+  ms-set09-regionalms-4a-q03-tossup: [cells]
+  # life_science: What gland in the human body produces melatonin? => PINEAL GLAND
+  ms-set09-regionalms-4a-q03-bonus: [human-body]
+  # earth_and_space: What type of extremely dense star is left behind after a supernova? => NEUTRON STAR
+  ms-set09-regionalms-4a-q04-tossup: [stars]
+  # earth_and_space: Eclipses of the sun occur during which of the following? => NEW MOON
+  ms-set09-regionalms-4a-q04-bonus: [solar-system]
+  # energy: The principle behind the operation of photovoltaic cells was first explained by what scien... => ALBERT EINSTEIN
+  ms-set09-regionalms-4a-q05-tossup: [renewables, modern-physics]
+  # energy: What devices store chemical potential energy and convert it to electrical energy? => BATTERIES
+  ms-set09-regionalms-4a-q05-bonus: [batteries-storage]
+  # general_science: An object's specific gravity is determined by which of the following? => COMPARING THE OBJECT'S DENSITY WITH THE 
+  ms-set09-regionalms-4a-q06-tossup: [fluids]
+  # general_science: What force is responsible for the formation of the Earth from the planetary nebula? => GRAVITY
+  ms-set09-regionalms-4a-q06-bonus: [solar-system]
+  # earth_and_space: Karst topography refers to landscapes that have been shaped by what agent of erosion? => WATER
+  ms-set09-regionalms-4a-q07-tossup: [surface-processes]
+  # earth_and_space: What fuel source is classified into bituminous, anthracite, and lignite? => COAL
+  ms-set09-regionalms-4a-q07-bonus: [rocks-minerals]
+  # general_science: The first cervical vertebrae is called the: => ATLAS
+  ms-set09-regionalms-4a-q08-tossup: [human-body]
+  # general_science: Which of the following processes is not part of the water cycle? => DISTILLATION
+  ms-set09-regionalms-4a-q08-bonus: [surface-processes]
+  # math: A quadrilateral has one angle that measures 108 degrees and two right angles. What is the ... => 72
+  ms-set09-regionalms-4a-q09-tossup: [plane-geometry]
+  # math: The sum of two numbers is S. If each number is tripled and then 5 is added to each number,... => 3S + 10
+  ms-set09-regionalms-4a-q09-bonus: [algebra]
+  # life_science: Which of the following is the hereditary material in most living things? => DNA
+  ms-set09-regionalms-4a-q10-tossup: [genetics]
+  # life_science: What specific form of RNA is used to transfer amino acids to a protein in the process of t... => tRNA
+  ms-set09-regionalms-4a-q10-bonus: [genetics]
+  # physical_science: Vince travels in a straight line to a city 200 miles away in 2.5 hours. What is his averag... => 80
+  ms-set09-regionalms-4a-q11-tossup: [motion-forces]
+  # physical_science: A student rolls a basketball down a half pipe and it rolls all the way up the other side. ... => UP
+  ms-set09-regionalms-4a-q11-bonus: [motion-forces]
+  # energy: Which of the following locations would be most ideal for a wind farm? => COASTAL REGIONS
+  ms-set09-regionalms-4a-q12-tossup: [renewables]
+  # energy: Which of the following fuel types is extracted by hydraulic fracturing? => NATURAL GAS
+  ms-set09-regionalms-4a-q12-bonus: [fuels-combustion]
+  # physical_science: What particle found in the nucleus has a positive charge? => PROTON
+  ms-set09-regionalms-4a-q13-tossup: [atoms]
+  # physical_science: Bending of waves around a barrier is called what? => DIFFRACTION
+  ms-set09-regionalms-4a-q13-bonus: [waves-sound]
+  # general_science: By what process is the surface of a planet heated by the absorption of reflected thermal r... => GREENHOUSE EFFECT
+  ms-set09-regionalms-4a-q14-tossup: [climate-environment]
+  # general_science: The Aurora Borealis is the name given to the light show that occurs in the sky in the nort... => AURORA AUSTRALIS
+  ms-set09-regionalms-4a-q14-bonus: [solar-system]
+  # life_science: Identify all of the following three processes or structures that a cell can use to move: 1... => 1, 2, 3
+  ms-set09-regionalms-4a-q15-tossup: [cells]
+  # life_science: When a red blood cell is placed in a hypotonic solution, what happens to the cell as water... => LYSIS
+  ms-set09-regionalms-4a-q15-bonus: [cells]
+  # math: What is the degree of the polynomial 2x2 – x3 + 3x – 5? => 3
+  ms-set09-regionalms-4a-q16-tossup: [algebra]
+  # math: What is the distance between the points (2, 5) and (6, 8)? => 5
+  ms-set09-regionalms-4a-q16-bonus: [graphs-functions]
+  # earth_and_space: What lines on a map run directly east-west? => LINES OF LATITUDE
+  ms-set09-regionalms-4a-q17-tossup: [observing]
+  # earth_and_space: Argentite is an ore of what element? => SILVER
+  ms-set09-regionalms-4a-q17-bonus: [rocks-minerals]
+  # physical_science: Five batteries are connected in series. A sixth battery is added to the circuit in series ... => INCREASES
+  ms-set09-regionalms-4a-q18-tossup: [electricity]
+  # physical_science: Which of the following correctly explains how nails become rusty? => IRON REACTS WITH OXYGEN AND MOISTURE IN 
+  ms-set09-regionalms-4a-q18-bonus: [reactions]
+  # earth_and_space: What type of fault is the San Andreas fault in California? => STRIKE-SLIP
+  ms-set09-regionalms-4a-q19-tossup: [tectonics]
+  # earth_and_space: Spectral lines are split by what external stimulus in the Zeeman effect? => MAGNETIC FIELD
+  ms-set09-regionalms-4a-q19-bonus: [light-em, magnetism]
+  # general_science: What is a semiconductor device used to amplify and switch electronic signals called? => TRANSISTOR
+  ms-set09-regionalms-4a-q20-tossup: [electricity]
+  # general_science: What is the name given to the longest day of the year? => SUMMER SOLSTICE
+  ms-set09-regionalms-4a-q20-bonus: [solar-system]
+  # math: An equilateral triangle has a perimeter of 18. What is the height of the triangle? => 3 TIMES THE SQUARE ROOT OF 3
+  ms-set09-regionalms-4a-q21-tossup: [plane-geometry]
+  # math: A sequence of 10 terms has the property that every term starting with the third is the sum... => 16
+  ms-set09-regionalms-4a-q21-bonus: [sequences]
+  # life_science: Name the part of the plant that produces pollen. => STAMEN
+  ms-set09-regionalms-4a-q22-tossup: [plants]
+  # life_science: What is the genus and species identifier of the domestic dog? => CANIS LUPUS
+  ms-set09-regionalms-4a-q22-bonus: [diversity]
+  # energy: What type of device uses external work to remove heat from a cold reservoir and release it... => HEAT PUMP
+  ms-set09-regionalms-4a-q23-tossup: [heat-thermo, energy-use]
+  # energy: How much energy, to the nearest hundred Joules, is dissipated by a 5-watt fan running for ... => 1200
+  ms-set09-regionalms-4a-q23-bonus: [energy-work]
+
+  # Round 5a
+  # life_science: The difference between eukaryotic and prokaryotic cells, is that prokaryotic cells lack wh... => NUCLEUS
+  ms-set09-regionalms-5a-q01-tossup: [cells]
+  # life_science: Which of the following biological molecules make up the main part of the bilayer and hydro... => PHOSPHOLIPIDS
+  ms-set09-regionalms-5a-q01-bonus: [biochemistry]
+  # math: Two to the 4th power divided by 2 to the 3rd power equals 2 to what power? => 1st
+  ms-set09-regionalms-5a-q02-tossup: [algebra]
+  # math: Nick, Anna, and Sherry go on a vacation and agree to split the costs evenly. During the tr... => 40
+  ms-set09-regionalms-5a-q02-bonus: [arithmetic]
+  # physical_science: Which of the following defines a pure substance that cannot be broken down by any chemical... => ELEMENT
+  ms-set09-regionalms-5a-q03-tossup: [atoms]
+  # physical_science: How many lone pairs of electrons exist in a single water molecule? => TWO
+  ms-set09-regionalms-5a-q03-bonus: [bonding]
+  # earth_and_space: In what two seasons do lakes undergo turnovers? => SPRING AND FALL
+  ms-set09-regionalms-5a-q04-tossup: [surface-processes]
+  # earth_and_space: The deepest known point of the oceans is found in which of the following? => PACIFIC OCEAN
+  ms-set09-regionalms-5a-q04-bonus: [oceans]
+  # general_science: A keystone species is: => REQUIRED FOR MAINTAINING THE HEALTH OF A
+  ms-set09-regionalms-5a-q05-tossup: [ecology]
+  # general_science: The property of metalloids which makes them useful in computer chips is their: => VARYING ABILITY TO CONDUCT ELECTRICITY
+  ms-set09-regionalms-5a-q05-bonus: [periodic-table]
+  # earth_and_space: Which of the following is true about spiral galaxies? => THEY ARE USUALLY SIMILAR TO OUR GALAXY
+  ms-set09-regionalms-5a-q06-tossup: [galaxies-cosmology]
+  # earth_and_space: Which of the following stars can someone in North America see year-round? => POLARIS
+  ms-set09-regionalms-5a-q06-bonus: [observing]
+  # general_science: Which of the following is a group of organic compounds that is often added to foods to enh... => ESTERS
+  ms-set09-regionalms-5a-q07-tossup: [organic]
+  # general_science: To the nearest whole number, how many minutes does it take for the earth to rotate through... => 4
+  ms-set09-regionalms-5a-q07-bonus: [solar-system]
+  # energy: Approximately what percent of global energy production currently comes from renewable sour... => 16%
+  ms-set09-regionalms-5a-q08-tossup: [renewables, energy-use]
+  # energy: What greenhouse gas is the simplest hydrocarbon? => METHANE
+  ms-set09-regionalms-5a-q08-bonus: [fuels-combustion, climate-environment]
+  # physical_science: What is the process of comparing a property of an object to a well-defined and agreed-upon... => MEASUREMENT
+  ms-set09-regionalms-5a-q09-tossup: [measurement]
+  # physical_science: What law or principle relates the applied force to the amount of elongation in a spring wh... => HOOKE’S LAW
+  ms-set09-regionalms-5a-q09-bonus: [motion-forces]
+  # math: You spend a total of $21.43 at the store, but want to return an item with marked price $5.... => $5.35
+  ms-set09-regionalms-5a-q10-tossup: [arithmetic]
+  # math: From a 7-cup package, a cat eats 1 and 3/5 cups of food on Tuesday and 2¾ cups on Wednesda... => 2 and 13/20
+  ms-set09-regionalms-5a-q10-bonus: [arithmetic]
+  # life_science: Female members of what order of animals contain pouches used to complete development of th... => MARSUPIALIA
+  ms-set09-regionalms-5a-q11-tossup: [diversity]
+  # life_science: What structures, composed of flexible tissue, connect two or more bones together at joints... => LIGAMENTS
+  ms-set09-regionalms-5a-q11-bonus: [human-body]
+  # general_science: What type of map or chart is commonly used in navigation to eliminate distortion? => MERCATOR PROJECTION
+  ms-set09-regionalms-5a-q12-tossup: [observing]
+  # general_science: What is the SI base unit for measuring temperature? => KELVIN
+  ms-set09-regionalms-5a-q12-bonus: [measurement]
+  # earth_and_space: When a group of living organisms and non-living components in an environment interact as a... => ECOSYSTEM
+  ms-set09-regionalms-5a-q13-tossup: [ecology]
+  # earth_and_space: What dark areas occur on the Sun due to intense magnetic activity? => SUNSPOTS
+  ms-set09-regionalms-5a-q13-bonus: [stars]
+  # life_science: Which of the following is common to both bacteria and viruses? => NUCLEIC ACIDS
+  ms-set09-regionalms-5a-q14-tossup: [microbes]
+  # life_science: What molecule is released from muscles as a waste product, transported to the lungs in blo... => CARBON DIOXIDE
+  ms-set09-regionalms-5a-q14-bonus: [human-body]
+  # physical_science: Under what conditions does the behavior of real gases deviate most from that predicted by ... => HIGH PRESSURE, LOW TEMPERATURE
+  ms-set09-regionalms-5a-q15-tossup: [matter-gases]
+  # physical_science: A cubic meter is a measure of which of the following? => VOLUME
+  ms-set09-regionalms-5a-q15-bonus: [measurement]
+  # math: The sum of two numbers is 16. Their difference is 2. What are the numbers? => 7, 9
+  ms-set09-regionalms-5a-q16-tossup: [algebra]
+  # math: Given that x represents a number for which the denominator is defined, simplify the follow... => (x + 2) /(x – 3)
+  ms-set09-regionalms-5a-q16-bonus: [algebra]
+  # energy: When creating electric current using steam, the electric generator is attached to what typ... => TURBINE
+  ms-set09-regionalms-5a-q17-tossup: [energy-use]
+  # energy: What type of alternative energy production relies on energy provided by the Moon rather th... => TIDAL
+  ms-set09-regionalms-5a-q17-bonus: [renewables]
+  # math: Place the following 3 polyhedra in increasing order of the number of faces: 1) tetrahedron... => 1, 3, 2
+  ms-set09-regionalms-5a-q18-tossup: [solid-geometry]
+  # math: Triangle ABC is similar to Triangle DEF. If AB = 4, DE = 10, and EF = 15, what is the leng... => 6
+  ms-set09-regionalms-5a-q18-bonus: [plane-geometry]
+  # earth_and_space: The region of the atmosphere closest to the Earth’s surface is the: => TROPOSPHERE
+  ms-set09-regionalms-5a-q19-tossup: [weather]
+  # earth_and_space: The temperature in the stratosphere increases with altitude due to absorption of what type... => ULTRAVIOLET
+  ms-set09-regionalms-5a-q19-bonus: [weather]
+  # life_science: To what class do humans belong? => MAMMALIA
+  ms-set09-regionalms-5a-q20-tossup: [diversity]
+  # life_science: Imagine that you conducted an experiment where you tested the effects of different fertili... => PLANT HEIGHT
+  ms-set09-regionalms-5a-q20-bonus: [biology-misc]
+  # general_science: How many nodes are found in a 1s orbital? => ZERO
+  ms-set09-regionalms-5a-q21-tossup: [atoms]
+  # general_science: To the nearest degree, how many degrees Fahrenheit is equivalent to 283 Kelvin? => 50
+  ms-set09-regionalms-5a-q21-bonus: [measurement]
+  # physical_science: What is the term for the time required for a vibrating object to complete one full cycle? => PERIOD
+  ms-set09-regionalms-5a-q22-tossup: [waves-sound]
+  # physical_science: The ejection of an alpha particle from a nucleus results in which of the following? => A DECREASE IN THE ATOMIC NUMBER BY TWO
+  ms-set09-regionalms-5a-q22-bonus: [modern-physics]
+  # energy: Clean coal research is currently NOT focused on which of the following? => IMPROVING THE PURITY OF COAL ORE
+  ms-set09-regionalms-5a-q23-tossup: [fuels-combustion]
+  # energy: As an energy source, fuel cells have all of the following advantages over conventional sou... => LOW COST
+  ms-set09-regionalms-5a-q23-bonus: [batteries-storage]
+
+  # Round 6a
+  # earth_and_space: Which of the following is a scale of earthquake intensity? => MOMENT MAGNITUDE
+  ms-set09-regionalms-6a-q01-tossup: [tectonics]
+  # earth_and_space: What is the term for subsoil that remains frozen year round? => PERMAFROST
+  ms-set09-regionalms-6a-q01-bonus: [surface-processes]
+  # general_science: Which of the following is the study of spiders? => ARACHNOLOGY
+  ms-set09-regionalms-6a-q02-tossup: [diversity]
+  # general_science: Which of the following is an example of a high-altitude cloud type? => CIRROCUMULUS
+  ms-set09-regionalms-6a-q02-bonus: [weather]
+  # physical_science: Which of the following is formed when three atoms combine to produce a single unit of a la... => MOLECULE
+  ms-set09-regionalms-6a-q03-tossup: [atoms]
+  # physical_science: Identify all of the following four quantities that are considered vector quantities: 1) Ma... => 2 AND 4
+  ms-set09-regionalms-6a-q03-bonus: [motion-forces]
+  # life_science: What infectious particles consist of nucleic acids packaged into a protein coat? => VIRUS
+  ms-set09-regionalms-6a-q04-tossup: [microbes]
+  # life_science: Eukaryotic and prokaryotic cells both contain: => CELL MEMBRANE
+  ms-set09-regionalms-6a-q04-bonus: [cells]
+  # energy: What are the two gases used to power the first generation fuel cell cars? => HYDROGEN AND OXYGEN
+  ms-set09-regionalms-6a-q05-tossup: [batteries-storage]
+  # energy: To the nearest ten percent, what percent of the sun’s energy that hits the Earth is reflec... => 30
+  ms-set09-regionalms-6a-q05-bonus: [climate-environment]
+  # math: What is the distance of the point (2, 3) from the origin? => SQUARE ROOT OF 13
+  ms-set09-regionalms-6a-q06-tossup: [plane-geometry]
+  # math: Given the linear function f(x) = 3x + b, if f(-1) = 7, what is f(5)? => 25
+  ms-set09-regionalms-6a-q06-bonus: [graphs-functions]
+  # earth_and_space: Scientists were able to determine that the outer core of the Earth is a liquid because wha... => SECONDARY WAVES
+  ms-set09-regionalms-6a-q07-tossup: [tectonics]
+  # earth_and_space: Which of the following features is created by a volcano? => CALDERA
+  ms-set09-regionalms-6a-q07-bonus: [volcanoes]
+  # physical_science: In a vacuum, all photons have the same: => SPEED
+  ms-set09-regionalms-6a-q08-tossup: [light-em]
+  # physical_science: What is the efficiency of an engine that consumes 7500 Joules of energy to load a box that... => 60%
+  ms-set09-regionalms-6a-q08-bonus: [energy-work]
+  # general_science: What astronomical measurement is analogous to latitude? => DECLINATION
+  ms-set09-regionalms-6a-q09-tossup: [observing]
+  # general_science: Halite is composed of what two elements? => SODIUM AND CHLORINE
+  ms-set09-regionalms-6a-q09-bonus: [rocks-minerals]
+  # math: A father's age is twice that of his son. Expressed as a fraction, what is the ratio of the... => 1/2
+  ms-set09-regionalms-6a-q10-tossup: [ratios-rates]
+  # math: If x and y are positive, simplify the following expression: the fraction with numerator 4x... => (4x9) /(3y3)
+  ms-set09-regionalms-6a-q10-bonus: [algebra]
+  # energy: Most gasoline in the United States is E10, meaning that 10% of its content is made up of w... => ETHANOL
+  ms-set09-regionalms-6a-q11-tossup: [renewables, fuels-combustion]
+  # energy: Which of the following countries generates the highest percentage of its electricity by nu... => FRANCE
+  ms-set09-regionalms-6a-q11-bonus: [nuclear-energy]
+  # life_science: By what process does a mother cell split into two genetically identical daughter cells? => MITOSIS
+  ms-set09-regionalms-6a-q12-tossup: [cells]
+  # life_science: Which of the following types of plant cell tissue is considered most important for structu... => SCLERENCHYMA
+  ms-set09-regionalms-6a-q12-bonus: [plants]
+  # math: For what value of x does the graph of the function y = -5x + 15 cross the x- axis? => 3
+  ms-set09-regionalms-6a-q13-tossup: [graphs-functions]
+  # math: What two numbers have a sum of 36 and a product of 323? => 17 AND 19
+  ms-set09-regionalms-6a-q13-bonus: [algebra]
+  # life_science: Which of the following pairs of structures both contain linear DNA? => ANIMAL CELL NUCLEUS AND PLANT CELL NUCLE
+  ms-set09-regionalms-6a-q14-tossup: [genetics]
+  # life_science: What green pigment gives plants their color? => CHLOROPHYLL
+  ms-set09-regionalms-6a-q14-bonus: [plants]
+  # earth_and_space: Which of the following variables is most responsible for lake stratification? => TEMPERATURE
+  ms-set09-regionalms-6a-q15-tossup: [surface-processes]
+  # earth_and_space: What is the term for the days during which the Sun is furthest south or north of the equat... => SOLSTICES
+  ms-set09-regionalms-6a-q15-bonus: [solar-system]
+  # general_science: Which of the following causes the Coriolis Effect? => THE EARTH’S EASTERLY ROTATION
+  ms-set09-regionalms-6a-q16-tossup: [weather]
+  # general_science: What term is used to describe the ever-increasing amount of “disorder” in the universe? => ENTROPY
+  ms-set09-regionalms-6a-q16-bonus: [thermo-kinetics]
+  # physical_science: A cubic centimeter of water has a mass of almost exactly one of which of the following? => GRAM
+  ms-set09-regionalms-6a-q17-tossup: [measurement]
+  # physical_science: What is the chemical formula of magnesium nitrate? => Mg(NO3) 2
+  ms-set09-regionalms-6a-q17-bonus: [chemistry-misc]
+  # energy: Which of the following materials yields the greatest percentage reduction in energy to man... => ALUMINUM
+  ms-set09-regionalms-6a-q18-tossup: [energy-use]
+  # energy: What is the term for the total energy used to manufacture a finished product, including th... => EMBODIED ENERGY
+  ms-set09-regionalms-6a-q18-bonus: [energy-use]
+  # physical_science: Water is formed when oxygen and hydrogen undergo what process? => CHEMICAL REACTION
+  ms-set09-regionalms-6a-q19-tossup: [reactions]
+  # physical_science: How many bonds exists between two nitrogen atoms in dinitrogen gas? => THREE
+  ms-set09-regionalms-6a-q19-bonus: [bonding]
+  # math: In how many different orders can you play 5 songs once each? => 120
+  ms-set09-regionalms-6a-q20-tossup: [counting-probability]
+  # math: Which of the following equations represents a line with slope of 7/5? => 7x – 5y = 14
+  ms-set09-regionalms-6a-q20-bonus: [graphs-functions]
+  # life_science: Sand dollars, sea stars, sea cucumbers, and sea urchins all belong to what phyla? => ECHINODERMATA
+  ms-set09-regionalms-6a-q21-tossup: [diversity]
+  # life_science: Rubisco can use oxygen as a substrate in a process known as what? => PHOTORESPIRATION
+  ms-set09-regionalms-6a-q21-bonus: [plants]
+  # general_science: A lunar eclipse occurs when: => THE EARTH CASTS A SHADOW ON THE MOON
+  ms-set09-regionalms-6a-q22-tossup: [solar-system]
+  # general_science: Alfred Wegener proposed what theory, which suggested that 200 million years ago, a superco... => CONTINENTAL DRIFT
+  ms-set09-regionalms-6a-q22-bonus: [tectonics]
+  # earth_and_space: What is the term for exceptionally bright stars that are up to 1000 times the sun’s diamet... => SUPERGIANTS
+  ms-set09-regionalms-6a-q23-tossup: [stars]
+  # earth_and_space: Most of the convection that occurs in the Earth occurs in what layer? => MANTLE
+  ms-set09-regionalms-6a-q23-bonus: [tectonics]
+
+  # Round 7a
+  # math: A pair of headphones originally priced at 80 dollars is on sale at 25% off. If the sales t... => 66
+  ms-set09-regionalms-7a-q01-tossup: [ratios-rates]
+  # math: Simplify 3x2 times open parenthesis 2x – 8 + 5x3 close parenthesis minus open parenthesis ... => 11x5 + 6x3 – 24x2 – 7x
+  ms-set09-regionalms-7a-q01-bonus: [algebra]
+  # life_science: Plant cells differ from animal cells in that only plant cells possess: => CELL WALLS
+  ms-set09-regionalms-7a-q02-tossup: [cells]
+  # life_science: What fatty layer covers some neurons at regular intervals and is responsible for the color... => MYELIN
+  ms-set09-regionalms-7a-q02-bonus: [human-body]
+  # general_science: What is the name of the heat energy trapped in the Earth’s interior? => GEOTHERMAL
+  ms-set09-regionalms-7a-q03-tossup: [renewables]
+  # general_science: Colony collapse disorder is a phenomenon associated with what animals? => HONEY BEES
+  ms-set09-regionalms-7a-q03-bonus: [behavior]
+  # physical_science: Which factor does not influence the speed needed to put a satellite into orbit? => MASS OF THE SATELLITE
+  ms-set09-regionalms-7a-q04-tossup: [motion-forces]
+  # physical_science: Ice is placed into a beaker partially filled with water at room temperature and standard a... => 0
+  ms-set09-regionalms-7a-q04-bonus: [heat-thermo]
+  # earth_and_space: The climate of northwestern Europe is most directly affected by the: => GULF STREAM
+  ms-set09-regionalms-7a-q05-tossup: [oceans, climate-environment]
+  # earth_and_space: Ninety-nine percent of the atmosphere is composed of what two gases? => NITROGEN AND OXYGEN
+  ms-set09-regionalms-7a-q05-bonus: [weather]
+  # general_science: By weight, what element is MOST common in petroleum? => CARBON
+  ms-set09-regionalms-7a-q06-tossup: [organic]
+  # general_science: Which of the following activities best describes the practice of science as inquiry? => PLACING DIFFERENT OBJECTS IN A TANK OF W
+  ms-set09-regionalms-7a-q06-bonus: [biology-misc]
+  # energy: In the United States, where does most of the hydropower production originate? => OCEANIC COASTAL REGIONS
+  ms-set09-regionalms-7a-q07-tossup: [renewables]
+  # energy: Which of the following requires the greatest percentage of energy in a household? => HEATING
+  ms-set09-regionalms-7a-q07-bonus: [energy-use]
+  # life_science: Which of the following are abiotic factors? => SUNLIGHT
+  ms-set09-regionalms-7a-q08-tossup: [ecology]
+  # life_science: What specific major group of flowering plants, is traditionally recognized as possessing s... => MONOCOT
+  ms-set09-regionalms-7a-q08-bonus: [plants]
+  # math: Find the slope of the line with equation 4x + 5y = -10 => -4/5
+  ms-set09-regionalms-7a-q09-tossup: [graphs-functions]
+  # math: What is the product of the mean, median, and mode of the following list of seven numbers: ... => 99/7
+  ms-set09-regionalms-7a-q09-bonus: [statistics]
+  # physical_science: A 300 Newton stone sits atop a hill making an angle of 30 degrees with the horizontal. Wha... => 300 NEWTONS
+  ms-set09-regionalms-7a-q10-tossup: [motion-forces]
+  # physical_science: Which of the following statements about sound is not true? => THE SPEED OF SOUND IS NOT DEPENDENT ON T
+  ms-set09-regionalms-7a-q10-bonus: [waves-sound]
+  # earth_and_space: The International Astronomical Union divides the night sky into regions based on star patt... => CONSTELLATIONS
+  ms-set09-regionalms-7a-q11-tossup: [observing]
+  # earth_and_space: Which of the following correctly describes Sputnik I? => THE FIRST ARTIFICIAL SATELLITE
+  ms-set09-regionalms-7a-q11-bonus: [observing]
+  # life_science: Cellular respiration is used by the cell to produce what energetically relevant molecule? => ATP
+  ms-set09-regionalms-7a-q12-tossup: [cells]
+  # life_science: Carbon dioxide enters plant leaves through what pores? => STOMATA
+  ms-set09-regionalms-7a-q12-bonus: [plants]
+  # earth_and_space: A characteristic feature of the stratosphere is the relative abundance of: => OZONE
+  ms-set09-regionalms-7a-q13-tossup: [weather]
+  # earth_and_space: What extrusive igneous rock is formed when felsic lava cools rapidly and forms a glassy te... => OBSIDIAN
+  ms-set09-regionalms-7a-q13-bonus: [rocks-minerals]
+  # energy: What commission in the US is responsible for licensing nuclear power plants and overseeing... => NUCLEAR REGULATORY COMMISSION
+  ms-set09-regionalms-7a-q14-tossup: [nuclear-energy]
+  # energy: Barrages with built in sluices are used to harvest energy from what source? => TIDES
+  ms-set09-regionalms-7a-q14-bonus: [renewables]
+  # physical_science: Joseph Priestly discovered that a certain gas could be dissolved in water to form seltzer.... => CARBON DIOXIDE
+  ms-set09-regionalms-7a-q15-tossup: [solutions]
+  # physical_science: What fundamental force is primarily responsible for the formation of black holes? => GRAVITY
+  ms-set09-regionalms-7a-q15-bonus: [stars]
+  # general_science: The prefix “nano-” refers to 10 raised to what power? => -9
+  ms-set09-regionalms-7a-q16-tossup: [measurement]
+  # general_science: Loudness of a sound is most closely related to what property? => AMPLITUDE
+  ms-set09-regionalms-7a-q16-bonus: [waves-sound]
+  # math: Which of the following numbers is equivalent to 7–1? => 1/7
+  ms-set09-regionalms-7a-q17-tossup: [arithmetic]
+  # math: What is the slope of a line perpendicular to the line with equation 8y – 2x = 4? => -4
+  ms-set09-regionalms-7a-q17-bonus: [graphs-functions]
+  # earth_and_space: What gemstone type of quartz is purple due to impurities such as iron oxide? => AMETHYST
+  ms-set09-regionalms-7a-q18-tossup: [rocks-minerals]
+  # earth_and_space: What is the term for the line of longitude at which longitude is defined to be zero degree... => PRIME MERIDIAN
+  ms-set09-regionalms-7a-q18-bonus: [observing]
+  # math: Simplify the expression: negative 2t – open parenthesis 9 – 10t close parenthesis. => 8t – 9
+  ms-set09-regionalms-7a-q19-tossup: [algebra]
+  # math: On average, Shelley makes three free throws for every five that she attempts. If she attem... => 18
+  ms-set09-regionalms-7a-q19-bonus: [ratios-rates]
+  # physical_science: Which type of radiation has the greatest ability to penetrate matter? => GAMMA RAYS
+  ms-set09-regionalms-7a-q20-tossup: [modern-physics]
+  # physical_science: What property of a sound wave is most directly associated with pitch? => FREQUENCY
+  ms-set09-regionalms-7a-q20-bonus: [waves-sound]
+  # general_science: What electrical circuit component is described by a physical property measured in farads? => CAPACITOR
+  ms-set09-regionalms-7a-q21-tossup: [electricity]
+  # general_science: Which type of bulk transport across the plasma membrane accounts for the majority of secre... => EXOCYTOSIS
+  ms-set09-regionalms-7a-q21-bonus: [cells]
+  # life_science: Bacteria are more likely used to produce which of the following: => VINEGAR
+  ms-set09-regionalms-7a-q22-tossup: [microbes]
+  # life_science: What is the pattern of inheritance when one allele is not completely dominant over another... => INCOMPLETE DOMINANCE
+  ms-set09-regionalms-7a-q22-bonus: [genetics]
+  # energy: Order the following three sources of electricity generation from least to greatest in term... => 2, 3, 1
+  ms-set09-regionalms-7a-q23-tossup: [energy-use]
+  # energy: Place the following three choices in order as to the percentage of total energy usage in a... => 2, 3, 1
+  ms-set09-regionalms-7a-q23-bonus: [energy-use]
+
+  # Round 8a
+  # math: Evaluate the following expression: -19 minus the absolute value of -24. => -43
+  ms-set09-regionalms-8a-q01-tossup: [arithmetic]
+  # math: Which of the following pizzas has the greatest total area: => A SQUARE PIZZA, 15 INCHES BY 15 INCHES
+  ms-set09-regionalms-8a-q01-bonus: [plane-geometry]
+  # energy: Because of its volcanic “hot spots,” the Pacific Rim is an important area for generation o... => GEOTHERMAL ENERGY
+  ms-set09-regionalms-8a-q02-tossup: [renewables]
+  # energy: In passive solar homes located in the United States, most of the windows face in what card... => SOUTH
+  ms-set09-regionalms-8a-q02-bonus: [renewables]
+  # general_science: Which of the following is an ecosystem service provided by the ocean? => ABSORBING HEAT FROM THE SUN'S LIGHT
+  ms-set09-regionalms-8a-q03-tossup: [oceans]
+  # general_science: Heavy water differs from light water because the hydrogen atoms in light water are replace... => DEUTERIUM
+  ms-set09-regionalms-8a-q03-bonus: [atoms]
+  # earth_and_space: During which of the following situations will sundogs be visible? => SOLAR ECLIPSE
+  ms-set09-regionalms-8a-q04-tossup: [weather]
+  # earth_and_space: Fossils are usually found in what type of rock? => SEDIMENTARY
+  ms-set09-regionalms-8a-q04-bonus: [earth-history]
+  # physical_science: Vinegar is a liquid solution containing acetic acid and water. It could be accurately clas... => HOMOGENEOUS MIXTURE
+  ms-set09-regionalms-8a-q05-tossup: [solutions]
+  # physical_science: Balance the following equation using simplest whole number coefficients: Al + HCl yields A... => 2Al + 6HCl yields 2AlCl3+ 3H2
+  ms-set09-regionalms-8a-q05-bonus: [reactions]
+  # life_science: What type of animal tissue is found in the ears and nose as structural support? => CARTILAGE
+  ms-set09-regionalms-8a-q06-tossup: [human-body]
+  # life_science: Starch and glycogen are polymers of what simple sugar? => GLUCOSE
+  ms-set09-regionalms-8a-q06-bonus: [biochemistry]
+  # physical_science: In a circuit, electrons and electric current flow in what respective directions? => NEGATIVE TO POSITIVE; POSITIVE TO NEGATI
+  ms-set09-regionalms-8a-q07-tossup: [electricity]
+  # physical_science: You accidentally drop a drinking glass. After the glass left your hand: => GRAVITY CAUSED THE GLASS TO FALL FASTER 
+  ms-set09-regionalms-8a-q07-bonus: [motion-forces]
+  # life_science: Which of the following cell organelles is responsible for the function of respiration? => MITOCHONDRIA
+  ms-set09-regionalms-8a-q08-tossup: [cells]
+  # life_science: What type of plant culturing method involves growing plants in mineral solutions instead o... => HYDROPONICS
+  ms-set09-regionalms-8a-q08-bonus: [plants]
+  # math: Given f inverse of x equals 5x, find f(x). => x/5
+  ms-set09-regionalms-8a-q09-tossup: [graphs-functions]
+  # math: A triangle has two sides with lengths of 9 and 13. Which of the following choices is not a... => 3
+  ms-set09-regionalms-8a-q09-bonus: [plane-geometry]
+  # earth_and_space: Which of the following can form when calcium ions precipitate from solution? => CALCITE
+  ms-set09-regionalms-8a-q10-tossup: [rocks-minerals]
+  # earth_and_space: Which of the following glacial features forms at the foot of a glacier? => MORAINES
+  ms-set09-regionalms-8a-q10-bonus: [surface-processes]
+  # general_science: What second magnitude star is found closest to the north celestial pole and is often calle... => POLARIS
+  ms-set09-regionalms-8a-q11-tossup: [observing]
+  # general_science: How many embryonic leaves do dicot seedlings have? => TWO
+  ms-set09-regionalms-8a-q11-bonus: [plants]
+  # energy: “Eternal flames” that burned when the ground was ignited during lightning storms was an ex... => NATURAL GAS
+  ms-set09-regionalms-8a-q12-tossup: [fuels-combustion]
+  # energy: What term refers to the total quantity of electricity a utility company has on hand at any... => CAPACITY
+  ms-set09-regionalms-8a-q12-bonus: [energy-use]
+  # general_science: What logarithmic scale is used to describe the acidity or alkalinity of a solution? => pH SCALE
+  ms-set09-regionalms-8a-q13-tossup: [acids-bases]
+  # general_science: How many feet and inches, to the nearest inch, is 152 centimeters? => 5 FEET 0 INCHES
+  ms-set09-regionalms-8a-q13-bonus: [measurement]
+  # math: What is the volume of a cube, in cubic feet, if one edge is 4 inches long? => 1/27
+  ms-set09-regionalms-8a-q14-tossup: [solid-geometry]
+  # math: A cell phone plan costs a fixed rate per month plus 5 cents per text message sent and 10 c... => $20
+  ms-set09-regionalms-8a-q14-bonus: [algebra]
+  # earth_and_space: What solar feature follows an 11 year cycle? => SUNSPOTS
+  ms-set09-regionalms-8a-q15-tossup: [stars]
+  # earth_and_space: On average, seawater in the world’s oceans has a salinity of about 35 grams per liter. Wha... => SODIUM AND CHLORINE
+  ms-set09-regionalms-8a-q15-bonus: [oceans]
+  # life_science: In the traditional 5 Kingdom classification of organisms, four of the 5 Kingdoms are Anima... => MONERA
+  ms-set09-regionalms-8a-q16-tossup: [diversity]
+  # life_science: Jellyfish belong to what phylum? => CNIDARIA
+  ms-set09-regionalms-8a-q16-bonus: [diversity]
+  # physical_science: The position of an element in the periodic table is determined by its: => ATOMIC NUMBER
+  ms-set09-regionalms-8a-q17-tossup: [periodic-table]
+  # physical_science: What is the name of the process by which a gas bypasses the liquid phase to become a solid... => DEPOSITION
+  ms-set09-regionalms-8a-q17-bonus: [matter-gases]
+  # energy: The amount of oil obtained from a given well can be increased by pumping carbon dioxide ga... => ENHANCED OIL RECOVERY
+  ms-set09-regionalms-8a-q18-tossup: [fuels-combustion]
+  # energy: The Haber process is used for the industrial production of what basic compound? => AMMONIA
+  ms-set09-regionalms-8a-q18-bonus: [reactions]
+  # general_science: How many moons does the planet Mars have? => 2
+  ms-set09-regionalms-8a-q19-tossup: [solar-system]
+  # general_science: The usage of compounds based on what metal as an antiknocking agent was banned after the d... => LEAD
+  ms-set09-regionalms-8a-q19-bonus: [fuels-combustion, climate-environment]
+  # life_science: What cells in a leaf surround the stomata? => GUARD CELLS
+  ms-set09-regionalms-8a-q20-tossup: [plants]
+  # life_science: What is the innermost layer of the root cortex? => ENDODERMIS
+  ms-set09-regionalms-8a-q20-bonus: [plants]
+  # physical_science: An inorganic binary compound always has a name that ends with what suffix? => I-D-E
+  ms-set09-regionalms-8a-q21-tossup: [chemistry-misc]
+  # physical_science: Why do noble gases almost never form chemical bonds? => THEY HAVE FILLED OUTER VALENCE SHELLS
+  ms-set09-regionalms-8a-q21-bonus: [periodic-table]
+  # math: What percentage of $2000 is $400? => 20
+  ms-set09-regionalms-8a-q22-tossup: [ratios-rates]
+  # math: What are the sum of the roots and the product of the roots, respectively, for the followin... => SUM = –3; PRODUCT = –5/2
+  ms-set09-regionalms-8a-q22-bonus: [algebra]
+  # earth_and_space: What is the name for the weak tides that occur when the Moon and the Sun's gravity oppose ... => NEAP TIDES
+  ms-set09-regionalms-8a-q23-tossup: [oceans]
+  # earth_and_space: What type of stars do not have sufficient mass to fuse hydrogen? => BROWN DWARF
+  ms-set09-regionalms-8a-q23-bonus: [stars]
+
+  # Round 9a
+  # life_science: In the process of meiosis, which of the following is the end product? => ONE PARENT CELL BECOMES FOUR DAUGHTER CE
+  ms-set09-regionalms-9a-q01-tossup: [genetics]
+  # life_science: Which of the following terms is used to describe a change in cell structure and function f... => DIFFERENTIATION
+  ms-set09-regionalms-9a-q01-bonus: [cells]
+  # math: Simplify the following expression: open parenthesis 2x2 close parenthesis squared. => 4x4
+  ms-set09-regionalms-9a-q02-tossup: [algebra]
+  # math: Identify all of the following three statements regarding quadratic equations with real coe... => 1
+  ms-set09-regionalms-9a-q02-bonus: [algebra]
+  # physical_science: An electrical generator converts: => MECHANICAL ENERGY TO ELECTRIC ENERGY
+  ms-set09-regionalms-9a-q03-tossup: [electricity]
+  # physical_science: Identify all of the following three processes that are considered phase changes: 1) Sodium... => 2 AND 3
+  ms-set09-regionalms-9a-q03-bonus: [matter-gases]
+  # earth_and_space: The objects that Carl Seyfert [say-fert] observed are examples of what? => GALAXIES
+  ms-set09-regionalms-9a-q04-tossup: [galaxies-cosmology]
+  # earth_and_space: Ablation by sunlight would primarily affect which of the following objects? => GLACIER
+  ms-set09-regionalms-9a-q04-bonus: [surface-processes]
+  # general_science: What is the term used to describe the dark, smooth areas of the moon, previously thought t... => MARIA
+  ms-set09-regionalms-9a-q05-tossup: [solar-system]
+  # general_science: Magnetrons are generally found in which home device? => MICROWAVE OVENS
+  ms-set09-regionalms-9a-q05-bonus: [light-em]
+  # math: Identify all of the following three numbers that are rational: 1) 6/9; 2) (√8) divided by ... => ALL OF THEM
+  ms-set09-regionalms-9a-q06-tossup: [number-theory]
+  # math: Anna buys used books for x dollars per dozen and sells them for x/9 dollars per book. If s... => 2 DOLLARS
+  ms-set09-regionalms-9a-q06-bonus: [ratios-rates]
+  # physical_science: A high-speed electron ejected from a nucleus during radioactive decay is referred to as wh... => BETA PARTICLE
+  ms-set09-regionalms-9a-q07-tossup: [modern-physics]
+  # physical_science: A coin weighs 3.5 grams and when placed in water, displaces a volume of 0.50 milliliters. ... => 7.0
+  ms-set09-regionalms-9a-q07-bonus: [measurement]
+  # energy: What state produces the most coal in the U.S.? => WYOMING
+  ms-set09-regionalms-9a-q08-tossup: [fuels-combustion]
+  # energy: What type of energy generation involves the usage of radioactive actinides? => NUCLEAR
+  ms-set09-regionalms-9a-q08-bonus: [nuclear-energy]
+  # earth_and_space: What is the term for igneous activity that occurs below the Earth's surface? => PLUTONIC
+  ms-set09-regionalms-9a-q09-tossup: [volcanoes]
+  # earth_and_space: What is the term for a catastrophic explosion of a massive star? => SUPERNOVA
+  ms-set09-regionalms-9a-q09-bonus: [stars]
+  # life_science: Which of the following is a vascular plant? => OAK TREE
+  ms-set09-regionalms-9a-q10-tossup: [plants]
+  # life_science: What structural polysaccharide is found in fungal cell walls and the exoskeletons of insec... => CHITIN
+  ms-set09-regionalms-9a-q10-bonus: [biochemistry]
+  # general_science: While there are over 300 species of sharks in the ocean, approximately what percentage are... => 2
+  ms-set09-regionalms-9a-q11-tossup: [behavior]
+  # general_science: To the nearest whole foot, how many feet does light travel in one nanosecond? => ONE
+  ms-set09-regionalms-9a-q11-bonus: [light-em]
+  # earth_and_space: What two planets in the Solar System do not have any moons? => MERCURY AND VENUS
+  ms-set09-regionalms-9a-q12-tossup: [solar-system]
+  # earth_and_space: Which of the following types of rocks hosts the best-preserved fossils? => BLACK SHALE
+  ms-set09-regionalms-9a-q12-bonus: [earth-history]
+  # general_science: Growth of plants in the ocean is generally limited by which of the following? => NITROGEN AND PHOSPHORUS
+  ms-set09-regionalms-9a-q13-tossup: [oceans, ecology]
+  # general_science: Rectification is the conversion of alternating current to direct current. What process con... => INVERSION
+  ms-set09-regionalms-9a-q13-bonus: [electricity]
+  # life_science: Identify all of the following organisms that are considered autotrophs: 1) plants; 2) cyan... => 1 AND 2
+  ms-set09-regionalms-9a-q14-tossup: [ecology]
+  # life_science: What type of molecules are secreted by the endocrine system? => HORMONES
+  ms-set09-regionalms-9a-q14-bonus: [human-body]
+  # physical_science: What is the molar volume, to the nearest tenth of a liter, of an ideal gas at standard pre... => 22.4
+  ms-set09-regionalms-9a-q15-tossup: [matter-gases]
+  # physical_science: The chemical behavior of an atom is determined by its: => ATOMIC NUMBER
+  ms-set09-regionalms-9a-q15-bonus: [atoms]
+  # math: A circle has a circumference of 6π. What is its radius? => 3
+  ms-set09-regionalms-9a-q16-tossup: [plane-geometry]
+  # math: Given that f = -1, g = 7, and h = -10, what is h2 + fgh? => 170
+  ms-set09-regionalms-9a-q16-bonus: [arithmetic]
+  # energy: Coal can be burned to produce energy. It can also be chemically combined with oxygen or ai... => COAL GASIFICATION
+  ms-set09-regionalms-9a-q17-tossup: [fuels-combustion]
+  # energy: In geologic sequestration, carbon dioxide is often pumped back into the ground to replace ... => 1 and 2
+  ms-set09-regionalms-9a-q17-bonus: [climate-environment]
+  # math: Laura wants to find the distance between two cities. The distance on a map is 18 inches. T... => 30 MILES
+  ms-set09-regionalms-9a-q18-tossup: [ratios-rates]
+  # math: What is the area of a trapezoid with the following properties: its altitude is 12, and it ... => 450
+  ms-set09-regionalms-9a-q18-bonus: [plane-geometry]
+  # physical_science: A chemical change occurs when a substance: => GAINS OR LOSES ELECTRONS
+  ms-set09-regionalms-9a-q19-tossup: [reactions]
+  # physical_science: The energy associated with a photon is related to its frequency by what fundamental physic... => PLANCK’S CONSTANT
+  ms-set09-regionalms-9a-q19-bonus: [modern-physics]
+  # life_science: What fluid fills the spaces between cells in animals? => INTERSTITIAL FLUID
+  ms-set09-regionalms-9a-q20-tossup: [human-body]
+  # life_science: What parts of plants, located at the tips of the roots and shoots, contain cells that are ... => MERISTEMS
+  ms-set09-regionalms-9a-q20-bonus: [plants]
+  # general_science: What graduated piece of glassware is used for delivering known volume of a liquid, especia... => BURETTE
+  ms-set09-regionalms-9a-q21-tossup: [measurement]
+  # general_science: What country is the world's leading overall emitter of greenhouse gas? => CHINA
+  ms-set09-regionalms-9a-q21-bonus: [climate-environment]
+  # earth_and_space: Which of the following cannot be classified as an igneous rock? => COAL
+  ms-set09-regionalms-9a-q22-tossup: [rocks-minerals]
+  # earth_and_space: What layer of the atmosphere is the transition between atmosphere and space? => EXOSPHERE
+  ms-set09-regionalms-9a-q22-bonus: [weather]
+  # energy: What is the source of most of the energy on Earth? => SUN
+  ms-set09-regionalms-9a-q23-tossup: [energy-misc]
+  # energy: The Advanced Light Source at the Lawrence Berkeley National Laboratory produces bright ele... => X-RAYS
+  ms-set09-regionalms-9a-q23-bonus: [light-em]
+
+  # Round 10a
+  # math: Annie has 12 candy bars in a bag. Nine of them are Snick bars and 3 of them are Milky bars... => 1 to 3
+  ms-set09-regionalms-10a-q01-tossup: [counting-probability]
+  # math: A student makes the following conjecture: “If a quadrilateral is a rectangle, then it must... => A RECTANGLE THAT IS NOT A PARALLELOGRAM
+  ms-set09-regionalms-10a-q01-bonus: [logic-sets]
+  # physical_science: A pencil sitting in a glass of water appears bent because light bends as it passes from wa... => REFRACTION
+  ms-set09-regionalms-10a-q02-tossup: [light-em]
+  # physical_science: Einstein received the Nobel Prize for his analysis of what physical phenomenon? => PHOTOELECTRIC EFFECT
+  ms-set09-regionalms-10a-q02-bonus: [modern-physics]
+  # earth_and_space: The dynamo effect enables Earth's core to generate what? => MAGNETIC FIELD
+  ms-set09-regionalms-10a-q03-tossup: [magnetism]
+  # earth_and_space: What devices are used to measure humidity? => HYGROMETERS
+  ms-set09-regionalms-10a-q03-bonus: [weather]
+  # life_science: What part of the brain is responsible for muscle coordination and is involved with muscle ... => CEREBELLUM
+  ms-set09-regionalms-10a-q04-tossup: [human-body]
+  # life_science: By what process do bacterial cells divide? => BINARY FISSION
+  ms-set09-regionalms-10a-q04-bonus: [microbes]
+  # energy: What is the SI unit of electric current? => AMPERE
+  ms-set09-regionalms-10a-q05-tossup: [electricity]
+  # energy: Order the following countries from least to greatest in terms of the percentage of their p... => 1, 3, 2
+  ms-set09-regionalms-10a-q05-bonus: [renewables, energy-use]
+  # general_science: Where are Haversian canals found? => INSIDE OF BONES
+  ms-set09-regionalms-10a-q06-tossup: [human-body]
+  # general_science: What is the common name of the chemical NH3? => AMMONIA
+  ms-set09-regionalms-10a-q06-bonus: [chemistry-misc]
+  # life_science: At which of the following pH values would pepsin be most active? => 2
+  ms-set09-regionalms-10a-q07-tossup: [biochemistry, human-body]
+  # life_science: What is the process of constructing an mRNA molecule from DNA? => TRANSCRIPTION
+  ms-set09-regionalms-10a-q07-bonus: [genetics]
+  # physical_science: The nucleus of the most common isotope of hydrogen is formed from which of the following? => A SINGLE PROTON
+  ms-set09-regionalms-10a-q08-tossup: [atoms]
+  # physical_science: An electron is emitted by an atomic nucleus in the process of: => BETA DECAY
+  ms-set09-regionalms-10a-q08-bonus: [modern-physics]
+  # general_science: If a computer’s hard drive can hold 2 to the 40th bytes, it can hold one of what unit of s... => TERABYTE
+  ms-set09-regionalms-10a-q09-tossup: [arithmetic]
+  # general_science: What name is given to a group of organisms that are the first to establish themselves in a... => PIONEER SPECIES
+  ms-set09-regionalms-10a-q09-bonus: [ecology]
+  # math: Fifty is multiplied by a number between 0 and 1. Which of the following must be true about... => IT IS BETWEEN 0 AND 50
+  ms-set09-regionalms-10a-q10-tossup: [arithmetic]
+  # math: Bobby saved $32 when he purchased a jacket at a clearance sale. If the sale price was 40% ... => $80
+  ms-set09-regionalms-10a-q10-bonus: [ratios-rates]
+  # energy: In a photovoltaic cell, two types of semiconductors are placed next to each other. What is... => P-N JUNCTION
+  ms-set09-regionalms-10a-q11-tossup: [renewables, electricity]
+  # energy: Order the following three sectors from least to greatest in terms of propane consumption i... => 2, 1, 3
+  ms-set09-regionalms-10a-q11-bonus: [fuels-combustion, energy-use]
+  # earth_and_space: What is the spectral class of the Sun? => G
+  ms-set09-regionalms-10a-q12-tossup: [stars]
+  # earth_and_space: What is the term for the continuous or broken ring of coral reef that surrounds a lagoon? => ATOLL
+  ms-set09-regionalms-10a-q12-bonus: [oceans]
+  # general_science: Place the following four steps of mitosis in their proper order: 1) Anaphase; 2) Telophase... => 4, 3, 1, 2
+  ms-set09-regionalms-10a-q13-tossup: [cells]
+  # general_science: What is the name of the monosaccharide that RNA possesses and DNA does not? => RIBOSE
+  ms-set09-regionalms-10a-q13-bonus: [biochemistry]
+  # physical_science: The ionosphere is a region of ionized gas in the upper atmosphere. The ionosphere is extre... => RADIO COMMUNICATION
+  ms-set09-regionalms-10a-q14-tossup: [weather, light-em]
+  # physical_science: What property of water causes it to form small droplets and allows water striders to walk ... => SURFACE TENSION
+  ms-set09-regionalms-10a-q14-bonus: [fluids]
+  # math: Which of the following tests is most useful for determining whether or not a relation defi... => VERTICAL LINE TEST
+  ms-set09-regionalms-10a-q15-tossup: [graphs-functions]
+  # math: If each edge of a cube is decreased by 80%, by what percentage is the volume decreased? => 99.2
+  ms-set09-regionalms-10a-q15-bonus: [solid-geometry]
+  # life_science: Photophosphorylation is used in the plant cell to generate what molecule? => ATP
+  ms-set09-regionalms-10a-q16-tossup: [plants, biochemistry]
+  # life_science: Identify all of the following three conditions that would denature a protein: 1) Heating t... => 1 AND 2
+  ms-set09-regionalms-10a-q16-bonus: [biochemistry]
+  # earth_and_space: What type of volcano is characterized by gently sloping sides and fluid basaltic lavas? => SHIELD VOLCANO
+  ms-set09-regionalms-10a-q17-tossup: [volcanoes]
+  # earth_and_space: What is the term for large areas on continents that are composed of very ancient rocks? => CRATONS
+  ms-set09-regionalms-10a-q17-bonus: [tectonics]
+  # life_science: In what organelle does the citric acid cycle occur? => MITOCHONDRIA
+  ms-set09-regionalms-10a-q18-tossup: [cells]
+  # life_science: Sponges are part of what phylum? => PORIFERA
+  ms-set09-regionalms-10a-q18-bonus: [diversity]
+  # energy: What state generates the most solar power in the United States? => CALIFORNIA
+  ms-set09-regionalms-10a-q19-tossup: [renewables]
+  # energy: A photovoltaic cell doped with phosphorous will result in what type of semiconductor? => N-TYPE SEMICONDUCTOR
+  ms-set09-regionalms-10a-q19-bonus: [renewables, electricity]
+  # math: As a decimal rounded to the hundredths place, what is 20% of 80% of 14? => 2.24
+  ms-set09-regionalms-10a-q20-tossup: [ratios-rates]
+  # math: A mail order movie store is having a sale. For a limited time, DVD’s are $8.80 each and th... => 10
+  ms-set09-regionalms-10a-q20-bonus: [algebra]
+  # earth_and_space: What term is used to describe recognizable groups of stars that are not constellations, su... => ASTERISM
+  ms-set09-regionalms-10a-q21-tossup: [observing]
+  # earth_and_space: What atmospheric gas is most responsible for ocean acidification? => CARBON DIOXIDE (CO2)
+  ms-set09-regionalms-10a-q21-bonus: [oceans, climate-environment]
+  # general_science: What type of process occurs without heat entering or leaving the system? => ADIABATIC
+  ms-set09-regionalms-10a-q22-tossup: [heat-thermo]
+  # general_science: What pair of endocrine glands secrete epinephrine and norepinephrine? => ADRENAL GLANDS
+  ms-set09-regionalms-10a-q22-bonus: [human-body]
+  # physical_science: According to Newton’s Laws, the net force acting on a body is the product of what two quan... => MASS AND ACCELERATION
+  ms-set09-regionalms-10a-q23-tossup: [motion-forces]
+  # physical_science: What functional group is represented by –NH2? => AMINE
+  ms-set09-regionalms-10a-q23-bonus: [organic]
+
+  # Round 11a
+  # physical_science: What subatomic particles are hadrons, such as protons and neutrons, composed of? => QUARKS
+  ms-set09-regionalms-11a-q01-tossup: [modern-physics]
+  # physical_science: An alpha particle is equivalent to the nucleus of what element? => HELIUM
+  ms-set09-regionalms-11a-q01-bonus: [modern-physics]
+  # energy: In the most common type of geothermal power plant, what rotates the turbines? => STEAM
+  ms-set09-regionalms-11a-q02-tossup: [renewables]
+  # energy: Artificial photosynthesis is being explored as a new type of renewable energy. What is the... => CALVIN-BENSON CYCLE
+  ms-set09-regionalms-11a-q02-bonus: [plants]
+  # math: Solve the following equation for x: -2x2 + 2 = 0. => 1 AND -1 (MUST PROVIDE BOTH ANSWERS)
+  ms-set09-regionalms-11a-q03-tossup: [algebra]
+  # math: A right circular cone has volume 72 cubic inches. A second cone has half the radius and th... => 54
+  ms-set09-regionalms-11a-q03-bonus: [solid-geometry]
+  # earth_and_space: Where on an Hertzsprung-Russel diagram would one find a red supergiant? => TOP RIGHT
+  ms-set09-regionalms-11a-q04-tossup: [stars]
+  # earth_and_space: What is the term for a water-bearing layer of permeable, undergound rock? => AQUIFER
+  ms-set09-regionalms-11a-q04-bonus: [surface-processes]
+  # general_science: What is the study of woody plants? => DENDROLOGY
+  ms-set09-regionalms-11a-q05-tossup: [plants]
+  # general_science: In photosynthesis, the energy from light is used to split what molecule? => WATER
+  ms-set09-regionalms-11a-q05-bonus: [plants]
+  # life_science: What term is used by biologists to describe an organism’s appearance or observable traits? => PHENOTYPE
+  ms-set09-regionalms-11a-q06-tossup: [genetics]
+  # life_science: What muscle is responsible for extending the arm at the elbow? => TRICEPS BRACHII
+  ms-set09-regionalms-11a-q06-bonus: [human-body]
+  # math: What is the area of the smallest possible square that contains a circle of radius 5? => 100
+  ms-set09-regionalms-11a-q07-tossup: [plane-geometry]
+  # math: What is the area of a right triangle with hypotenuse 10 and one leg of length 4? => 4 times the square root of 21
+  ms-set09-regionalms-11a-q07-bonus: [plane-geometry]
+  # earth_and_space: What rock texture is characterized by broken fragments of older rocks? => CLASTIC
+  ms-set09-regionalms-11a-q08-tossup: [rocks-minerals]
+  # earth_and_space: Identify all of the following three objects that are known to have a dipolar magnetic fiel... => 1 AND 2
+  ms-set09-regionalms-11a-q08-bonus: [magnetism, solar-system]
+  # energy: What type of nuclear reactor produces fissile fuel as a waste product? => BREEDER REACTORS
+  ms-set09-regionalms-11a-q09-tossup: [nuclear-energy]
+  # energy: One major trouble with using absolute ethanol as a fuel source is that ethanol forms an az... => WATER
+  ms-set09-regionalms-11a-q09-bonus: [fuels-combustion, solutions]
+  # life_science: Which of the following is the region of the body where the thyroid gland is located? => NECK
+  ms-set09-regionalms-11a-q10-tossup: [human-body]
+  # life_science: Which of the following is an example of metamorphosis? => A BUMBLE BEE LARVA FORMING A PUPARIUM AN
+  ms-set09-regionalms-11a-q10-bonus: [diversity]
+  # general_science: Cell membranes are described as fluid mosaic models consisting of proteins embedded in a b... => ENDOPLASMIC RETICULUM
+  ms-set09-regionalms-11a-q11-tossup: [cells]
+  # general_science: Johannes Kepler’s laws of planetary motion were based upon observations of what planet? => MARS
+  ms-set09-regionalms-11a-q11-bonus: [solar-system]
+  # physical_science: Identify all of the following three substances that are considered basic: 1) Vinegar; 2) A... => 2
+  ms-set09-regionalms-11a-q12-tossup: [acids-bases]
+  # physical_science: At what temperature do the Celsius and Fahrenheit scales have the same value? => NEGATIVE 40
+  ms-set09-regionalms-11a-q12-bonus: [measurement]
+  # earth_and_space: What type of fault is characterized by two tectonic plates that slide past one another hor... => TRANSFORM FAULT
+  ms-set09-regionalms-11a-q13-tossup: [tectonics]
+  # earth_and_space: In which of the following locations could a hurricane never develop? => EQUATOR
+  ms-set09-regionalms-11a-q13-bonus: [weather]
+  # life_science: Which of the following best describes the relationship between epiphytes and the trees the... => COMMENSALISM
+  ms-set09-regionalms-11a-q14-tossup: [ecology]
+  # life_science: Identify all of the following three choices that arise, directly or indirectly, from meris... => 1, 2, 3
+  ms-set09-regionalms-11a-q14-bonus: [plants]
+  # physical_science: Which of the following standard units is defined in terms of a physical object? => KILOGRAM
+  ms-set09-regionalms-11a-q15-tossup: [measurement]
+  # physical_science: Two physics students can push on a box of mass M and give it acceleration A. How many stud... => 3
+  ms-set09-regionalms-11a-q15-bonus: [motion-forces]
+  # general_science: In many drugs, hydrogens are replaced with what element that is similar in size to hydroge... => FLUORINE
+  ms-set09-regionalms-11a-q16-tossup: [periodic-table]
+  # general_science: Which of the following statements about the magnetic north pole is NOT true? => IT IS CURRENTLY IN THE SAME PLACE AS THE
+  ms-set09-regionalms-11a-q16-bonus: [magnetism]
+  # math: What is the greatest common factor of 36 and 48? => 12
+  ms-set09-regionalms-11a-q17-tossup: [number-theory]
+  # math: The base-six numeral 124 [one-two-four] is equivalent to what in base 10? => 52
+  ms-set09-regionalms-11a-q17-bonus: [number-theory]
+  # energy: Order the following four types of coal from greatest to least in energy density: 1) Subbit... => 2, 4, 1, 3
+  ms-set09-regionalms-11a-q18-tossup: [fuels-combustion]
+  # energy: A 100-watt lightbulb is left on between 8:00 am and 5:00 pm. How many kilowatt-hours of en... => 0.9
+  ms-set09-regionalms-11a-q18-bonus: [energy-use]
+  # math: Two jokers are inserted into a standard 52-card deck. If one card is drawn at random, what... => 1/27
+  ms-set09-regionalms-11a-q19-tossup: [counting-probability]
+  # math: To the nearest whole number, what is the slant height of a right circular cone with radius... => 9
+  ms-set09-regionalms-11a-q19-bonus: [solid-geometry]
+  # earth_and_space: Which of the following types of magmas has the greatest percentage of dissolved gas? => RHYOLITIC
+  ms-set09-regionalms-11a-q20-tossup: [volcanoes]
+  # earth_and_space: What layer of the Sun's atmosphere is hidden during totality? => PHOTOSPHERE
+  ms-set09-regionalms-11a-q20-bonus: [stars]
+  # life_science: What is the term for the fluid inside of the chloroplast? => STROMA
+  ms-set09-regionalms-11a-q21-tossup: [plants]
+  # life_science: Which of the following is the causative agent for some cases of familial fatal insomnia, C... => PRION
+  ms-set09-regionalms-11a-q21-bonus: [immunity-disease]
+  # physical_science: What is the momentum, in newton seconds, of a 15 kilogram object moving at 13 meters per s... => 195
+  ms-set09-regionalms-11a-q22-tossup: [momentum-rotation]
+  # physical_science: Giving your answers in scientific notation to two significant figures, how many atoms of n... => NITROGEN: 1.2 x 1024 OXYGEN: 2.4 x 1024
+  ms-set09-regionalms-11a-q22-bonus: [chemistry-misc]
+  # general_science: In an experiment on the effects of sugar on rat hyperactivity, rats in group 1 are given p... => CONTROL
+  ms-set09-regionalms-11a-q23-tossup: [biology-misc]
+  # general_science: With what celestial bodies is Hawking radiation associated? => BLACK HOLES
+  ms-set09-regionalms-11a-q23-bonus: [stars]
+
+  # Round 12a
+  # earth_and_space: What type of nebula consists primarily of hot, ionized gas that radiates light? => EMISSION NEBULA
+  ms-set09-regionalms-12a-q01-tossup: [stars]
+  # earth_and_space: Order the following three gases from least common to most common in the atmosphere of Mars... => 1, 2, 3
+  ms-set09-regionalms-12a-q01-bonus: [solar-system]
+  # energy: Which of the following sectors in the United States uses the most petroleum? => TRANSPORTATION
+  ms-set09-regionalms-12a-q02-tossup: [fuels-combustion, energy-use]
+  # energy: What form of energy provides about 14% of the world's electricity, with France, Belgium, a... => NUCLEAR
+  ms-set09-regionalms-12a-q02-bonus: [nuclear-energy]
+  # math: What is the x-intercept of the line with the equation 4x – 3y = 48? => 12
+  ms-set09-regionalms-12a-q03-tossup: [graphs-functions]
+  # math: A right triangle has sides of length 7, 24, and 25. What is the length of the altitude to ... => 168/25
+  ms-set09-regionalms-12a-q03-bonus: [plane-geometry]
+  # life_science: What network of microtubules, microfilaments, and intermediate filaments extends throughou... => CYTOSKELETON
+  ms-set09-regionalms-12a-q04-tossup: [cells]
+  # life_science: In humans, what organ is responsible for producing glucagon? => PANCREAS
+  ms-set09-regionalms-12a-q04-bonus: [human-body]
+  # physical_science: As a solid undergoes a phase change to a liquid state, it: => ABSORBS HEAT WHILE REMAINING AT A CONSTA
+  ms-set09-regionalms-12a-q05-tossup: [matter-gases]
+  # physical_science: What is the chemical name of Al2O3? => ALUMINUM OXIDE
+  ms-set09-regionalms-12a-q05-bonus: [chemistry-misc]
+  # general_science: Which of the following compartments is responsible for the large amount of greenhouse gas ... => RUMEN
+  ms-set09-regionalms-12a-q06-tossup: [diversity, climate-environment]
+  # general_science: What phenomenon do noise-cancelling headphones use in order to cancel out repetitive sound... => DESTRUCTIVE INTERFERENCE
+  ms-set09-regionalms-12a-q06-bonus: [waves-sound]
+  # physical_science: When solutions of silver nitrate and potassium chloride are reacted, a solid precipitate f... => SILVER CHLORIDE
+  ms-set09-regionalms-12a-q07-tossup: [solutions]
+  # physical_science: Using the appropriate units, what is the momentum of a 14 kilogram bicycle traveling at 2 ... => 28 KILOGRAM-METERS PER SECOND
+  ms-set09-regionalms-12a-q07-bonus: [momentum-rotation]
+  # math: Which of the following types of quadrilaterals may have some opposite sides that are not c... => TRAPEZOID
+  ms-set09-regionalms-12a-q08-tossup: [plane-geometry]
+  # math: What is the y-intercept of the line that contains the points (1, 4) and (5, 10)? => 5/2
+  ms-set09-regionalms-12a-q08-bonus: [graphs-functions]
+  # earth_and_space: The Fujita scale is used to measure the intensity of what weather phenomena? => TORNADOES
+  ms-set09-regionalms-12a-q09-tossup: [weather]
+  # earth_and_space: Rank the following three minerals from least to most in terms of the Mohs scale of hardnes... => 2, 1, 3
+  ms-set09-regionalms-12a-q09-bonus: [rocks-minerals]
+  # general_science: Human skin is mostly composed of what tissue type? => EPITHELIAL
+  ms-set09-regionalms-12a-q10-tossup: [human-body]
+  # general_science: Alkenes and radical initiators are generally used for forming which of the following? => POLYMERS
+  ms-set09-regionalms-12a-q10-bonus: [organic]
+  # life_science: Which of the following would be the best outgroup when building a phylogenetic tree of cat... => WOLF
+  ms-set09-regionalms-12a-q11-tossup: [evolution]
+  # life_science: Which of the following is the most important function of fiber tracheids [tray-key-ids] in... => STRUCTURAL SUPPORT
+  ms-set09-regionalms-12a-q11-bonus: [plants]
+  # energy: Ribulose bisphosphate is part of what bioenergetics cycle that takes place in plants? => CALVIN CYCLE
+  ms-set09-regionalms-12a-q12-tossup: [plants]
+  # energy: Which of the following correctly explains why electrolysis is not used for the industrial ... => Hydrogen gas produced by electrolysis is
+  ms-set09-regionalms-12a-q12-bonus: [reactions]
+  # life_science: Honeybees and other pollinators transfer pollen from the: => ANTHER TO THE STIGMA OF THE FLOWER
+  ms-set09-regionalms-12a-q13-tossup: [plants]
+  # life_science: During what time in geological history did many present-day phyla of animals appear in the... => CAMBRIAN EXPLOSION
+  ms-set09-regionalms-12a-q13-bonus: [earth-history]
+  # physical_science: When do water molecules move back and forth between the liquid and the gaseous state? => AT ALL TIMES
+  ms-set09-regionalms-12a-q14-tossup: [matter-gases]
+  # physical_science: What type of bond between atoms is defined to be an equal sharing of electrons? => COVALENT BOND
+  ms-set09-regionalms-12a-q14-bonus: [bonding]
+  # math: How many points of intersection do the graphs of the functions f(x) = x2 and g(x) = x4 hav... => 3
+  ms-set09-regionalms-12a-q15-tossup: [graphs-functions]
+  # math: Marc is flying a kite in the shape of a rhombus with one diagonal measuring 10 and the oth... => 25
+  ms-set09-regionalms-12a-q15-bonus: [plane-geometry]
+  # earth_and_space: The moons of what planet are named for Shakespearean characters? => URANUS
+  ms-set09-regionalms-12a-q16-tossup: [solar-system]
+  # earth_and_space: During perihelion, the Earth is approximately what percent closer to the Sun than average? => 2%
+  ms-set09-regionalms-12a-q16-bonus: [solar-system]
+  # general_science: An object's weight is a relationship between the object's mass and its: => GRAVITATIONAL ACCELERATION
+  ms-set09-regionalms-12a-q17-tossup: [motion-forces]
+  # general_science: Identify all of the following three pairings where the species is NOT paired with the corr... => 2
+  ms-set09-regionalms-12a-q17-bonus: [diversity]
+  # math: Identify all of the following three logical conclusions that follow from the statement “al... => 2
+  ms-set09-regionalms-12a-q18-tossup: [logic-sets]
+  # math: Which of the following points lies inside the circle defined by the equation x2 + y2 = 25? => (4, 2 TIMES SQUARE ROOT OF 2)
+  ms-set09-regionalms-12a-q18-bonus: [graphs-functions]
+  # general_science: Fjords are created by what land features? => GLACIERS
+  ms-set09-regionalms-12a-q19-tossup: [surface-processes]
+  # general_science: By what process do organisms adapt to changes in their natural environment that subject th... => ACCLIMATIZATION
+  ms-set09-regionalms-12a-q19-bonus: [evolution]
+  # life_science: Ethylene and cytokines are hormones in what type of organisms? => PLANTS
+  ms-set09-regionalms-12a-q20-tossup: [plants]
+  # life_science: What term in leaf classification is used to describe leaves consisting of leaflets or lobe... => PALMATE
+  ms-set09-regionalms-12a-q20-bonus: [plants]
+  # earth_and_space: Which of the following explains why the same side of the Moon always faces the Earth? => THE MOON IS TIDALLY LOCKED TO THE EARTH
+  ms-set09-regionalms-12a-q21-tossup: [solar-system]
+  # earth_and_space: Project Mercury was a US program that aimed to build a spacecraft to orbit what planet? => EARTH
+  ms-set09-regionalms-12a-q21-bonus: [observing]
+  # energy: Tetraethyllead was banned as an anti-knocking additive to gasoline due to concerns that it... => THE 1970’s
+  ms-set09-regionalms-12a-q22-tossup: [fuels-combustion]
+  # energy: Engine fuel is rated on what scale, which uses n-heptane and 2,2,4- trimethylpentane as th... => OCTANE RATING
+  ms-set09-regionalms-12a-q22-bonus: [fuels-combustion]
+  # physical_science: What form of highly-purified coal is used in smelting iron ore to make steel? => COKE
+  ms-set09-regionalms-12a-q23-tossup: [chemistry-misc]
+  # physical_science: What is the common name of the acid HClO2? => CHLOROUS ACID
+  ms-set09-regionalms-12a-q23-bonus: [acids-bases]
+
+  # Round 13a
+  # general_science: What is the name of the deepest trench in the world’s oceans? => MARIANA TRENCH
+  ms-set09-regionalms-13a-q01-tossup: [oceans]
+  # general_science: What type of biologically relevant molecule includes phosphatidylcholine [foss-fah-tie-dal... => PHOSPHOLIPIDS
+  ms-set09-regionalms-13a-q01-bonus: [biochemistry]
+  # math: What percent of 80 is 12? => 15
+  ms-set09-regionalms-13a-q02-tossup: [ratios-rates]
+  # math: The three vertices of a triangle have coordinates (-2, 6) , (2, 1) , and (4, 7) . The long... => (4, 7)
+  ms-set09-regionalms-13a-q02-bonus: [plane-geometry]
+  # energy: Performing electrolysis on water results in the production of what two diatomic gases? => HYDROGEN AND OXYGEN
+  ms-set09-regionalms-13a-q03-tossup: [reactions]
+  # energy: What is the major component of crude oil, by weight? => NAPHTHENES
+  ms-set09-regionalms-13a-q03-bonus: [fuels-combustion, organic]
+  # physical_science: Identify all of the following three statements that are true regarding the kinetic molecul... => ALL OF THEM
+  ms-set09-regionalms-13a-q04-tossup: [matter-gases]
+  # physical_science: What subatomic particle is principally responsible for the differences in chemical propert... => ELECTRON
+  ms-set09-regionalms-13a-q04-bonus: [atoms]
+  # earth_and_space: What is the largest layer of the Sun's atmosphere, in which temperatures reach as high as ... => CORONA
+  ms-set09-regionalms-13a-q05-tossup: [stars]
+  # earth_and_space: Which of the following is the streak color of the mineral fluorite? => WHITE
+  ms-set09-regionalms-13a-q05-bonus: [rocks-minerals]
+  # life_science: What is the primary oxygen-carrying protein found in red blood cells? => HEMOGLOBIN
+  ms-set09-regionalms-13a-q06-tossup: [human-body]
+  # life_science: The human ABO blood group system is an example of which of the following? => CO-DOMINANCE
+  ms-set09-regionalms-13a-q06-bonus: [genetics]
+  # earth_and_space: What term refers to the top-most layer of a thermally stratified lake? => EPILIMNION
+  ms-set09-regionalms-13a-q07-tossup: [surface-processes]
+  # earth_and_space: What specific type of eclipse occurs when the edges of the sun's photosphere are visible a... => ANNULAR ECLIPSE
+  ms-set09-regionalms-13a-q07-bonus: [solar-system]
+  # energy: Until the 1900s, what was the major source of energy for businesses and industry in the Un... => COAL
+  ms-set09-regionalms-13a-q08-tossup: [fuels-combustion, energy-use]
+  # energy: Which of the following is considered a non-renewable resource? => URANIUM
+  ms-set09-regionalms-13a-q08-bonus: [nuclear-energy, renewables]
+  # math: Determine the domain of the function: g(x) = the fraction with numerator 2x – 2 and denomi... => All real numbers except x = 9/2
+  ms-set09-regionalms-13a-q09-tossup: [graphs-functions]
+  # math: Simplify the following expression, if a and b are non-zero: open parenthesis 96a7b3 – 64a3... => 12a5b2 – 8a
+  ms-set09-regionalms-13a-q09-bonus: [algebra]
+  # physical_science: What type of heat transfer is demonstrated when a metal spoon placed in an operational fry... => CONDUCTION
+  ms-set09-regionalms-13a-q10-tossup: [heat-thermo]
+  # physical_science: What specific type of intermolecular force occurs between two atoms of neon? => LONDON DISPERSION
+  ms-set09-regionalms-13a-q10-bonus: [bonding]
+  # life_science: Which of the following cells stimulate macrophages, B cells, and T cells? => HELPER T CELLS
+  ms-set09-regionalms-13a-q11-tossup: [immunity-disease]
+  # life_science: Which of the following types of plant cell tissue is considered the least specialized? => PARENCHYMA
+  ms-set09-regionalms-13a-q11-bonus: [plants]
+  # general_science: Which of the following is not found in proteins? => PHOSPHOROUS
+  ms-set09-regionalms-13a-q12-tossup: [biochemistry]
+  # general_science: Which of the following is correct about catalysts? => ALL CATALYSTS LOWER ACTIVATION ENERGY
+  ms-set09-regionalms-13a-q12-bonus: [thermo-kinetics]
+  # physical_science: A longitudinal mechanical wave causes particles of a material to move: => BACK AND FORTH IN THE SAME DIRECTION THE
+  ms-set09-regionalms-13a-q13-tossup: [waves-sound]
+  # physical_science: Which of the following laws would be most useful for determining the change in volume of a... => CHARLES’ LAW
+  ms-set09-regionalms-13a-q13-bonus: [matter-gases]
+  # general_science: What is the term for the catalytically-active complex that consists of an apoenzyme and th... => HOLOENZYME
+  ms-set09-regionalms-13a-q14-tossup: [biochemistry]
+  # general_science: Name the three domains of life. => ARCHAEA, BACTERIA, AND EUKARYA (EUKARYOT
+  ms-set09-regionalms-13a-q14-bonus: [diversity]
+  # earth_and_space: If a star was twice as far away than it originally was, how much fainter would it appear t... => FOUR TIMES
+  ms-set09-regionalms-13a-q15-tossup: [light-em, stars]
+  # earth_and_space: What is the third most common gas in the atmosphere? => ARGON
+  ms-set09-regionalms-13a-q15-bonus: [weather]
+  # energy: Approximately one-third of the electricity in the United States comes from what fossil fue... => COAL
+  ms-set09-regionalms-13a-q16-tossup: [fuels-combustion, energy-use]
+  # energy: What series of elements which includes neodymium, has a variety of applications, including... => LANTHANIDES
+  ms-set09-regionalms-13a-q16-bonus: [periodic-table]
+  # math: If the radius of a right circular cylinder is quadrupled, by what factor must the height b... => 1/16
+  ms-set09-regionalms-13a-q17-tossup: [solid-geometry]
+  # math: Two people take turns counting, starting by saying “1,” then “1, 2,” then “1, 2, 3,” and s... => NINE
+  ms-set09-regionalms-13a-q17-bonus: [sequences]
+  # life_science: Which of the following is not considered a plant organ? => SIEVE-TUBE ELEMENTS
+  ms-set09-regionalms-13a-q18-tossup: [plants]
+  # life_science: What functional group is characteristic of ketones and aldehydes? => CARBONYL
+  ms-set09-regionalms-13a-q18-bonus: [organic]
+  # earth_and_space: The temperature and luminosity of what celestial objects are plotted on Hertzsprung-Russel... => STARS
+  ms-set09-regionalms-13a-q19-tossup: [stars]
+  # earth_and_space: What planet in the solar system is less dense than water? => SATURN
+  ms-set09-regionalms-13a-q19-bonus: [solar-system]
+  # life_science: RNA molecules can be catalysts that are called what? => RIBOZYMES
+  ms-set09-regionalms-13a-q20-tossup: [biochemistry]
+  # life_science: The cardiac center is located in which of the following structures? => MEDULLA
+  ms-set09-regionalms-13a-q20-bonus: [human-body]
+  # general_science: A scientist has a sample containing lithium, sodium, sulfur, and magnesium. In a flame tes... => LITHIUM
+  ms-set09-regionalms-13a-q21-tossup: [atoms]
+  # general_science: What acid-base indicator is colorless below pH 8 and was previously used as a laxative? => PHENOLPHTHALEIN
+  ms-set09-regionalms-13a-q21-bonus: [acids-bases]
+  # math: Which of the following illustrates a pair of dependent events? => CHOOSE A FOOD FROM A BUFFET. THEN CHOOSE
+  ms-set09-regionalms-13a-q22-tossup: [counting-probability]
+  # math: If the length and width of a rectangle are each increased by 50%, by what factor is the pe... => 1.5
+  ms-set09-regionalms-13a-q22-bonus: [plane-geometry]
+  # physical_science: At what point on a pressure-temperature diagram does gas, liquid, and solid coexist? => TRIPLE POINT
+  ms-set09-regionalms-13a-q23-tossup: [matter-gases]
+  # physical_science: An atom of radon-222 loses an alpha particle to become a more stable atom of which of the ... => POLONIUM
+  ms-set09-regionalms-13a-q23-bonus: [modern-physics]
+
+  # Round 14a
+  # life_science: What transport proteins facilitate diffusion of water across plasma membranes in plants? => AQUAPORINS
+  ms-set09-regionalms-14a-q01-tossup: [plants, cells]
+  # life_science: What branch of the nervous system is responsible for “fight or flight” responses? => SYMPATHETIC
+  ms-set09-regionalms-14a-q01-bonus: [human-body]
+  # general_science: Liquefaction can happen during which natural hazard? => EARTHQUAKES
+  ms-set09-regionalms-14a-q02-tossup: [tectonics]
+  # general_science: Kerr, Ressner-Nostrdrom, and Schwarzschild refer to solutions of which of the following se... => EINSTEIN FIELD EQUATIONS
+  ms-set09-regionalms-14a-q02-bonus: [modern-physics]
+  # math: Four daily high temperature readings in Blacksburg were 82°F, 79°F, 80°F, and 80°F. The te... => MEAN
+  ms-set09-regionalms-14a-q03-tossup: [statistics]
+  # math: How many different (that is, non-congruent) isosceles triangles that are not equilateral h... => 8
+  ms-set09-regionalms-14a-q03-bonus: [plane-geometry]
+  # physical_science: What experiment disproved the existence of luminiferous ether? => MICHELSON-MORLEY EXPERIMENT
+  ms-set09-regionalms-14a-q04-tossup: [light-em]
+  # physical_science: Which of the following is a unit of pressure? => NEWTON PER METER SQUARED
+  ms-set09-regionalms-14a-q04-bonus: [measurement]
+  # energy: What type of rechargeable battery, often used in cell phones and laptop computers, include... => LITHIUM-ION
+  ms-set09-regionalms-14a-q05-tossup: [batteries-storage]
+  # energy: Of the three isotopes of uranium found in nature, which is used most commonly for energy p... => URANIUM – 235
+  ms-set09-regionalms-14a-q05-bonus: [nuclear-energy]
+  # earth_and_space: Which of the following is a coarse-grained clastic rock that contains angular fragments? => BRECCIA
+  ms-set09-regionalms-14a-q06-tossup: [rocks-minerals]
+  # earth_and_space: What is the name for the movement of a tectonic plate under the force of its own weight? => SLAB-PULL
+  ms-set09-regionalms-14a-q06-bonus: [tectonics]
+  # life_science: Synaptic vesicles contain what signaling molecules? => NEUROTRANSMITTERS
+  ms-set09-regionalms-14a-q07-tossup: [human-body]
+  # life_science: What phase of the cell cycle follows mitosis and is generally thought of as the time the c... => INTERPHASE
+  ms-set09-regionalms-14a-q07-bonus: [cells]
+  # general_science: Identify all of the following three observations that are examples of qualitative data: 1)... => 1
+  ms-set09-regionalms-14a-q08-tossup: [measurement]
+  # general_science: Which of the following groups on the periodic table is generally known to be unreactive? => GROUP 18
+  ms-set09-regionalms-14a-q08-bonus: [periodic-table]
+  # physical_science: A spaceship starts at rest at the origin. Later, the spaceship is at coordinate (2000 mete... => 10
+  ms-set09-regionalms-14a-q09-tossup: [motion-forces]
+  # physical_science: Maxwell based his theory of electromagnetic waves on the hypothesis that a changing electr... => A MAGNETIC FIELD
+  ms-set09-regionalms-14a-q09-bonus: [light-em]
+  # math: Two angles will necessarily be equal in measure if they are which of the following? => VERTICAL ANGLES
+  ms-set09-regionalms-14a-q10-tossup: [plane-geometry]
+  # math: To the nearest tenth, find the area of a circle that has a circumference of 4. => 1.3
+  ms-set09-regionalms-14a-q10-bonus: [plane-geometry]
+  # earth_and_space: What term describes metamorphic rocks that are characterized by their layers and bands of ... => FOLIATED
+  ms-set09-regionalms-14a-q11-tossup: [rocks-minerals]
+  # earth_and_space: The international treaties called the Montreal Protocols were agreements to ban the use of... => CFCs
+  ms-set09-regionalms-14a-q11-bonus: [climate-environment]
+  # energy: Which of the following engines runs using the Otto, spelled O-T-T-O, cycle? => GASOLINE ENGINE
+  ms-set09-regionalms-14a-q12-tossup: [fuels-combustion, heat-thermo]
+  # energy: Identify all of the following three gases that would be reacted in the catalytic converter... => ALL OF THEM
+  ms-set09-regionalms-14a-q12-bonus: [reactions]
+  # math: Which of the following subsets of the real numbers contains the square root of 2? => IRRATIONAL NUMBERS
+  ms-set09-regionalms-14a-q13-tossup: [number-theory]
+  # math: If angle ABC is inscribed in a circle and measures 65 degrees, what is the degree measure ... => 230
+  ms-set09-regionalms-14a-q13-bonus: [plane-geometry]
+  # earth_and_space: What type of stars are found at the lower left of the H-R diagram? => WHITE DWARF
+  ms-set09-regionalms-14a-q14-tossup: [stars]
+  # earth_and_space: Identify all of the following three planets that are Jovian: 1) Mars; 2) Neptune; 3) Earth... => 2
+  ms-set09-regionalms-14a-q14-bonus: [solar-system]
+  # physical_science: What ions are formed during the reaction between carbon dioxide and water? => HYDROGEN CARBONATE AND HYDROGEN
+  ms-set09-regionalms-14a-q15-tossup: [acids-bases]
+  # physical_science: Order the following four elements from least electronegative to most electronegative: 1) c... => CARBON, NITROGEN, OXYGEN, FLUORINE
+  ms-set09-regionalms-14a-q15-bonus: [periodic-table]
+  # general_science: Varicella [var-ih-sell-uh] zoster is the causative agent of which childhood disease? => CHICKEN POX
+  ms-set09-regionalms-14a-q16-tossup: [immunity-disease]
+  # general_science: Which two valves are located between the atria and ventricles of the heart? => MITRAL AND TRICUSPID
+  ms-set09-regionalms-14a-q16-bonus: [human-body]
+  # life_science: Pepsin is most active in the stomach due to the presence of which of the following acids? => HYDROCHLORIC
+  ms-set09-regionalms-14a-q17-tossup: [human-body]
+  # life_science: What cellular organelle is responsible for packaging and transporting proteins outside of ... => GOLGI BODY
+  ms-set09-regionalms-14a-q17-bonus: [cells]
+  # energy: Steam reforming is used to produce hydrogen from what fuel? => NATURAL GAS
+  ms-set09-regionalms-14a-q18-tossup: [fuels-combustion]
+  # energy: Derricks and drilling rigs are used to mine what natural resource? => OIL
+  ms-set09-regionalms-14a-q18-bonus: [fuels-combustion]
+  # life_science: Sponges capture food particles suspended in water as it flows through their body. This typ... => FILTER FEEDER
+  ms-set09-regionalms-14a-q19-tossup: [diversity]
+  # life_science: Identify all of the following four diseases that are caused by nematodes: 1) Chagas diseas... => 3 AND 4
+  ms-set09-regionalms-14a-q19-bonus: [immunity-disease]
+  # math: What is 612? => 3721
+  ms-set09-regionalms-14a-q20-tossup: [arithmetic]
+  # math: Coach Myers bought pizza for her basketball team. She bought 8 pizzas. Each pizza containe... => 16
+  ms-set09-regionalms-14a-q20-bonus: [arithmetic]
+  # physical_science: A rope inclined upward at 45 degrees pulls a suitcase horizontally across 100 meters while... => 1400
+  ms-set09-regionalms-14a-q21-tossup: [energy-work]
+  # physical_science: A quantum number is not associated with an atomic electron’s: => MASS
+  ms-set09-regionalms-14a-q21-bonus: [atoms]
+  # general_science: Which of the following conversions between English and metric units is exact? => ONE INCH EQUALS 2.54 CENTIMETERS
+  ms-set09-regionalms-14a-q22-tossup: [measurement]
+  # general_science: What is the binomial scientific name of the common fruit fly? => DROSOPHILA MELANOGASTER
+  ms-set09-regionalms-14a-q22-bonus: [diversity]
+  # earth_and_space: What element is the most abundant in Earth’s crust? => OXYGEN
+  ms-set09-regionalms-14a-q23-tossup: [rocks-minerals]
+  # earth_and_space: The measure of the level of particles such as sediment, plankton or organic by-products in... => TURBIDITY
+  ms-set09-regionalms-14a-q23-bonus: [oceans]
+
+  # Round 15a
+  # energy: Which of the following elements would one be likely to find in a catalytic converter? => PALLADIUM
+  ms-set09-regionalms-15a-q01-tossup: [fuels-combustion, reactions]
+  # energy: What part of a car engine is responsible for blending air and fuel before combustion? => CARBURETOR
+  ms-set09-regionalms-15a-q01-bonus: [fuels-combustion]
+  # general_science: How many bones can you find in the body of a Chondrichthyan [kon-drik-thee-uhn]? => ZERO
+  ms-set09-regionalms-15a-q02-tossup: [diversity]
+  # general_science: What is the term for the circular movement of bodily extremities? => CIRCUMDUCTION
+  ms-set09-regionalms-15a-q02-bonus: [human-body]
+  # earth_and_space: What is the term for a plate margin at which no tectonic activity occurs? => PASSIVE MARGIN
+  ms-set09-regionalms-15a-q03-tossup: [tectonics]
+  # earth_and_space: Which of the following ores is NOT a sulfide? => BARITE
+  ms-set09-regionalms-15a-q03-bonus: [rocks-minerals]
+  # physical_science: What value, in regard to the electron, did J.J. Thompson discover? => CHARGE-TO-MASS RATIO
+  ms-set09-regionalms-15a-q04-tossup: [atoms]
+  # physical_science: What class of lever is typified by a pair of tweezers? => THIRD CLASS
+  ms-set09-regionalms-15a-q04-bonus: [motion-forces]
+  # life_science: What is the main excitatory neurotransmitter in the human neuromuscular junction? => ACETYLCHOLINE
+  ms-set09-regionalms-15a-q05-tossup: [human-body]
+  # life_science: Most of the growth in a plant is due to which of the following? => CELL ELONGATION
+  ms-set09-regionalms-15a-q05-bonus: [plants]
+  # math: A combination lock requires 3 numbers to open the lock. The lock uses numbers one through ... => 729
+  ms-set09-regionalms-15a-q06-tossup: [counting-probability]
+  # math: If a prism has 18 edges, how many vertices does it have? => 12
+  ms-set09-regionalms-15a-q06-bonus: [solid-geometry]
+  # physical_science: A child is holding a helium-filled balloon in an enclosed car. If the car suddenly acceler... => POSITIVE X DIRECTION
+  ms-set09-regionalms-15a-q07-tossup: [motion-forces]
+  # physical_science: What principle states that no two electrons can occupy the same quantum state? => PAULI EXCLUSION PRINCIPLE
+  ms-set09-regionalms-15a-q07-bonus: [atoms]
+  # energy: Which of the following is NOT an important step in natural gas processing and treatment? => OXYGEN EXTRACTION
+  ms-set09-regionalms-15a-q08-tossup: [fuels-combustion]
+  # energy: Mercaptan is added to what energy resource to give it an odor? => NATURAL GAS
+  ms-set09-regionalms-15a-q08-bonus: [fuels-combustion]
+  # earth_and_space: The 21-centimeter radiation is characteristic of what element that is commonly found in in... => HYDROGEN
+  ms-set09-regionalms-15a-q09-tossup: [stars]
+  # earth_and_space: What gas is most common in the atmosphere of Venus? => CARBON DIOXIDE
+  ms-set09-regionalms-15a-q09-bonus: [solar-system]
+  # general_science: If the temperature of a surface is below the freezing point of water, instead of dew forma... => HOAR FROST
+  ms-set09-regionalms-15a-q10-tossup: [weather]
+  # general_science: Odontoceti and Mysticeti are terms given to: => WHALES, BASED ON THE STRUCTURE OF THEIR 
+  ms-set09-regionalms-15a-q10-bonus: [diversity]
+  # life_science: Radioactive iodine is used to image what organ? => THYROID
+  ms-set09-regionalms-15a-q11-tossup: [human-body]
+  # life_science: Identify all of the following four amino acids that have a nonpolar side chain: 1) Valine;... => 1, 3, AND 4
+  ms-set09-regionalms-15a-q11-bonus: [biochemistry]
+  # math: Which of the following is not a triangle congruence theorem? => SIDE-SIDE-ANGLE
+  ms-set09-regionalms-15a-q12-tossup: [plane-geometry]
+  # math: A woman drove to work at an average speed of 40 miles per hour and returned along the same... => 34 2/7
+  ms-set09-regionalms-15a-q12-bonus: [ratios-rates]
+  # energy: Order the following sectors from least to greatest in terms of U.S. coal consumption: 1) H... => 1, 3, 2
+  ms-set09-regionalms-15a-q13-tossup: [fuels-combustion, energy-use]
+  # energy: Mixed oxide fuels are a form of fuel used in what method of energy production? => NUCLEAR
+  ms-set09-regionalms-15a-q13-bonus: [nuclear-energy]
+  # math: What is 76 times 84? => 6384
+  ms-set09-regionalms-15a-q14-tossup: [arithmetic]
+  # math: At the start of camp, Gracie scored 78 on her pre-test. At the end of the week, she scored... => 7.7
+  ms-set09-regionalms-15a-q14-bonus: [ratios-rates]
+  # general_science: Which of the following toxins is produced by Aspergillus flavus and can be found on contam... => AFLATOXIN
+  ms-set09-regionalms-15a-q15-tossup: [microbes]
+  # general_science: Aside from carbon, which of the following elements can one find in Teflon? => FLUORINE
+  ms-set09-regionalms-15a-q15-bonus: [organic]
+  # life_science: By what process does a mother cell split into four haploid daughter cells? => MEIOSIS
+  ms-set09-regionalms-15a-q16-tossup: [genetics]
+  # life_science: In genetics, what is the general term for the type of cross between the F1 generation of u... => TEST CROSS
+  ms-set09-regionalms-15a-q16-bonus: [genetics]
+  # physical_science: If a car is traveling at a constant velocity of 2.5 meters per second, how far, in meters,... => 37.5
+  ms-set09-regionalms-15a-q17-tossup: [motion-forces]
+  # physical_science: Which of the following substances would show the Tyndall effect? => BLOOD
+  ms-set09-regionalms-15a-q17-bonus: [solutions]
+  # earth_and_space: What term describes a region where fresh water flows to the surface from underground? => SPRING
+  ms-set09-regionalms-15a-q18-tossup: [surface-processes]
+  # earth_and_space: What effect refers to cities that have hotter temperatures than nearby areas? => HEAT ISLAND
+  ms-set09-regionalms-15a-q18-bonus: [climate-environment]
+  # physical_science: If you double the mass of a cart while it is undergoing a constant unbalanced force, the a... => HALVED
+  ms-set09-regionalms-15a-q19-tossup: [motion-forces]
+  # physical_science: Which of the following electromagnetic waves has a shorter wavelength than visible light? => ULTRAVIOLET
+  ms-set09-regionalms-15a-q19-bonus: [light-em]
+  # earth_and_space: Yardangs are formed by what erosional agent? => WIND
+  ms-set09-regionalms-15a-q20-tossup: [surface-processes]
+  # earth_and_space: The red color in the rocks of southern Utah is caused by oxides of what element? => IRON
+  ms-set09-regionalms-15a-q20-bonus: [rocks-minerals]
+  # general_science: An autoclave would often be used by which of the following scientists? => MICROBIOLOGIST
+  ms-set09-regionalms-15a-q21-tossup: [microbes]
+  # general_science: What genus of protists are well known for their pseudopodia and are part of the phylum Rhi... => AMOEBA
+  ms-set09-regionalms-15a-q21-bonus: [diversity]
+  # math: For a weekend trip, you pack the following: three different shirts, three different pairs ... => 18
+  ms-set09-regionalms-15a-q22-tossup: [counting-probability]
+  # math: What is the sum of the integers between 90 and 99, inclusive? => 945
+  ms-set09-regionalms-15a-q22-bonus: [sequences]
+  # life_science: What structural carbohydrate is found in the cell walls of fungi and the exoskeletons of a... => CHITIN
+  ms-set09-regionalms-15a-q23-tossup: [biochemistry]
+  # life_science: What effect occurs when a population is greatly reduced by events such as a natural disast... => BOTTLENECK EFFECT
+  ms-set09-regionalms-15a-q23-bonus: [evolution]
+
+  # Round 16a
+  # general_science: What energy in a nucleus is equivalent to the mass defect? => BINDING ENERGY
+  ms-set09-regionalms-16a-q01-tossup: [modern-physics]
+  # general_science: Identify all of the following three diseases that are considered autoimmune disorders: 1) ... => 1 AND 3
+  ms-set09-regionalms-16a-q01-bonus: [immunity-disease]
+  # life_science: What organ in the human body is responsible for storing glucose in the form of glycogen? => LIVER
+  ms-set09-regionalms-16a-q02-tossup: [human-body]
+  # life_science: A scientist performs a Gram stain on an unknown strain of bacteria and observes that the b... => THEIR CELL WALLS CONTAIN LARGE AMOUNTS O
+  ms-set09-regionalms-16a-q02-bonus: [microbes]
+  # math: Three identical circular plates sit at the very edge of a small square table. The plates a... => 36
+  ms-set09-regionalms-16a-q03-tossup: [plane-geometry]
+  # math: Find the surface area of a square pyramid whose base has sides of length 4 and a slant hei... => 64
+  ms-set09-regionalms-16a-q03-bonus: [solid-geometry]
+  # earth_and_space: What was the heaviest element produced during the big bang nucleosynthesis? => LITHIUM
+  ms-set09-regionalms-16a-q04-tossup: [galaxies-cosmology]
+  # earth_and_space: What is the term for the small, atmospheric particles onto which water vapor condenses to ... => CONDENSATION NUCLEI
+  ms-set09-regionalms-16a-q04-bonus: [weather]
+  # physical_science: Compared to cooler air, warm air can hold: => MORE WATER VAPOR
+  ms-set09-regionalms-16a-q05-tossup: [weather]
+  # physical_science: Two electrons can occupy the same orbital if what value is different? => SPIN QUANTUM NUMBER
+  ms-set09-regionalms-16a-q05-bonus: [atoms]
+  # general_science: Which of the following is typically used to sterilize laboratory glassware: => AUTOCLAVE
+  ms-set09-regionalms-16a-q06-tossup: [chemistry-misc]
+  # general_science: What paradox, first published in 1826, suggested that in a static universe, the night sky ... => OLBERS’ PARADOX
+  ms-set09-regionalms-16a-q06-bonus: [galaxies-cosmology]
+  # physical_science: How many hydrogen atoms are contained in dichloro- difluoromethane? => ZERO
+  ms-set09-regionalms-16a-q07-tossup: [organic]
+  # physical_science: What term is used to describe the electrons in the highest energy level of an atom? => VALENCE
+  ms-set09-regionalms-16a-q07-bonus: [atoms]
+  # math: Determine the area of an equilateral triangle with side length square root of 3. => (3 times the square root of 3) ⁄ 4
+  ms-set09-regionalms-16a-q08-tossup: [plane-geometry]
+  # math: Sam places 2 red shirts and one green shirt in a bag. He places 3 blue pairs of shorts and... => 50%
+  ms-set09-regionalms-16a-q08-bonus: [counting-probability]
+  # life_science: Unlike eutherians, both monotremes and marsupials are associated with which of the followi... => EMBRYONIC DEVELOPMENT OUTSIDE THE UTERUS
+  ms-set09-regionalms-16a-q09-tossup: [diversity]
+  # life_science: Which of the following functional groups is possessed by alcohols? => HYDROXYL
+  ms-set09-regionalms-16a-q09-bonus: [organic]
+  # energy: Raw natural gas contains approximately 5 percent of which of the following gases? => PROPANE
+  ms-set09-regionalms-16a-q10-tossup: [fuels-combustion]
+  # energy: Adding hydrogen gas to compressed natural gas reduces the emission of pollutants that cont... => NITROGEN
+  ms-set09-regionalms-16a-q10-bonus: [fuels-combustion, climate-environment]
+  # earth_and_space: Reverse and normal faults are both examples of what general type of fault? => DIP-SLIP FAULT
+  ms-set09-regionalms-16a-q11-tossup: [tectonics]
+  # earth_and_space: Over the Earth’s history, ice ages have occurred approximately how often? => EVERY 200 MILLION YEARS
+  ms-set09-regionalms-16a-q11-bonus: [earth-history]
+  # physical_science: A ball is swinging in a circle on a string in the absence of gravity. When the string leng... => HALVED
+  ms-set09-regionalms-16a-q12-tossup: [motion-forces]
+  # physical_science: Which of Kepler’s laws states that a satellite’s angular momentum is conserved as it orbit... => SECOND
+  ms-set09-regionalms-16a-q12-bonus: [solar-system, momentum-rotation]
+  # earth_and_space: What law relates the distance between the Milky Way and another galaxy to the speed that g... => HUBBLE'S LAW
+  ms-set09-regionalms-16a-q13-tossup: [galaxies-cosmology]
+  # earth_and_space: What is the specific name for the theory that gravity is just a curvature of spacetime? => GENERAL RELATIVITY
+  ms-set09-regionalms-16a-q13-bonus: [modern-physics]
+  # general_science: An Atwood machine can be used to measure what fundamental force? => GRAVITY
+  ms-set09-regionalms-16a-q14-tossup: [motion-forces]
+  # general_science: What can analog signals do that digital signals cannot do? => HAVE A CONTINUUM OF VALUES
+  ms-set09-regionalms-16a-q14-bonus: [electricity]
+  # math: What is the greatest integer less than or equal to the square root of 500? => 22
+  ms-set09-regionalms-16a-q15-tossup: [number-theory]
+  # math: Your fully charged cell phone is good for 8 hours. How many minutes remain after using 40%... => 288
+  ms-set09-regionalms-16a-q15-bonus: [ratios-rates]
+  # life_science: Certain diseases, like hemophilia, are mostly contracted by men and inherited from their c... => X CHROMOSOME
+  ms-set09-regionalms-16a-q16-tossup: [genetics]
+  # life_science: Tapeworms are part of what phylum? => PLATYHELMINTHES
+  ms-set09-regionalms-16a-q16-bonus: [diversity]
+  # energy: Order the following three types of light bulbs from least efficient to most efficient: 1) ... => 2, 3, 1
+  ms-set09-regionalms-16a-q17-tossup: [energy-use]
+  # energy: Identify all of the following three statements that are true about propane and its usage f... => 1 AND 3
+  ms-set09-regionalms-16a-q17-bonus: [fuels-combustion]
+  # life_science: Aside from neurons, what other general type of cells are found in the nervous system? => GLIAL CELLS
+  ms-set09-regionalms-16a-q18-tossup: [human-body]
+  # life_science: Which of the following would be least likely to diffuse through the plasma membrane of a c... => FIBRINOGEN
+  ms-set09-regionalms-16a-q18-bonus: [cells]
+  # earth_and_space: What quantity is a measure of the amount of light that a star emits that reaches the Earth... => APPARENT MAGNITUDE
+  ms-set09-regionalms-16a-q19-tossup: [stars]
+  # earth_and_space: The Very Large Array is a set of telescopes designed to capture what type of radiation? => RADIO WAVES
+  ms-set09-regionalms-16a-q19-bonus: [observing]
+  # math: In terms of real numbers p and q, for what value of x is the function -x2 + px + q maximiz... => p/2
+  ms-set09-regionalms-16a-q20-tossup: [graphs-functions]
+  # math: Mary went shopping in two stores with her birthday gift money. In the first store, she spe... => 96
+  ms-set09-regionalms-16a-q20-bonus: [algebra]
+  # energy: Which of the following fuels has an octane rating of greater than 100? => PROPANE
+  ms-set09-regionalms-16a-q21-tossup: [fuels-combustion]
+  # energy: What rating, similar to octane ratings for gasoline, is used to indicate the combustion sp... => CETANE NUMBER
+  ms-set09-regionalms-16a-q21-bonus: [fuels-combustion]
+  # physical_science: What quantum number determines the shape of an electron’s orbital? => AZIMUTHAL
+  ms-set09-regionalms-16a-q22-tossup: [atoms]
+  # physical_science: For the decomposition of gaseous N2O4to form two gaseous NO2molecules, identify all of the... => 2
+  ms-set09-regionalms-16a-q22-bonus: [thermo-kinetics]
+  # general_science: What products are formed from the reaction of sodium hydroxide and hydrochloric acid? => WATER AND SALT
+  ms-set09-regionalms-16a-q23-tossup: [acids-bases]
+  # general_science: What series of techniques is used for separating mixtures of gases, liquids, or dissolved ... => CHROMATOGRAPHY
+  ms-set09-regionalms-16a-q23-bonus: [solutions]
+
+  # Round 17a
+  # energy: What technology is designed to harvest energy from the thermal gradient in the oceans? => OTEC
+  ms-set09-regionalms-17a-q01-tossup: [renewables]
+  # energy: Which of the following is NOT possible using a solar box cooker? => PURIFYING ANHYDROUS ETHANOL
+  ms-set09-regionalms-17a-q01-bonus: [renewables]
+  # physical_science: What is the molecular geometry of methane? => TETRAHEDRAL
+  ms-set09-regionalms-17a-q02-tossup: [bonding]
+  # physical_science: What principle states that each point on a wave front is a source of a new wavelet? => HUYGEN’S PRINCIPLE
+  ms-set09-regionalms-17a-q02-bonus: [waves-sound]
+  # math: Express the following as a mixed number: the fraction with numerator 5/6 and denominator 2... => 2 AND 2/5
+  ms-set09-regionalms-17a-q03-tossup: [arithmetic]
+  # math: Find the volume, in cubic meters, of a rectangular pyramid measuring 17 meters and 18 mete... => 1734
+  ms-set09-regionalms-17a-q03-bonus: [solid-geometry]
+  # life_science: Identify all of the following three organisms that are considered gastropods: 1) Snails; 2... => 1
+  ms-set09-regionalms-17a-q04-tossup: [diversity]
+  # life_science: Which of the following are not found in both prokaryotes and eukaryotes? => MITOCHONDRIA
+  ms-set09-regionalms-17a-q04-bonus: [cells]
+  # earth_and_space: Type IA [ONE-A] supernovas are associated with what type of star? => WHITE DWARF
+  ms-set09-regionalms-17a-q05-tossup: [stars]
+  # earth_and_space: Which of the following is an ore of zinc? => SPHALERITE
+  ms-set09-regionalms-17a-q05-bonus: [rocks-minerals]
+  # general_science: What mechanism controls the passage of substances from the blood to the cerebrospinal flui... => BLOOD-BRAIN BARRIER
+  ms-set09-regionalms-17a-q06-tossup: [human-body]
+  # general_science: What term describes the change in displacement per unit time? => VELOCITY
+  ms-set09-regionalms-17a-q06-bonus: [motion-forces]
+  # life_science: Which of the following hormones plays a major role in the male reproductive system? => ANDROGENS
+  ms-set09-regionalms-17a-q07-tossup: [human-body]
+  # life_science: What reproductive cells do ferns release into the air? => SPORES
+  ms-set09-regionalms-17a-q07-bonus: [plants]
+  # energy: Oil components are separated using what process? => FRACTIONAL DISTILLATION
+  ms-set09-regionalms-17a-q08-tossup: [fuels-combustion]
+  # energy: The U.S. Department of Energy has created safety measures for the disposal of compact fluo... => MERCURY
+  ms-set09-regionalms-17a-q08-bonus: [energy-use]
+  # physical_science: Hydrogen, with its one electron, produces a line spectrum in the visible light range with: => FOUR COLOR LINES
+  ms-set09-regionalms-17a-q09-tossup: [atoms, light-em]
+  # physical_science: The Doppler effect occurs: => IN ALL TYPES OF WAVES
+  ms-set09-regionalms-17a-q09-bonus: [waves-sound]
+  # earth_and_space: A bowshock is found where a planet's magnetic field deflects what? => SOLAR WIND
+  ms-set09-regionalms-17a-q10-tossup: [solar-system]
+  # earth_and_space: Xerophytes are plants most likely to be found in what biome? => DESERT
+  ms-set09-regionalms-17a-q10-bonus: [plants, ecology]
+  # math: Points A, B, and C all lie on circle O. What is the measure of Angle ABC in degrees if it ... => 56
+  ms-set09-regionalms-17a-q11-tossup: [plane-geometry]
+  # math: Convert 102 in base 10 to base 7. => 204
+  ms-set09-regionalms-17a-q11-bonus: [number-theory]
+  # general_science: Which of the following terms is used to describe substances that reduce pain without causi... => ANALGESIC
+  ms-set09-regionalms-17a-q12-tossup: [biology-misc]
+  # general_science: Which general type of material is added to a reaction in order to lower the activation ene... => CATALYST
+  ms-set09-regionalms-17a-q12-bonus: [thermo-kinetics]
+  # math: What fraction is halfway between 1/5th and 1/3rd on the number line? => 4/15th
+  ms-set09-regionalms-17a-q13-tossup: [arithmetic]
+  # math: If b and c satisfy the system of equations 6b + 7 = 12c and 3b – 9c = 4, what is c? => -5/2
+  ms-set09-regionalms-17a-q13-bonus: [algebra]
+  # life_science: What genomic elements are capable of moving randomly throughout the genome? => TRANSPOSONS
+  ms-set09-regionalms-17a-q14-tossup: [genetics]
+  # life_science: What type of virus solely infects bacteria? => BACTERIOPHAGES
+  ms-set09-regionalms-17a-q14-bonus: [microbes]
+  # energy: What process breaks down heavy hydrocarbons into smaller ones? => CRACKING
+  ms-set09-regionalms-17a-q15-tossup: [fuels-combustion]
+  # energy: The Fischer-Tropsch process converts hydrogen and carbon dioxide into what? => HYDROCARBONS
+  ms-set09-regionalms-17a-q15-bonus: [fuels-combustion, reactions]
+  # physical_science: Which of the following electron configurations would be the most chemically stable? => 2s22p6
+  ms-set09-regionalms-17a-q16-tossup: [atoms]
+  # physical_science: A permanent magnet has magnetic properties due to which of the following? => THE MAGNETIC DOMAINS HAVE PARALLEL MAGNE
+  ms-set09-regionalms-17a-q16-bonus: [magnetism]
+  # general_science: Taxol is a drug used to treat which of the following disorders? => CANCER
+  ms-set09-regionalms-17a-q17-tossup: [immunity-disease]
+  # general_science: A Hall-Heroult cell is used industrially for the extraction of what metal? => ALUMINUM
+  ms-set09-regionalms-17a-q17-bonus: [chemistry-misc]
+  # earth_and_space: What interstellar clouds consist of neutral hydrogen? => HI REGIONS
+  ms-set09-regionalms-17a-q18-tossup: [stars]
+  # earth_and_space: Which of the following correctly explains why liquid fuel rockets are preferred over solid... => THE USE OF LIQUID FUEL ROCKETS CAN BE ST
+  ms-set09-regionalms-17a-q18-bonus: [earth-space-misc]
+  # math: What is the greatest common factor of the terms in the polynomial 3x2y2 + 12yz2 + 6xy3z? => 3y
+  ms-set09-regionalms-17a-q19-tossup: [algebra]
+  # math: Jason needs to buy 2 pairs of jeans and 4 shirts. Jeans costs $15.24 and shirts cost $12.5... => $11.47
+  ms-set09-regionalms-17a-q19-bonus: [arithmetic]
+  # physical_science: Identify all of the following units that are considered SI units: 1) Kilogram; 2) Metric t... => 1
+  ms-set09-regionalms-17a-q20-tossup: [measurement]
+  # physical_science: You are standing 100 meters from a concrete wall and your friend Billy is 200 meters farth... => 0.67
+  ms-set09-regionalms-17a-q20-bonus: [waves-sound]
+  # general_science: In the brain, the occipital lobe is primarily involved in which bodily function? => VISION
+  ms-set09-regionalms-17a-q21-tossup: [human-body]
+  # general_science: What extract from red seaweed is used as a gelling agent in microbiology labs for making b... => AGAR
+  ms-set09-regionalms-17a-q21-bonus: [microbes]
+  # earth_and_space: What type of optical aberration occurs because different wavelengths of light have slightl... => CHROMATIC ABERRATION
+  ms-set09-regionalms-17a-q22-tossup: [observing]
+  # earth_and_space: What kind of particles will be detected in a massive surge just before a supernova? => NEUTRINOS
+  ms-set09-regionalms-17a-q22-bonus: [stars]
+  # life_science: Sharks are in the class Chondricthyes [kon-drik-theez], because they have a skeleton made ... => CARTILAGE
+  ms-set09-regionalms-17a-q23-tossup: [diversity]
+  # life_science: What type of plant cells have thin, flexible primary walls and perform most of the metabol... => PARENCHYMA
+  ms-set09-regionalms-17a-q23-bonus: [plants]
